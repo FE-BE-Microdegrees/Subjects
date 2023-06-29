@@ -1,1 +1,5 @@
 # Operators
+
+## Description
+
+## Learning Outcomes
