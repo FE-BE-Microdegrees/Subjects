@@ -2,15 +2,26 @@
 
 ## Description
 
-- Volume: 6 ECTS (6 x 26 hours)
-- Subject Aims: To introduce students to the software development process and the tools used in the process. To introduce and use code versioning during study. To introduce students to the roles in software development and the software development methods. To introduce students to the software development life cycle and the documentation used in the process. To introduce students to the networking concepts used in software development. Apply the knowledge in a project.
+**"Software Development"** delves deep into the heart of creating modern software solutions. This subject covers the entire software development lifecycle, from understanding user requirements to design, coding, testing, deployment, and beyond. Students will learn both the theoretical foundations of software engineering and the practical skills necessary to become proficient software developers. Topics covered include design principles, coding best practices, collaborative development, version control, testing strategies, and software maintenance. Through hands-on projects and case studies, students will experience the challenges and rewards of software development in real-world contexts.
+
+- **Volume**: 6 ECTS (6 x 26 hours)
+- **Subject Aims**: The aim of the "Software Development" subject is to provide students with a comprehensive understanding of the processes, methodologies, tools, and best practices used in the design, creation, and maintenance of software applications.
+By the end of the course, students should be well-equipped to translate real-world problems into computational solutions and develop software applications that are robust, user-friendly, and maintainable.
+
 
 ## Learning Outcomes
 
-- Uses code versioning and project management to store, manage and document project (Proficiency in Collaborative Development Environments)
-- Understands and describes software development concepts and processes
-- Understands and describes the roles in software development
-- Uses at least one software development method
+- **Software Development Lifecycle (SDLC) Understanding**: Describe the stages of the software development lifecycle, including requirements gathering, design, implementation, testing, deployment, and maintenance.
+- **Development Methodologies**: Understand and differentiate between various software development methodologies such as Waterfall, Agile, and Scrum, and determine when each is appropriate.
+- **Requirements Analysis**: Extract and document clear, complete, and actionable software requirements from stakeholder communications.
+- **Software Design Principles**: Apply fundamental software design principles and patterns to create modular, scalable, and maintainable software solutions.
+- **Coding Standards**: Write clean, maintainable, and well-documented code adhering to industry standards and best practices.
+- **Testing and Quality Assurance**: Implement various testing strategies, such as unit testing, integration testing, and system testing, to validate software functionality and robustness.
+- **Version Control**: Use version control systems, like Git, effectively to manage codebase changes, collaborate with other developers, and maintain a history of project developments.
+- **Collaborative Development**: Work effectively in team-based development environments, understanding the roles, responsibilities, and best practices of team software development.
+- **Deployment and Continuous Integration**: Understand and utilize continuous integration/continuous deployment (CI/CD) pipelines to automate the testing and deployment of software changes.
+- **Software Security**: Apply basic security principles in software design and development to prevent common vulnerabilities, such as SQL injection or cross-site scripting attacks.
+- **User-Centered Design**: Develop software with the end-user in mind, emphasizing usability, accessibility, and user experience.
 
 ## Topics
 - Tools
