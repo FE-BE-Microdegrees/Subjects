@@ -3,6 +3,9 @@
 - What is Git?
 - Basic Git architecture (blobs, trees, commits, branches)
 - Installing Git
+- Basic Git vocabulary
+- Basic Git commands
+- Graphical Git clients
 
 ## What is Git?
 
@@ -59,3 +62,172 @@ This architecture, built around a directed acyclic graph of objects, is what all
 ## Installing Git
 
 Latest version of Git and instructions for installation can be found from [git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+## Basic Git vocabulary
+
+Git has its own unique vocabulary, and understanding these terms is key to working effectively with Git. Here's a basic overview of some essential Git terminology:
+
+- **Repository (Repo)**:
+  - A directory or storage space where your project lives. It contains all of the project files and the entire revision history.
+  - Can be local (on your computer) or remote (e.g., on a server or service like GitHub).
+
+- **Commit**:
+  - A set of changes or modifications to files. Each commit is uniquely identified by a SHA-1 hash code.
+  - Represents a snapshot of the repository's files and directory structure at a particular point in time.
+
+- **Branch**:
+  - A parallel version of a repository. It diverges from the main working project into a separate area where you can work without affecting the main or "master" branch.
+  - Useful for developing new features or testing out ideas.
+
+- **Master**:
+  - The default development branch. Whenever you create a Git repository, a branch named "master" is created, and becomes the active branch.
+  - Note: There's a shift in the industry to rename this default branch to "main" for inclusivity reasons.
+
+- **Clone**:
+  - A copy of a repository that lives on your computer instead of on a server elsewhere or the original repository site.
+  - `git clone [URL]` is the command used to clone (or copy) a repository from an existing URL.
+
+- **Fork**:
+  - A personal copy of another user's repository. Forking is used to suggest changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+- **Pull**:
+  - Refers to when you fetch in changes from a remote repository or branch and merge them into your current branch.
+  - `git pull [remote] [branch_name]` is the command used to pull changes.
+
+- **Push**:
+  - Sending your committed changes to a remote repository.
+  - `git push [remote] [branch_name]` is the command used to push your changes.
+
+- **HEAD**:
+  - A special pointer or reference to a specific commit in the repository. By default, it points to the latest commit in the branch you're currently on.
+
+- **Merge**:
+  - The process of integrating changes from one branch into another.
+
+- **Merge Conflict**:
+  - Occurs when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file.
+  - Git will highlight the differences and require you to choose which changes to keep.
+
+- **Pull Request (PR)**:
+  - On platforms like GitHub, a pull request is a way to propose changes from a fork or a branch which can then be merged into another branch, typically the master/main branch.
+
+- **Remote**:
+  - A version of your project that is hosted on the internet or network somewhere. You can have multiple remotes, and they are handy for collaborating with others.
+
+- **Staging Area (or Index)**:
+  - An intermediate area where commits can be formatted and reviewed before completing the commit.
+  - `git add [file_name]` is used to add changes to the staging area.
+
+- **Fetch**:
+  - The act of downloading new data from a remote repository. Unlike `pull`, `fetch` gets the data but does not merge it.
+
+- **Tag**:
+  - A reference or pointer to a specific commit, often used to capture a point in history that is significant, such as a release version.
+
+This overview covers the basic terms you'll encounter when starting with Git. As you delve deeper, you'll naturally come across more advanced concepts and terms.
+
+## Basic Git Commands
+
+Here's a basic overview of some essential Git commands and their descriptions:
+
+- **`git init`**:
+  - Initializes a new Git repository and starts tracking an existing directory.
+  - Adds a hidden subfolder within the existing directory that houses the internal data structure required for version control.
+
+- **`git clone [url]`**:
+  - Creates a local copy of a project that already exists remotely.
+  - The clone includes all the project’s files, history, and branches.
+
+- **`git add [file-name.txt]`**:
+  - Adds changes in the file to the staging area.
+  - Prepares and packages up changes for a commit.
+
+- **`git add .`**:
+  - Adds all the changes in the current directory to the staging area (useful for tracking several changes across different files).
+
+- **`git commit -m "[commit message]"`**:
+  - Captures a snapshot of the project's currently staged changes. 
+
+- **`git status`**:
+  - Shows the status of changes as untracked, modified, or staged.
+
+- **`git branch`**:
+  - Lists all local branches in the repository.
+  - If you need to see all branches (including remote), use `git branch -a`.
+
+- **`git branch [branch-name]`**:
+  - Creates a new branch.
+
+- **`git checkout [branch-name]`**:
+  - Switches to the specified branch and updates the working directory.
+  - Note: The command has evolved. You can now use `git switch [branch-name]` in newer versions of Git.
+
+- **`git merge [branch-name]`**:
+  - Merges the specified branch’s history into the current branch.
+
+- **`git pull`**:
+  - Updates your current local working branch with all new commits from the corresponding remote branch on GitHub.
+
+- **`git push [remote-name] [branch-name]`**:
+  - Pushes your local branch updates to the corresponding remote branch on GitHub.
+
+- **`git log`**:
+  - Displays an ordered list of all the commits which lead up to the current state of the branch.
+  - There are many options to tailor the output format, like `git log --oneline` for a condensed view.
+
+- **`git diff`**:
+  - Shows the file differences that are not yet staged.
+
+- **`git diff --staged`**:
+  - Shows file differences when comparing the staged changes to the last commit.
+
+- **`git remote add [alias] [url]`**:
+  - Adds a remote repository to your local project.
+
+- **`git remote -v`**:
+  - Lists all remote repositories connected to the local project.
+
+- **`git fetch`**:
+  - Fetches all the updates from the remote repository (does not merge them).
+
+- **`git revert [commit]`**:
+  - Undoes all the changes made in a particular commit with a new commit.
+
+- **`git reset`**:
+  - Resets your staging area to match the most recent commit, but leaves the working directory unchanged. Useful for undoing `git add`.
+
+This list covers the basics to get you started. Git is a deep tool with a variety of commands, and as you gain more experience, you'll discover many more advanced commands and options that can be used in various scenarios.
+
+## Graphical Git Clients
+
+**Graphical Git Clients** are applications that provide a visual interface to interact with Git, rather than relying solely on the command-line. They visually represent the version history, branches, and other aspects of a Git repository.
+
+While graphical clients can be incredibly helpful, especially for those not comfortable with the command line, they do abstract away some of the intricacies of Git. For deeper, more complex operations, or to truly understand the inner workings of Git, familiarity with the command line is beneficial. Both approaches have their advantages, and many developers find a hybrid approach (using both command line and GUI) to be the most efficient.
+
+### Some Popular Graphical Clients for Git:
+- [**GitHub Desktop**](https://desktop.github.com/): This is the official GUI for GitHub. It’s open-source and cross-platform (available for macOS and Windows).
+  
+- [**Sourcetree**](https://www.sourcetreeapp.com/): Developed by Atlassian, it's a free tool available for macOS and Windows. It offers visual interaction with your repositories and supports Mercurial as well as Git.
+
+- [**GitKraken**](https://www.gitkraken.com/): This cross-platform tool (available for Windows, macOS, and Linux) offers a vibrant and interactive interface. It's known for its graph visualization and has integrations with GitHub, GitLab, Bitbucket, and more.
+
+- [**TortoiseGit**](https://tortoisegit.org/): Primarily for Windows, TortoiseGit integrates directly into the Windows shell, so you can right-click on a folder to access its features. 
+
+### Reasons to Use Graphical Git Clients:
+
+- **User-Friendly**: For beginners, the command line can be intimidating. Graphical clients offer a more approachable and intuitive interface to interact with Git.
+
+- **Visualization**: They provide a clear visual representation of branches, commits, merges, and more. This is especially helpful in understanding the flow and structure of commits in a repository.
+
+- **Simplifies Complex Tasks**: Some Git tasks can be complex and verbose on the command line. GUI clients often simplify these processes into more manageable steps or provide a drag-and-drop interface.
+
+- **Conflict Resolution**: Many graphical clients offer a visual way to resolve merge conflicts, making it clearer and sometimes easier than manually editing conflict markers in a text editor.
+
+- **Integrated Tooling**: Graphical clients might come with built-in tools or integrations, such as Git blame, repository hosting services, and more.
+
+- **Multitasking**: GUIs usually allow you to work on multiple repositories in separate tabs/windows, making context switching easier.
+
+- **Immediate Feedback**: Many GUIs provide immediate visual feedback for most operations, such as the result of a merge or the changes introduced in a particular commit.
+
+- **Support for Non-Git Operations**: Some GUIs offer features that aren't strictly Git operations, like the ability to open a file in a preferred editor, view the command history, or even run custom scripts.
+
