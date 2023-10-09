@@ -24,7 +24,7 @@ By the end of the course, students should be well-equipped to translate real-wor
 - **User-Centered Design**: Develop software with the end-user in mind, emphasizing usability, accessibility, and user experience.
 
 ## Topics
-- Tools
+- [Tools](../Concepts/Tools/README.md)
 - [Version Control](../Concepts/VersionControl/README.md)
 - [Git](../Concepts/Git/README.md)
 - [Github](../Concepts/Github/README.md)
