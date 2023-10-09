@@ -25,9 +25,11 @@ By the end of the course, students should be well-equipped to translate real-wor
 
 ## Topics
 - Tools
-- Git
+- [Version Control](../Concepts/VersionControl/README.md)
+- [Git](../Concepts/Git/README.md)
+- [Github](../Concepts/Github/README.md)
 - Project management
-- Softvare Development Life Cycle
+- Software Development Life Cycle
 - Roles in Software development
 - Software Development Methods
 - Documentation
