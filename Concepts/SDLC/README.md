@@ -3,16 +3,15 @@
 - [Software Development Life Cycle (SDLC):](#software-development-life-cycle-sdlc)
   - [Typical SDLC Phases:](#typical-sdlc-phases)
   - [Importance of SDLC:](#importance-of-sdlc)
-  - [Common SDLC Frameworks:](#common-sdlc-frameworks)
+  - [Common SDLC Models:](#common-sdlc-models)
     - [**Waterfall Model:**](#waterfall-model)
-    - [**Iterative Model:**](#iterative-model)
+    - [**Lean**](#lean)
     - [**Spiral Model:**](#spiral-model)
     - [**Agile Model:**](#agile-model)
-    - [**V-Model (Validation and Verification):**](#v-model-validation-and-verification)
-    - [**Big Bang Model:**](#big-bang-model)
-    - [**Incremental Model:**](#incremental-model)
-    - [**Rapid Application Development (RAD):**](#rapid-application-development-rad)
-    - [**Scrum (A type of Agile approach):**](#scrum-a-type-of-agile-approach)
+    - [**Feature-Driven Development (FDD)**](#feature-driven-development-fdd)
+    - [**Extreme Programming (XP)**](#extreme-programming-xp)
+    - [**Kanban:**](#kanban)
+    - [**Scrum:**](#scrum)
 
 
 The Software Development Life Cycle (SDLC) is a systematic process for planning, creating, testing, deploying, and maintaining software. It defines the stages and tasks involved in producing software from inception to retirement.
@@ -90,52 +89,46 @@ Each of these phases can be iterative, especially in agile or spiral models, whe
 - **Efficiency and Cost-effectiveness:** By systematically addressing the software development process, wastage is minimized, and efficiency is improved.
 - **Documentation:** Proper documentation is an integral part of the SDLC, ensuring that knowledge is preserved and system details are well understood.
 
-## Common SDLC Frameworks:
+## Common SDLC Models:
 
 ### **Waterfall Model:**
+- **Description:** A linear and sequential approach where each phase must be completed before the next one starts. It's the earliest SDLC approach.
+- **Pros:** Clear structure, simple to understand, well-defined stages.
+- **Cons:** Difficult to make changes after the phase is complete, not suitable for complex projects.
 
-- A linear and sequential approach where each phase depends on the deliverables of the previous phase.
-- Phases include: Requirement Analysis, System Design, Implementation, Integration and Testing, Deployment, and Maintenance.
-
-### **Iterative Model:**
-
-- Software is developed in iterations, with each iteration building and improving upon the previous one.
-- Focuses on refining software in repetitive cycles.
+### **Lean**
+- **Description:** Originating from manufacturing, it focuses on resource optimization and customer value delivery. It aims to cut out any "waste" from the process.
+- **Pros:** Efficient resource utilization, focuses on delivering value.
+- **Cons:** May overlook necessary tasks as "waste," requires a deep understanding to implement correctly.
 
 ### **Spiral Model:**
-
-- Combines the iterative model's approach with the systematic phases of the waterfall model.
-- Involves repetitive cycles/iterations, each cycle involving risk assessment and refinement.
+- **Description:** Combines the design phase of the Waterfall model with the iterative philosophy of prototyping. Focuses on risk assessment at every spiral.
+- **Pros:** Focus on risk management, flexibility in design and requirements.
+- **Cons:** Can be expensive, requires risk assessment expertise.
 
 ### **Agile Model:**
+- **Description:** An iterative approach to software delivery that builds software incrementally, with a focus on customer feedback and rapid iterations.
+- **Pros:** Flexible, promotes iterative feedback, encourages customer involvement.
+- **Cons:** Less predictability, can be hard to grasp for those used to traditional methods.
 
-- Emphasizes flexibility, collaboration, and customer feedback.
-- Iterative approach with rapid cycles known as "sprints."
-- Popular frameworks under the Agile umbrella include Scrum, Kanban, and Extreme Programming (XP).
+### **Feature-Driven Development (FDD)**
+- **Description:** An iterative and incremental software development process driven by feature lists.
+- **Pros:** Focus on building and delivering tangible, client-valued functions.
+- **Cons:** Not as flexible as other Agile methodologies, requires detailed documentation.
 
-### **V-Model (Validation and Verification):**
+### **Extreme Programming (XP)**
+- **Description:** An Agile framework that emphasizes customer satisfaction, with frequent "releases" in short development cycles aimed at improving productivity and introducing checkpoints.
+- **Pros:** Emphasizes code quality, encourages customer involvement.
+- **Cons:** Requires extensive customer involvement, can be intense for developers.
 
-- An extension of the Waterfall model where the development stage is associated with a testing phase.
-- Development and testing activities run in parallel, making it more systematic.
+### **Kanban:**
+- **Description:** A visual approach to process management, taking cues from lean manufacturing and emphasizing just-in-time delivery.
+- **Pros:** Flexibility, continuous delivery, visual nature helps in identifying bottlenecks.
+- **Cons:** Less structured, can lead to scope creep if not managed correctly.
 
-### **Big Bang Model:**
-
-- Development starts with little planning, relying more on luck and spontaneous generation of code.
-- More chaotic and less systematic, but can be suitable for small projects or prototypes.
-
-### **Incremental Model:**
-
-- The software is developed in parts, known as increments.
-- Each increment represents a portion of the complete system's functionality.
-
-### **Rapid Application Development (RAD):**
-
-- Focuses on rapid prototyping to gather customer feedback and iterate.
-- Prioritizes speed and adaptability.
-
-### **Scrum (A type of Agile approach):**
-
-- Organizes software development into short, fixed-length iterations called sprints.
-- Uses roles like Product Owner, Scrum Master, and Development Team.
+### **Scrum:**
+- **Description:** A type of Agile methodology that organizes work into cycles known as "Sprints," typically lasting 2-4 weeks.
+- **Pros:** Regular product deliveries, high visibility, adaptability.
+- **Cons:** Requires experienced team members, scope can sometimes be too flexible.
 
 In conclusion, the choice of SDLC framework often depends on the nature of the project, organizational preferences, team size, project scope, and other factors. The ultimate aim is to produce high-quality software that meets user expectations while maintaining a time and budgetary framework.

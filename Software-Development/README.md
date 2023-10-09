@@ -33,6 +33,6 @@ By the end of the course, students should be well-equipped to translate real-wor
 - [Project management](../Concepts/Project-Management/README.md)
 - [Software Development Life Cycle](../Concepts/SDLC/README.md)
 - [Roles in Software development](../Concepts/Roles/README.md)
-- Software Development Methods
+- [Software Development Methods](../Concepts/SDLC/README.md#common-sdlc-models)
 - Documentation
 - Networking (could be separate subject?)
