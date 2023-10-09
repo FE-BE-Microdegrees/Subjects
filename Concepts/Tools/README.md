@@ -1,5 +1,7 @@
 # Tools
 
+- [Tools](#tools)
+
 In the context of software development, tools encompass a wide range of software applications, libraries, frameworks, and utilities that developers use to aid in various stages of the software development life cycle (*SDLC*). These tools are designed to streamline processes, enhance productivity, ensure code quality, and facilitate collaboration. Here's an overview of the different types of tools that are commonly used in software development:
 
 - **Integrated Development Environments (IDEs):**

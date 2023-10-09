@@ -1,10 +1,16 @@
 # Project management in software development
 
+- [Project management in software development](#project-management-in-software-development)
+  - [Importance of Project Management in Software Development:](#importance-of-project-management-in-software-development)
+  - [Key Elements of Project Management in Software Development:](#key-elements-of-project-management-in-software-development)
+  - [Tools](#tools)
+
+
 In the context of software development, project management involves the planning, organizing, and directing of tasks and resources to achieve specific software outcomes within a given set of constraints, usually related to time, scope, and budget. It encompasses a range of activities, from defining requirements and setting goals to tracking progress and making necessary adjustments.
 
 Here's a breakdown of its importance and main elements:
 
-### Importance of Project Management in Software Development:
+## Importance of Project Management in Software Development:
 
 - **Clear Goals and Objectives:** Project management provides a clear roadmap for what needs to be done, when, and by whom. It ensures that everyone is aligned towards a common goal.
 
@@ -26,7 +32,7 @@ Here's a breakdown of its importance and main elements:
 
 - **Closure and Reflection:** Once the project is complete, project management allows for a structured closure and reflection phase to gather feedback and learnings for future projects.
 
-### Key Elements of Project Management in Software Development:
+## Key Elements of Project Management in Software Development:
 
 - **Initiation:** Defining the project, its feasibility, and getting the necessary approvals to start.
 

@@ -1,10 +1,25 @@
 # Markdown
 
-- What is Markdown?
-- Pros of Markdown
-- Cons of Markdown
-- When to Use Markdown
-- Basic Markdown Syntax
+- [Markdown](#markdown)
+  - [What is Markdown?](#what-is-markdown)
+  - [Pros of Markdown:](#pros-of-markdown)
+  - [Cons of Markdown:](#cons-of-markdown)
+  - [When to Use Markdown:](#when-to-use-markdown)
+  - [Basic Markdown Syntax:](#basic-markdown-syntax)
+    - [Headers:](#headers)
+    - [Emphasis:](#emphasis)
+    - [Lists:](#lists)
+      - [Unordered:](#unordered)
+      - [Ordered:](#ordered)
+    - [Links:](#links)
+    - [Images:](#images)
+    - [Blockquotes:](#blockquotes)
+    - [Inline Code:](#inline-code)
+    - [Code Blocks:](#code-blocks)
+    - [Horizontal Rule:](#horizontal-rule)
+    - [Tables:](#tables)
+    - [Task Lists:](#task-lists)
+
 
 ## What is Markdown?
 

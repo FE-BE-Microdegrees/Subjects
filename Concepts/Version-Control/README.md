@@ -1,9 +1,14 @@
 # Version Control
 
-- What is version control?
-- Why version control is important
-- Brief history of version control
-- Centralized vs. Distributed version control systems
+- [Version Control](#version-control)
+  - [What is Version Control?](#what-is-version-control)
+  - [Why is Version Control Important?](#why-is-version-control-important)
+  - [Brief History of Version Control](#brief-history-of-version-control)
+  - [Centralized vs. Distributed version control systems](#centralized-vs-distributed-version-control-systems)
+    - [Centralized Version Control Systems (CVCS):](#centralized-version-control-systems-cvcs)
+    - [Distributed Version Control Systems (DVCS):](#distributed-version-control-systems-dvcs)
+    - [Comparison:](#comparison)
+
 
 ## What is Version Control?
 

@@ -1,5 +1,9 @@
 # Git and Github Best Practices
 
+- [Git and Github Best Practices](#git-and-github-best-practices)
+  - [Git Best Practices:](#git-best-practices)
+  - [GitHub Best Practices:](#github-best-practices)
+
 Using *Git* and *GitHub* effectively involves more than just knowing the commands and tools. Following best practices ensures that the development process is smooth, the project history remains clean, and collaboration among team members is efficient.
 
 Here's an overview of best practices for both Git and GitHub:

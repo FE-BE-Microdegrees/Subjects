@@ -1,8 +1,9 @@
 # Github
 
-- What is Github?
-- Creating an account (exercise)
-- Discover Github UI (exercise)
+- [Github](#github)
+  - [What is Github?](#what-is-github)
+  - [Creating an Account](#creating-an-account)
+  - [Discover GitHub UI](#discover-github-ui)
 
 ## What is Github?
 

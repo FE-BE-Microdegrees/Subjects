@@ -1,12 +1,18 @@
 # Git
 
-- What is Git?
-- Basic Git architecture (blobs, trees, commits, branches)
-- Installing Git
-- Basic Git vocabulary
-- Basic Git commands
-- Graphical Git clients
-- Git flow
+- [Git](#git)
+  - [What is Git?](#what-is-git)
+  - [Basic Git Architecture](#basic-git-architecture)
+  - [Installing Git](#installing-git)
+  - [Basic Git vocabulary](#basic-git-vocabulary)
+  - [Basic Git Commands](#basic-git-commands)
+  - [Graphical Git Clients](#graphical-git-clients)
+    - [Some Popular Graphical Clients for Git:](#some-popular-graphical-clients-for-git)
+    - [Reasons to Use Graphical Git Clients:](#reasons-to-use-graphical-git-clients)
+  - [Git flow](#git-flow)
+    - [1. **Main Branches**:](#1-main-branches)
+    - [2. **Supporting Branches**:](#2-supporting-branches)
+    - [**Basic Git Flow Process**:](#basic-git-flow-process)
 
 ## What is Git?
 

@@ -1,5 +1,15 @@
 # .gitignore
 
+- [.gitignore](#gitignore)
+  - [What is `.gitignore`?](#what-is-gitignore)
+  - [Why Should We Use `.gitignore`?](#why-should-we-use-gitignore)
+  - [How to Use `.gitignore`:](#how-to-use-gitignore)
+  - [Caveats:](#caveats)
+  - [.gitignore in context of Node.js](#gitignore-in-context-of-nodejs)
+    - [Explanation:](#explanation)
+    - [What to Put into `.gitignore`:](#what-to-put-into-gitignore)
+    - [What Not to Put into `.gitignore`:](#what-not-to-put-into-gitignore)
+
 ## What is `.gitignore`?
 
 `.gitignore` is a special file used by Git to determine which files and directories to ignore when committing changes. It's a way to exclude unnecessary files from being tracked by version control, such as compiled code, logs, or environment-specific configurations.
@@ -16,7 +26,7 @@
 
 - **Consistency:** Ensures that all developers working on a project are not accidentally committing files that should be ignored.
 
-### How to Use `.gitignore`:
+## How to Use `.gitignore`:
 
 1. **Create the File:** If it doesn't exist, create a file named `.gitignore` in the root directory of your repository.
 
