@@ -36,6 +36,8 @@ Here are the key aspects and features of GitHub:
 
 - **Integrations**: GitHub can be integrated with a vast array of third-party tools and platforms, amplifying its capabilities.
 
+- **GitHub Projects**: This feature allows users to create Kanban-style boards to manage projects and tasks.
+
 ## Creating an Account
 
 To create a GitHub account, go to [github.com](https://github.com/signup) and follow the instructions.
