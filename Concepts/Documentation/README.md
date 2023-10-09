@@ -1,9 +1,9 @@
-## Documentation in Software Development
+# Documentation in Software Development
 
 - [Documentation in Software Development](#documentation-in-software-development)
-- [Importance of Documentation:](#importance-of-documentation)
-- [Types of Documentation:](#types-of-documentation)
-- [Tools for Documentation:](#tools-for-documentation)
+  - [Importance of Documentation:](#importance-of-documentation)
+  - [Types of Documentation:](#types-of-documentation)
+  - [Tools for Documentation:](#tools-for-documentation)
 
 In software development, documentation refers to the written artifacts that describe the functions, architecture, design, or usage of a software solution. It encompasses all the details required to understand, interact with, and maintain the software.
 
