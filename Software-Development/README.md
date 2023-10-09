@@ -8,7 +8,6 @@
 - **Subject Aims**: The aim of the "Software Development" subject is to provide students with a comprehensive understanding of the processes, methodologies, tools, and best practices used in the design, creation, and maintenance of software applications.
 By the end of the course, students should be well-equipped to translate real-world problems into computational solutions and develop software applications that are robust, user-friendly, and maintainable.
 
-
 ## Learning Outcomes
 
 - **Software Development Lifecycle (SDLC) Understanding**: Describe the stages of the software development lifecycle, including requirements gathering, design, implementation, testing, deployment, and maintenance.
@@ -32,8 +31,8 @@ By the end of the course, students should be well-equipped to translate real-wor
   - [Markdown](../Concepts/Markdown/README.md)
 - [Git and Github Best Practices](../Concepts/Git-Best-Practices/README.md)
 - [Project management](../Concepts/Project-Management/README.md)
-- Software Development Life Cycle
-- Roles in Software development
+- [Software Development Life Cycle](../Concepts/SDLC/README.md)
+- [Roles in Software development](../Concepts/Roles/README.md)
 - Software Development Methods
 - Documentation
 - Networking (could be separate subject?)
