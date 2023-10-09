@@ -25,7 +25,7 @@ By the end of the course, students should be well-equipped to translate real-wor
 
 ## Topics
 - [Tools](../Concepts/Tools/README.md)
-- [Version Control](../Concepts/VersionControl/README.md)
+- [Version Control](../Concepts/Version-Control/README.md)
 - [Git](../Concepts/Git/README.md)
   - [.gitignore](../Concepts/Gitignore/README.md)
 - [Github](../Concepts/Github/README.md)
