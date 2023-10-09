@@ -27,8 +27,11 @@ By the end of the course, students should be well-equipped to translate real-wor
 - [Tools](../Concepts/Tools/README.md)
 - [Version Control](../Concepts/VersionControl/README.md)
 - [Git](../Concepts/Git/README.md)
+  - [.gitignore](../Concepts/Gitignore/README.md)
 - [Github](../Concepts/Github/README.md)
-- Project management
+  - [Markdown](../Concepts/Markdown/README.md)
+- [Git and Github Best Practices](../Concepts/Git-Best-Practices/README.md)
+- [Project management](../Concepts/Project-Management/README.md)
 - Software Development Life Cycle
 - Roles in Software development
 - Software Development Methods
