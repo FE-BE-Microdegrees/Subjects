@@ -6,8 +6,27 @@
 - Basic Git vocabulary
 - Basic Git commands
 - Graphical Git clients
+- Git flow
 
 ## What is Git?
+
+```mermaid
+    gitGraph
+       commit id: "Create project"
+       commit id: "Project base"
+       branch nice_feature_branch
+       checkout nice_feature_branch
+       commit id: "Add frontend boilerplate"
+       checkout nice_feature_branch
+       commit id: "Connect frontend with API"
+       checkout nice_feature_branch
+       commit id: "Add frontend tests"
+       checkout main
+       merge nice_feature_branch id: "Basic frontend" tag: "Version 1.0"
+       commit id: "Create documentation"
+       checkout main
+       commit id: "Update documentation"
+```
 
 **Git** is a distributed version control system (*DVCS*) used to track changes in source code during software development. It's designed to handle everything from small to very large projects with speed and efficiency. **Git** provides a way for multiple developers to collaborate on the same codebase without interfering with each other.
 
@@ -231,3 +250,102 @@ While graphical clients can be incredibly helpful, especially for those not comf
 
 - **Support for Non-Git Operations**: Some GUIs offer features that aren't strictly Git operations, like the ability to open a file in a preferred editor, view the command history, or even run custom scripts.
 
+## Git flow
+
+Git Flow is a popular workflow methodology in Git that defines a structured approach to branching and merging. It provides a solid framework for managing larger projects and can simplify the process of collaborating with other developers on a shared repository. Below, I'll outline the Git Flow process, focusing on the role of branching:
+
+### 1. **Main Branches**:
+- **`main` (formerly `master`)**:
+  - This branch contains the official release history.
+  - All commits in the `main` branch represent a version of the software that is fully tested and deployable.
+
+- **`develop`**:
+  - Serves as an integration branch for features.
+  - All the changes destined for the next release are integrated into this branch.
+
+### 2. **Supporting Branches**:
+
+These branches are used to aid parallel development, easily track features, prepare for releases, and quickly fix live issues.
+
+- **Feature Branches**:
+  - Branch off from: `develop`
+  - Merge back into: `develop`
+  - Naming convention: anything except `main`, `develop`, `release-*`, or `hotfix-*`
+  - Purpose: Used to develop new features or enhancements. They exist as long as the feature is in development.
+
+    ```mermaid
+    graph LR
+        A[develop] --> B[feature/feature_name]
+        B --> A
+    ```
+
+- **Release Branches**:
+  - Branch off from: `develop`
+  - Merge back into: `main` and `develop`
+  - Naming convention: `release-*`
+  - Purpose: Used to prepare a new product version. This is where we tag our versions before they go into production. Bug fixes can be applied in this branch.
+
+    ```mermaid
+    graph LR
+        A[develop] --> B[release/version_number]
+        B --> C[main]
+        B --> A
+    ```
+
+- **Hotfix Branches**:
+  - Branch off from: `main`
+  - Merge back into: `main` and `develop`
+  - Naming convention: `hotfix-*`
+  - Purpose: They arise from the necessity to act immediately upon an undesired state of the `main` branch. Used to quickly patch production releases.
+
+    ```mermaid
+    graph LR
+        A[main] --> B[hotfix/issue]
+        B --> A
+        B --> C[develop]
+    ```
+
+### **Basic Git Flow Process**:
+
+```mermaid
+gitGraph
+    commit id: "Create project"
+    branch develop
+    checkout develop
+    commit id: "Project base"
+    branch feature/nice_feature
+    checkout feature/nice_feature
+    commit id: "Add frontend boilerplate"
+    commit id: "Connect frontend with API"
+    commit id: "Add frontend tests"
+    checkout develop
+    merge feature/nice_feature
+    branch release/1.0
+    checkout release/1.0
+    commit id: "Prepare for release"
+    checkout main
+    merge release/1.0 id: "Release Version 1.0" tag: "Version 1.0"
+    checkout develop
+    merge release/1.0
+    checkout main
+```
+
+1. **Initialization**:
+   Initialize a Git repository and then set up an empty `main` and `develop` branch.
+
+2. **Start a New Feature**:
+   For every new feature, create a new branch from `develop`, and name it according to the feature you're working on.
+
+3. **Incorporate a Finished Feature**:
+   Once the feature is complete and tested, it is merged back into `develop`. It awaits the next release cycle for integration into `main`.
+
+4. **Release Time**:
+   When enough features are ready, or a predetermined release point is reached, `develop` is branched off to a release branch, where final testing happens.
+
+5. **Merge with Main**:
+   Once the release branch is thoroughly tested, it is merged into `main` and tagged with a version number. It then also needs to be merged back into `develop` to ensure features added in the next cycle have the hotfixes and updates.
+
+6. **Hotfixes**:
+   If an issue is detected in the `main` branch and needs an immediate fix, a hotfix branch is created. Once the hotfix is complete, it's merged both into `main` (and tagged) and into `develop`.
+
+Git Flow offers a rigorous framework for large-scale projects, but it might be overkill for smaller projects or teams. Some teams opt for simpler workflows, like GitHub flow or GitLab flow. Still, understanding Git Flow provides a solid foundation for how branching can be used in complex scenarios.
