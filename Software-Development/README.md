@@ -11,7 +11,7 @@ By the end of the course, students should be well-equipped to translate real-wor
 ## Learning Outcomes
 
 - **Software Development Lifecycle (SDLC) Understanding**: Describe the stages of the software development lifecycle, including requirements gathering, design, implementation, testing, deployment, and maintenance.
-- **Development Methodologies**: Understand and differentiate between various software development methodologies such as Waterfall, Agile, and Scrum, and determine when each is appropriate.
+- **Development Methodologies**: Understand and differentiate between various software development methodologies such as *Waterfall*, *Agile*, and *Scrum*, and determine when each is appropriate.
 - **Requirements Analysis**: Extract and document clear, complete, and actionable software requirements from stakeholder communications.
 - **Software Design Principles**: Apply fundamental software design principles and patterns to create modular, scalable, and maintainable software solutions.
 - **Coding Standards**: Write clean, maintainable, and well-documented code adhering to industry standards and best practices.
@@ -34,5 +34,6 @@ By the end of the course, students should be well-equipped to translate real-wor
 - [Software Development Life Cycle](../Concepts/SDLC/README.md)
 - [Roles in Software development](../Concepts/Roles/README.md)
 - [Software Development Methods](../Concepts/SDLC/README.md#common-sdlc-models)
-- Documentation
+- [Documentation](../Concepts/Documentation/README.md)
+- [Testing](../Concepts/Testing/README.md)
 - Networking (could be separate subject?)
