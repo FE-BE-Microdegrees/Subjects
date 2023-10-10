@@ -25,6 +25,9 @@ By the end of the course, students should be adept at the principles of server a
 - REST
 - Express.JS
 - Request/Response cycle
+- API structure
+- API documentation
+- Middleware
 - Authentication/Authorization
 - Security
 - JWT

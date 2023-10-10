@@ -25,7 +25,7 @@ By the end of the course, students should be proficient in the principles of com
 ## Topics
 - JavaScript frameworks
 - React.JS
-- Components
-- JSX
-- State
-- Props
+  - Components
+  - JSX
+  - State
+  - Props
