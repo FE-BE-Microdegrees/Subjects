@@ -2,6 +2,14 @@
 
 - [Roles in Software Development](#roles-in-software-development)
 
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- understand the different roles in software development;
+- identify the responsibilities and skills required for different roles;
+- describe the relationship between different roles.
+
 In the realm of software development, there are various roles that individuals may assume, each with distinct responsibilities and contributions to the overall project.
 
 Here's an overview of some of the key roles in software development:

@@ -1,6 +1,7 @@
 # Markdown
 
 - [Markdown](#markdown)
+  - [Learning Outcomes](#learning-outcomes)
   - [What is Markdown?](#what-is-markdown)
   - [Pros of Markdown:](#pros-of-markdown)
   - [Cons of Markdown:](#cons-of-markdown)
@@ -19,7 +20,17 @@
     - [Horizontal Rule:](#horizontal-rule)
     - [Tables:](#tables)
     - [Task Lists:](#task-lists)
+  - [Excercises and Assignments](#excercises-and-assignments)
 
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- describe what Markdown is and why it's useful;
+- identify the pros and cons of Markdown;
+- use Markdown to format text;
+- use Markdown for documentation, blogging, and other purposes.
+- use Markdown in Github.
 
 ## What is Markdown?
 
@@ -201,3 +212,6 @@ or
 Remember, different platforms or flavors of Markdown might have additional features or slight variations, but the above covers the basic and commonly-used syntax.
 
 Read more from [Markdown Guide](https://www.markdownguide.org/).
+
+## Excercises and Assignments
+

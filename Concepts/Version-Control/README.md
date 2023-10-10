@@ -1,6 +1,7 @@
 # Version Control
 
 - [Version Control](#version-control)
+  - [Learning Outcomes](#learning-outcomes)
   - [What is Version Control?](#what-is-version-control)
   - [Why is Version Control Important?](#why-is-version-control-important)
   - [Brief History of Version Control](#brief-history-of-version-control)
@@ -8,7 +9,15 @@
     - [Centralized Version Control Systems (CVCS):](#centralized-version-control-systems-cvcs)
     - [Distributed Version Control Systems (DVCS):](#distributed-version-control-systems-dvcs)
     - [Comparison:](#comparison)
+  - [Exercises and Assignments](#exercises-and-assignments)
 
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- describe what version control is and why it's important;
+- describe different types of version control systems;
+- compare and contrast centralized and distributed version control systems;
 
 ## What is Version Control?
 
@@ -121,3 +130,5 @@ Next, let's delve into an overview and comparison of Centralized and Distributed
 
 
 In summary, while both CVCS and DVCS have their own strengths and weaknesses, the choice largely depends on the project's requirements, team size, and preferred workflow. However, it's worth noting that DVCS, especially Git, has seen widespread adoption in recent years due to its flexibility and the collaborative features offered by platforms like GitHub and GitLab.
+
+## Exercises and Assignments

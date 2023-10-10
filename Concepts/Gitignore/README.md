@@ -1,6 +1,7 @@
 # .gitignore
 
 - [.gitignore](#gitignore)
+  - [Learing Outcomes](#learing-outcomes)
   - [What is `.gitignore`?](#what-is-gitignore)
   - [Why Should We Use `.gitignore`?](#why-should-we-use-gitignore)
   - [How to Use `.gitignore`:](#how-to-use-gitignore)
@@ -9,6 +10,15 @@
     - [Explanation:](#explanation)
     - [What to Put into `.gitignore`:](#what-to-put-into-gitignore)
     - [What Not to Put into `.gitignore`:](#what-not-to-put-into-gitignore)
+  - [Excercises and Assignments](#excercises-and-assignments)
+
+## Learing Outcomes
+
+After completing this topic, you'll be able to:
+
+- describe what `.gitignore` is and why it's important;
+- create a `.gitignore` file;
+- use `.gitignore` to exclude files from version control.
 
 ## What is `.gitignore`?
 
@@ -161,3 +171,6 @@ node_modules/
 - Build and deployment scripts.
   
 Remember, the goal of the `.gitignore` file is to keep your repository clean by excluding files and directories that don't provide value in version control. It also helps in preventing accidental commits of sensitive data or user-specific settings.
+
+## Excercises and Assignments
+

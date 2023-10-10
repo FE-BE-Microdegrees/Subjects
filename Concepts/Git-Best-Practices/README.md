@@ -1,8 +1,17 @@
 # Git and Github Best Practices
 
 - [Git and Github Best Practices](#git-and-github-best-practices)
+  - [Learning Outcomes](#learning-outcomes)
   - [Git Best Practices:](#git-best-practices)
   - [GitHub Best Practices:](#github-best-practices)
+  - [Excercises and Assignments](#excercises-and-assignments)
+
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- describe best practices for using Git and GitHub;
+- apply Git and GitHub best practices in a software development project.
 
 Using *Git* and *GitHub* effectively involves more than just knowing the commands and tools. Following best practices ensures that the development process is smooth, the project history remains clean, and collaboration among team members is efficient.
 
@@ -68,3 +77,6 @@ Here's an overview of best practices for both Git and GitHub:
    - Ensure that only the necessary collaborators have access to your repository, and regularly review and adjust permissions.
 
 By adhering to these best practices, you'll ensure that your Git and GitHub usage is efficient, your project history remains meaningful and organized, and collaboration is smooth and productive.
+
+## Excercises and Assignments
+

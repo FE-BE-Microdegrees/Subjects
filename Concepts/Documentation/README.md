@@ -1,11 +1,22 @@
 # Documentation in Software Development
 
 - [Documentation in Software Development](#documentation-in-software-development)
+  - [Learning Outcomes](#learning-outcomes)
   - [Importance of Documentation:](#importance-of-documentation)
   - [Types of Documentation:](#types-of-documentation)
   - [Tools for Documentation:](#tools-for-documentation)
+  - [Excercises and Assignments](#excercises-and-assignments)
 
 In software development, documentation refers to the written artifacts that describe the functions, architecture, design, or usage of a software solution. It encompasses all the details required to understand, interact with, and maintain the software.
+
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- understand the importance of documentation in software development;
+- identify the different types of documentation;
+- describe various tools used for documentation;
+- create documentation for a software project.
 
 ## Importance of Documentation:
 
@@ -56,3 +67,5 @@ In software development, documentation refers to the written artifacts that desc
 - **Note-taking Apps:** **Notion**, **OneNote**, and **Evernote** can be used for lightweight documentation and note-taking.
 
 In conclusion, documentation is a crucial aspect of software development that ensures clarity, consistency, and smooth operation at various stages of a software's lifecycle. Proper documentation reduces the learning curve for new team members, assists in troubleshooting, and improves overall software quality and user experience.
+
+## Excercises and Assignments

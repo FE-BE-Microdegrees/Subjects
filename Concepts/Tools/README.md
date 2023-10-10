@@ -1,6 +1,16 @@
 # Tools
 
 - [Tools](#tools)
+  - [Learning Outcomes](#learning-outcomes)
+  - [Excercises and Assignments](#excercises-and-assignments)
+
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- identify the different types of tools used in software development;
+- describe various tools used in software development;
+- use different tools in software development.
 
 In the context of software development, tools encompass a wide range of software applications, libraries, frameworks, and utilities that developers use to aid in various stages of the software development life cycle (*SDLC*). These tools are designed to streamline processes, enhance productivity, ensure code quality, and facilitate collaboration. Here's an overview of the different types of tools that are commonly used in software development:
 
@@ -77,4 +87,5 @@ In the context of software development, tools encompass a wide range of software
   - **Purpose:**  Plan, track, and manage software projects from conception to completion
   - **Examples:** JIRA (Atlassian), Trello, Asana, GitHub Projects
 
+## Excercises and Assignments
 

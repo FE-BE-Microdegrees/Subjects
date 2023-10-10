@@ -1,10 +1,20 @@
 # Project management in software development
 
 - [Project management in software development](#project-management-in-software-development)
+  - [Learning Outcomes](#learning-outcomes)
   - [Importance of Project Management in Software Development:](#importance-of-project-management-in-software-development)
   - [Key Elements of Project Management in Software Development:](#key-elements-of-project-management-in-software-development)
   - [Tools](#tools)
+  - [Exercises and Assignments](#exercises-and-assignments)
 
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- understand the importance of project management in software development;
+- identify the key elements of project management;
+- describe various tools used for project management;
+- apply project management principles to software development.
 
 In the context of software development, project management involves the planning, organizing, and directing of tasks and resources to achieve specific software outcomes within a given set of constraints, usually related to time, scope, and budget. It encompasses a range of activities, from defining requirements and setting goals to tracking progress and making necessary adjustments.
 
@@ -64,3 +74,6 @@ There are lot of different tools for project management. Some of them are:
 - [Jira](https://www.atlassian.com/software/jira)
 - [Asana](https://asana.com/)
 - [Github Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+
+## Exercises and Assignments
+

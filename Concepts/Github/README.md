@@ -1,9 +1,22 @@
 # Github
 
 - [Github](#github)
+  - [Learning Outcomes](#learning-outcomes)
   - [What is Github?](#what-is-github)
   - [Creating an Account](#creating-an-account)
-  - [Discover GitHub UI](#discover-github-ui)
+  - [Discover GitHub UI (excercise)](#discover-github-ui-excercise)
+  - [Github Desktop](#github-desktop)
+  - [Excercises and Assignments](#excercises-and-assignments)
+
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
+
+- describe what GitHub is and why it's popular;
+- create a GitHub account;
+- navigate the GitHub UI.
+- use Github Desktop to clone, commit, push, and pull changes to a repository.
+- use Github Desktop to create a branch, make changes, and merge it.
 
 ## What is Github?
 
@@ -43,8 +56,50 @@ Here are the key aspects and features of GitHub:
 
 To create a GitHub account, go to [github.com](https://github.com/signup) and follow the instructions.
 
-## Discover GitHub UI
+## Discover GitHub UI (excercise)
 
 Go to [github.com](https://www.github.com) and explore the GitHub UI. Familiarize yourself with the various features and sections of the website.
 
+## Github Desktop
 
+GitHub Desktop is a Graphical User Interface (GUI) for Git, created by GitHub. It aims to simplify the process of managing your Git repositories and GitHub projects in a more user-friendly way compared to using Git solely through the command line. Here are some key aspects of GitHub Desktop:
+
+- **Repository Management**:
+
+  - GitHub Desktop allows users to create new repositories, clone existing repositories, and manage local repositories.
+  - It provides a visual representation of your repositories, making it easier to understand the structure and changes over time.
+
+- **Branching and Merging**:
+
+  - Users can create, switch, and merge branches directly from the interface, making the branching process more intuitive.
+  - It provides visualizations for merge conflicts and assists in resolving them.
+
+- **Commit History**:
+
+  - The application provides a visual history of commits, which can be helpful for understanding the progression of a project.
+  - Users can easily see who made changes, what changes were made, and when those changes were made.
+
+- **Easy Commits and Pushes**:
+
+  - GitHub Desktop simplifies the process of staging changes, committing them, and pushing them to GitHub.
+  - It provides a simple form for entering commit messages and choosing which changes to include in a commit.
+
+- **Integration with GitHub**:
+
+  - The application is tightly integrated with GitHub, allowing for easy synchronization between local repositories and GitHub repositories.
+  - Users can open pull requests, view issues, and more, all within the GitHub Desktop interface.
+
+- **Cross-Platform**:
+
+  - GitHub Desktop is available for Windows and macOS, making it a versatile tool for teams with mixed operating systems.
+
+- **Open Source**:
+
+  - GitHub Desktop is open source, allowing anyone to contribute to its development or examine its code.
+
+- **Assistance for Advanced Git Features**:
+  - While GitHub Desktop focuses on simplifying basic Git operations, it also provides assistance for more advanced Git features, serving as a bridge between the command line and GUI operations.
+
+Overall, GitHub Desktop is designed for developers who prefer a graphical interface, and it can be especially helpful for those who are new to Git or prefer visual interactions over command-line interactions.
+
+## Excercises and Assignments

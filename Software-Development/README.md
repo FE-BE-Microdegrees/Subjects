@@ -2,7 +2,7 @@
 
 ## Description
 
-**"Software Development"** delves deep into the heart of creating modern software solutions. This subject covers the entire software development lifecycle, from understanding user requirements to design, coding, testing, deployment, and beyond. Students will learn both the theoretical foundations of software engineering and the practical skills necessary to become proficient software developers. Topics covered include design principles, coding best practices, collaborative development, version control, testing strategies, and software maintenance. Through hands-on projects and case studies, students will experience the challenges and rewards of software development in real-world contexts.
+**Software Development** delves deep into the heart of creating modern software solutions. This subject covers the entire software development lifecycle, from understanding user requirements to design, coding, testing, deployment, and beyond. Students will learn both the theoretical foundations of software engineering and the practical skills necessary to become proficient software developers. Topics covered include design principles, coding best practices, collaborative development, version control, testing strategies, and software maintenance. Through hands-on projects and case studies, students will experience the challenges and rewards of software development in real-world contexts.
 
 - **Volume**: 6 ECTS (6 x 26 hours)
 - **Subject Aims**: The aim of the "Software Development" subject is to provide students with a comprehensive understanding of the processes, methodologies, tools, and best practices used in the design, creation, and maintenance of software applications.
@@ -29,7 +29,7 @@ By the end of the course, students should be well-equipped to translate real-wor
   - [.gitignore](../Concepts/Gitignore/README.md)
 - [Github](../Concepts/Github/README.md)
   - [Markdown](../Concepts/Markdown/README.md)
-- [Git and Github Best Practices](../Concepts/Git-Best-Practices/README.md)
+  - [Git and Github Best Practices](../Concepts/Git-Best-Practices/README.md)
 - [Project management](../Concepts/Project-Management/README.md)
 - [Software Development Life Cycle](../Concepts/SDLC/README.md)
 - [Roles in Software development](../Concepts/Roles/README.md)

@@ -1,13 +1,23 @@
 # Testing in Software Development
 
 - [Testing in Software Development](#testing-in-software-development)
+  - [Learning Outcomes:](#learning-outcomes)
   - [Importance of Testing:](#importance-of-testing)
   - [Types of Testing:](#types-of-testing)
   - [Testing Approaches:](#testing-approaches)
   - [Testing Methods:](#testing-methods)
   - [Software Development Life Cycle (SDLC) and Testing:](#software-development-life-cycle-sdlc-and-testing)
   - [Popular Testing Tools:](#popular-testing-tools)
+  - [Excercises and Assignments](#excercises-and-assignments)
 
+## Learning Outcomes:
+
+After completing this topic, you'll be able to:
+
+- understand the importance of testing in software development;
+- identify the different types of testing;
+- describe various testing approaches and methods;
+- apply testing principles to software development.
 
 Testing in software development refers to the process of executing a program or application with the intent of finding software bugs. It ensures the software product meets the specified requirements and delivers a quality product to the end-user.
 
@@ -82,3 +92,6 @@ Testing in software development refers to the process of executing a program or 
 - **NUnit:** A unit-testing framework for .NET languages.
 
 In conclusion, testing is an integral part of software development that ensures the delivery of a robust, high-quality product. It identifies and rectifies bugs, vulnerabilities, and deficiencies in the early stages, ensuring the software meets user expectations and industry standards. Proper testing results in reliable software, minimizes risks, and enhances user satisfaction.
+
+## Excercises and Assignments
+
