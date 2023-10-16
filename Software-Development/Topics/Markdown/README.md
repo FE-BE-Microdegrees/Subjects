@@ -7,7 +7,7 @@
   - [Cons of Markdown:](#cons-of-markdown)
   - [When to Use Markdown:](#when-to-use-markdown)
   - [Basic Markdown Syntax:](#basic-markdown-syntax)
-    - [Headers:](#headers)
+    - [Headings:](#headings)
     - [Emphasis:](#emphasis)
     - [Lists:](#lists)
       - [Unordered:](#unordered)
@@ -86,7 +86,7 @@ In conclusion, Markdown is an excellent choice for projects that require basic f
 
 Here's a quick reference to basic Markdown syntax:
 
-### Headers:
+### Headings:
 
 ```markdown
 # H1
