@@ -69,7 +69,7 @@ In the context of software development, tools encompass a wide range of software
 
 - **Collaboration and Communication Tools:**
     - **Purpose:** Facilitate team communication and collaboration.
-    - **Examples:** Slack, Microsoft Teams, Zoom, Confluence.
+    - **Examples:** [Slack](https://slack.com/), [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software), [Zoom](https://zoom.us/), [Confluence](https://www.atlassian.com/software/confluence).
 
 - **Development Frameworks and Libraries:**
     - **Purpose:** Provide a structured foundation to build applications more efficiently.
