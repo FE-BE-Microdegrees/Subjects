@@ -16,7 +16,7 @@ In the context of software development, tools encompass a wide range of software
 
 - **Integrated Development Environments (IDEs):**
     - **Purpose:** Provide an environment to write, debug, and test code.
-    - **Examples:** Eclipse, Visual Studio, IntelliJ IDEA, PyCharm, Xcode.
+    - **Examples:** [Eclipse](https://www.eclipse.org/), [Visual Studio](https://visualstudio.microsoft.com/), [IntelliJ IDEA](https://www.jetbrains.com/idea/), [PyCharm](https://www.jetbrains.com/pycharm/), [Xcode](https://developer.apple.com/xcode/).
 
 - **Version Control Systems:**
     - **Purpose:** Track and manage changes to code over time.
