@@ -20,7 +20,7 @@ In the context of software development, tools encompass a wide range of software
 
 - **Version Control Systems:**
     - **Purpose:** Track and manage changes to code over time.
-    - **Examples:** Git, Mercurial, Subversion (SVN), CVS.
+    - **Examples:** [Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/), [Subversion (SVN)](https://subversion.apache.org/), [CVS](https://www.gnu.org/software/trans-coord/manual/cvs/cvs.html).
 
 - **Build Tools:**
     - **Purpose:** Automate the process of compiling and building applications.
