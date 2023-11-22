@@ -23,7 +23,11 @@ Debugging is the process of finding and fixing bugs in a program. A bug is an er
 
 In context of Node JS, we can use the built-in debugger to debug our programs. The built-in debugger is a tool that allows us to step through our code line by line and inspect the values of variables at each step. We can use the built-in debugger to find and fix bugs in our programs. The built-in debugger is a command-line tool that is available in Node JS version 8 and above.
 
-Also there are code editors that have built-in debuggers. For example, Visual Studio Code has a built-in debugger that allows us to step through our code line by line and inspect the values of variables at each step. We can use the built-in debugger in Visual Studio Code to find and fix bugs in our programs.
+Also there are code editors that have built-in debuggers. For example, **Visual Studio Code** has a built-in debugger that allows us to step through our code line by line and inspect the values of variables at each step. We can use the built-in debugger in Visual Studio Code to find and fix bugs in our programs.
+
+To use built-in debugger in Visual Studio Code, we need to start our program in debugging mode by pressing `F5` or by clicking the `Run > Start Debugging` menu item. Then we can choose debugging environment, which in our case is `Node.js`. Then we can set breakpoints in our code by clicking on the line number where we want to set a **breakpoint**. Breakpoint is a point in our code where we want the debugger to pause execution and allow us to inspect the values of variables. Then we can start debugging by pressing `F5` or by clicking the `Run > Start Debugging` menu item. Then we can step through our code line by line and inspect the values of variables at each step.
+
+![Debugging in VSCode](DebuggingNodeJSInVSCode.gif)
 
 There is one more way to debug our programs in Node JS. We can use `console.log()` statements to print the values of variables at different points in our code. This is a simple way to debug our programs, but it is not as powerful as the built-in debugger.
 
