@@ -2,10 +2,11 @@
 
 ## Description
 
-- What is?
-- How to declare?
-- How to assign?
-- Data types
+In this topic, we'll learn about variables in Javascript.
+
+- What is a Variable?
+- How to Declare a Variable?
+- Assigning Values to Variables
 
 ## Learning Outcomes
 
@@ -45,24 +46,3 @@ let age = 25, lastName = 'Doe'; // declare multiple variables and assign values 
 const PI = 3.14; // declare a constant named PI and assign the value 3.14 to it
 ```
 
-## Data Types
-
-As we can see in the previous examples, we can assign different types of values to variables. In Javascript, there are 7 primitive data types:
-
-- `string`: a sequence of characters enclosed in single or double quotes
-- `number`: a numeric value
-- `boolean`: a value that is either `true` or `false`
-- `null`: a value that represents nothing
-- `undefined`: a value that represents the absence of a value
-- `symbol`: a unique value that is used to identify object properties
-- `bigint`: a numeric value that is larger than the `Number.MAX_SAFE_INTEGER` value
-
-```javascript
-let firstName = 'John'; // string
-let age = 25; // number
-let isMarried = false; // boolean
-let car = null; // null
-let x; // undefined
-let symbol = Symbol('symbol'); // symbol
-let bigInt = 9007199254740991n; // bigint
-```
