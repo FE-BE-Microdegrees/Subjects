@@ -2,15 +2,95 @@
 
 ## Description
 
+In this topic, we'll learn about data types in Javascript.
+- What is a data type?
+- Primitive data types
+- Object data types
+- Type conversion
+- Type coercion
+
 ## Learning Outcomes
+
+After completing this topic, you'll be able to:
+- Define what a data type is
+- List the primitive data types in Javascript
+- List the object data types in Javascript
+- Convert values from one data type to another
+- Explain the difference between type conversion and type coercion
+
+## What is a Data Type?
+
+As we already know, the variable is a `named storage location in a computer's memory` that can be used to store data. The data that can be stored in a variable has a *type*. The **type** of data determines what operations can be performed on it. For example, we can add two **numbers** together, but we cannot add a **number** and a **string** together.
+
+Javascript is a dynamically typed language, which means that the **type** of a variable can be changed throughout the execution of a program. For example, we can assign a **number** to a variable and then assign a **string** to the same variable later in the program. This is different from statically typed languages like Java, where the type of a variable is fixed as we declare it.
+
+In Javascript, we can divide data types into two categories: **primitive data** types and object data types.
 
 ## Primitive Data Types
 
-- String
-- Number
-- Boolean
-- Undefined
-- Null
-- Symbol
-- BigInt
+Primitive data types are the most basic data types in Javascript. There are 7 primitive data types in Javascript:
 
+- **String**: a sequence of *characters* enclosed in single or double quotes
+- **Number**: a *numeric* value
+- **Boolean**: a value that is either *true* or *false*
+- **Undefined**: a value that represents the *absence of a value*
+- **Null**: a value that represents *nothing*
+- **Symbol**: a *unique* value that is used to identify object properties
+- **BigInt**: a numeric value that is *larger than the Number.MAX_SAFE_INTEGER* value
+
+```javascript
+let firstName = 'John'; // string
+let age = 25; // number
+let isMarried = false; // boolean
+let x; // undefined
+let car = null; // null
+let symbol = Symbol('symbol'); // symbol
+let bigInt = 1234567890123456789012345678901234567890n; // bigint
+```
+
+## Object Data Types
+
+Object data types are more complex data types that can be used to store collections of data. There are 3 object data types in Javascript:
+
+- **Object**: a collection of *key-value pairs*
+- **Array**: a collection of *values*
+- **Function**: a *block of code* that can be executed by calling it
+
+```javascript
+let person = { // object
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25,
+  isMarried: false
+};
+
+let fruits = ['apple', 'banana', 'orange']; // array
+
+function sayHello() { // function
+  console.log('Hello!');
+}
+```
+
+## Type Conversion
+
+Type conversion is the process of converting a value from one data type to another. In Javascript, we can convert values from one data type to another using the following methods:
+
+- **String()**: converts a value to a string
+- **Number()**: converts a value to a number
+- **Boolean()**: converts a value to a boolean
+
+```javascript
+let x = 5; // number
+let y = String(x); // string
+let z = Boolean(x); // boolean
+```
+
+## Type Coercion
+
+Type coercion is the process of converting a value from one data type to another implicitly. In Javascript, type coercion occurs when an operator is used with operands of different data types. For example, the `+` operator can be used to add two numbers together, but it can also be used to concatenate two strings together.
+
+```javascript
+let x = 5; // number
+let y = '5'; // string
+let z = x + y; // string
+```
