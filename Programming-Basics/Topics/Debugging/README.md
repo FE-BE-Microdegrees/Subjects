@@ -13,7 +13,7 @@ In this topic, we'll learn about debugging in Node JS.
 After completing this topic, you'll be able to:
 
 - Define what debugging is
-- List the debugging tools in Node JS
+- Use different methods to debug your code
 
 ## What is Debugging?
 
@@ -33,6 +33,5 @@ For simple programs, we can use `console.log()` statements to print the values o
 
 First of all, we should test our code as we write it. We should not wait until we have written a lot of code before testing it. We should test our code frequently. This will help us find bugs in our code early on and fix them before they become bigger problems later on. Most of the bugs are caused by simple mistakes, such as typos, missing semicolons, and missing parentheses. We should always check our code for these simple mistakes before running it.
 
-- Use `console.log()` statements to print the values of variables at different points in your code.
-- Use the built-in debugger to step through your code line by line and inspect the values of variables at each step.
 - Use the built-in debugger to set breakpoints in your code and inspect the values of variables at those breakpoints.
+- Use `console.log()` statements to print the values of variables at different points in your code.
