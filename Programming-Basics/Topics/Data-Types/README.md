@@ -81,8 +81,8 @@ Type conversion is the process of converting a value from one data type to anoth
 
 ```javascript
 let x = 5; // number
-let y = String(x); // string
-let z = Boolean(x); // boolean
+let y = String(x); // string - value of y is '5'
+let z = Boolean(x); // boolean - value of z is true
 ```
 
 ## Type Coercion
@@ -92,5 +92,5 @@ Type coercion is the process of converting a value from one data type to another
 ```javascript
 let x = 5; // number
 let y = '5'; // string
-let z = x + y; // string
+let z = x + y; // string - value of z is '55'
 ```
