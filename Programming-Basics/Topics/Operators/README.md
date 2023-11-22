@@ -1,8 +1,9 @@
-# Operators
+# Operators and Expressions
 
 ## Description
 
-- What is operator?
+- What is an operator?
+- What is an expression?
 - Operator types
   - Arithmetic
   - Assignment
@@ -20,6 +21,8 @@
 After completing this topic, you'll be able to:
 
 - Define what an operator is
+- Define what an expression is
+- Differentiate between operators and expressions
 - List the most common operators in Javascript
 - Explain the difference between the different types of operators
 - Use operators in your programs
@@ -33,6 +36,16 @@ An operator is a symbol that is used to perform an operation on one or more valu
 ```javascript
 let x = 5 + 10; // 5 and 10 are operands, + is the operator. x is the variable that stores the result of the operation
 ```
+
+## What is an Expression?
+
+An expression is a combination of values, variables, operators, and functions that are evaluated to produce a result. For example, `2 + 3` is an expression that evaluates to `5`. Expressions can be used to perform calculations, manipulate strings, and more.
+
+## Relationship between Operators and Expressions:
+
+- The primary relationship is that operators are used within expressions to define the kind of operation being performed on the operands. An expression might consist of a simple operation with only one operator (like x + y) or a more complex operation with multiple operators (like (x + y) * (a - b)).
+- The type of the operator dictates the type of the expression. For instance, arithmetic operators create arithmetic expressions, logical operators create logical expressions, and so on.
+- The evaluation of expressions often follows a specific order of operations, determined by the precedence and associativity of the operators involved.
 
 ## Operator Types
 
