@@ -12,9 +12,9 @@
 After completing this topic, you'll be able to:
 
 - Define what an algorithm is
-- Design algorithms
-- Write algorithms in pseudocode
-- Draw flowcharts
+- Design simple algorithms
+- Write simple algorithms in pseudocode
+- Draw simple flowcharts
 
 ## What is an Algorithm?
 
