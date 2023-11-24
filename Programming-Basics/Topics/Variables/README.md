@@ -4,9 +4,16 @@
 
 In this topic, we'll learn about variables in Javascript.
 
-- What is a Variable?
-- How to Declare a Variable?
-- Assigning Values to Variables
+- [Variables](#variables)
+  - [Description](#description)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is a Variable?](#what-is-a-variable)
+  - [How to Declare a Variable?](#how-to-declare-a-variable)
+  - [Assigning Values to Variables](#assigning-values-to-variables)
+  - [Exercises](#exercises)
+    - [Exercise 1](#exercise-1)
+    - [Exercise 2](#exercise-2)
+    - [Exercise 3](#exercise-3)
 
 ## Learning Outcomes
 
@@ -46,3 +53,54 @@ let age = 25, lastName = 'Doe'; // declare multiple variables and assign values 
 const PI = 3.14; // declare a constant named PI and assign the value 3.14 to it
 ```
 
+## Exercises
+
+Create a file named `index.js` (or another name of your choice) and start adding solutions to the exercises below.
+
+### Exercise 1
+
+Declare a variable named `firstName` and assign the value `John` to it.
+
+Print the value of the `firstName` variable to the console.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+let firstName = 'John'; // declare a variable named firstName and assign the value 'John' to it
+
+console.log(firstName); // print the value of the firstName variable to the console
+```
+![Declaring variable with value](DeclaringVariableWithValue.gif)
+
+</details>
+
+### Exercise 2
+
+In the same file, declare a variable named `lastName` and assign the value `Doe` to it.
+
+Print out values of the `firstName` and `lastName` variables in a single line. Output should look like this: `John Doe`.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+let firstName = 'John'; // declare a variable named firstName and assign the value 'John' to it
+let lastName = 'Doe'; // declare a variable named lastName and assign the value 'Doe' to it
+
+console.log(firstName + ' ' + lastName); // print out values of the firstName and lastName variables in a single line
+```
+
+</details>
+
+### Exercise 3
+
+In the same file, declare a variable named `age` and assign the value `25` to it.
+
+Print out text `John is 25 years old.` using the `firstName` and `age` variables.
+
+Test your code.
