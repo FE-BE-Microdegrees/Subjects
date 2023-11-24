@@ -27,7 +27,16 @@ After completing this topic, you'll be able to:
 
 A variable is a named storage location in a computer's memory that can be used to store data. Variables are used to store values that can be changed during the execution of a program. For example, a variable named `x` can be used to store the value `5`. The value of `x` can be changed to `10` by assigning the value `10` to `x`. Variables are used to store data that can be used later in the program.
 
-We can imagine a variable as a box with label on it (variable name) that can hold something (value). We can put something in the box (assign a value) and we can take something out of the box (use the value).
+We can imagine a variable as a box with a label on it (`variable name`) that can contain something (`value`). We can put something in the box (`assign a value`) and we can take something out of the box (`use the value`). If we want to know what is in the box, we can look at the label (`variable name`) to identify the box and then open the box to see what is inside (`access the value`).
+
+For example, we could have `apples` variable, which contains some apples. If we want to know how many apples we have in the `apples` variable, we can look at the label (`apples`) to identify the box and then open the box to see how many apples are inside (`access the value`).
+
+In Javascript it would be something like this:
+
+```javascript
+let apples = 5; // declare a variable named apples and assign the value 5 to it (put 5 apples in the box)
+console.log(apples); // print the value of the apples variable to the console (open the box, see how many apples are inside and print the value to the console)
+```
 
 ## How to Declare a Variable?
 
