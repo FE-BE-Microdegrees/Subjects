@@ -78,4 +78,6 @@ console.log(sum); // print the value of the sum variable to the console
 
 In next example, we create a new file named `index.js`, create a `calculate.js` file, export the `add` and `subtract` functions from the `calculate.js` file, import the `calculate.js` file in the `index.js` file, and use the `add` function in our code.
 
-<video src="UsingModule.mp4" controls title="Using Module"></video>
+![Using Module](UsingModule.gif)
+
+[Click here to download the video](UsingModule.mp4)
