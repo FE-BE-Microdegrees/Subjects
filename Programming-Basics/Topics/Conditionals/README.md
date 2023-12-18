@@ -280,3 +280,7 @@ In this example, we check if `x` is truthy or falsy and print a message to the c
 - Use `===` instead of `==` when comparing values
 - Use `!==` instead of `!=` when comparing values
 - Use `if-else-if` statement instead of nested conditionals
+
+## Exercises
+
+TODO

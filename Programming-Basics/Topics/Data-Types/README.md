@@ -94,3 +94,7 @@ let x = 5; // number
 let y = '5'; // string
 let z = x + y; // string - value of z is '55'
 ```
+
+## Exercises
+
+TODO
