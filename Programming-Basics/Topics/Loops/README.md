@@ -206,4 +206,84 @@ As we can see, the `break` statement exits the loop. In this example, we created
 
 ## Exercises
 
-TODO
+Create a file named `index.js` (or another name of your choice) and start adding solutions to the exercises below.
+
+### Exercise 1
+
+Create a `for` loop that iterates over the numbers from `1` to `10` and prints them to the console.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+```
+Expected output:
+
+```javascript
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+![For loop](forLoop.gif)
+
+</details>
+
+### Exercise 2
+
+Create a `for` loop that iterates over the numbers from `1` to `10` and prints only the even numbers to the console.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+Expected output:
+
+```javascript
+2
+4
+6
+8
+10
+```
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+```
+</details>
+
+
+### Exercise 3
+
+Create multiplication table using nested `for` loops.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+Expected output:
+
+```javascript
+1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+...
+10 x 8 = 80
+10 x 9 = 90
+10 x 10 = 100
+```
