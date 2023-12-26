@@ -23,6 +23,7 @@ By the end of the course, students should have a clear understanding of the logi
 - [Tools](./Topics/Tools/README.md)
 - [Programming](./Topics/Programming/README.md)
 - [Node.JS](./Topics/NodeJS/README.md)
+- [Hello World](./Topics/HelloWorld/README.md)
 - [Algorithms](./Topics/Algorithms/README.md)
 - [Variables](./Topics/Variables/README.md)
 - [Data types](./Topics/DataTypes/README.md)
@@ -32,3 +33,5 @@ By the end of the course, students should have a clear understanding of the logi
 - [Loops](./Topics/Loops/README.md)
 - [Functions](./Topics/Functions/README.md)
 - [Data structures](./Topics/DataStructures/README.md)
+- [Modules](./Topics/Modules/README.md)
+- [NPM](./Topics/NPM/README.md)
