@@ -36,20 +36,20 @@ The `for` loop is used to repeat a block of code a certain number of times. The 
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
-
-// Output:
-// 0
-// 1
-// 2
-// 3
-// 4
-// 5
-// 6
-// 7
-// 8
-// 9
 ```
-
+Output:
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
 In this example, we created a `for` loop that iterates over the numbers from `0` to `9` and prints them to the console. In the beginning of the loop, we initialize the loop counter (`i`) to `0` (`let i = 0`). Then, we check if the loop counter (`i`) is less than `10` (`i < 10`). If the loop counter is less than `10`, we print the value of the loop counter to the console and increment the loop counter (`i`) by `1` (`i++`). And then we repeat this process until the loop counter is greater than or equal to `10`.
 
 ## `while` Loop
@@ -65,18 +65,19 @@ while (i < 10) {
   console.log(i);
   i++;
 }
-
-// Output:
-// 0
-// 1
-// 2
-// 3
-// 4
-// 5
-// 6
-// 7
-// 8
-// 9
+```
+Output:
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
 ```
 
 We can see, that even though the `for` loop and `while` loop are defined differently, they both do the same thing. In these exapmles they both iterate over the numbers from `0` to `9` and print them to the console.
@@ -92,18 +93,19 @@ do {
   console.log(i);
   i++;
 } while (i < 10);
-
-// Output:
-// 0
-// 1
-// 2
-// 3
-// 4
-// 5
-// 6
-// 7
-// 8
-// 9
+```
+Output:
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
 ```
 
 The key difference between the `while` loop and the `do...while` loop is that the `do...while` loop executes the code inside the loop at least once, even if the condition is false.
@@ -123,14 +125,14 @@ const person = {
 for (let key in person) {
   console.log(key + ': ' + person[key]);
 }
-
-// Output:
-// firstName: John
-// lastName: Doe
-// age: 25
-// isMarried: false
 ```
-
+Output:
+```
+firstName: John
+lastName: Doe
+age: 25
+isMarried: false
+```
 In this example, we created an object named `person` with four properties: `firstName`, `lastName`, `age`, and `isMarried`. Then, we created a `for...in` loop that iterates over the properties of the `person` object and prints them to the console.
 
 ## `for...of` Loop
@@ -143,13 +145,13 @@ const fruits = ['apple', 'banana', 'orange'];
 for (let fruit of fruits) {
   console.log(fruit);
 }
-
-// Output:
-// apple
-// banana
-// orange
 ```
-
+Output:
+```
+apple
+banana
+orange
+```
 In this example, we created an array named `fruits` with three values: `apple`, `banana`, and `orange`. Then, we created a `for...of` loop that iterates over the values of the `fruits` array and prints them to the console.
 
 ## Loop Control Statements
@@ -167,17 +169,19 @@ for (let i = 0; i < 10; i++) {
   }
   console.log(i);
 }
-
-// Output:
-// 0
-// 1
-// 2
-// 3
-// 4
-// 6
-// 7
-// 8
-// 9
+```
+Output:
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
 ```
 
 As we can see, the `continue` statement skips the current iteration of the loop. In this example, we created a `for` loop that iterates over the numbers from `0` to `9` and prints them to the console. But if the loop counter is equal to `5`, we skip the current iteration of the loop using the `continue` statement.
@@ -193,13 +197,14 @@ for (let i = 0; i < 10; i++) {
   }
   console.log(i);
 }
-
-// Output:
-// 0
-// 1
-// 2
-// 3
-// 4
+```
+Output:
+```
+0
+1
+2
+3
+4
 ```
 
 As we can see, the `break` statement exits the loop. In this example, we created a `for` loop that iterates over the numbers from `0` to `9` and prints them to the console. But if the loop counter is equal to `5`, we exit the loop using the `break` statement.
@@ -214,14 +219,6 @@ Create a `for` loop that iterates over the numbers from `1` to `10` and prints t
 
 Test your code by running the `index.js` file using the `node index.js` command.
 
-<details>
-  <summary>Solution</summary>
-
-```javascript
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
-```
 Expected output:
 
 ```javascript
@@ -235,6 +232,14 @@ Expected output:
 8
 9
 10
+```
+<details>
+  <summary>Solution</summary>
+
+```javascript
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
 ```
 
 ![For loop](forLoop.gif)
