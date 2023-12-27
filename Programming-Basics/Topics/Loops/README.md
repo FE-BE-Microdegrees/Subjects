@@ -213,11 +213,13 @@ As we can see, the `break` statement exits the loop. In this example, we created
 
 Create a file named `index.js` (or another name of your choice) and start adding solutions to the exercises below.
 
+Test your code by running the `index.js` file using the `node index.js` command.
+
+You can also test Your code with different values for the variables.
+
 ### Exercise 1
 
 Create a `for` loop that iterates over the numbers from `1` to `10` and prints them to the console.
-
-Test your code by running the `index.js` file using the `node index.js` command.
 
 Expected output:
 
@@ -233,6 +235,11 @@ Expected output:
 9
 10
 ```
+
+> Hint: Use the `console.log()` method to print the numbers to the console.
+>
+> Pay attention to the value of the loop counter.
+
 <details>
   <summary>Solution</summary>
 
@@ -250,7 +257,7 @@ for (let i = 1; i <= 10; i++) {
 
 Create a `for` loop that iterates over the numbers from `1` to `10` and prints only the even numbers to the console.
 
-Test your code by running the `index.js` file using the `node index.js` command.
+> Hint: Use the `%` operator to check if a number is even or odd.
 
 Expected output:
 
@@ -279,8 +286,6 @@ for (let i = 1; i <= 10; i++) {
 
 Create multiplication table using nested `for` loops.
 
-Test your code by running the `index.js` file using the `node index.js` command.
-
 Expected output:
 
 ```javascript
@@ -292,3 +297,5 @@ Expected output:
 10 x 9 = 90
 10 x 10 = 100
 ```
+
+> Hint: Use nested `for` loops to create the multiplication table. Nested means that one loop is inside another loop.
