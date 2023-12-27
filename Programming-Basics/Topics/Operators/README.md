@@ -261,3 +261,83 @@ let person = {
 'fullName' in person; // false
 person instanceof Object; // true
 ```
+
+## Exercises
+
+Create a file `index.js` and write the code for the following exercises in this file.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+Also, test your code with different values for the variables.
+
+### Exercise 1 -  Basic Arithmetic Operators
+
+**Objective**: Perform basic arithmetic operations.
+
+**Description**: Write a program that declares two variables, `num1` and `num2`, assigned with numbers. Perform addition, subtraction, multiplication, and division on these variables. Print the results of each operation.
+
+**Expected Output**: The sum, difference, product, and quotient of `num1` and `num2`.
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  let num1 = 5;
+  let num2 = 10;
+
+  console.log(num1 + num2); // 15
+  console.log(num1 - num2); // -5
+  console.log(num1 * num2); // 50
+  console.log(num1 / num2); // 0.5
+  ```
+![Operators](operators.gif)
+
+</details>
+
+### Exercise 2 -  Comparison Operators
+**Objective**: Compare two values using different comparison operators.
+
+**Description**: Define two variables with numeric values. Use comparison operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to compare these values, and print the results of each comparison in a descriptive way.
+
+**Expected Output**: Statements indicating the result of each comparison between `a` and `b`.
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  let a = 5;
+  let b = 10;
+
+  console.log(a == b); // false
+  console.log(a != b); // true
+  console.log(a > b); // false
+  console.log(a < b); // true
+  console.log(a >= b); // false
+  console.log(a <= b); // true
+  ```
+</details>
+
+### Exercise 3: Logical Operators and Conditional Statements
+
+**Objective**: Make decisions using logical operators.
+
+**Description**: Write a program that declares three variables `age`, `license`, and `goodVision`. Using logical operators (`&&`, `||`, `!`), determine if a person is eligible to drive a car. The criteria for eligibility are: age must be 18 or over, must have a driving license, and must have good vision.
+
+> Hint: To make a decision, we can use the `if` statement.
+>
+> `&&` is the logical AND operator. It returns `true` if both operands are `true`.
+>
+> `||` is the logical OR operator. It returns `true` if one of the operands is `true`.
+>
+> `!` is the logical NOT operator. It returns `true` if the operand is `false`.
+
+**Example Code**:
+```javascript
+let age = 25;
+let license = true;
+let goodVision = true;
+
+// Determine eligibility to drive and print the result
+```
+
+**Expected Output**: A statement indicating whether the person meets the driving eligibility criteria.
