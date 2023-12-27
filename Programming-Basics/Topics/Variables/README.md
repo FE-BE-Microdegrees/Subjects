@@ -66,6 +66,10 @@ const PI = 3.14; // declare a constant named PI and assign the value 3.14 to it
 
 Create a file named `index.js` (or another name of your choice) and start adding solutions to the exercises below.
 
+Test your code by running the `index.js` file using the `node index.js` command.
+
+You can also test Your code with different values for the variables.
+
 ### Exercise 1
 
 Declare a variable named `firstName` and assign the value `John` to it.
@@ -94,6 +98,8 @@ Print out values of the `firstName` and `lastName` variables in a single line. O
 
 Test your code by running the `index.js` file using the `node index.js` command.
 
+> Hint: Use the `+` operator to concatenate the values of the `firstName` and `lastName` variables.
+
 <details>
   <summary>Solution</summary>
 
@@ -111,5 +117,3 @@ console.log(firstName + ' ' + lastName); // print out values of the firstName an
 In the same file, declare a variable named `age` and assign the value `25` to it.
 
 Print out text `John is 25 years old.` using the `firstName` and `age` variables.
-
-Test your code.
