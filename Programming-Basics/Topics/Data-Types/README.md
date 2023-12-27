@@ -97,4 +97,60 @@ let z = x + y; // string - value of z is '55'
 
 ## Exercises
 
-TODO
+### Exercise 1
+
+What is the data type of the following variables?
+
+```javascript
+let firstName = 'John';
+let age = 25;
+let isMarried = false;
+let x;
+let car = null;
+```
+
+<details>
+<summary>Solution</summary>
+
+- `firstName` is a string
+- `age` is a number
+- `isMarried` is a boolean
+- `x` is undefined
+- `car` is null
+
+</details>
+
+### Exercise 2
+
+What is the data type of the following variables?
+
+```javascript
+let person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25,
+  isMarried: false
+};
+
+let fruits = ['apple', 'banana', 'orange'];
+
+function sayHello() {
+  console.log('Hello!');
+}
+```
+
+<details>
+<summary>Solution</summary>
+
+- `person` is an object
+  - `firstName`, `lastName`, `age`, and `isMarried` are properties of the `person` object
+  - `firstName`, `lastName` are strings
+  - `age` is a number
+  - `isMarried` is a boolean
+- `fruits` is an array
+  - `apple`, `banana`, and `orange` are elements of the `fruits` array
+  - `apple`, `banana`, and `orange` are strings
+- `sayHello` is a function
+  - 'Hello!' is a string
+
+</details>
