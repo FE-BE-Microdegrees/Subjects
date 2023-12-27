@@ -24,6 +24,7 @@ By the end of the course, students should be well-equipped to translate real-wor
 
 ## Topics
 - [Tools](./Topics/Tools/README.md)
+- [Programming](./Topics/Programming/README.md)
 - [Version Control](./Topics/Version-Control/README.md)
 - [Git](./Topics/Git/README.md)
   - [.gitignore](./Topics/Gitignore/README.md)
