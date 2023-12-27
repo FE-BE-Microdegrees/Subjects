@@ -19,6 +19,18 @@ Upon completion, students should be adept at data modeling, understanding databa
 - **Real-world Applications**: Apply database concepts in real-world scenarios, understanding the role of databases in web applications, data analytics, and other modern technological contexts.
 
 ## Topics
-- Database
+- Databases
 - SQL
+- MySQL
+- Tools
+- Setting up the environment
+- Data Types
+- Tables
+- MySQL syntax and commands
 - Data normalization
+- Entity-Relationship (ER) diagrams
+- Advanced SQL queries
+- Administering MySQL
+- Migrations
+- Seeding data
+- Database security
