@@ -1,22 +1,26 @@
 # Conditionals
 
-## Description
-
 In this topic, we'll learn about conditionals in Javascript.
 
-- What is a conditional?
-- Understanding conditionals
-  - Boolean expressions
-  - comparison operators
-- Types of conditionals
-  - if
-  - if-else
-  - if-else-if
-  - switch
-  - ternary operator
-- Nested conditional
-- Truthiness and falsiness
-- Best practices
+- [Conditionals](#conditionals)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is a Conditional?](#what-is-a-conditional)
+  - [Understanding Conditionals](#understanding-conditionals)
+    - [Boolean Expressions](#boolean-expressions)
+    - [Comparison Operators](#comparison-operators)
+  - [Types of Conditionals](#types-of-conditionals)
+    - [if](#if)
+    - [if-else](#if-else)
+    - [if-else-if](#if-else-if)
+    - [switch](#switch)
+    - [Ternary operator](#ternary-operator)
+  - [Nested Conditional](#nested-conditional)
+  - [Truthiness and Falsiness](#truthiness-and-falsiness)
+  - [Best Practices](#best-practices)
+  - [Exercises](#exercises)
+    - [Exercise 1 - Basic If Statement](#exercise-1---basic-if-statement)
+    - [Exercise 2 - If-Else Statement](#exercise-2---if-else-statement)
+    - [Exercise 3 - Nested If-Else Statement](#exercise-3---nested-if-else-statement)
 
 ## Learning Outcomes
 

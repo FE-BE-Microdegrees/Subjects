@@ -1,14 +1,20 @@
 # Functions
 
-## Description
+In this topic, we will learn about functions in Javascript.
 
-- What is a function?
-- Function declaration
-- Function expression
-- Function invocation
-- Function scope
-- Function hoisting
-- Arrow functions
+- [Functions](#functions)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is a Function?](#what-is-a-function)
+  - [Function Declaration](#function-declaration)
+  - [Function Expression](#function-expression)
+  - [Function Invocation](#function-invocation)
+  - [Function Scope](#function-scope)
+  - [Function Hoisting](#function-hoisting)
+  - [Arrow Functions](#arrow-functions)
+  - [Exercises](#exercises)
+    - [Exercise 1 - Basic Function Definition and Call](#exercise-1---basic-function-definition-and-call)
+    - [Exercise 2 - Function with Return Value](#exercise-2---function-with-return-value)
+    - [Exercise 3 - Function Manipulating Array Data](#exercise-3---function-manipulating-array-data)
 
 ## Learning Outcomes
 

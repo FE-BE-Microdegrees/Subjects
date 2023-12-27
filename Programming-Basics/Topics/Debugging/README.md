@@ -1,12 +1,12 @@
 # Debugging
 
-## Description
-
 In this topic, we'll learn about debugging in Node JS.
 
-- What is debugging?
-- Debugging tools
-- Debugging tips
+- [Debugging](#debugging)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Debugging?](#what-is-debugging)
+  - [Debugging Tools](#debugging-tools)
+  - [Debugging Tips](#debugging-tips)
 
 ## Learning Outcomes
 

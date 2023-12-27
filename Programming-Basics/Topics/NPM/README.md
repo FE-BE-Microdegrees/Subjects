@@ -1,17 +1,20 @@
 # Node Package Manager (*NPM*)
 
-## Description
-
 In this topic, we'll learn about Node Package Manager (NPM).
 
-- What is NPM?
-- How to Install NPM?
-- How to Use NPM?
-- How to Create a Package.json File?
-- How to Install Packages?
-- How to Uninstall Packages?
-- How to Update Packages?
-- How to Use Packages?
+- [Node Package Manager (*NPM*)](#node-package-manager-npm)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is NPM?](#what-is-npm)
+  - [How to Install NPM?](#how-to-install-npm)
+  - [How to Use NPM?](#how-to-use-npm)
+  - [How to Create a package.json File?](#how-to-create-a-packagejson-file)
+  - [How to Install Packages?](#how-to-install-packages)
+  - [How to Uninstall Packages?](#how-to-uninstall-packages)
+  - [How to Update Packages?](#how-to-update-packages)
+  - [How to Use Packages?](#how-to-use-packages)
+  - [Example of Using NPM to install `ansi-colors` package and use it in code](#example-of-using-npm-to-install-ansi-colors-package-and-use-it-in-code)
+    - [Commands and code used in the example](#commands-and-code-used-in-the-example)
+    - [Create package.json file](#create-packagejson-file)
 
 ## Learning Outcomes
 

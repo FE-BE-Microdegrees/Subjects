@@ -1,20 +1,27 @@
 # Operators and Expressions
 
-## Description
+In this topic, we'll learn about operators and expressions in Javascript.
 
-- What is an operator?
-- What is an expression?
-- Operator types
-  - Arithmetic
-  - Assignment
-  - Comparison
-  - Logical
-  - Bitwise (optional - not used during the course)
-  - String
-  - Conditional (Ternary)
-  - Comma
-  - Unary
-  - Relational
+- [Operators and Expressions](#operators-and-expressions)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is an Operator?](#what-is-an-operator)
+  - [What is an Expression?](#what-is-an-expression)
+  - [Relationship between Operators and Expressions:](#relationship-between-operators-and-expressions)
+  - [Operator Types](#operator-types)
+    - [Arithmetic Operators](#arithmetic-operators)
+    - [Assignment Operators](#assignment-operators)
+    - [Comparison Operators](#comparison-operators)
+    - [Logical Operators](#logical-operators)
+    - [Bitwise Operators (optional - not used during the course)](#bitwise-operators-optional---not-used-during-the-course)
+    - [String Operators](#string-operators)
+    - [Conditional (Ternary) Operator](#conditional-ternary-operator)
+    - [Comma Operator](#comma-operator)
+    - [Unary Operators](#unary-operators)
+    - [Relational Operators](#relational-operators)
+  - [Exercises](#exercises)
+    - [Exercise 1 -  Basic Arithmetic Operators](#exercise-1----basic-arithmetic-operators)
+    - [Exercise 2 -  Comparison Operators](#exercise-2----comparison-operators)
+    - [Exercise 3: Logical Operators and Conditional Statements](#exercise-3-logical-operators-and-conditional-statements)
 
 ## Learning Outcomes
 

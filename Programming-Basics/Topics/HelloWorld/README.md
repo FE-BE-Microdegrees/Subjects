@@ -1,12 +1,12 @@
 # Hello World
 
-## Description
-
 In this topic, we'll learn about Hello World in Javascript.
 
-- What is Hello World?
-- How to write Hello World in Javascript?
-- How to run Hello World in Javascript?
+- [Hello World](#hello-world)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Hello World?](#what-is-hello-world)
+  - [How to Write Hello World in Javascript?](#how-to-write-hello-world-in-javascript)
+  - [How to Run Hello World in Javascript?](#how-to-run-hello-world-in-javascript)
 
 ## Learning Outcomes
 

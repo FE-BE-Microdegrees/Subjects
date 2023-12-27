@@ -1,17 +1,22 @@
 # Loops and iteration
 
-## Description
+In this topic, we'll learn about loops and iteration.
 
-- What is loop?
-- Loop types
-  - `for`
-  - `while`
-  - `do...while`
-  - `for...in`
-  - `for...of`
-- Loop control statements
-  - `continue`
-  - `break`
+- [Loops and iteration](#loops-and-iteration)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is a Loop?](#what-is-a-loop)
+  - [`for` Loop](#for-loop)
+  - [`while` Loop](#while-loop)
+  - [`do...while` Loop](#dowhile-loop)
+  - [`for...in` Loop](#forin-loop)
+  - [`for...of` Loop](#forof-loop)
+  - [Loop Control Statements](#loop-control-statements)
+    - [`continue`](#continue)
+    - [`break`](#break)
+  - [Exercises](#exercises)
+    - [Exercise 1](#exercise-1)
+    - [Exercise 2](#exercise-2)
+    - [Exercise 3](#exercise-3)
 
 ## Learning Outcomes
 

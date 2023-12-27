@@ -1,10 +1,22 @@
 # Data Structures
 
-## Description
+In this topic, we'll learn about data structures. We'll learn what a data structure is, what an array is, what an object is, and how to use arrays and objects.
 
-- What is data structure?
-- Array
-- Object
+- [Data Structures](#data-structures)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Data Structure?](#what-is-data-structure)
+  - [Array](#array)
+    - [Array Methods](#array-methods)
+      - [Adding Values to an Array](#adding-values-to-an-array)
+      - [Finding Values in an Array](#finding-values-in-an-array)
+      - [Removing Values from an Array](#removing-values-from-an-array)
+    - [Array Iteration](#array-iteration)
+  - [Object](#object)
+  - [Exercises](#exercises)
+    - [Exercise 1 - Basic Array Operations](#exercise-1---basic-array-operations)
+    - [Exercise 2 - Array Iteration](#exercise-2---array-iteration)
+    - [Exercise 3 - Basic Object Operations](#exercise-3---basic-object-operations)
+    - [Exercise 4 - Modifying Object Properties](#exercise-4---modifying-object-properties)
 
 ## Learning Outcomes
 

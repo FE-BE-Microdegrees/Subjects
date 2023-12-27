@@ -1,14 +1,15 @@
 # Tools
 
-## Description
-
 In this topic, we'll learn about tools that we'll be using during this course.
-- Code editor
-- Browser
-- Terminal
-- Git
-- GitHub
-- Github Desktop
+
+- [Tools](#tools)
+  - [Learning Outcomes](#learning-outcomes)
+  - [Code Editor](#code-editor)
+  - [Browser](#browser)
+  - [Terminal](#terminal)
+  - [Git](#git)
+  - [GitHub](#github)
+  - [GitHub Desktop](#github-desktop)
 
 ## Learning Outcomes
 

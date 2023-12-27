@@ -1,11 +1,8 @@
 # Variables
 
-## Description
-
 In this topic, we'll learn about variables in Javascript.
 
 - [Variables](#variables)
-  - [Description](#description)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Variable?](#what-is-a-variable)
   - [How to Declare a Variable?](#how-to-declare-a-variable)

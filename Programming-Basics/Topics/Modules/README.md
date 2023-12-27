@@ -1,13 +1,18 @@
 # Modules
 
-## Description
-
 In this topic, we'll learn about modules in Javascript.
 
-- What is a module?
-- How to export a module?
-- How to import a module?
-- How to use a module?
+- [Modules](#modules)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is a Module?](#what-is-a-module)
+  - [How to Export a Module?](#how-to-export-a-module)
+  - [How to Import a Module?](#how-to-import-a-module)
+  - [How to Use a Module?](#how-to-use-a-module)
+  - [Example of Using Modules](#example-of-using-modules)
+  - [Exercises](#exercises)
+    - [Exercise 1 - Basic Export and Require](#exercise-1---basic-export-and-require)
+    - [Exercise 2 - Export Multiple Functions](#exercise-2---export-multiple-functions)
+    - [Exercise 3 - Exporting an Object](#exercise-3---exporting-an-object)
 
 ## Learning Outcomes
 

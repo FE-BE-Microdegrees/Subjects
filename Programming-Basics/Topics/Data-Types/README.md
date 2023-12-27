@@ -1,13 +1,17 @@
 # Data Types
 
-## Description
-
 In this topic, we'll learn about data types in Javascript.
-- What is a data type?
-- Primitive data types
-- Object data types
-- Type conversion
-- Type coercion
+
+- [Data Types](#data-types)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is a Data Type?](#what-is-a-data-type)
+  - [Primitive Data Types](#primitive-data-types)
+  - [Object Data Types](#object-data-types)
+  - [Type Conversion](#type-conversion)
+  - [Type Coercion](#type-coercion)
+  - [Exercises](#exercises)
+    - [Exercise 1](#exercise-1)
+    - [Exercise 2](#exercise-2)
 
 ## Learning Outcomes
 

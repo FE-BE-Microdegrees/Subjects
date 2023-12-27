@@ -21,6 +21,7 @@ By the end of the course, students should have a clear understanding of the logi
 ## Topics
 - [Introduction](./Topics/Introduction/README.md)
 - [Tools](./Topics/Tools/README.md)
+- [JavaScript](./Topics/JavaScript/README.md)
 - [Node.JS](./Topics/NodeJS/README.md)
 - [Hello World](./Topics/HelloWorld/README.md)
 - [Algorithms](./Topics/Algorithms/README.md)

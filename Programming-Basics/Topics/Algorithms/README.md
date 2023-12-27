@@ -1,11 +1,17 @@
 # Algorithms
 
-## Description
+In this topic, we will learn about algorithms and how to design algorithms to solve problems.
 
-- What is algorithm?
-- Designing algorithms
-- Pseudocode
-- Flowcharts
+- [Algorithms](#algorithms)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is an Algorithm?](#what-is-an-algorithm)
+  - [Designing Algorithms](#designing-algorithms)
+  - [Pseudocode](#pseudocode)
+  - [Flowcharts](#flowcharts)
+  - [Exercises](#exercises)
+    - [Exercise 1](#exercise-1)
+    - [Exercise 2](#exercise-2)
+    - [Exercise 3](#exercise-3)
 
 ## Learning Outcomes
 
