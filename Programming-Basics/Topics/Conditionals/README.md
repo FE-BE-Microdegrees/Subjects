@@ -283,4 +283,82 @@ In this example, we check if `x` is truthy or falsy and print a message to the c
 
 ## Exercises
 
-TODO
+Create a file named `index.js` (or another name of your choice) and start adding solutions to the exercises below.
+
+### Exercise 1 - Basic If Statement
+
+**Objective**: Check if a number is positive.
+
+**Description**: Write a JavaScript program that defines a variable to store a number. Use an if statement to print "The number is positive" if the number is greater than zero.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+Test your code with different values.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+let number = 5;
+
+if (number > 0) {
+  console.log('The number is positive');
+}
+```
+Expected output:
+
+```javascript
+The number is positive
+```
+
+Video - TODO
+
+</details>
+
+### Exercise 2 - If-Else Statement
+
+**Objective**: Check if a number is even or odd.
+
+**Description**: Write a JavaScript program that takes a number and checks whether the number is even or odd. Print "The number is even" if the number is even and "The number is odd" if the number is odd.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+Test your code with different values.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+let number = 5;
+
+if (number % 2 === 0) {
+  console.log('The number is even');
+} else {
+  console.log('The number is odd');
+}
+```
+
+Expected output:
+
+```javascript
+The number is odd
+```
+</details>
+
+### Exercise 3 - Nested If-Else Statement
+
+**Objective**: Grade classification.
+
+**Description**: Write a JavaScript program that classifies students' grades. The program should take a number (0-100) and classify it as follows:
+
+- `A` for 90 and above
+- `B` for 80 to 89
+- `C` for 70 to 79
+- `D` for 60 to 69
+- `F` for below 60
+
+Print the grade classification.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+Test your code with different values.
