@@ -8,3 +8,7 @@
 - Aggregate Functions: Using functions like COUNT(), SUM(), AVG(), MAX(), MIN().
 - Join Operations: Understanding different types of joins (INNER, LEFT, RIGHT, FULL).
 - Creating Complex Tables: Implementing primary keys, foreign keys, and constraints.
+
+## Learning Outcomes
+
+After completing this topic, you'll be able to:
