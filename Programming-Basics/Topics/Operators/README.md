@@ -276,7 +276,7 @@ Also, test your code with different values for the variables.
 
 **Description**: Write a program that declares two variables, `num1` and `num2`, assigned with numbers. Perform addition, subtraction, multiplication, and division on these variables. Print the results of each operation.
 
-**Expected Output**: The sum, difference, product, and quotient of `num1` and `num2`.
+**Expected output**: The sum, difference, product, and quotient of `num1` and `num2`.
 
 <details>
   <summary>Solution</summary>
@@ -299,7 +299,7 @@ Also, test your code with different values for the variables.
 
 **Description**: Define two variables with numeric values. Use comparison operators (`==`, `!=`, `>`, `<`, `>=`, `<=`) to compare these values, and print the results of each comparison in a descriptive way.
 
-**Expected Output**: Statements indicating the result of each comparison between `a` and `b`.
+**Expected output**: Statements indicating the result of each comparison between `a` and `b`.
 
 <details>
   <summary>Solution</summary>
@@ -340,4 +340,4 @@ let goodVision = true;
 // Determine eligibility to drive and print the result
 ```
 
-**Expected Output**: A statement indicating whether the person meets the driving eligibility criteria.
+**Expected output**: A statement indicating whether the person meets the driving eligibility criteria.

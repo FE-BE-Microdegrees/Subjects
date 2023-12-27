@@ -305,7 +305,7 @@ if (number > 0) {
   console.log('The number is positive');
 }
 ```
-Expected output:
+**Expected output**:
 
 ```javascript
 The number is positive
@@ -333,7 +333,7 @@ if (number % 2 === 0) {
 }
 ```
 
-Expected output:
+**Expected output**:
 
 ```javascript
 The number is odd

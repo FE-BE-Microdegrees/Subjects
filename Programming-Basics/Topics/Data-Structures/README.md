@@ -46,7 +46,7 @@ const numbers = [1, 2, 3];
 
 console.log(numbers[0]);
 ```
-Expected output:
+**Expected output**:
 
 ```
 1
@@ -61,7 +61,7 @@ numbers[0] = 10;
 
 console.log(numbers);
 ```
-Expected output:
+**Expected output**:
 
 ```
 [10, 2, 3]
@@ -86,7 +86,7 @@ numbers.push(4);
 
 console.log(numbers);
 ```
-Expected output:
+**Expected output**:
 
 ```
 [1, 2, 3, 4]
@@ -102,7 +102,7 @@ const numbers = [1, 2, 3];
 
 console.log(numbers.indexOf(2));
 ```
-Expected output:
+**Expected output**:
 
 ```
 1
@@ -121,7 +121,7 @@ numbers.splice(1, 1);
 
 console.log(numbers);
 ```
-Expected output:
+**Expected output**:
 
 ```
 [1, 3]
@@ -144,7 +144,7 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(numbers[i]);
 }
 ```
-Expected output:
+**Expected output**:
 
 ```
 Monday
@@ -265,7 +265,7 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(sum);
 ```
-Expected output:
+**Expected output**:
 
 ```
 15
@@ -295,7 +295,7 @@ const car = {
 console.log(`I drive a ${car.year} ${car.make} ${car.model}.`);
 ```
 
-Expected output:
+**Expected output**:
 
 ```
 I drive a 2019 Toyota Corolla.
@@ -343,7 +343,7 @@ student.subject = 'Math';
 console.log(student);
 ```
 
-Expected output:
+**Expected output**:
 
 ```
 { name: 'John Doe', age: 17, grade: 10, subject: 'Math' }

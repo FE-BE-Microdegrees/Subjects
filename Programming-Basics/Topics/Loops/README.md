@@ -221,7 +221,7 @@ You can also test Your code with different values for the variables.
 
 Create a `for` loop that iterates over the numbers from `1` to `10` and prints them to the console.
 
-Expected output:
+**Expected output**:
 
 ```javascript
 1
@@ -259,7 +259,7 @@ Create a `for` loop that iterates over the numbers from `1` to `10` and prints o
 
 > Hint: Use the `%` operator to check if a number is even or odd.
 
-Expected output:
+**Expected output**:
 
 ```javascript
 2
@@ -286,7 +286,7 @@ for (let i = 1; i <= 10; i++) {
 
 Create multiplication table using nested `for` loops.
 
-Expected output:
+**Expected output**:
 
 ```javascript
 1 x 1 = 1

@@ -207,7 +207,7 @@ function greet(name) {
 greet('John');
 ```
 
-Expected output:
+**Expected output**:
 
 ```javascript
 Hello, John!
@@ -242,7 +242,7 @@ const area2 = calculateArea(2, 4);
 console.log(area2);
 ```
 
-Expected output:
+**Expected output**:
 
 ```javascript
 50
@@ -270,7 +270,7 @@ const evenNumbers = filterEvenNumbers(numbers);
 console.log(evenNumbers);
 ```
 
-Expected output:
+**Expected output**:
 
 ```javascript
 [2, 4, 6, 8]
