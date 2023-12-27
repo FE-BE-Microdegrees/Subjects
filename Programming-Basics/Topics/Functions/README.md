@@ -184,6 +184,94 @@ In this example we declared a function using arrow function syntax. We can see, 
 
 ## Exercises
 
-TODO
+Create a file named index.js (or another name of your choice) and start adding solutions to the exercises below.
 
+Test your code by running the index.js file using the node index.js command.
 
+Test your code with different values
+
+### Exercise 1 - Basic Function Definition and Call
+
+**Objective**: Write a function that prints a greeting message.
+
+**Description**: Define a function named greet that takes a name as an argument and prints "Hello, [name]!". Call this function with a name.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet('John');
+```
+
+Expected output:
+
+```javascript
+Hello, John!
+```
+![Function](function.gif)
+
+</details>
+
+### Exercise 2 - Function with Return Value
+
+**Objective**: Create a function that calculates and returns the area of a rectangle.
+
+**Description**: Write a function named `calculateArea` that takes the `length` and `width` of a rectangle as arguments and returns its area. Call this function with different sets of values and print the results.
+
+> Hint: You can give multiple arguments to a function by separating them with commas.
+> 
+> Hint: The area of a rectangle is calculated by multiplying its length by its width.
+
+<details>
+  <summary>Solution</summary>
+
+```javascript
+function calculateArea(length, width) {
+  const area = length * width;
+  return area;
+}
+
+const area1 = calculateArea(5, 10);
+console.log(area1);
+
+const area2 = calculateArea(2, 4);
+console.log(area2);
+```
+
+Expected output:
+
+```javascript
+50
+8
+```
+</details>
+
+### Exercise 3 - Function Manipulating Array Data
+
+**Objective**: Write a function that filters even numbers from an array and returns a new array.
+
+**Description**: Define a function named `filterEvenNumbers` that takes an array of numbers as an argument. This function should return a new array containing only the even numbers from the original array.
+
+> Hint: You can use the modulus operator (%) to check if a number is even or odd. If a number is even, the result of the modulus operation will be 0. If a number is odd, the result of the modulus operation will be 1.
+>
+> Hint: You can use the push() method to add an element to the end of an array.
+
+**Example**:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const evenNumbers = filterEvenNumbers(numbers);
+
+console.log(evenNumbers);
+```
+
+Expected output:
+
+```javascript
+[2, 4, 6, 8]
+```
