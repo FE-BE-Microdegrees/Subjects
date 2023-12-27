@@ -133,3 +133,33 @@ flowchart TD
 
 ```
 
+## Exercises
+
+Create a flowchart or write pseudocode for the following algorithms:
+
+### Exercise 1
+
+Write an algorithm that takes two numbers as input and prints the sum of the two numbers.
+
+<details>
+<summary>Solution</summary>
+
+```mermaid
+flowchart TD
+    A[Start] --> B{{Input number1}}
+    B --> C{{Input number2}}
+    C --> D[sum = number1 + number2]
+    D --> E[Print sum]
+    E --> F[End]
+```
+</details>
+
+### Exercise 2
+
+Write an algorithm that takes two numbers as input and prints the larger of the two numbers.
+
+### Exercise 3
+
+Write an algorithm that takes three numbers as input and prints the average of the three numbers.
+
+
