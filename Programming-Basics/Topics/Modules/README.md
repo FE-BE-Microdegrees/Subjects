@@ -118,3 +118,58 @@ Test your code by running the `index.js` file using the `node index.js` command.
   ```
 ![Modules](modules.gif)
 </details>
+
+### Exercise 2 - Export Multiple Functions
+
+**Objective**: Export multiple functions from a module.
+
+**Description**: Create two files, `greetings.js` and `index.js`. In `greetings.js`, define two functions, one that prints "Hello, World!" to the console and one that takes a name as an argument and prints "Hello, [name]!" to the console. Export both functions. In `index.js`, import `greetings.js` and call the imported functions.
+
+> Hint: You can export multiple functions by using the `module.exports` keyword followed by an object containing the functions that you want to export.
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // greetings.js
+  function sayHello() {
+    console.log('Hello, World!');
+  }
+
+  function sayHelloTo(name) {
+    console.log(`Hello, ${name}!`);
+  }
+
+  module.exports = { sayHello, sayHelloTo };
+  ```
+
+  ```javascript
+  // index.js
+  const { sayHello, sayHelloTo } = require('./greetings');
+
+  sayHello();
+  sayHelloTo('John');
+  ```
+</details>
+
+### Exercise 3 - Exporting an Object
+
+**Objective**: Export an object containing multiple methods.
+
+**Description**: Create a file `utils.js` with an object that has two methods: `square` (returns the square of a number) and `cube` (returns the cube of a number). Export this object. In `index.js`, import this object and call its methods.
+
+> Hint: You can add functions to an object using the following syntax:
+> ```javascript
+> const myObject = {
+>   myFunction() {
+>     // function body
+>   }
+> }
+> ```
+>
+> Hint: You can call a function from an object using the following syntax:
+> ```javascript
+> myObject.myFunction();
+> ```
+
+
