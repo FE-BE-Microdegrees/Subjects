@@ -81,3 +81,40 @@ In next example, we create a new file named `index.js`, create a `calculate.js` 
 ![Using Module](UsingModule.gif)
 
 [Click here to download the video](UsingModule.mp4)
+
+## Exercises
+
+Create a files as described in the exercises below.
+
+Test your code by running the `index.js` file using the `node index.js` command.
+
+### Exercise 1 - Basic Export and Require
+
+**Objective**: Create a basic module and import it.
+
+**Description**: Create two files, `greetings.js` and `index.js`. In `greetings.js`, define a function that prints "Hello, World!" to the console. Export this function. In `index.js`, import `greetings.js` and call the imported function.
+
+> Hint: Don't forget to use the `module.exports` keyword to export the function.
+>
+> Hint: Use the `require` keyword to import the function.
+
+<details>
+  <summary>Solution</summary>
+
+  ```javascript
+  // greetings.js
+  function sayHello() {
+    console.log('Hello, World!');
+  }
+
+  module.exports = sayHello;
+  ```
+
+  ```javascript
+  // index.js
+  const sayHello = require('./greetings');
+
+  sayHello();
+  ```
+![Modules](modules.gif)
+</details>
