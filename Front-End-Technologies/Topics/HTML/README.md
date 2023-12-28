@@ -1,14 +1,23 @@
 # Hyper Text Markup Language (HTML)
 
-- HTML Basics
-- HTML Tags
-- HTML Elements
-- Nested HTML Elements
-- HTML Attributes
-- HTML Document Structure
-- HTML Document Metadata
-- How to write HTML?
-- How to run HTML?
+In this topic, we'll learn about Hyper Text Markup Language (HTML).
+
+- [Hyper Text Markup Language (HTML)](#hyper-text-markup-language-html)
+  - [Learning Outcomes](#learning-outcomes)
+  - [HTML Basics](#html-basics)
+  - [HTML Tags](#html-tags)
+  - [HTML Elements](#html-elements)
+  - [Nested HTML Elements](#nested-html-elements)
+  - [HTML Attributes](#html-attributes)
+  - [HTML Document Structure](#html-document-structure)
+  - [HTML Document Metadata](#html-document-metadata)
+  - [How to write HTML?](#how-to-write-html)
+  - [How to run HTML?](#how-to-run-html)
+  - [Exercises](#exercises)
+    - [Exercise 1 - Basic HTML Page Structure](#exercise-1---basic-html-page-structure)
+    - [Exercise 2 - HTML Lists](#exercise-2---html-lists)
+    - [Exercise 3 - HTML Table and Links](#exercise-3---html-table-and-links)
+
 
 ## Learning Outcomes
 
