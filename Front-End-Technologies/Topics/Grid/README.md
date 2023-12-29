@@ -337,6 +337,7 @@ Try to solve exercises without looking at the solutions. If you get stuck, you c
   background-color: #bbb;
 }
 ```
+![Exercise 1 solution](CSSExercise.gif)
 
 </details>
 
