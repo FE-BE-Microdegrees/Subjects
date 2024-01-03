@@ -1,5 +1,7 @@
 # .gitignore
 
+In this topic, we'll learn about the `.gitignore` file, what it is, and why it's important. We'll also learn how to use it to exclude files from version control.
+
 - [.gitignore](#gitignore)
   - [Learing Outcomes](#learing-outcomes)
   - [What is `.gitignore`?](#what-is-gitignore)
@@ -10,7 +12,7 @@
     - [Explanation:](#explanation)
     - [What to Put into `.gitignore`:](#what-to-put-into-gitignore)
     - [What Not to Put into `.gitignore`:](#what-not-to-put-into-gitignore)
-  - [Excercises and Assignments](#excercises-and-assignments)
+  - [Excercises](#excercises)
 
 ## Learing Outcomes
 
@@ -27,31 +29,24 @@ After completing this topic, you'll be able to:
 ## Why Should We Use `.gitignore`?
 
 - **Clean Repository:** Keeps the repository clean by not including files that aren't necessary for the project to function.
-
 - **Reduce Clutter:** Reduces the clutter in commit histories by excluding files that change often but don't need to be versioned (e.g., logs).
-
 - **Improve Efficiency:** Reduces the size of the repository, which can make cloning, fetching, and pulling faster.
-
 - **Security:** Prevents accidentally committing sensitive information, such as passwords, API keys, or secrets.
-
 - **Consistency:** Ensures that all developers working on a project are not accidentally committing files that should be ignored.
 
 ## How to Use `.gitignore`:
 
 1. **Create the File:** If it doesn't exist, create a file named `.gitignore` in the root directory of your repository.
-
 2. **Specify Patterns:** Each line in the `.gitignore` file specifies a pattern. For example:
    - `*.log` ignores all files with a `.log` extension.
    - `node_modules/` ignores the entire `node_modules` directory.
    - `config.env` would ignore a file named `config.env`.
-
 3. **Comments:** You can include comments in `.gitignore` by starting a line with `#`.
 
    ```
    # This is a comment
    *.tmp
    ```
-
 4. **Negate Patterns:** If you want to track a file that matches one of your ignore patterns, you can negate the pattern by prefixing it with `!`.
 
    ```
@@ -60,23 +55,17 @@ After completing this topic, you'll be able to:
    ```
 
    In this example, all `.log` files would be ignored, except for `important.log`.
-
 5. **Glob Patterns:** The `.gitignore` file supports glob patterns, which offer more flexibility in specifying which files to ignore:
    - `**` matches multiple directory levels. For instance, `**/logs` matches any `logs` directory in the repo.
    - `?` matches a single character.
-
 6. **Using Templates:** Many programming languages and frameworks have common patterns of files to ignore. There are templates available (like on [gitignore.io](https://www.gitignore.io/)) to get you started based on the type of project you're working on.
-
 7. **Checking Ignored Files:** If you want to see which files in your repository are being ignored because of the `.gitignore` patterns, you can use the command `git status --ignored`.
-
 8. **Commit `.gitignore`:** Don't forget to add and commit your `.gitignore` file to the repository so that other collaborators will have the same set of ignored files.
-
 9. **Global `.gitignore`:** If you have files that you want to ignore across all repositories on your system (e.g., editor backup files), you can set up a global `.gitignore` file. Use `git config --global core.excludesfile ~/.gitignore_global` and then add your patterns to the `~/.gitignore_global` file.
 
 ## Caveats:
 
 - If a file was already tracked by Git before it was added to `.gitignore`, it won't be automatically ignored. You would need to manually untrack it using `git rm --cached <filename>`.
-  
 - Make sure you thoroughly understand the patterns you're adding to `.gitignore` to avoid accidentally ignoring important files.
 
 In summary, the `.gitignore` file is an essential tool for maintaining a clean and efficient Git repository. It ensures that unwanted files are excluded from version control, providing both security and efficiency benefits.
@@ -135,23 +124,15 @@ node_modules/
 ### Explanation:
 
 - **Logs:** It's common to ignore log files and directories as they often contain runtime data that doesn't need to be versioned.
-
 - **Runtime Data:** Similarly, any generated PID or seed files should be excluded.
-
 - **Test Coverage Data:** Directories like `lib-cov`, `coverage`, and `.nyc_output` often store test coverage data and should be excluded.
-
 - **`node_modules/`:** This is a crucial one for Node.js projects. When you install third-party packages via npm or Yarn, they're stored in this directory. You should exclude `node_modules/` because:
    - It can be large, making cloning and fetching slow.
    - Dependencies can be installed on a per-environment basis. This ensures that when another developer or a CI/CD pipeline clones the repo, they can install the exact versions specified in your `package-lock.json` or `yarn.lock` by running `npm install` or `yarn`.
-
 - **IDE Settings:** Directories like `.idea/` (for JetBrains IDEs) and `.vscode/` (for Visual Studio Code) can contain user-specific IDE settings. They should be ignored to prevent overriding another developer's setup.
-
 - **Environment Variables:** Files like `.env` often contain sensitive or environment-specific values. They should be ignored to prevent leaking secrets and to allow different developers or environments to maintain their configurations.
-
 - **Mac-Specific:** `.DS_Store` is a system file generated by Mac OS.
-
 - **Cache Files:** `.npm` and `.eslintcache` are cache directories/files that don't need to be versioned.
-
 - **REPL History:** `.node_repl_history` is the history file when using the Node REPL.
 
 ### What to Put into `.gitignore`:
@@ -172,5 +153,13 @@ node_modules/
   
 Remember, the goal of the `.gitignore` file is to keep your repository clean by excluding files and directories that don't provide value in version control. It also helps in preventing accidental commits of sensitive data or user-specific settings.
 
-## Excercises and Assignments
+## Excercises
 
+Try to explain in your own words what `.gitignore` is and why it's important.
+
+Next, try to complete the following tasks:
+- Create a `.gitignore` file in your repository.
+- Add `draft.md` to `.gitignore`.
+- Commit the `.gitignore` file to your repository.
+- Create a new file named `draft.md` and add some content to it.
+- Check if `draft.md` is being ignored by Git (try to commit it).

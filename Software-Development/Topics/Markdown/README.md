@@ -20,7 +20,7 @@
     - [Horizontal Rule:](#horizontal-rule)
     - [Tables:](#tables)
     - [Task Lists:](#task-lists)
-  - [Excercises and Assignments](#excercises-and-assignments)
+  - [Excercises](#excercises)
 
 ## Learning Outcomes
 
@@ -213,5 +213,9 @@ Remember, different platforms or flavors of Markdown might have additional featu
 
 Read more from [Markdown Guide](https://www.markdownguide.org/).
 
-## Excercises and Assignments
+## Excercises
 
+- Create `README.md` file into your repository and write a short introduction about yourself using Markdown syntax.
+- Make sure to use at least 3 different Markdown syntaxes (e.g. headings, lists, links, images, etc.).
+- Commit and push your changes to your repository.
+- Check your repository on GitHub and make sure that your `README.md` file is rendered properly.
