@@ -10,6 +10,7 @@ In this topic, we'll learn about Structured Query Language (SQL).
   - [Disadvantages of SQL](#disadvantages-of-sql)
   - [How to run SQL?](#how-to-run-sql)
 
+
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
@@ -37,3 +38,12 @@ TODO
 
 We can run SQL in a database management system (DBMS). A DBMS is a software application that is used to manage data in a database. There are many different DBMSs available, including `MySQL`, `PostgreSQL`, `Oracle`, `Microsoft SQL Server`, and `SQLite`. We can use any of these DBMSs to run SQL.
 
+In this course we'll use `MySQL` as our DBMS. MySQL is an open-source relational database management system (RDBMS) that is developed by Oracle Corporation. It is one of the most popular RDBMSs in the world. It is used by many companies, including `Facebook`, `Twitter`, and `Google`.
+
+There are many different ways to run SQL in MySQL. For example, we can use:
+- MySQL command-line client;
+- MySQL Workbench;
+- MySQL Connector/ODBC;
+- etc.
+
+During this course, we'll use MySQL Workbench to run SQL. MySQL Workbench is a graphical user interface (GUI) tool that is used to manage MySQL databases. It is available for Windows, Mac, and Linux.

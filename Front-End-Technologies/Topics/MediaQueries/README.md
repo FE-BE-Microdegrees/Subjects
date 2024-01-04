@@ -1,4 +1,4 @@
-# React
+# Media Queries
 
 ## Learning Outcomes
 

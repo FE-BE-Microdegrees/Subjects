@@ -1,4 +1,4 @@
-# React
+# Events and Event Handling
 
 ## Learning Outcomes
 
