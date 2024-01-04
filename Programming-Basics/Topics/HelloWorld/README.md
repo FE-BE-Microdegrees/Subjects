@@ -7,6 +7,7 @@ In this topic, we'll learn about Hello World in Javascript.
   - [What is Hello World?](#what-is-hello-world)
   - [How to Write Hello World in Javascript?](#how-to-write-hello-world-in-javascript)
   - [How to Run Hello World in Javascript?](#how-to-run-hello-world-in-javascript)
+  - [Excercises](#excercises)
 
 ## Learning Outcomes
 
@@ -39,3 +40,14 @@ We can save the file as `helloWorld.js` and run it using Node JS.
 In order to run Hello World in Javascript, we need to open a terminal and type `node helloWorld.js` in the terminal, where `helloWorld.js` is the name of the file that contains the Hello World program.
 
 ![Running Hello World](RunningHelloWorld.gif)
+
+## Excercises
+
+Write a program that prints the words "Hello World" to the screen.
+
+Run the program using Node JS.
+
+> **Hint:** You can use the `console.log()` function to print a message to the console.
+>
+> **Hint:** You can use the `node fileName.js` command to run a Javascript file.
+> 
