@@ -21,13 +21,14 @@ By the end of the course, students should be well-equipped to translate real-wor
 
 ## Topics
 - [Tools](./Topics/Tools/README.md)
-- [Software and Software Development](TODO)
+- [Software and Software Development](./Topics/Software/README.md)
 - [Version Control](./Topics/Version-Control/README.md)
 - [Git](./Topics/Git/README.md)
   - [.gitignore](./Topics/Gitignore/README.md)
 - [Github](./Topics/Github/README.md)
   - [Markdown](./Topics/Markdown/README.md)
   - [Git and Github Best Practices](./Topics/Git-Best-Practices/README.md)
+  - [Github Issue](./Topics/Github-Issue/README.md)
 - [Project management](./Topics/Project-Management/README.md)
 - [Software Development Life Cycle](./Topics/SDLC/README.md)
 - [Roles in Software development](./Topics/Roles/README.md)
@@ -39,5 +40,5 @@ By the end of the course, students should be well-equipped to translate real-wor
   - [User Journeys](./Topics/User-Journeys/README.md)
   - [User Flows](./Topics/User-Flows/README.md)
 - [Documentation](./Topics/Documentation/README.md)
-- [Prototype](./Topics/Prototype/README.md)
+- [Prototyping](./Topics/Prototyping/README.md)
 - [Testing](./Topics/Testing/README.md)
