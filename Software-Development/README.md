@@ -24,7 +24,7 @@ By the end of the course, students should be well-equipped to translate real-wor
 
 ## Topics
 - [Tools](./Topics/Tools/README.md)
-- [Programming](./Topics/Programming/README.md)
+- [Software and Software Development](TODO)
 - [Version Control](./Topics/Version-Control/README.md)
 - [Git](./Topics/Git/README.md)
   - [.gitignore](./Topics/Gitignore/README.md)
@@ -35,6 +35,12 @@ By the end of the course, students should be well-equipped to translate real-wor
 - [Software Development Life Cycle](./Topics/SDLC/README.md)
 - [Roles in Software development](./Topics/Roles/README.md)
 - [Software Development Methods](./Topics/SDLC/README.md#common-sdlc-models)
+- [User Research](./Topics/User-Research/README.md)
+  - [Requirements](./Topics/Requirements/README.md)
+  - [User Stories](./Topics/User-Stories/README.md)
+  - [Personas](./Topics/Personas/README.md)
+  - [User Journeys](./Topics/User-Journeys/README.md)
+  - [User Flows](./Topics/User-Flows/README.md)
 - [Documentation](./Topics/Documentation/README.md)
+- [Prototype](./Topics/Prototype/README.md)
 - [Testing](./Topics/Testing/README.md)
-- Networking (could be separate subject?)
