@@ -13,13 +13,10 @@ By the end of the course, students should be well-equipped to translate real-wor
 - **Software Development Lifecycle (SDLC) Understanding**: Describe the stages of the software development lifecycle, including requirements gathering, design, implementation, testing, deployment, and maintenance.
 - **Development Methodologies**: Understand and differentiate between various software development methodologies such as *Waterfall*, *Agile*, and *Scrum*, and determine when each is appropriate.
 - **Requirements Analysis**: Extract and document clear, complete, and actionable software requirements from stakeholder communications.
-- **Software Design Principles**: Apply fundamental software design principles and patterns to create modular, scalable, and maintainable software solutions.
 - **Coding Standards**: Write clean, maintainable, and well-documented code adhering to industry standards and best practices.
 - **Testing and Quality Assurance**: Implement various testing strategies, such as unit testing, integration testing, and system testing, to validate software functionality and robustness.
 - **Version Control**: Use version control systems, like Git, effectively to manage codebase changes, collaborate with other developers, and maintain a history of project developments.
 - **Collaborative Development**: Work effectively in team-based development environments, understanding the roles, responsibilities, and best practices of team software development.
-- **Deployment and Continuous Integration**: Understand and utilize continuous integration/continuous deployment (CI/CD) pipelines to automate the testing and deployment of software changes.
-- **Software Security**: Apply basic security principles in software design and development to prevent common vulnerabilities, such as SQL injection or cross-site scripting attacks.
 - **User-Centered Design**: Develop software with the end-user in mind, emphasizing usability, accessibility, and user experience.
 
 ## Topics
