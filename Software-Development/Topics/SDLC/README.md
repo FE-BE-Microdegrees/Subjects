@@ -45,51 +45,38 @@ graph TD
 The Software Development Life Cycle (SDLC) is a structured process that defines the phases or steps involved in producing software. While there are different models or frameworks for SDLC, many share common phases. Here's an overview of the typical steps involved:
 
 1. **Planning:**
-
    - Determine the scope of the project.
    - Identify potential risks, constraints, and resources.
    - Develop a project plan, including timelines, milestones, and budget estimates.
-
+   - User research to understand user needs and expectations.
 2. **Requirement Analysis:**
-
-   - Gather and document the needs and specifications from stakeholders.
+   - Gather and document the needs and specifications from stakeholders (*end-users, clients, etc.*).
    - Analyze the feasibility of requirements.
    - Prioritize and finalize the list of requirements.
-
 3. **System Design:**
-
    - Translate requirements into system specifications.
    - Design the system architecture and framework.
    - Create high-level and detailed design documents.
    - Select appropriate technologies, platforms, and tools.
-
 4. **Implementation/Development:**
-
    - Write the actual code for the software.
    - Translate design documentation into functional software.
    - Integrate various components and ensure they work together.
-
 5. **Testing:**
-
    - Verify that the software meets the requirements.
    - Identify and fix bugs, errors, and inconsistencies.
    - Use various testing methods like unit testing, integration testing, system testing, acceptance testing, etc.
    - Validate the software's functionality, performance, security, and usability.
-
 6. **Deployment:**
-
    - Prepare the environment for the software's launch.
    - Install and configure the software in the production environment.
    - Provide necessary training to end-users if required.
    - Monitor the software's performance and ensure smooth operation.
-
 7. **Maintenance and Support:**
-
    - Address any issues or bugs that arise post-deployment.
    - Provide updates, patches, or enhancements based on user feedback.
    - Ensure the software remains operational, efficient, and relevant over time.
    - Address any security vulnerabilities or compatibility issues that may arise.
-
 8. **Review and Feedback:**
    - Gather feedback from stakeholders and end-users.
    - Analyze the software's performance and identify areas for improvement.
