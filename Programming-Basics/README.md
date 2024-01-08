@@ -35,3 +35,102 @@ By the end of the course, students should have a clear understanding of the logi
 - [Data Structures](./Topics/Data-Structures/README.md)
 - [Modules](./Topics/Modules/README.md)
 - [NPM](./Topics/NPM/README.md)
+
+## Lectures
+
+### Lecture 1: Introduction to Programming Basics
+
+Volume: 4h
+
+- Introduction to subject
+- Tools
+- Javascript
+- Node
+- Hello World
+- Algorithms
+- Variables
+- Data Types
+- Uploading Code to Github
+- Exercises
+
+### Lecture 2 (Zoom):
+
+Volume: 2h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Uploading Code to Github
+- Exercises
+
+### Lecture 3:
+
+Volume: 4h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Operators and Expressions
+- Exercises
+
+### Lecture 4 (Zoom): 
+
+Volume: 2h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Exercises
+
+
+### Lecture 5: 
+
+Volume: 4h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Debugging
+- Conditionals
+- Exercises
+
+### Lecture 6 (Zoom):
+
+Volume: 2h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Exercises
+
+### Lecture 7: 
+
+Volume: 4h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Loops
+- Functions
+- Exercises
+
+### Lecture 8 (Zoom):
+
+Volume: 2h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Exercises
+
+### Lecture 9: 
+
+Volume: 4h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- Data Structures
+- Modules
+- Exercises
+
+### Lecture 10 (Zoom):
+
+Volume: 2h
+
+- Recall of previous lecture
+- Solving problems that arose during the homework
+- NPM
+- Final Q&A
