@@ -4,7 +4,7 @@
 
 ## Description
 
-- **Volume**: 6 ECTS (6 x 26 hours)
+- **Volume**: 4 ECTS (4 x 26 hours)
 - **Subject Aims**: The aim of the "Back-end Frameworks" subject is to cultivate students' abilities to use modern back-end frameworks for the development of robust, scalable, and secure server-side applications.
 
 By the end of the course, students should be adept at the principles of server architecture, API development, database integration, and the broader ecosystem associated with contemporary back-end development.

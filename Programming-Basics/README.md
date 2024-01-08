@@ -4,7 +4,7 @@
 
 **"Programming Basics"** serves as an entry point into the world of computer programming. Designed for beginners, this subject covers the fundamental concepts every budding programmer must know. Students will learn about variables, data types, control structures, loops, functions, and basic algorithm development. Through hands-on exercises and projects, students will write and debug their first lines of code, paving the way for more advanced studies in software development and computer science. No prior programming experience is required, making this the ideal starting point for anyone curious about the art and science of programming.
 
-- **Volume**: 6 ECTS (6 x 26 hours)
+- **Volume**: 4 ECTS (4 x 26 hours)
 - **Subject Aims**: The aim of the **"Programming Basics"** subject is to introduce students to the foundational concepts and principles of computer programming.
 By the end of the course, students should have a clear understanding of the logical structure of programming, be familiar with basic coding syntax, and be capable of writing simple programs to solve computational problems.
 

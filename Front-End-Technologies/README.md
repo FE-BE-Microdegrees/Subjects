@@ -3,7 +3,7 @@
 **"Front-end Technologies"** provides an immersive exploration into the tools, techniques, and best practices that drive today's web interfaces. This subject introduces students to the trinity of web development: HTML for content structure, CSS for styling and layout, and JavaScript for interactivity and dynamic behavior. With a blend of theory and hands-on practice, students will undertake projects that challenge them to design and code web pages and applications that are both visually appealing and functionally robust. This course serves as a gateway to the fast-evolving domain of web development and user experience design.
 ## Description
 
-- **Volume**: 6 ECTS (6 x 26 hours)
+- **Volume**: 4 ECTS (4 x 26 hours)
 - **Subject Aims**: The aim of the "Front-end Technologies" subject is to equip students with the skills and knowledge required to design and develop interactive, user-friendly, and responsive web interfaces.
 
 By the end of the course, students should be proficient in key front-end technologies, understand the principles of web design, and be capable of creating modern web interfaces that cater to diverse user needs and devices.

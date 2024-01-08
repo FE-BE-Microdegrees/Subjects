@@ -4,7 +4,7 @@
 
 ## Description
 
-- **Volume**: 6 ECTS (6 x 26 hours)
+- **Volume**: 4 ECTS (4 x 26 hours)
 - **Subject Aims**: The aim of the "Front-end Frameworks" subject is to empower students with the expertise needed to harness modern front-end frameworks for the development of dynamic, efficient, and user-centric web applications.
 
 By the end of the course, students should be proficient in the principles of component-based architecture, state management, and the broader ecosystem of tools and extensions associated with contemporary front-end development.
