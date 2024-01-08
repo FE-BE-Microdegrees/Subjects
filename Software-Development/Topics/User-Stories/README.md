@@ -4,6 +4,11 @@ In this topic we'll discuss the concept of user stories - what they are, why the
 
 ## Learning Outcomes
 
+By the end of this topic you should be able to:
+- Define user stories and explain their importance in software development.
+- Write user stories for a given software project.
+- Prioritize user stories using the MoSCoW method.
+
 
 ## What is a User Story?
 
@@ -80,6 +85,4 @@ Now it is easy to convert these user stories into tasks and plan the project acc
 ## Exercises
 
 ### Exercise 1
-
-
 
