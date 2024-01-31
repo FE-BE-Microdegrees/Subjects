@@ -18,6 +18,14 @@ By the end of the course, students should have a clear understanding of the logi
 - **Problem-solving Skills**: Analyze simple problems and devise computational solutions through algorithmic thinking.
 - **Basic Input/Output**: Implement basic input and output operations to interact with users or to read from and write to files.
 
+## Learning Instructions
+
+We will be using Github to share the learning materials and to submit the homework.
+
+Students should follow the order of the topics and lectures. Each topic has a `README` file with the learning materials and exercises. The exercises should be solved and uploaded to Github. The homework should be submitted before the next lecture.
+
+Learning materials for the next lecture should be studied before the lecture (exept for the first lecture). In the lectures we will discuss about the topics and solve exercises regarding the studied topics.
+
 ## Topics
 - [Introduction](./Topics/Introduction/README.md)
 - [Tools](./Topics/Tools/README.md)
