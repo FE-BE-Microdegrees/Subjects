@@ -25,15 +25,34 @@ To start with Software Development, we need to understand what is software. Soft
 
 We can classify software into two main categories:
 
-- **System Software:** System software is software that manages and controls the hardware components of a computer system. It includes operating systems, device drivers, utilities, and other tools that help manage the computer system. System software is essential for the computer to function properly. Examples of system software include **Windows**, **macOS**, **Linux**, **Android**, and **iOS**.
+- **System Software:** System software is software that manages and controls the hardware components of a computer system. It includes operating systems, device drivers, utilities, and other tools that help manage the computer system. System software is essential for the computer to function properly. Examples of system software include
+  - **Windows**
+  - **macOS**
+  - **Linux**
+  - **Android**
+  - **iOS**
 
-- **Application Software:** Application software is software that performs a specific task or set of tasks. It includes programs such as word processors, spreadsheets, web browsers, and games. Application software is what most people think of when they think of software. Examples of application software include **Microsoft Word**, **Google Chrome**, **Adobe Photoshop**, and **Minecraft**.
+- **Application Software:** Application software is software that performs a specific task or set of tasks. It includes programs such as word processors, spreadsheets, web browsers, and games. Application software is what most people think of when they think of software. Examples of application software include
+  - **Microsoft Word**
+  - **Google Chrome**
+  - **Adobe Photoshop**
+  - **Minecraft**
+    
+ Additionally, various web applications, mobile applications, and other specific software solutions created for specific tasks can also be considered as application software.
 
 ## Open Source Software vs Proprietary Software
 
 Software can also be classified as open source or proprietary. Open source software is software that is freely available and can be modified and redistributed by anyone. Proprietary software is software that is owned by a company or individual and cannot be modified or redistributed without permission.
 
-Examples of open source software include **Linux**, **Firefox**, and **WordPress**. Examples of proprietary software include **Microsoft Windows**, **Adobe Photoshop**, and **Apple iOS**.
+Examples of open source software include 
+- **Linux**
+- **Firefox**
+- **WordPress**
+
+ Examples of proprietary software include 
+ - **Microsoft Windows**
+ - **Adobe Photoshop**
+ -  **Apple iOS**.
 
 |                         | Open Source Software                                            | Proprietary Software |
 |-------------------------|-----------------------------------------------------------------|----------------------|
@@ -50,16 +69,31 @@ In conclusion, open source and proprietary software have their own advantages an
 
 Software is created by software developers. Software developers are people who write code to create software. They are also known as programmers or coders. Software developers use programming languages to write code. Programming languages are formal languages that can be translated into machine code (i.e., binary) and executed by a computer.
 
-There are many different programming languages, and each has its own strengths and weaknesses. Some of them are considered easier to learn than others, while some are more powerful and flexible. Some of the most popular programming languages include **JavaScript**, **Python**, **C#**, **Java**, **C**, and **C++**.
+There are many different programming languages, and each has its own strengths and weaknesses. Some of them are considered easier to learn than others, while some are more powerful and flexible. Some of the most popular programming languages include 
+- [**JavaScript**](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [**Python**](https://www.python.org/)
+- [**C#**](https://dotnet.microsoft.com/en-us/languages/csharp)
+- [**Java**](https://www.w3schools.com/java/java_intro.asp)
+- [**C**](https://www.w3schools.com/c/c_intro.php?external_link=true)
+- [**C++**](https://www.w3schools.com/cpp/cpp_intro.asp)
+- etc.
 
 It is important to note that a choice of programming language is not always a matter of personal preference. Some programming languages are better suited for certain tasks than others. For example, JavaScript is a popular programming language for web development, while Python is a popular programming language for data science and machine learning. It could also depend on the type of hardware or operating system that the software will run on.
 
 ## What is Software Development?
 
-Software Development is the process of creating software. It involves analyzing user needs, designing software solutions, writing code, testing software, and deploying software. Software development is a complex process that requires a lot of planning and coordination. It is typically done by a team of software developers, each with their own area of expertise.
+First and foremost, it's important to note that software development is not synonymous with programming. While software development involves writing code, it is much more than just writing code.
 
-In this subject, we will focus on the basics of software development, including the software development life cycle, requirement analysis, and user research.
+Software development is the process of creating software. It includes:
 
+- analyzing user needs;
+- designing software solutions;
+- writing code;
+- testing software;
+- deploying software
+- etc.
+  
+Software development is a complex process that requires a lot of planning and coordination. It typically takes place in a team of software developers, where each member has a specific role.
 ## Exercises
 
 - Discussion about software and software development.
