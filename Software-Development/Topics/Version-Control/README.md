@@ -21,6 +21,28 @@ After completing this topic, you'll be able to:
 
 ## What is Version Control?
 
+Writing alone in a document and making changes might not necessitate tracking when and what changes were made. However, working with others who make changes to the same document can become crucial. Especially if the document is passed back and forth and could be modified by many different people. How do we know **what the latest version is?** How do we know **who made the last change?** How do we know **what was changed?** Applications often consist of many files, and changes to the code can be very complex. Keeping an overview of changes and history in those files is crucial for ensuring the software's quality and stability.
+
+Searching the internet for version control often finds a similar image that visualizes the history and changes of code:
+
+```mermaid
+gitGraph
+  commit id: "Create project"
+  commit id: "Project base"
+  branch nice_feature_branch
+  checkout nice_feature_branch
+  commit id: "Add frontend boilerplate"
+  checkout nice_feature_branch
+  commit id: "Connect frontend with API"
+  checkout nice_feature_branch
+  commit id: "Add frontend tests"
+  checkout main
+  merge nice_feature_branch id: "Basic frontend" tag: "Version 1.0"
+  commit id: "Create documentation"
+  checkout main
+  commit id: "Update documentation"
+```
+
 **Version Control**, also known as **Source Code Management** (*SCM*), is a system that tracks and manages changes to files, directories, and codebases over time. It allows multiple people to work on a single project without conflicting with one another and maintains a history of every modification.
 
 Nowadays, version control is an essential part of the software development process. It is used by developers to collaborate on projects, track changes, and maintain a history of their work. It is also used by companies to manage their codebases and ensure that changes are made in a controlled and secure manner.
@@ -40,7 +62,7 @@ Version control is important for a number of reasons:
 - **Accountability**: With a proper log of who made what changes and when, there's a clear record of accountability. This is especially useful in team settings to understand contributions and to ensure that code changes can be tracked to specific individuals.
 - **Parallel Development**: Version control systems allow for the possibility of parallel development, where multiple versions of a software application can be developed concurrently.
 
-In a nutshell, version control is foundational in modern software development practices. It ensures smooth collaboration, provides safety nets for errors, and maintains a clear and audit-able record of how a software project evolves over time. Whether you're a solo developer or part of a large team, using version control is essential.
+In summary, version control is a cornerstone of modern software development practices. It ensures smoother collaboration, provides safety nets for mistakes, and maintains a clear and auditable record of how a software project evolves over time. Whether you are a solo developer or part of a large team, using version control is essential today.
 
 ## Brief History of Version Control
 
@@ -132,3 +154,6 @@ Next, let's delve into an overview and comparison of Centralized and Distributed
 In summary, while both CVCS and DVCS have their own strengths and weaknesses, the choice largely depends on the project's requirements, team size, and preferred workflow. However, it's worth noting that DVCS, especially Git, has seen widespread adoption in recent years due to its flexibility and the collaborative features offered by platforms like GitHub and GitLab.
 
 ## Exercises and Assignments
+- Provide examples from everyday life that illustrate version control.
+- Describe in your own words the difference between centralized and distributed version control systems.
+- Consider some advantages and disadvantages you might experience using centralized and distributed version control systems.
