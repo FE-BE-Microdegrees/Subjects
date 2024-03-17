@@ -23,17 +23,34 @@ After completing this topic, you'll be able to:
 
 ## Code Editor
 
-A code editor is a program that is used to write and edit source code. There are many different code editors available, but the most popular ones are** Visual Studio Code**, **Sublime Text**, **Atom**, etc. Technically, we could write code using regular text editors, but code editors have many features that make it easier to write code, such as syntax highlighting, code completion, and code folding.
+A code editor is a program that is used to write and edit source code. There are many different code editors available, but the most popular ones are:
+- Visual Studio Code
+- Sublime Text
+- Atom
+- etc.
+
+Technically, we could write code using regular text editors, but code editors have many features that make it easier to write code, such as syntax highlighting, code completion, and code folding.
 
 During this course, we'll be using [Visual Studio Code](https://code.visualstudio.com/) as our code editor, but everyone can use whichever code editor they prefer. Visual Studio Code is a free and open-source code editor that is developed by Microsoft. It is available for Windows, Mac, and Linux and it has many features that make it a great choice for beginners.
 
 ## Browser
 
-A browser is a program that is used to view web pages. There are many different browsers available, but the most popular ones are Google Chrome, Mozilla Firefox, and Microsoft Edge. During this course, we'll be using [Google Chrome](https://www.google.com/chrome/) as our browser, but again, everyone can use whichever browser they prefer.
+A browser is a program that is used to view web pages. There are many different browsers available, but the most popular ones are: 
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+During this course, we'll be using [Google Chrome](https://www.google.com/chrome/) as our browser, but again, everyone can use whichever browser they prefer.
 
 ## Terminal
 
-A terminal is a program that is used to interact with the operating system. It is also known as a command-line interface (CLI) or a shell. There are many different terminals available, but the most popular ones are Windows Terminal, iTerm2, and Hyper. During this course, we'll be using Visual Studio Code's built-in terminal, but everyone can use whichever terminal they prefer. We use terminals to run commands that perform various tasks, such as creating files, installing packages, and running programs.
+A terminal is a program that is used to interact with the operating system. It is also known as a command-line interface (CLI) or a shell. There are many different terminals available, but the most popular ones are: 
+- Windows Terminal
+- iTerm2
+- Hyper
+- etc
+
+During this course, we'll be using Visual Studio Code's built-in terminal, but everyone can use whichever terminal they prefer. We use terminals to run commands that perform various tasks, such as creating files, installing packages, and running programs.
 ![Running Node](../NodeJS/RunningNode.gif)
 
 ## Git
