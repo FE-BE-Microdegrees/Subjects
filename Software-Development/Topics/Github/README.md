@@ -21,31 +21,35 @@ After completing this topic, you'll be able to:
 
 ## What is Github?
 
-**GitHub** is a web-based platform that provides hosting for software development and version control using Git. It offers the distributed version control capabilities of Git combined with its own features.
+![Github](Github.png)
 
-GitHub was founded in 2008 by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett. In 2018, it was acquired by Microsoft. Today, it's one of the largest code hosting platforms in the world, boasting a vast community of developers, open-source projects, and private repositories.
+**GitHub** is a web-based platform that offers hosting for software development and version control using Git. It provides the distributed version control capabilities of Git along with added functionalities by GitHub.
 
-Here are the key aspects and features of GitHub:
+GitHub was founded in 2008 by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett. In 2018, it was acquired by Microsoft. Today, it is one of the world's largest code hosting platforms, with a very large community of developers and containing a plethora of open-source projects as well as private repositories.
 
-- **Repositories**: At the heart of GitHub is the "repository" (often abbreviated to "repo"). A repository contains all of the project files, including the revision history. Repositories can be public (accessible to anyone) or private (restricted access).
-- **Forking**: Users can "fork" a repository, which means creating a personal copy of another user's project. This allows users to make changes without affecting the original project. Once changes have been made in a fork, users can send a "pull request" to the owner of the original repository to propose integrating those changes.
-- **Pull Requests**: Pull requests let you inform others about changes you've made to a repository. Once a pull request is sent, project maintainers can review the set of changes, discuss potential modifications, and even push follow-up commits before the changes are merged into the repository.
-- **Issues**: GitHub provides an issue tracking system where users can report bugs, request features, or discuss other project-related concerns.
-- **GitHub Actions**: This feature allows automated workflows for CI/CD (Continuous Integration/Continuous Deployment) and other tasks to be defined directly within the GitHub repository.
-- **GitHub Pages**: Users can host static websites directly from their repositories on GitHub. It's popular for personal portfolios, project documentation, and more.
-- **Gists**: Gist is a service provided by GitHub to share snippets of code. While repositories are for larger projects, gists are designed for smaller code snippets.
-- **Collaboration**: GitHub provides various tools like code reviews, project management boards, and extensive collaboration features to make working on team projects easier.
-- **Marketplace**: GitHub Marketplace offers a collection of tools and integrations that extend and enhance the functionality of GitHub, ranging from continuous integration services to code quality checkers and more.
-- **Security**: GitHub has several security features, including automated security alerts for known vulnerabilities in dependencies, and the "Dependabot" which can automatically create pull requests to update dependencies to newer, secure versions.
-- **Sponsorship**: GitHub introduced a "Sponsor" feature, allowing users to financially support their favorite open-source developers and projects directly through GitHub.
-- **Integrations**: GitHub can be integrated with a vast array of third-party tools and platforms, amplifying its capabilities.
-- **GitHub Projects**: This feature allows users to create Kanban-style boards to manage projects and tasks.
+Here are some key aspects and features of GitHub:
+
+- **Repositories**: At the heart of GitHub is the "repository" (often abbreviated as "repo"). A repository contains all the project files, including the history of changes. Repositories can be public (accessible to everyone), private (limited access), or organization internal (visible to members of an organization).
+- **Forking**: Users can "fork" a repository, meaning creating a personal copy of another user's project. This allows users to make changes without affecting the original project. If changes are made in a fork, users can send a pull request to the original repository owner to suggest integrating those changes.
+- **Pull Requests (PRs)**: Pull requests allow notifying others about changes made in a repository. When a pull request is sent, project maintainers can review the set of changes, discuss potential modifications, and even make follow-up modifications before merging the changes into the repository.
+- **Issues**: GitHub offers an issue tracking system where users can report bugs, request features, or discuss other project-related questions. In addition, GitHub issues are often used for task distribution/tracking and project management.
+- **GitHub Actions**: This feature allows for the creation of automated workflows for CI/CD (Continuous Integration/Continuous Deployment) and other event-triggered tasks directly within a GitHub repository.
+- **GitHub Pages**: Users can host static websites directly from their repositories on GitHub. This is popular for personal portfolios, project documentation, etc.
+- **Gists**: A gist is a service provided by GitHub for sharing snippets of code. While repositories are for larger projects, gists are intended for smaller pieces of code sharing.
+- **Collaboration**: GitHub offers a variety of tools such as code reviews, project management boards, and extensive collaboration features to make teamwork easier.
+- **Marketplace**: The GitHub marketplace offers a range of tools and integrations that extend and enhance GitHub's functionality, ranging from continuous integration services to code quality checkers and more.
+- **Security**: GitHub has several security features, including automated security checks for known vulnerabilities in dependencies and "Dependabot," which can automatically create pull requests to update dependencies to newer, safer versions.
+- **Sponsorship**: GitHub introduced a "Sponsor" feature, allowing users to financially support their favorite open-source developers and projects on GitHub.
+- **Integrations**: GitHub can be integrated with a wide range of third-party tools and platforms, enhancing its functionality.
+- **GitHub Projects**: This feature allows users to create Kanban-style boards for project and task management.
 
 ## Creating an Account
+![Github.com](Github-com.png)
 
 To create a GitHub account, go to [github.com](https://github.com/signup) and follow the instructions.
 
 ## Github Desktop
+![Github Desktop](Gtihub-Desktop.png)
 
 GitHub Desktop is a Graphical User Interface (GUI) for Git, created by GitHub. It aims to simplify the process of managing your Git repositories and GitHub projects in a more user-friendly way compared to using Git solely through the command line. Here are some key aspects of GitHub Desktop:
 
@@ -95,3 +99,5 @@ Next, do the following:
 - commit the changes
 - push the changes to the remote repository
 - create new `Issue` on Your repository on `Github` and assign it to yourself
+
+![Creating_repo](CreateRepository.gif)
