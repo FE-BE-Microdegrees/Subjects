@@ -28,7 +28,9 @@ As we already know, the variable is a `named storage location in a computer's me
 
 Javascript is a dynamically typed language, which means that the **type** of a variable can be changed throughout the execution of a program. For example, we can assign a **number** to a variable and then assign a **string** to the same variable later in the program. This is different from statically typed languages like Java, where the type of a variable is fixed as we declare it.
 
-In Javascript, we can divide data types into two categories: **primitive data** types and object data types.
+In Javascript, we can divide data types into two categories: 
+- **primitive data** types
+- **object data** types.
 
 ## Primitive Data Types
 
@@ -37,10 +39,10 @@ Primitive data types are the most basic data types in Javascript. There are 7 pr
 - **String**: a sequence of *characters* enclosed in single or double quotes
 - **Number**: a *numeric* value
 - **Boolean**: a value that is either *true* or *false*
-- **Undefined**: a value that represents the *absence of a value*
-- **Null**: a value that represents *nothing*
-- **Symbol**: a *unique* value that is used to identify object properties
-- **BigInt**: a numeric value that is *larger than the Number.MAX_SAFE_INTEGER* value
+- **Undefined**: a value that represents *lack of value* (e.g., when a variable is declared but has not been assigned a value)
+- **Null**: a value that represents *nothing* (the difference from *undefined* value is usually that *null* is a deliberately assigned value)
+- **Symbol**: a *unique* value used to identify object properties (we will not use this type in this course)
+- **BigInt**: a numeric value that is *larger than Number.MAX_SAFE_INTEGER* (we will not use this type in this course)
 
 ```javascript
 let firstName = 'John'; // string
@@ -56,8 +58,8 @@ let bigInt = 1234567890123456789012345678901234567890n; // bigint
 
 Object data types are more complex data types that can be used to store collections of data. There are 3 object data types in Javascript:
 
-- **Object**: a collection of *key-value pairs*
-- **Array**: a collection of *values*
+- **Object**: a collection of key: value pairs, which can describe data with a more complex structure. Here, the value can be a primitive data type, an array, or even another object. The key is a string that describes the property of the object and is followed by a colon and then the property value.
+- **Array**: a collection of values. An array is an object that allows storing multiple values in one variable. An array can contain different data types, including primitive data types, arrays, and objects.
 - **Function**: a *block of code* that can be executed by calling it
 
 ```javascript
@@ -91,7 +93,7 @@ let z = Boolean(x); // boolean - value of z is true
 
 ## Type Coercion
 
-Type coercion is the process of converting a value from one data type to another implicitly. In Javascript, type coercion occurs when an operator is used with operands of different data types. For example, the `+` operator can be used to add two numbers together, but it can also be used to concatenate two strings together.
+Type coercion is the process of converting a value from one data type to another implicitly. This means that type coercion happens automatically without us having to do it ourselves. In Javascript, type coercion occurs when an operator is used with operands of different data types. For example, the + operator can be used to add two numbers, but it can also be used to concatenate two strings.
 
 ```javascript
 let x = 5; // number
