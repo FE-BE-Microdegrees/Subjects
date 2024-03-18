@@ -11,28 +11,35 @@ In this topic, we'll learn about Node JS.
 
 ## Learning Outcomes
 
-After completing this topic, you'll be able to:
-- Define what Node JS is
-- Explain why Node JS is popular
-- Install Node JS on your computer
-- Run Node JS programs
+After completing this topic, you will be able to:
+- Explain what Node JS is;
+- Explain why Node JS is popular;
+- Install Node JS on your computer;
+- Run Node JS programs.
 
 ## What is Node JS?
 
-Javascript is a programming language that is used to create interactive web pages. It is a client-side language, which means that it runs in the browser. Node JS is a runtime environment that allows us to run Javascript code outside of the browser. Node JS is a server-side language, which means that it runs on the server. Node JS is built on top of the V8 Javascript engine, which is the same engine that powers the Google Chrome browser.
+**NodeJS** is a JavaScript runtime environment that allows us to execute JavaScript code outside of the web browser. NodeJS is a server-side language, meaning it runs on a server and, unlike browser-run JavaScript, NodeJS has access to the computer's filesystem. Access to the filesystem allows NodeJS to read, create, and modify files from the computer's storage devices, which cannot be done with browser-run JavaScript.
+
 
 ## Why Use Node JS?
 
-Node JS is a popular choice for building web applications because it is fast, scalable, and easy to learn and it is possible to use same language (Javascript) on both the client-side and the server-side. Node JS is also popular because it has a large community of developers and a large number of open-source libraries that can be used to build web applications.
+NodeJS is a popular choice for building web applications because it is fast, scalable, and easy to learn, and it allows using the same language (JavaScript) on both the client and server sides. NodeJS is also popular because it has a large community of developers and a vast number of open-source libraries that can be used to build web applications.
 
-Node JS is not only for building web applications. It can also be used to build desktop applications, mobile applications, and even IoT applications.
+NodeJS's use is not limited to web applications. It can also be used to build: 
+- **desktop applications**
+- **mobile applications**
+-  **IoT** applications.
 
 ## How to Install Node JS?
 
-In order to install Node JS, we need to download the Node JS installer from the [official Node JS website](https://nodejs.org/en/download). The installer will install Node JS and NPM (Node Package Manager) on our computer. NPM is a tool that is used to install and manage Node JS packages.
+To install NodeJS, you need to download the NodeJS installer from the [official NodeJS website](https://nodejs.org/en/download). The installer will install NodeJS and **NPM** (*Node Package Manager*) on your computer. **NPM** is a tool used to install and manage NodeJS packages.
 
 ## How to Run Node JS?
 
-In order to run Node JS, we need to open a terminal and type `node` followed by the name of the file that we want to run. For example, if we have a file named `index.js`, we can run it by typing `node index.js` in the terminal.
+To run Node JS, we need to open a terminal and type `node` followed by the name of the file that we want to run. For example, if we have a file named `index.js`, we can run it by typing `node index.js` in the terminal.
+
+Note that in this way, we can only run files that are located inside the folder opened in our terminal. If we want to run files located elsewhere, we need to navigate to the respective folder in the terminal.
+
 
 ![Running Node](RunningNode.gif)
