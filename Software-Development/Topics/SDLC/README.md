@@ -40,59 +40,99 @@ graph TD
 
 ```
 
-## Typical SDLC Phases:
+## Typical SDLC Phases
 
-The Software Development Life Cycle (SDLC) is a structured process that defines the phases or steps involved in producing software. While there are different models or frameworks for SDLC, many share common phases. Here's an overview of the typical steps involved:
+The Software Development Life Cycle (SDLC) is a structured process that defines the stages or steps involved in producing software. While there are various models or frameworks for SDLC, many share common phases. Here is an overview of typical steps involved:
 
-1. **Planning:**
-   - Determine the scope of the project.
-   - Identify potential risks, constraints, and resources.
-   - Develop a project plan, including timelines, milestones, and budget estimates.
-   - User research to understand user needs and expectations.
-2. **Requirement Analysis:**
-   - Gather and document the needs and specifications from stakeholders (*end-users, clients, etc.*).
-   - Analyze the feasibility of requirements.
-   - Prioritize and finalize the list of requirements.
-3. **System Design:**
-   - Translate requirements into system specifications.
-   - Design the system architecture and framework.
-   - Create high-level and detailed design documents.
-   - Select appropriate technologies, platforms, and tools.
-4. **Implementation/Development:**
-   - Write the actual code for the software.
-   - Translate design documentation into functional software.
-   - Integrate various components and ensure they work together.
-5. **Testing:**
-   - Verify that the software meets the requirements.
-   - Identify and fix bugs, errors, and inconsistencies.
-   - Use various testing methods like unit testing, integration testing, system testing, acceptance testing, etc.
-   - Validate the software's functionality, performance, security, and usability.
-6. **Deployment:**
-   - Prepare the environment for the software's launch.
-   - Install and configure the software in the production environment.
-   - Provide necessary training to end-users if required.
-   - Monitor the software's performance and ensure smooth operation.
-7. **Maintenance and Support:**
-   - Address any issues or bugs that arise post-deployment.
-   - Provide updates, patches, or enhancements based on user feedback.
-   - Ensure the software remains operational, efficient, and relevant over time.
-   - Address any security vulnerabilities or compatibility issues that may arise.
-8. **Review and Feedback:**
-   - Gather feedback from stakeholders and end-users.
-   - Analyze the software's performance and identify areas for improvement.
-   - Plan for the next iteration or version of the software.
+### Planning and Requirements Definition
 
-Each of these phases can be iterative, especially in agile or spiral models, where the software is developed in cycles or iterations. The exact steps and their sequence can vary based on the SDLC model chosen, organizational processes, and the nature of the project. However, the aim remains consistent: to produce high-quality software that aligns with user needs and expectations in an organized and efficient manner.
+Requirement analysis is the most crucial and fundamental stage of SDLC. It is conducted by team members in collaboration with clients, sales departments, market research, and industry experts. This information is then used to plan the basic approach to the project and conduct a feasibility study in economic, labor, and technical areas.
 
-## Importance of SDLC:
+The planning stage also involves planning for quality assurance requirements and identifying project-related risks. The result of the technical feasibility study is to define different technical approaches that can be followed to successfully implement the project with minimal risks.
 
-- **Structured Process:** SDLC offers a structured approach to software development, ensuring that critical steps are not missed.
-- **Quality Assurance:** Each phase of the SDLC has specific deliverables and review processes, leading to better software quality.
-- **Risk Management:** Early identification of issues or risks allows for timely mitigation.
-- **Project Management:** SDLC offers a clear framework for project managers to track progress, allocate resources, and adhere to budgets.
-- **Stakeholder Communication:** By defining clear phases and deliverables, stakeholders are kept in the loop regarding progress and expected outcomes.
-- **Efficiency and Cost-effectiveness:** By systematically addressing the software development process, wastage is minimized, and efficiency is improved.
-- **Documentation:** Proper documentation is an integral part of the SDLC, ensuring that knowledge is preserved and system details are well understood.
+This stage may include the following steps:
+- Determining project scope.
+- Identifying potential risks, constraints, and resources.
+- Creating a project plan (including schedules, milestones, and budget estimates).
+- Conducting user research to understand user needs and expectations.
+
+### Requirements Definition
+
+Once the requirements analysis is done, the next step is to clearly define and document product requirements and get approval from the client or market analysts. This is done through the Software Requirement Specification (SRS), which contains all the product requirements planned and developed throughout the project life cycle.
+
+This stage may include the following activities:
+- Gathering and documenting requirements and needs.
+- Collecting specifications from stakeholders (end-users, clients, etc.).
+- Feasibility analysis of requirements.
+- Prioritizing and confirming the list of requirements.
+
+### Design
+
+The Software Requirements Specification serves as the basis for product architects to come up with the best architecture for the product to be developed. Based on the requirements defined in the Software Requirements Specification, more than one product architecture design solution is usually proposed and documented in the Design Document Specification (DDS).
+
+The Design Document Specification is reviewed by all key stakeholders, and the best design solution for the product is selected based on various parameters such as risk assessment, product robustness, design modularity, budget, and time constraints.
+
+The design approach clearly defines all product architecture modules along with their communication and data flow presentation with external and third-party modules (if any). The interior design of all modules of the proposed architecture should be clearly defined down to the minutest details in the Design Document Specification.
+
+In this stage, the user interface (UI) and user experience (UX) design are also created, which are crucial for engaging users and simplifying the use of the product.
+- Translating requirements into system specifications.
+- Designing system architecture and framework.
+- UX (User Experience) and UI (User Interface) design.
+- Selection of appropriate technologies, platforms, and tools.
+
+### Development
+
+In this SDLC phase, actual development and building of the product begin. Programming code is generated at this stage according to the design document specification. If the design has been detailed and organized properly, code can be generated without much trouble.
+
+Developers must follow the coding guidelines defined by their organization, and programming tools such as compilers, debuggers, etc., are used to generate the code. Different high-level programming languages like C, C++, Pascal, Java, Javascript, and PHP are used for coding, depending on the type of software being developed.
+- Writing code.
+- Transforming design into functional software.
+- Integrating various components and ensuring their cooperation.
+
+### Testing
+
+This stage is usually a subset of all stages, as in modern SDLC models, testing activities mostly cover all SDLC stages. However, this stage refers to the product testing stage, where defects in the product are reported, tracked, corrected, and retested until the product reaches the quality standards defined in the SRS.
+- Verifying compliance with software requirements.
+- Correcting and verifying bugs and discrepancies.
+- Applying various testing methods (unit testing, integration testing, manual testing, etc.).
+- Validating software functionality, performance, security, and usability.
+
+### Deployment
+
+Once the product is tested and ready for deployment, it is officially released to the relevant market. Sometimes, the product deployment is carried out in stages according to the organization's business strategy. The product might initially be released in a limited segment and tested in a real business environment (UAT – User Acceptance Testing).
+
+The product might then be released in its form or along with recommended enhancements in the target market segment based on feedback.
+- Preparing the software launch environment.
+- Installing and implementing software in the production environment.
+- Training end-users if necessary.
+- Monitoring software performance and ensuring smooth operation.
+
+### Maintenance and Support
+
+After the software deployment, it is crucial to ensure that it operates without issues and meets user needs. This involves software maintenance and support to ensure that the software remains operational, efficient, and relevant over time.
+- Resolving issues and bugs that arise post-deployment.
+- Creating updates, fixes, or enhancements based on user feedback.
+- Ensuring that the software remains operational, efficient, and relevant over time.
+- Addressing security vulnerabilities and compatibility issues.
+
+### Review and Feedback
+
+The final stage involves reviewing the entire SDLC process and collecting feedback to identify what can be improved in the next iteration or software version. This stage is essential to ensure that the software development process is continuously improved and meets user needs.
+- Collecting feedback from stakeholders and end-users.
+- Analyzing software performance and identifying areas for improvement.
+- Planning the next iteration or software version.
+
+Each of these phases can be iterative, especially in agile or spiral models, where software is developed in cycles or iterations. The exact steps and their order may vary depending on the chosen SDLC model, organizational processes, and the nature of the project. However, the goal is the same: to produce quality software that meets user needs and expectations in the most efficient way possible.
+
+## Importance of SDLC
+
+- **Structured Process:** SDLC provides a structured approach to software development, ensuring that critical steps are not missed.
+- **Quality Assurance:** Each phase of SDLC has specific outcomes and review processes that lead to better software quality.
+- **Risk Management:** Early identification of possible issues or risks allows for timely mitigation.
+- **Project Management:** SDLC provides a clear framework for monitoring project progress, allocating resources, and adhering to budgets.
+- **Stakeholder Communication:** By defining clear phases and outcomes, stakeholders are kept informed about progress and expected results.
+- **Efficiency and Cost-Effectiveness:** By systematically addressing the software development process, wastage is minimized and efficiency is maximized.
+- **Documentation:** Proper documentation is an integral part of SDLC, ensuring that knowledge is preserved and system details are well understood.
 
 ## Common SDLC Models:
 
