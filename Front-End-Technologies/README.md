@@ -16,7 +16,9 @@ By the end of the course, students should be proficient in key front-end technol
 - **Responsive Design**: Design and develop web interfaces that are mobile-friendly and adapt to varying screen resolutions using responsive design techniques.
 - **User Experience (UX) Principles**: Recognize the importance of user experience principles in front-end design and apply basic heuristics for creating user-friendly interfaces.
 - **Web Accessibility**: Develop web interfaces that are accessible to users with disabilities, applying guidelines from the Web Content Accessibility Guidelines (WCAG).
+
 ## Topics
+
 - [Document Object Model (DOM)](./Topics/DOM/README.md)
 - [HTML](./Topics/HTML/README.md)
 - [CSS](./Topics/CSS/README.md)
