@@ -8,7 +8,6 @@
   - [Types of Personas](#types-of-personas)
   - [Examples of Personas](#examples-of-personas)
   - [Tools for Creating Personas](#tools-for-creating-personas)
-  - [Persona Template](#persona-template)
 
 ## Learning Outcomes
 
