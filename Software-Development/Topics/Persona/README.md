@@ -1,8 +1,3 @@
-# Persona
-
-![Persona](Persona.webp)
-
-Image source: Dall-E by OpenAI
 
 - [Persona](#persona)
   - [Learning Outcomes](#learning-outcomes)
