@@ -376,6 +376,7 @@ console.log(sum);
 15
 ```
 </details>
+
 If you want to solve additional exercises, you can find some here: [Additional Exercises for Arrays](Exercises-Arrays.md).
 
 ### Exercise 3 - Basic Object Operations
@@ -456,4 +457,5 @@ console.log(student);
 ```
 
 </details>
-If you want to solve additional exercises on objects, you can find some here: [Addditional exercises.](e
+
+If you want to solve additional exercises on objects, you can find some here: [Addditional exercises.](Exercises-Objects.md)
