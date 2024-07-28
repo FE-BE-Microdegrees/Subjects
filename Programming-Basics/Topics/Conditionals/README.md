@@ -356,5 +356,10 @@ The number is odd
 - `D` for 60 to 69
 - `F` for below 60
 
+
 Print the grade classification.
+
+# Additional Exercises
+
+If you want to solve additional exercises, you can find some here: [Additional Exercises](./Exercises.md)
 
