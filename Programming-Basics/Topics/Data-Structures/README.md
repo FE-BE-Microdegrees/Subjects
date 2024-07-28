@@ -1,10 +1,10 @@
 # Data Structures
 
-In this topic, we'll learn about data structures. We'll learn what a data structure is, what an array is, what an object is, and how to use arrays and objects.
+In this topic, we will talk in detail about data structures. We will explore what a data structure is, what an array is, what an object is, and how to use arrays and objects.
 
 - [Data Structures](#data-structures)
   - [Learning Outcomes](#learning-outcomes)
-  - [What is Data Structure?](#what-is-data-structure)
+  - [What is a Data Structure?](#what-is-a-data-structure)
   - [Array](#array)
     - [Array Methods](#array-methods)
       - [Adding Values to an Array](#adding-values-to-an-array)
@@ -12,6 +12,9 @@ In this topic, we'll learn about data structures. We'll learn what a data struct
       - [Removing Values from an Array](#removing-values-from-an-array)
     - [Array Iteration](#array-iteration)
   - [Object](#object)
+    - [`Object.keys()` Method](#objectkeys-method)
+    - [`Object.values()` Method](#objectvalues-method)
+    - [`Object.entries()` Method](#objectentries-method)
   - [Exercises](#exercises)
     - [Exercise 1 - Basic Array Operations](#exercise-1---basic-array-operations)
     - [Exercise 2 - Array Iteration](#exercise-2---array-iteration)
@@ -28,7 +31,7 @@ After completing this topic, you'll be able to:
 - Use arrays and objects
 - Use basic array methods
 
-## What is Data Structure?
+## What is a Data Structure?
 
 We already know what variable is and that it is used to store data. But so far we were able to store only one value in a variable or describe only one thing. For example, we could have a variable named `firstName` that stores the first name of a person. But what if we want to store the first name, last name, age, and address of a person? We could create a variable for each of these values, but that would be very inefficient. Instead, we can use a data structure to store all of these values in one place.
 
@@ -218,7 +221,97 @@ person.firstName = 'Jane';
 console.log(person); // { firstName: 'Jane', lastName: 'Doe', age: 25 }
 ```
 
-As for arrays, there are lots of methods that we can use to manipulate objects also. For example, we can use the `Object.keys()` method to get an array of the keys in an object, the `Object.values()` method to get an array of the values in an object, and the `Object.entries()` method to get an array of the key-value pairs in an object.
+As for arrays, there are lots of methods that we can use to manipulate objects also. For example, we can use the 
+
+### `Object.keys()` Method
+The `Object.keys()` method returns the keys of an object as an array. For example, if we want to get the keys of the `person` object as an array, we can use the `Object.keys()` method like this:
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+console.log(Object.keys(person)); // [ 'firstName', 'lastName', 'age' ]
+```
+This can also be used for iterating over the properties of an object. For example, if we want to print each key in the `person` object, we can use the `Object.keys()` method like this:
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+for (let key of Object.keys(person)) {
+  console.log(key);
+}
+
+// Väljund:
+// firstName
+// lastName
+// age
+
+```
+If we do not want to use a `for...of` loop, we can also use a `for` loop like this:
+
+```javascript
+
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+for (let i = 0; i < Object.keys(person).length; i++) {
+  console.log(Object.keys(person)[i]);
+}
+
+// output:
+// firstName
+// lastName
+// age
+
+```
+### `Object.values()` Method 
+The `Object.values()` method returns the values of an object as an array. For example, if we want to get the values of the `person` object as an array, we can use the `Object.values()` method like this:
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+console.log(Object.values(person)); // [ 'John', 'Doe', 25 ]
+```
+### `Object.entries()` Method 
+The `Object.entries()` method returns an array of key-value pairs of an object. For example, if we want to get the key-value pairs of the `person` object as an array, we can use the `Object.entries()` method like this:
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+console.log(Object.entries(person)); // [ [ 'firstName', 'John' ], [ 'lastName', 'Doe' ], [ 'age', 25 ] ]
+```
+If we want to output key-value pairs one by one, we can use a `for` loop like this:
+
+```javascript
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 25
+};
+
+for (let i = 0; i < Object.entries(person).length; i++) {
+  console.log(Object.entries(person)[i]);
+}
+
+// Output:
+// [ 'firstName', 'John' ]
+// [ 'lastName', 'Doe' ]
+// [ 'age', 25 ]
+```
 
 All object methods are listed in the [Object Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) section of the MDN web docs.
 
@@ -283,6 +376,7 @@ console.log(sum);
 15
 ```
 </details>
+If you want to solve additional exercises, you can find some here: [Additional Exercises for Arrays](./Exercises-Arrays.md).
 
 ### Exercise 3 - Basic Object Operations
 
@@ -312,7 +406,7 @@ console.log(`I drive a ${car.year} ${car.make} ${car.model}.`);
 ```
 I drive a 2019 Toyota Corolla.
 ```
-![Object](object.gif)
+
 
 </details>
 
@@ -362,3 +456,4 @@ console.log(student);
 ```
 
 </details>
+If you want to solve additional exercises on objects, you can find some here: [Additional Exercises for Objects](./Exercises-Objects.md).
