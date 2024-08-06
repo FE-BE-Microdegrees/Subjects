@@ -304,3 +304,4 @@ Create multiplication table using nested `for` loops.
 ```
 
 > Hint: Use nested `for` loops to create the multiplication table. Nested means that one loop is inside another loop.
+If you want to solve additional exercises, you can find some here: [Additional Exercises for Loops.](./Exercises.md)
