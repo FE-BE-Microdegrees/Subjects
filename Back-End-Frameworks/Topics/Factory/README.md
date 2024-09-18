@@ -1,39 +1,39 @@
-# Factory
+# Factory Design Pattern
 
-_Factory_ (Tehas) arengumuster on loomismuster. "Tehas" on superklass, mille alamklassid saavad mõjutada milliste parameetritega objekt luuakse. Tehase superklass teeb kaks asja:
+The _Factory_ design pattern is a creational pattern. A "factory" is a superclass whose subclasses can influence which parameters are used to create an object. The factory superclass does two things:
 
-- loob objekte **varjatud** superklassi meetodiga
-- viitab loodud objektile läbi **ühise** liidese
+- creates objects using a **hidden** superclass method
+- refers to the created object through a **common** interface
 
-Eesmärk on vähendada koodi ja vähendada arenduslikku võlga (_technical debt_). Peamsielt peaks vähendama uue objekti loomist _new_ käsuga, näiteks:
+The goal is to reduce code and minimize technical debt. Mainly, it should reduce the creation of new objects using the `new` keyword, for example:
 
 ```js
 const bear = new Bear();
 const parrot = new Parrot();
 const goldfish = new Goldfish();
-// jne
+// etc.
 ```
 
 ---
 
-## Kasutusjuhtum
+## Use Case
 
-Tehase arengumuster lahendab probleeme, mis tekivad siis, kui objektide loomine muutub keerukaks või kui see sõltub dünaamilistest tingimustest. See mustriga eraldatakse objektide loomise loogika nende kasutamisest, mis võimaldab süsteemil olla paindlikum ja lihtsamini hooldatav.
+The factory design pattern addresses problems that arise when object creation becomes complex or depends on dynamic conditions. This pattern separates the logic of creating objects from their usage, allowing the system to be more flexible and easier to maintain.
 
-Kolm komponmenti Tehase mustris:
+Three components in the Factory pattern:
 
-1. Toode (Product): See on loodav objekt, millel on ühine liides. Varjatud kliendi eest.
-2. Tehas (Factory): See on klass, mis sisaldab meetodit objektide loomiseks. Tavaliselt varjatud Kliendi eest.
-3. Klient (Client): See on klass, mis kasutab tehast objektide loomiseks. See on tegelik osa mis kasutab Tehast.
+1. **Product**: The object being created, which has a common interface, hidden from the client.
+2. **Factory**: The class that contains the method for creating objects, typically hidden from the client.
+3. **Client**: The class that uses the factory to create objects. This is the part that utilizes the factory.
 
 ---
 
-## Näide
+## Example
 
-### Kasside superklass ("Toode" komponent)
+### Cat Superclass ("Product" Component)
 
 ```js
-// Superklass ühtse liidese jaoks
+// Superclass for a common interface
 class Cat {
   constructor(name, age, color) {
     this.name = name;
@@ -42,24 +42,24 @@ class Cat {
   }
   introduce() {
     console.log(
-      `Minu kassi nimi on ${this.name}, ta on ${this.age} aastat vana ja tema karva värv on ${this.color}.`
+      `My cat's name is ${this.name}, he is ${this.age} years old, and his fur color is ${this.color}.`
     );
   }
 }
 ```
 
-### Tehase klass ("Tehas" komponent)
+### Factory Class ("Factory" Component)
 
 ```js
 class CatFactory {
   createCat(name, age, color) {
-    // Tehased peaks alati sisaldama minimaalselt 'create()' meetodit.
+    // Factories should always contain at least a 'create()' method.
     return new Cat(name, age, color);
   }
 }
 ```
 
-Antud tehast on võimalik teha ka funktsioonina. Sama tulemus.
+The factory can also be implemented as a function, yielding the same result.
 
 ```js
 function CatFactory(name, age, color) {
@@ -67,112 +67,114 @@ function CatFactory(name, age, color) {
 }
 ```
 
-### Tehase kasutamine ("Klient" komponent)
+### Using the Factory ("Client" Component)
 
 ```js
 const factory = new CatFactory();
-const myCat = factory.createCat("Tom", 3, "hall");
-const myOtherCat = factory.createCat("Max", 2, "valge");
-myCat.introduce(); // Minu kassi nimi on Tom, ta on 3 aastat vana ja tema karva värv on hall.
-myOtherCat.introduce(); // Minu kassi nimi on Max, ta on 2 aastat vana ja tema karva värv on valge.
+const myCat = factory.createCat("Tom", 3, "gray");
+const myOtherCat = factory.createCat("Max", 2, "white");
+myCat.introduce(); // My cat's name is Tom, he is 3 years old, and his fur color is gray.
+myOtherCat.introduce(); // My cat's name is Max, he is 2 years old, and his fur color is white.
 ```
 
 ---
 
-## Keerulisem näide
+## More Complex Example
 
-Eelmises näites oli tegu ainult kassidega, teeme nüüd asju natuke ümber, et meil oleks võimalik kirjeldada nii kassi kui ka koera.
+In the previous example, we dealt only with cats. Now, let’s modify things to accommodate both cats and dogs.
 
-### Toode
+### Product
 
 ```js
-// Superklass ühtse liidese jaoks
+// Superclass for a common interface
 class Animal {
   constructor(name, age, color, type) {
     this.name = name;
     this.age = age;
     this.color = color;
-    this.type = type; // Lisame looma tüübi
+    this.type = type; // Adding the type of animal
   }
   introduce() {
     console.log(
-      `Minu lemmiklooma nimi on ${this.name}, ta on ${this.age} aastat vana ja ta on ${this.color}i värvi.`
+      `My pet's name is ${this.name}, he is ${this.age} years old, and he is ${this.color} in color.`
     );
   }
   logActivity() {
-    console.log(`Looma tüüp: ${this.type}, tegevus: ${this.currentActivity()}`);
+    console.log(
+      `Animal type: ${this.type}, activity: ${this.currentActivity()}`
+    );
   }
   currentActivity() {
-    return "Tavaline tegevus";
+    return "Normal activity";
   }
 }
 ```
 
-### Alamklass
+### Subclasses
 
-Eelmise näitega võrreldes lisame nüüd ka alamklassid _Animal_ klassile. See võimaldab meil vajadusel lisada unikaalseid omadused, mis superklassil puudusid. Hetkel eristan neid lihtsalt mõne tegevusega, mida loom parajasti teeb.
+In comparison to the previous example, we now add subclasses to the _Animal_ class. This allows us to add unique properties as needed.
 
 ```js
 class Cat extends Animal {
   constructor(name, age, color) {
-    super(name, age, color, "Kass"); // Määran type kohale kohe mis loomaga on tegu, kuna vastav klass ongi sellele loomale
+    super(name, age, color, "Cat"); // Setting the type immediately since this class corresponds to that animal
   }
   currentActivity() {
-    return "Mängib mänguhiirega";
+    return "Playing with a toy mouse";
   }
 }
 
 class Dog extends Animal {
   constructor(name, age, color) {
-    super(name, age, color, "Koer");
+    super(name, age, color, "Dog");
   }
   currentActivity() {
-    return "Jookseb õues ringi";
+    return "Running around outside";
   }
 }
 ```
 
-### Tehas
+### Factory
 
-Siin ma lisan konstruktorisse ka _'type'_, mis eristab kahte looma ja loodavat objekti.
+Here, I also add the _'type'_, which distinguishes between the two animals being created.
 
 ```js
 class AnimalFactory {
   createAnimal(type, name, age, color) {
-    if (type == "Cat") {
+    if (type === "Cat") {
       return new Cat(name, age, color);
-    } else if (type == "Dog") {
+    } else if (type === "Dog") {
       return new Dog(name, age, color);
     } else {
-      throw new Error("Invalid animal type"); // Meie tehas ei toeta hetkel muid loomi.
+      throw new Error("Invalid animal type"); // Our factory currently does not support other animals.
     }
   }
 }
 ```
 
-### Klient
+### Client
 
 ```js
 const factory = new AnimalFactory();
-const myCat = factory.createAnimal("Tom", 3, "hall");
-const myDog = factory.createAnimal("Rex", 5, "pruun");
+const myCat = factory.createAnimal("Cat", "Tom", 3, "gray");
+const myDog = factory.createAnimal("Dog", "Rex", 5, "brown");
 
 myCat.introduce();
 myDog.introduce();
 
-myCat.logActivity(); // Looma tüüp: Cat, tegevus: Mängib mänguhiirega
-myDog.logActivity(); // Looma tüüp: Dog, tegevus: Jookseb õues ringi
+myCat.logActivity(); // Animal type: Cat, activity: Playing with a toy mouse
+myDog.logActivity(); // Animal type: Dog, activity: Running around outside
 ```
 
 ---
 
-## Ülesanne
+## Exercise
 
-Kirjeldus: Kood peab salvestama ettevõtte töötajad andmebaasi. Andmebaasis kirjeldab töötajaid kolm omadust: nimi, töökoht ja juhtimistasand.
+**Description**: The code must save company employees in a database. The database describes employees with three properties: name, job, and management level.
 
-Tegevused: Tuleb luua Toode, toote tootmiseks Tehas ja tehase kaudu loodud objektid "andmebaasi" (andmebaas siin on tühi massiiv []).
+**Tasks**: Create a Product, a Factory for producing the product, and create objects through the factory into a "database" (the database here is an empty array `[]`).
 
-Oodatav tulemus: console.log(database) tulemus on:
+**Expected Output**: The result of `console.log(database)` should be:
 
 ```json
 [
@@ -184,17 +186,16 @@ Oodatav tulemus: console.log(database) tulemus on:
 
 ---
 
-Allikad:
+**Sources**:
 
 - [Oodesign - factory pattern](https://www.oodesign.com/factory-pattern)
-
 - [Refactoring Guru - factory method](https://refactoring.guru/design-patterns/factory-method)
 
-**Autor: Taavi Ansper**
+**Author: Taavi Ansper**
 
-## Factory arendusmuster kasutades funktsionaalset lähenemist
+## Factory Design Pattern Using a Functional Approach
 
-`Factory` arendusmustrit on väga edukalt võimalik kasutada ka funktsionaalses lähenemises. Kõige lihtsamalt on selleks vaja lihtsalt funktsiooni, mis tagastab uue objekti. Näiteks:
+The `Factory` design pattern can also be effectively utilized using a functional approach. The simplest way is to create a function that returns a new object. For example:
 
 ```js
 function createCat(name, age, color) {
@@ -204,12 +205,12 @@ function createCat(name, age, color) {
     color,
     introduce() {
       console.log(
-        `Minu kassi nimi on ${this.name}, ta on ${this.age} aastat vana ja tema karva värv on ${this.color}.`
+        `My cat's name is ${this.name}, he is ${this.age} years old, and his fur color is ${this.color}.`
       );
     },
   };
 }
 
-const myCat = createCat("Tom", 3, "hall");
-myCat.introduce(); // Minu kassi nimi on Tom, ta on 3 aastat vana ja tema karva värv on hall.
+const myCat = createCat("Tom", 3, "gray");
+myCat.introduce(); // My cat's name is Tom, he is 3 years old, and his fur color is gray.
 ```
