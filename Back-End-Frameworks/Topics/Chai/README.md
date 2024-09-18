@@ -1,57 +1,85 @@
-# Chai Asertsiooniraamatukogu
+# Chai Assertion Library
 
-Chai on populaarne asertsiooniraamatukogu JavaScripti jaoks, mida kasutatakse koos testimisraamistikega nagu Mocha ja Jest. Chai pakub mitmesuguseid asertsioonistiile, sealhulgas TDD (Test-Driven Development) ja BDD (Behavior-Driven Development) stiile, mis teevad testide kirjutamise lihtsaks ja loetavaks.
+Chai is a popular assertion library for JavaScript used with testing frameworks like Mocha and Jest. Chai offers various assertion styles, including TDD (Test-Driven Development) and BDD (Behavior-Driven Development) styles, making it easy and readable to write tests.
 
 ![Chai](Chai.webp)
 
-Pildi allikas: Dall-E by OpenAI
+Image source: Dall-E by OpenAI
 
-## Õpiväljundid
+- [Chai Assertion Library](#chai-assertion-library)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Chai?](#what-is-chai)
+    - [Chai Advantages](#chai-advantages)
+  - [Installing and Setting Up Chai](#installing-and-setting-up-chai)
+    - [1. Installing Chai](#1-installing-chai)
+    - [2. Installing a Testing Framework](#2-installing-a-testing-framework)
+    - [3. Creating a Test File](#3-creating-a-test-file)
+  - [Writing Tests with Chai](#writing-tests-with-chai)
+    - [Example: Simple TDD Style Test](#example-simple-tdd-style-test)
+      - [`sum.js` - The Function We Are Testing](#sumjs---the-function-we-are-testing)
+      - [`test/sum.test.js` - Mocha Test with Chai](#testsumtestjs---mocha-test-with-chai)
+    - [Example: Simple BDD Style Test](#example-simple-bdd-style-test)
+      - [`test/sum.test.js` - Mocha Test with Chai](#testsumtestjs---mocha-test-with-chai-1)
+    - [Running Tests](#running-tests)
+  - [Chai Assertion Styles](#chai-assertion-styles)
+    - [1. Assert Style](#1-assert-style)
+    - [2. Expect Style](#2-expect-style)
+    - [3. Should Style](#3-should-style)
+  - [Extending Chai](#extending-chai)
+    - [Example: Chai-as-Promised](#example-chai-as-promised)
+      - [Installation](#installation)
+      - [Usage](#usage)
+  - [Additional Examples and Best Practices](#additional-examples-and-best-practices)
+    - [Checking Object Equality](#checking-object-equality)
+    - [Checking for Errors](#checking-for-errors)
+    - [Testing Asynchronous Functions](#testing-asynchronous-functions)
 
-Selle õppematerjali lõpuks peaksid õppijad olema võimelised:
+## Learning Outcomes
 
-- selgitama, mis on Chai ja miks seda kasutatakse;
-- paigaldama ja seadistama Chai projekti tasemel koos Mocha või muu testimisraamistikuga;
-- kasutama erinevaid Chai assertsioone TDD ja BDD stiilis testide kirjutamiseks;
-- laiendama Chai funktsionaalsust pistikprogrammide abil.
+By the end of this material, learners should be able to:
 
-## Mis on Chai?
+- explain what Chai is and why it is used;
+- install and set up Chai at the project level with Mocha or another testing framework;
+- use various Chai assertions for writing tests in TDD and BDD styles;
+- extend Chai functionality with plugins.
 
-Chai on asertsiooniraamatukogu, mis pakub mitmesuguseid meetodeid, et kontrollida testide tulemusi. See töötab hästi koos Mocha ja teiste JavaScripti testimisraamistikega, pakkudes paindlikke ja loetavaid asertsioone.
+## What is Chai?
 
-### Chai Eelised
+Chai is an assertion library that provides various methods to verify test results. It works well with Mocha and other JavaScript testing frameworks, offering flexible and readable assertions.
 
-- **Paindlikkus:** Toetab mitmesuguseid asertsioonistiile.
-- **Loetavus:** Asertsioonid on loetavad ja intuitiivsed.
-- **Laiendatavus:** Saab laiendada pistikprogrammide abil.
+### Chai Advantages
 
-## Chai Paigaldamine ja Seadistamine
+- **Flexibility:** Supports multiple assertion styles.
+- **Readability:** Assertions are clear and intuitive.
+- **Extensibility:** Can be extended with plugins.
 
-### 1. Chai Paigaldamine
+## Installing and Setting Up Chai
 
-Paigaldage Chai projekti tasemel, kasutades npm-i või yarn-i.
+### 1. Installing Chai
+
+Install Chai at the project level using npm or yarn.
 
 ```bash
 npm install --save-dev chai@4.4.1
 ```
 
-Või, kui kasutate yarn-i:
+Or, if you are using yarn:
 
 ```bash
 yarn add --dev chai@4.4.1
 ```
 
-> **NB!** Selle kursuse jaoks kasutame versiooni 4.4.1, kuna see on viimane versioon, mis toetab `require`-põhist importimist. Uuemad versioonid kasutavad ES6 importimist.
+> Note: For this course, we are using version 4.4.1, as it is the last version that supports `require`-based imports. Newer versions use ES6 imports.
 
-### 2. Testimisraamistiku Paigaldamine
+### 2. Installing a Testing Framework
 
-Selles näites kasutame Mocha, kuid võite kasutada ka Jest või mõnda muud testimisraamistikku.
+In this example, we will use Mocha, but you can also use Jest or any other testing framework.
 
 ```bash
 npm install --save-dev mocha
 ```
 
-Lisage `package.json` faili skript, et käivitada teste Mochaga.
+Add a script in the `package.json` file to run tests with Mocha.
 
 ```json
 {
@@ -61,9 +89,9 @@ Lisage `package.json` faili skript, et käivitada teste Mochaga.
 }
 ```
 
-### 3. Testi Faili Loomine
+### 3. Creating a Test File
 
-Looge projekti juurkausta kataloog nimega `test` ja selle sisse testifail, näiteks `sum.test.js`.
+Create a directory named `test` in the root of the project and a test file inside it, for example, `sum.test.js`.
 
 ```bash
 mkdir test
@@ -71,11 +99,11 @@ cd test
 touch sum.test.js
 ```
 
-## Testide Kirjutamine Chai abil
+## Writing Tests with Chai
 
-### Näide: Lihtne Test TDD Stiilis
+### Example: Simple TDD Style Test
 
-#### `sum.js` - Funktsioon, mida testime
+#### `sum.js` - The Function We Are Testing
 
 ```javascript
 function sum(a, b) {
@@ -85,7 +113,7 @@ function sum(a, b) {
 module.exports = sum;
 ```
 
-#### `test/sum.test.js` - Mocha test Chai-ga
+#### `test/sum.test.js` - Mocha Test with Chai
 
 ```javascript
 const chai = require("chai");
@@ -103,9 +131,9 @@ describe("Sum Function", function () {
 });
 ```
 
-### Näide: Lihtne Test BDD Stiilis
+### Example: Simple BDD Style Test
 
-#### `test/sum.test.js` - Mocha test Chai-ga
+#### `test/sum.test.js` - Mocha Test with Chai
 
 ```javascript
 const chai = require("chai");
@@ -123,19 +151,19 @@ describe("Sum Function", function () {
 });
 ```
 
-### Testide Käivitamine
+### Running Tests
 
-Käivitage testid, kasutades Mocha käsurealt.
+Run the tests using the Mocha command line.
 
 ```bash
 npm test
 ```
 
-## Chai Asertsioonistiilid
+## Chai Assertion Styles
 
-Chai toetab kolme erinevat asertsioonistiili: Assert, Expect ja Should.
+Chai supports three different assertion styles: Assert, Expect, and Should.
 
-### 1. Assert Stiil
+### 1. Assert Style
 
 ```javascript
 const chai = require("chai");
@@ -144,7 +172,7 @@ const assert = chai.assert;
 assert.strictEqual(sum(1, 2), 3, "sum of 1 and 2 should be 3");
 ```
 
-### 2. Expect Stiil
+### 2. Expect Style
 
 ```javascript
 const chai = require("chai");
@@ -153,7 +181,7 @@ const expect = chai.expect;
 expect(sum(1, 2)).to.equal(3, "sum of 1 and 2 should be 3");
 ```
 
-### 3. Should Stiil
+### 3. Should Style
 
 ```javascript
 const chai = require("chai");
@@ -162,21 +190,21 @@ chai.should();
 sum(1, 2).should.equal(3, "sum of 1 and 2 should be 3");
 ```
 
-## Chai Laiendamine
+## Extending Chai
 
-Chai saab laiendada pistikprogrammide abil, et lisada täiendavat funktsionaalsust.
+Chai can be extended with plugins to add additional functionality.
 
-### Näide: Chai-as-Promised
+### Example: Chai-as-Promised
 
-Chai-as-Promised on pistikprogramm, mis võimaldab testida lubadusi (promises).
+Chai-as-Promised is a plugin that allows you to test promises.
 
-#### Paigaldamine
+#### Installation
 
 ```bash
 npm install --save-dev chai-as-promised
 ```
 
-#### Kasutamine
+#### Usage
 
 ```javascript
 const chai = require("chai");
@@ -200,9 +228,9 @@ describe("Async Function", function () {
 });
 ```
 
-## Täiendavad Näited ja Parimad Praktikad
+## Additional Examples and Best Practices
 
-### Objekti Ekvivalentsuse Kontrollimine
+### Checking Object Equality
 
 ```javascript
 const obj1 = { a: 1, b: 2 };
@@ -211,7 +239,7 @@ const obj2 = { a: 1, b: 2 };
 expect(obj1).to.deep.equal(obj2);
 ```
 
-### Vea Käivitamise Kontrollimine
+### Checking for Errors
 
 ```javascript
 function badFunction() {
@@ -221,7 +249,7 @@ function badFunction() {
 expect(badFunction).to.throw("Something went wrong");
 ```
 
-### Asünkroonsete Funktsioonide Testimine
+### Testing Asynchronous Functions
 
 ```javascript
 function asyncFunction(callback) {

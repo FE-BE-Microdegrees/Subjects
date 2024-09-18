@@ -1,120 +1,120 @@
-# Docker: Mis see on ja milleks seda kasutatakse
+# Docker: What It Is and What It Is Used For
 
 ![Docker](Docker.webp)
 
-Pildi allikas: Dall-E by OpenAI
+Image source: Dall-E by OpenAI
 
-## Sissejuhatus
+## Introduction
 
-Docker on avatud lähtekoodiga platvorm, mis võimaldab arendajatel ja IT-spetsialistidel luua, juurutada ja hallata rakendusi konteinerites. Konteinerid võimaldavad rakenduste ja nende sõltuvuste isoleeritud keskkonnas käitamist, mis tagab ühtlase ja ennustatava käitumise kõikides etappides, alates arendusest kuni tootmiseni.
+Docker is an open-source platform that allows developers and IT professionals to build, deploy, and manage applications in containers. Containers enable applications and their dependencies to run in an isolated environment, ensuring consistent and predictable behavior across all stages, from development to production.
 
-- [Docker: Mis see on ja milleks seda kasutatakse](#docker-mis-see-on-ja-milleks-seda-kasutatakse)
-  - [Sissejuhatus](#sissejuhatus)
-  - [Õpiväljundid](#õpiväljundid)
-  - [Docker-i põhimõisted](#docker-i-põhimõisted)
-  - [Docker-i tööpõhimõte](#docker-i-tööpõhimõte)
-    - [Konteinerid vs virtuaalmasinad](#konteinerid-vs-virtuaalmasinad)
-  - [Docker-i põhikomponendid](#docker-i-põhikomponendid)
+- [Docker: What It Is and What It Is Used For](#docker-what-it-is-and-what-it-is-used-for)
+  - [Introduction](#introduction)
+  - [Learning Outcomes](#learning-outcomes)
+  - [Key Concepts of Docker](#key-concepts-of-docker)
+  - [How Docker Works](#how-docker-works)
+    - [Containers vs Virtual Machines](#containers-vs-virtual-machines)
+  - [Core Components of Docker](#core-components-of-docker)
     - [Docker Engine](#docker-engine)
     - [Docker Image](#docker-image)
     - [Docker Container](#docker-container)
     - [Docker Compose](#docker-compose)
   - [Docker Desktop](#docker-desktop)
-    - [Docker Desktopi installatsioon ja seadistus](#docker-desktopi-installatsioon-ja-seadistus)
+    - [Installing and Setting Up Docker Desktop](#installing-and-setting-up-docker-desktop)
       - [Windows](#windows)
       - [macOS](#macos)
-  - [Docker-i kasutusjuhud ja eelised](#docker-i-kasutusjuhud-ja-eelised)
-    - [Kasutusjuhud](#kasutusjuhud)
-    - [Eelised](#eelised)
-  - [Allikad](#allikad)
-  - [Kontrollküsimused või harjutus](#kontrollküsimused-või-harjutus)
+  - [Use Cases and Benefits of Docker](#use-cases-and-benefits-of-docker)
+    - [Use Cases](#use-cases)
+    - [Benefits](#benefits)
+  - [References](#references)
+  - [Review Questions or Exercises](#review-questions-or-exercises)
 
-## Õpiväljundid
+## Learning Outcomes
 
-Selle peatüki lõpuks peaksid õppijad olema võimelised:
+By the end of this chapter, learners should be able to:
 
-- selgitama, mis on Docker ja kuidas see töötab;
-- kirjeldama konteinerite ja virtuaalmasinate erinevusi;
-- nimetama Docker-i põhikomponente ja nende funktsionaalsust;
-- kirjeldama Docker-i kasutusjuhtumeid ja eeliseid;
-- installeerima Docker Desktopi oma arvutisse.
+- explain what Docker is and how it works;
+- describe the differences between containers and virtual machines;
+- name the core components of Docker and their functionality;
+- outline the use cases and benefits of Docker;
+- install Docker Desktop on their computer.
 
-## Docker-i põhimõisted
+## Key Concepts of Docker
 
-**Docker:** Docker on platvorm, mis kasutab konteineriseerimistehnoloogiat, et pakkida rakendused ja nende sõltuvused ühte isoleeritud üksusesse, mida nimetatakse konteineriks.
+**Docker:** Docker is a platform that uses containerization technology to package applications and their dependencies into an isolated unit known as a container.
 
-**Konteiner:** Konteiner on kerge, isoleeritud keskkond, mis sisaldab kõiki vajalikke faile ja sõltuvusi rakenduse käivitamiseks. Konteinerid jagavad sama operatsioonisüsteemi tuuma (_kernelit_), mis muudab need tõhusamaks kui virtuaalmasinad.
+**Container:** A container is a lightweight, isolated environment that includes all the necessary files and dependencies to run an application. Containers share the same operating system kernel, making them more efficient than virtual machines.
 
-**Docker Image (_tõmmis_):** Docker Image on fail, mis sisaldab kõiki rakenduse käivitamiseks vajalikke komponente, sealhulgas koodi, raamistikke, sõltuvusi ja süsteemi tööriistu. Image-d on `read-only`-d ja neid kasutatakse konteinerite loomiseks.
+**Docker Image:** A Docker image is a file that contains all the components necessary to run an application, including the code, frameworks, dependencies, and system tools. Images are read-only and are used to create containers.
 
-**Docker Container:** Docker Container on Imagest loodud eksemplar, mis käitab rakendust isoleeritud keskkonnas. Konteinerid on kerged ja käivituvad kiiresti.
+**Docker Container:** A Docker container is a running instance of a Docker image that executes an application in an isolated environment. Containers are lightweight and start quickly.
 
-**Dockerfile:** Dockerfile on tekstifail, mis sisaldab juhiseid Docker Image loomiseks. See määratleb, millised komponendid ja sammud on vajalikud Image loomiseks.
+**Dockerfile:** A Dockerfile is a text file that contains instructions for creating a Docker image. It defines the components and steps required to build the image.
 
-**Docker Hub:** Docker Hub on pilvepõhine repositoorium, kus kasutajad saavad jagada, tõmmata ja üles laadida Docker Image-id.
+**Docker Hub:** Docker Hub is a cloud-based repository where users can share, pull, and push Docker images.
 
-## Docker-i tööpõhimõte
+## How Docker Works
 
-Docker kasutab konteinerite tehnoloogiat, mis võimaldab rakenduste ja nende sõltuvuste pakkimist, arendamist ja käitamist isoleeritud keskkonnas. Konteinerid töötavad otseselt host-operatsioonisüsteemi peal, jagades sama kernelit, mis muudab need kergemaks ja tõhusamaks kui traditsioonilised virtuaalmasinad.
+Docker uses container technology that allows applications and their dependencies to be packaged, developed, and run in isolated environments. Containers run directly on the host operating system, sharing the same kernel, making them lighter and more efficient than traditional virtual machines.
 
-### Konteinerid vs virtuaalmasinad
+### Containers vs Virtual Machines
 
-Konteinerid ja virtuaalmasinad (VM-id) on mõlemad isoleeritud keskkonnad, kuid nende tööpõhimõtted ja kasutusjuhud erinevad.
+Containers and virtual machines (VMs) are both isolated environments, but their principles of operation and use cases differ.
 
-- **Konteinerid:**
+- **Containers:**
 
-  - jagavad host-operatsioonisüsteemi kernelit;
-  - on väiksemamahulised ja käivituvad kiiremini;
-  - pakuvad paremat jõudlust ja efektiivsust;
-  - sobivad hästi mikroteenuste arhitektuuride ja pilvepõhiste rakenduste jaoks.
+  - share the host operating system kernel;
+  - are smaller and start faster;
+  - provide better performance and efficiency;
+  - are well-suited for microservices architectures and cloud-based applications.
 
-- **Virtuaalmasinad:**
-  - käitavad täisväärtuslikku operatsioonisüsteemi koos oma kerneliga;
-  - on suuremamahulisemad ja käivituvad reeglina aeglasemalt;
-  - pakuvad täielikku isolatsiooni ja turvalisust;
-  - sobivad hästi mitmesuguste operatsioonisüsteemide käitamiseks samal riistvaral.
+- **Virtual Machines:**
+  - run a full-fledged operating system with its kernel;
+  - are larger and generally start slower;
+  - provide complete isolation and security;
+  - are suitable for running various operating systems on the same hardware.
 
-## Docker-i põhikomponendid
+## Core Components of Docker
 
 ### Docker Engine
 
-Docker Engine on Docker-i peamine komponent, mis vastutab konteinerite loomise ja käitamise eest. See koosneb kolmest osast:
+Docker Engine is the primary component of Docker responsible for creating and running containers. It consists of three parts:
 
-- **Server (Docker Daemon):** Teenus, mis haldab konteinerite elutsüklit.
-- **REST API:** Liides, mis võimaldab suhtlust Docker Daemoniga.
-- **CLI (Command Line Interface):** Käsurea tööriist, mis võimaldab kasutajatel suhelda Dockeriga.
+- **Server (Docker Daemon):** A service that manages the lifecycle of containers.
+- **REST API:** An interface that allows communication with the Docker Daemon.
+- **CLI (Command Line Interface):** A command-line tool that enables users to interact with Docker.
 
 ### Docker Image
 
-Docker Image on rakenduse ja selle sõltuvuste muudetamatu mall, mida kasutatakse konteinerite loomiseks. Image-d ehitatakse `Dockerfile` abil.
+A Docker image is an immutable template for an application and its dependencies used to create containers. Images are built using a Dockerfile.
 
-Näide Dockerfile-st:
+Example Dockerfile:
 
 ```Dockerfile
-# Alustatakse baas-Image-ga
+# Start from a base image
 FROM node:14
 
-# Määratakse töökaust konteineris
+# Set the working directory inside the container
 WORKDIR /app
 
-# Kopeeritakse package.json ja package-lock.json
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Installitakse sõltuvused
+# Install dependencies
 RUN npm install
 
-# Kopeeritakse ülejäänud rakenduse kood
+# Copy the rest of the application code
 COPY . .
 
-# Määratakse käivituskäsk
+# Set the command to run the application
 CMD ["node", "app.js"]
 ```
 
 ### Docker Container
 
-Docker Container on jooksva rakenduse eksemplar, mis on loodud Docker Image-st. Konteinerid on kerged, isoleeritud ja neid saab hõlpsasti käivitada, peatada ja eemaldada.
+A Docker container is a running instance of a Docker image. Containers are lightweight, isolated, and can be easily started, stopped, and removed.
 
-Näide konteineri loomisest ja käivitamisest:
+Example of creating and running a container:
 
 ```bash
 docker build -t my-node-app .
@@ -123,9 +123,9 @@ docker run -d -p 3000:3000 my-node-app
 
 ### Docker Compose
 
-Docker Compose on tööriist, mis võimaldab määratleda ja hallata mitme konteineriga rakendusi. See kasutab `YAML` konfiguratsioonifaili `docker-compose.yml`, et määratleda teenused, võrgud ja mahud.
+Docker Compose is a tool that allows you to define and manage multi-container applications. It uses a YAML configuration file, `docker-compose.yml`, to specify services, networks, and volumes.
 
-Näide `docker-compose.yml` failist:
+Example of a `docker-compose.yml` file:
 
 ```yaml
 version: "3"
@@ -142,45 +142,42 @@ services:
 
 ## Docker Desktop
 
-Docker Desktop on tööriist, mis pakub lihtsat ja kasutajasõbralikku viisi Docker-i konteinerite haldamiseks ja arendamiseks Windowsi ja macOS platvormidel. Docker Desktop ühendab endas kõik vajalikud tööriistad, sealhulgas Docker Engine, Docker CLI, Docker Compose ja Kubernetes, et arendajad saaksid kiiresti alustada konteineripõhiste rakenduste loomist ja haldamist.
+Docker Desktop is a tool that provides an easy and user-friendly way to manage and develop Docker containers on Windows and macOS platforms. Docker Desktop integrates all the necessary tools, including Docker Engine, Docker CLI, Docker Compose, and Kubernetes, allowing developers to quickly start building and managing container-based applications.
 
-Inimestele, kes ei ole harjunud või kes ei sooovi kasutada käsurea tööriistu, pakub Docker Desktop lihtsat kasutajaliidest, mis võimaldab konteinerite loomist, käivitamist ja haldamist visuaalselt.
+For those unfamiliar with or unwilling to use command-line tools, Docker Desktop offers a simple graphical user interface for creating, running, and managing containers visually.
 
-### Docker Desktopi installatsioon ja seadistus
+### Installing and Setting Up Docker Desktop
 
 #### Windows
 
-- Laadige alla Docker Desktopi installer [Docker-i ametlikult veebisaidilt](https://www.docker.com/products/docker-desktop).
-- Käivitage installer ja järgige juhiseid, et installida Docker Desktop.
-- Pärast installatsiooni lõpetamist käivitage Docker Desktop ja logige sisse oma Docker Hubi kontoga (valikuline).
+- Download the Docker Desktop installer from [Docker's official website](https://www.docker.com/products/docker-desktop).
+- Run the installer and follow the instructions to install Docker Desktop.
+- After the installation is complete, launch Docker Desktop and log in with your Docker Hub account (optional).
 
 #### macOS
 
-- Laadige alla Docker Desktopi DMG-fail [Docker-i ametlikult veebisaidilt](https://www.docker.com/products/docker-desktop).
-- Avage DMG-fail ja lohistage Docker Desktopi ikoon rakenduste kausta.
-- Käivitage Docker Desktop rakenduste kaustast ja logige sisse oma Docker Hubi kontoga (valikuline).
+- Download the Docker Desktop DMG file from [Docker's official website](https://www.docker.com/products/docker-desktop).
+- Open the DMG file and drag the Docker Desktop icon to the Applications folder.
+- Launch Docker Desktop from the Applications folder and log in with your Docker Hub account (optional).
 
-## Docker-i kasutusjuhud ja eelised
+## Use Cases and Benefits of Docker
 
-### Kasutusjuhud
+### Use Cases
 
-- \*\*Mik
+- **Microservices Architecture:** Docker enables isolated and independent deployment of microservices.
+- **Cloud-Based Applications:** Containers provide scalability and flexibility for cloud-based applications.
+- **Development and Testing:** Docker allows for a consistent development and testing environment, reducing bugs and speeding up development cycles.
+- **Modernizing Legacy Systems:** Docker helps containerize legacy systems and migrate them to more modern platforms.
 
-roteenuste arhitektuur:\*\* Docker võimaldab mikroteenuste isoleeritud ja sõltumatut juurutamist.
+### Benefits
 
-- **Pilvepõhised rakendused:** Konteinerid võimaldavad skaleeritavust ja paindlikkust pilvepõhiste rakenduste jaoks.
-- **Arendus ja testimine:** Docker võimaldab ühtlast arendus- ja testimiskeskkonda, mis vähendab vigu ja kiirendab arendustsüklit.
-- **Pärandsüsteemide moderniseerimine:** Docker aitab pärandsüsteeme konteineriseerida ja viia need kaasaegsematele platvormidele.
+- **Lighter and faster than virtual machines.**
+- **Easy to install and manage.**
+- **Scalability and portability.**
+- **Consistent behavior across different environments.**
+- **Strong ecosystem and large community.**
 
-### Eelised
-
-- **Kergemad ja kiiremad kui virtuaalmasinad.**
-- **Lihtne paigaldamine ja haldamine.**
-- **Skaleeritavus ja portatiivsus.**
-- **Ühtlane käitumine erinevates keskkondades.**
-- **Tugev ökosüsteem ja lai kogukond.**
-
-## Allikad
+## References
 
 - [Docker Official Documentation](https://docs.docker.com/)
 - [Docker for Dummies by Earl Waud](https://www.amazon.com/Docker-Dummies-Earl-Waud/dp/1119564687)
@@ -188,9 +185,9 @@ roteenuste arhitektuur:\*\* Docker võimaldab mikroteenuste isoleeritud ja sõlt
 - [Learning Docker by Jeeva S. Chelladhurai](https://www.amazon.com/Learning-Docker-Jeeva-Chelladhurai/dp/1783984869)
 - [Docker for Developers by Richard Bullington-McGuire](https://www.amazon.com/Docker-Developers-Richard-Bullington-McGuire/dp/1789617384)
 
-## Kontrollküsimused või harjutus
+## Review Questions or Exercises
 
-- Mis on Docker ja kuidas see erineb virtuaalmasinatest?
-- Selgitage Docker Image ja Docker Container vahelist erinevust.
-- Kirjutage lihtne Dockerfile, mis loob Node.js rakenduse pildi.
-- Mis on Docker Compose ja kuidas see aitab mitme konteineriga rakendusi hallata?
+- What is Docker and how does it differ from virtual machines?
+- Explain the difference between Docker Image and Docker Container.
+- Write a simple Dockerfile that creates an image for a Node.js application.
+- What is Docker Compose and how does it help manage multi-container applications?
