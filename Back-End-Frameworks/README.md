@@ -35,7 +35,7 @@ By the end of the course, students should be proficient in the principles of ser
 - [Authentication and Authorization](./Topics/Auth/README.md)
 - [Bcrypt](./Topics/Bcrypt/README.md)
 - [JWT](./Topics/JWT/README.md)
-- [Adding Tests to an Existing Project](./Topics/Adding-Tests-TO-Existing-Project/README.md)
+- [Adding Tests to an Existing Project](../Databases/Topics/MySQL-NodeJS/README.md)
 - [Chai](./Topics/Chai/README.md)
 - [Connecting to a Database](./Topics/Connecting-Database/README.md)
 - [Design Patterns](./Topics/Design-Patterns/README.md)
