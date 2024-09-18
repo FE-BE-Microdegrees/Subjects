@@ -246,9 +246,7 @@ RIGHT JOIN posts ON users.id = posts.user_id;
 
 #### FULL JOIN: All Users and Posts
 
-```
-
-sql
+```sql
 SELECT users.username, posts.title
 FROM users
 LEFT JOIN posts ON users.id = posts.user_id
