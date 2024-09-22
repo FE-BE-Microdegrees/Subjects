@@ -48,7 +48,7 @@ marp: true
 
 ## Installing Live Share
 
-![Installing Live Share](image.png)
+![Installing Live Share](https://github.com/FE-BE-Microdegrees/Subjects/blob/Slides-translation/Lessons/Common-Lessons/Lesson-02/image.png)
 
 ---
 
