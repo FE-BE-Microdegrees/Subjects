@@ -411,6 +411,30 @@ An array is a collection of values stored in a single variable. Arrays are typic
 
 ---
 
+## Declaring an Array
+```javascript
+const numbers = [1, 2, 3];
+const fruits = ['apple', 'pear', 'banana'];
+const mixed = [1, 'apple', true];
+```
+
+---
+
+## Accessing Array Elements
+
+- Each element has its own index (position number)
+- Index starts at zero
+- Access an element: `array[index]`
+- Array length: `array.length`
+
+```javascript
+const numbers = [1, 2, 3];
+
+console.log(numbers[0]); // 1
+
+console.log(numbers.length); // 3
+```
+
 ## Loops - Discussion
 
 ---
@@ -422,7 +446,101 @@ An array is a collection of values stored in a single variable. Arrays are typic
 - `do...while`
 
 ---
+## `for` Loop
 
+A `for` loop is used to repeat a block of code a certain number of times. The for loop consists of three parts: initialization, condition, and increment/decrement.
+---
+
+## `for` Loop Syntax
+
+```js
+for (initialization; condition; increment/decrement) {
+  // code to repeat
+}
+
+```
+
+---
+
+## `for` Loop Example
+
+```js
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+```
+
+---
+
+## `while` loop
+
+A `while` loop is used to repeat a block of code as long as a certain condition is true. The while loop consists of a condition and a code block.
+
+---
+
+## `while` Loop Syntax
+
+```js
+while (condition) {
+  // code to repeat
+}
+
+```
+
+---
+
+## `while` Loop - Important!
+
+The `while` loop does not have a built-in initialization or increment/decrement part. Therefore, we need to be careful when using the `while` loop, as failing to update the counter can cause an infinite loop.
+
+---
+
+## `while` Loop Example
+
+```js
+let i = 0;
+
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+```
+
+---
+
+## `do...while` Loop
+
+The `do...while` loop is another type of loop used to repeat a block of code as long as a certain condition is true.
+
+The difference from previous loops is that with the other loops, the condition is checked before executing the block of code, but in the `do...while` loop, the condition is checked after the code block is executed. This means that the code block in a `do...while` loop will always execute at least once, even if the condition is false.
+
+---
+
+## `do...while` Loop Syntax
+
+```js
+do {
+  // code to repeat
+} while (condition);
+
+```
+
+---
+
+## `do...while` Loop Example
+```js
+let i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+
+```
+
+---
 
 ## Exercises
 
