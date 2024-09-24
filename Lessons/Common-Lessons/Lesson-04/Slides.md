@@ -4,9 +4,7 @@ marp: true
 
 # Web Development
 
-Martti Raavel
 
-<martti.raavel@tlu.ee>
 
 ---
 
