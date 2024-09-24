@@ -12,11 +12,11 @@ marp: true
 - Recap of the previous lecture
 - Solving issues that arose during homework
 - Requirements and user research
-  - [Brief](../../../Subjects/Software-Development/Topics/Brief/README.md)
-  - [Persona](../../../Subjects/Software-Development/Topics/Persona/README.md)
-  - [User Stories](../../../Subjects/Software-Development/Topics/User-Stories/README.md)
-  - [Scenario](../../../Subjects/Software-Development/Topics/Scenario/README.md)
-  - [User Journeys](../../../Subjects/Software-Development/Topics/User-Journey/README.md)
+  - [Brief](https://github.com/FE-BE-Microdegrees/Subjects/tree/Slides-translation/Software-Development/Topics/Brief/README.md)
+  - [Persona](https://github.com/FE-BE-Microdegrees/Subjects/tree/Slides-translation/Software-Development/Topics/Persona/README.md)
+  - [User Stories](https://github.com/FE-BE-Microdegrees/Subjects/tree/Slides-translation/Software-Development/Topics/User-Stories/README.md)
+  - [Scenario](https://github.com/FE-BE-Microdegrees/Subjects/tree/Slides-translation/Software-Development/Topics/Scenario/README.md)
+  - [User Journeys](https://github.com/FE-BE-Microdegrees/Subjects/tree/Slides-translation/Software-Development/Topics/User-Journey/README.md)
 
 ---
 
@@ -93,7 +93,7 @@ A **persona** is created based on research and data about real users, and it hel
 
 ## Persona - Example
 
-![Persona](../../../Subjects/Software-Development/Topics/Persona/files/persona_2.png)
+![Persona](https://github.com/FE-BE-Microdegrees/Subjects/blob/Slides-translation/Software-Development/Topics/Persona/persona_2.png)
 
 ---
 
@@ -258,7 +258,7 @@ A user journey, also known as a user journey map or customer journey map, is a t
 
 ## User Journey - Example
 
-![User Journey](../../../Subjects/Software-Development/Topics/User-Journey/files/Kasutajateekond_1.png)
+![User Journey](https://github.com/FE-BE-Microdegrees/Subjects/blob/Slides-translation/Software-Development/Topics/User-Journey/Kasutajateekond_1.png)
 
 ---
 
@@ -316,3 +316,62 @@ function add(a, b) {
   const sum = a + b;
   return sum;
 }
+```
+
+---
+
+## Function - Consists of
+
+- Function - Consists of
+- Function name
+- Function parameters (optional)
+- Function body
+- Return statement (optional)
+- Return value (optional)
+
+---
+
+## Function Declaration
+
+In JavaScript, we can declare functions in two ways:
+
+- Function declaration;
+- Function expression.
+
+---
+
+## Function Declaration
+
+```javascript
+function functionName(parameter1, parameter2) {
+  // function body
+  return value;
+}
+```
+
+---
+
+## Function Expression
+
+```javascript
+const add = function(a, b) {
+  const sum = a + b;
+  return sum;
+}
+```
+
+---
+
+## Function Invocation (Execution)
+
+```javascript
+const sum = add(1, 2);
+
+console.log(sum); // 3
+```
+
+---
+
+## Harjutused
+
+---
