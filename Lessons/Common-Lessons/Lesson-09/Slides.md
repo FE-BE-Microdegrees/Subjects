@@ -4,9 +4,7 @@ marp: true
 
 # Software Development and Programming
 
-Martti Raavel
 
-<martti.raavel@tlu.ee>
 
 ---
 
