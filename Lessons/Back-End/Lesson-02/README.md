@@ -16,9 +16,6 @@
 - Using an API Tool
   - Thunder Client
 
-Diagram drawn on the board during the lecture:
-
-![Request Path](image.png)
 
 ## Homework
 
