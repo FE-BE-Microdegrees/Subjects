@@ -114,7 +114,6 @@ console.log(firstName + ' ' + lastName); // print out values of the firstName an
 In the same file, declare a variable named `age` and assign the value `25` to it.
 
 Print out text `John is 25 years old.` using the `firstName` and `age` variables.
-
 # Değişkenler
 
 Bu konuda, JavaScript'teki değişkenler hakkında öğreniyoruz.
@@ -147,7 +146,7 @@ Bir değişkeni, üzerine etiket yapıştırılmış bir kutu gibi düşünebili
 
 JavaScript'te bu şöyle bir şey olacaktır:
 
-```javascript
+```javascript```
 let elma = 5; // elma adında bir değişken deklare edilir ve 5 değeri atanır (kutuda 5 elma var)
 console.log(elma); // elma değişkeninin değerini ekrana yazdırır (kutuyu açar, içinde kaç elma olduğunu görür ve ekrana yazdırır)
 Değişken Nasıl Deklare Edilir?
@@ -156,8 +155,7 @@ Bir değişkeni bir programda kullanabilmek için önce onu deklare etmemiz gere
 var anahtar kelimesi, değeri değiştirilebilen bir değişkeni deklare etmek için kullanılır, ancak günümüzde var kullanmaktan kaçınılmalı ve yerine let kullanılmalıdır.
 let anahtar kelimesi, değeri değiştirilebilen bir değişkeni deklare etmek için kullanılır.
 const anahtar kelimesi, değeri değiştirilemeyecek bir değişkeni deklare etmek için kullanılır.
-javascript
-Kodu kopyala
+
 let ilkAd; // ilkAd adında bir değişken deklare edilir
 let yas, soyad; // birden fazla değişken deklare edilir
 Önceki örnekte, ilkAd, yas ve soyad adlarında değişkenler deklare ettik. Ayrıca, aynı anda değişkenlere değer atayarak da deklare edebiliriz.
@@ -165,8 +163,6 @@ let yas, soyad; // birden fazla değişken deklare edilir
 Değişkenlere Değer Atama
 Değişkenlere değer atamak için atama operatörü = kullanılır. Atama operatörünün sağ tarafındaki değer, sol taraftaki değişkene atanır.
 
-javascript
-Kodu kopyala
 let ilkAd = 'John'; // ilkAd adında bir değişken deklare edilir ve 'John' değeri atanır
 let yas = 25, soyad = 'Doe'; // birden fazla değişken deklare edilir ve değerler atanır
 const PI = 3.14; // PI adında bir sabit deklare edilir ve 3.14 değeri atanır
@@ -185,13 +181,9 @@ ilkAd değişkeninin değerini ekrana yazdırın.
 Kodunuzu node index.js komutuyla test edin.
 
 <details> <summary>Çözüm</summary>
-javascript
-Kodu kopyala
 let ilkAd = 'John'; // ilkAd adında bir değişken deklare edilir ve 'John' değeri atanır
 
 console.log(ilkAd); // ilkAd değişkeninin değerini ekrana yazdırır
-
-
 </details>
 Alıştırma 2
 Aynı dosyada, soyad adında bir değişken deklare edin ve ona Doe değerini atayın.
@@ -203,8 +195,6 @@ Kodunuzu node index.js komutuyla test edin.
 İpucu: ilkAd ve soyad değişkenlerinin değerlerini birleştirmek için + operatörünü kullanın.
 
 <details> <summary>Çözüm</summary>
-javascript
-Kodu kopyala
 let ilkAd = 'John'; // ilkAd adında bir değişken deklare edilir ve 'John' değeri atanır
 let soyad = 'Doe'; // soyad adında bir değişken deklare edilir ve 'Doe' değeri atanır
 
@@ -214,3 +204,4 @@ Alıştırma 3
 Aynı dosyada, yas adında bir değişken deklare edin ve ona 25 değerini atayın.
 
 John is 25 years old. metnini, ilkAd ve yas değişkenlerini kullanarak yazdırın.
+
