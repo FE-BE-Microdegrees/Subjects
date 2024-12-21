@@ -173,7 +173,7 @@ Kodunuzu, node index.js komutuyla çalıştırarak test edin.
 
 Değişkenler için farklı değerler kullanarak kodunuzu da test edebilirsiniz.
 
-Alıştırma 1
+### Alıştırma 1
 ilkAd adında bir değişken deklare edin ve ona John değerini atayın.
 
 ilkAd değişkeninin değerini ekrana yazdırın.
@@ -185,7 +185,8 @@ let ilkAd = 'John'; // ilkAd adında bir değişken deklare edilir ve 'John' de�
 
 console.log(ilkAd); // ilkAd değişkeninin değerini ekrana yazdırır
 </details>
-Alıştırma 2
+
+### Alıştırma 2
 Aynı dosyada, soyad adında bir değişken deklare edin ve ona Doe değerini atayın.
 
 ilkAd ve soyad değişkenlerinin değerlerini tek bir satırda yazdırın. Çıktı şu şekilde olmalıdır: John Doe.
@@ -200,7 +201,8 @@ let soyad = 'Doe'; // soyad adında bir değişken deklare edilir ve 'Doe' değe
 
 console.log(ilkAd + ' ' + soyad); // ilkAd ve soyad değişkenlerinin değerlerini tek bir satırda yazdırır
 </details>
-Alıştırma 3
+
+### Alıştırma 3
 Aynı dosyada, yas adında bir değişken deklare edin ve ona 25 değerini atayın.
 
 John is 25 years old. metnini, ilkAd ve yas değişkenlerini kullanarak yazdırın.
