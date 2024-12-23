@@ -298,3 +298,46 @@ console.log(a >= b); // false
 console.log(a <= b); // true
 </details>
 ```
+# Operatörler ve İfadeler
+
+Bu bölümde JavaScript'te operatörler ve ifadeler hakkında bilgi edineceğiz.
+
+- [Operatörler ve İfadeler](#operatörler-ve-ifadeler)
+  - [Öğrenme Hedefleri](#öğrenme-hedefleri)
+  - [Operatör Nedir?](#operatör-nedir)
+  - [İfade Nedir?](#ifade-nedir)
+  - [Operatörler ve İfadeler Arasındaki İlişki](#operatörler-ve-ifadeler-arasındaki-ilişki)
+  - [Operatör Türleri](#operatör-türleri)
+    - [Aritmetik Operatörler](#aritmetik-operatörler)
+    - [Atama Operatörleri](#atama-operatörleri)
+    - [Karşılaştırma Operatörleri](#karşılaştırma-operatörleri)
+    - [Mantıksal Operatörler](#mantıksal-operatörler)
+    - [Bitwise Operatörler (isteğe bağlı - bu derste kullanılmamıştır)](#bitwise-operatörler-isteğe-bağlı---bu-derste-kullanılmamıştır)
+    - [String Operatörleri](#string-operatörleri)
+    - [Koşul (Ternary) Operatörü](#koşul-ternary-operatörü)
+    - [Virgül Operatörü](#virgül-operatörü)
+    - [Unary Operatörler](#unary-operatörler)
+  - [Alıştırmalar](#alıştırmalar)
+    - [Alıştırma 1 - Temel Aritmetik Operatörler](#alıştırma-1---temel-aritmetik-operatörler)
+    - [Alıştırma 2 - Karşılaştırma Operatörleri](#alıştırma-2---karşılaştırma-operatörleri)
+
+## Öğrenme Hedefleri
+
+Bu konuyu tamamladıktan sonra şunları yapabileceksiniz:
+
+- Operatörün ne olduğunu tanımlayın.
+- İfadenin ne olduğunu tanımlayın.
+- Operatörler ile ifadeleri birbirinden ayırt edin.
+- JavaScript'teki en yaygın operatörleri listeleyin.
+- Farklı türdeki operatörlerin arasındaki farkı açıklayın.
+- Programınızda operatörleri kullanın.
+- Eşitlik operatörü (`==`) ile sıkı eşitlik operatörü (`===`) arasındaki farkı açıklayın.
+- Eşitsizlik operatörü (`!=`) ile sıkı eşitsizlik operatörü (`!==`) arasındaki farkı açıklayın.
+
+## Operatör Nedir?
+
+Operatör, bir veya birden fazla değer üzerinde işlem yapmak için kullanılan bir semboldür. Örneğin, `+` sembolü iki değeri toplamak için kullanılır. Operatörün işlem yaptığı değerlere operand denir. Örneğin, `5 + 10` ifadesinde `+` operatör, `5` ve `10` operandlardır.
+
+```javascript
+let x = 5 + 10; // 5 ve 10 operand, + operatör. x değişkenine işlemin sonucu atanır.
+
