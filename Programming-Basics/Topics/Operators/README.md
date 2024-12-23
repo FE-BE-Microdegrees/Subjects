@@ -341,3 +341,108 @@ Operatör, bir veya birden fazla değer üzerinde işlem yapmak için kullanıla
 ```javascript
 let x = 5 + 10; // 5 ve 10 operand, + operatör. x değişkenine işlemin sonucu atanır.
 
+İfade Nedir?
+İfade, değerler, değişkenler, operatörler ve fonksiyonların bir kombinasyonudur ve bir sonuç döner. Örneğin, 2 + 3 bir ifadedir ve sonucu 5'tir. İfadeler, hesaplamalar yapmak, stringleri manipüle etmek gibi birçok işlemde kullanılır.
+
+Operatörler ve İfadeler Arasındaki İlişki
+Temel ilişki, operatörlerin ifadelerde kullanılan işlemleri tanımlamasıdır. Bir ifade, yalnızca bir operatör içeren basit bir işlemden (x + y) veya birden fazla operatör içeren karmaşık bir işlemden ((x + y) * (a - b)) oluşabilir.
+
+İfadelerin değerlendirilmesi genellikle operatörlerin önceliği ve birleşme kurallarına bağlıdır. Örneğin, çarpma ve bölme işlemleri toplama ve çıkarmadan önce yapılır.
+
+Operatör Türleri
+JavaScript'te birçok farklı operatör türü vardır. Bu konuda en yaygın kullanılan operatörleri inceleyeceğiz.
+
+Aritmetik Operatörler
+Aritmetik operatörler, sayısal değerler üzerinde matematiksel işlemler yapmak için kullanılır. Örneğin, iki sayıyı toplamak veya çarpmak isteyebiliriz.
+
+JavaScript'te 5 aritmetik operatör vardır:
+
++: Toplama - iki değeri toplar.
+-: Çıkarma - bir değeri diğerinden çıkarır.
+*: Çarpma - iki değeri çarpar.
+/: Bölme - bir değeri diğerine böler.
+%: Modulus - bir değeri diğerine böler ve kalanı döner.
+
+let x = 5 + 10; // toplama - sonuç 15
+let y = 5 - 10; // çıkarma - sonuç -5
+let z = 5 * 10; // çarpma - sonuç 50
+let w = 5 / 10; // bölme - sonuç 0.5
+let v = 5 % 10; // modulus - sonuç 5
+
+Atama Operatörleri
+Atama operatörleri, değişkenlere değer atamak için kullanılır. Bir değişken üzerinde işlem yapıp sonucu aynı değişkene atamak isteyebiliriz.
+
+JavaScript'te 8 atama operatörü vardır:
+
+=: bir değişkene değer atar.
++=: bir değişkene değer ekler ve sonucu aynı değişkene atar.
+-=: bir değişkenden değer çıkarır ve sonucu aynı değişkene atar.
+*=: bir değişkeni bir değerle çarpar ve sonucu aynı değişkene atar.
+/=: bir değişkeni bir değere böler ve sonucu aynı değişkene atar.
+%=: bir değişkeni bir değere böler ve kalanı aynı değişkene atar.
+**=: bir değişkenin üssünü alır ve sonucu aynı değişkene atar.
+++: bir değişkeni 1 artırır.
+--: bir değişkeni 1 azaltır.
+
+let x = 5;
+x += 10; // sonuç 15
+x -= 10; // sonuç 5
+x *= 10; // sonuç 50
+x /= 10; // sonuç 5
+x %= 10; // sonuç 5
+x **= 2; // sonuç 25
+x++; // sonuç 26
+x--; // sonuç 25
+
+Karşılaştırma Operatörleri
+Karşılaştırma operatörleri, iki değeri karşılaştırmak için kullanılır. Karşılaştırma sonucu true veya false döner.
+
+JavaScript'te 8 karşılaştırma operatörü vardır:
+
+==: eşit mi - iki değer eşitse true döner.
+!=: eşit değil mi - iki değer eşit değilse true döner.
+>: büyük mü - ilk değer ikincisinden büyükse true döner.
+<: küçük mü - ilk değer ikincisinden küçükse true döner.
+>=: büyük veya eşit mi - ilk değer ikincisinden büyük veya eşitse true döner.
+<=: küçük veya eşit mi - ilk değer ikincisinden küçük veya eşitse true döner.
+===: sıkı eşitlik - iki değer hem eşit hem aynı türdeyse true döner.
+!==: sıkı eşitsizlik - iki değer eşit değilse veya farklı türdeyse true döner.
+
+let x = 5;
+let y = 10;
+let z = '5';
+
+console.log(x == y); // false
+console.log(x != y); // true
+console.log(x > y); // false
+console.log(x < y); // true
+console.log(x >= y); // false
+console.log(x <= y); // true
+console.log(x === z); // false
+console.log(x !== z); // true
+
+Alıştırmalar
+Alıştırma 1 - Temel Aritmetik Operatörler
+İki değişken tanımlayın ve dört temel matematiksel işlemi uygulayın.
+
+let num1 = 5;
+let num2 = 10;
+
+console.log(num1 + num2); // 15
+console.log(num1 - num2); // -5
+console.log(num1 * num2); // 50
+console.log(num1 / num2); // 0.5
+
+Alıştırma 2 - Karşılaştırma Operatörleri
+İki değişken tanımlayın ve karşılaştırma operatörleriyle sonuçlarını yazdırın.
+
+let a = 5;
+let b = 10;
+
+console.log(a == b); // false
+console.log(a != b); // true
+console.log(a > b); // false
+console.log(a < b); // true
+console.log(a >= b); // false
+console.log(a <= b); // true
+
