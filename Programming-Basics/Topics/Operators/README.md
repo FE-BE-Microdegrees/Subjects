@@ -448,3 +448,17 @@ console.log(a < b); // true
 console.log(a >= b); // false
 console.log(a <= b); // true
 
+let x = 5;
+let y = 10;
+let z = '5';
+
+console.log(x == y); // false
+console.log(x != y); // true
+console.log(x > y); // false
+console.log(x < y); // true
+console.log(x >= y); // false
+console.log(x <= y); // true
+console.log(x === y); // false
+console.log(x !== y); // true
+console.log(x == z); // true
+console.log(x === z); // false
