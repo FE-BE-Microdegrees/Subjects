@@ -298,6 +298,7 @@ console.log(a >= b); // false
 console.log(a <= b); // true
 </details>
 ```
+
 # Operatörler ve İfadeler
 
 Bu bölümde JavaScript'te operatörler ve ifadeler hakkında bilgi edineceğiz.
@@ -339,9 +340,10 @@ Bu konuyu tamamladıktan sonra şunları yapabileceksiniz:
 Operatör, bir veya birden fazla değer üzerinde işlem yapmak için kullanılan bir semboldür. Örneğin, `+` sembolü iki değeri toplamak için kullanılır. Operatörün işlem yaptığı değerlere operand denir. Örneğin, `5 + 10` ifadesinde `+` operatör, `5` ve `10` operandlardır.
 
 ```javascript
-let x = 5 + 10; // 5 ve 10 operand, + operatör. x değişkenine işlemin sonucu atanır.
+let x = 5 + 10; // 5 ve 10 operand, + operatör. x değişkenine işlemin sonucu atanır
+```
 
-İfade Nedir?
+## İfade Nedir?
 İfade, değerler, değişkenler, operatörler ve fonksiyonların bir kombinasyonudur ve bir sonuç döner. Örneğin, 2 + 3 bir ifadedir ve sonucu 5'tir. İfadeler, hesaplamalar yapmak, stringleri manipüle etmek gibi birçok işlemde kullanılır.
 
 Operatörler ve İfadeler Arasındaki İlişki
