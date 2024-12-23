@@ -99,9 +99,7 @@ Bazı programlama dillerinde (örneğin C), "Hello World" kelimelerini ekrana ya
 
 Javascript'te Hello World yazmak için bir metin düzenleyicisi açmamız ve aşağıdaki kodu yazmamız gerekir:
 
-```javascript
-console.log('Hello World!');
-Dosyayı helloWorld.js olarak kaydedebilir ve Node JS kullanarak çalıştırabiliriz.
+![Running Hello World](RunningHelloWorld.gif)
 
 console.log() fonksiyonu, bir mesajı konsola yazdırmak için kullanılır. Bir argüman alır, bu argüman konsola yazdırmak istediğimiz mesajdır. Bu durumda mesaj "Hello World!"'tür.
 
