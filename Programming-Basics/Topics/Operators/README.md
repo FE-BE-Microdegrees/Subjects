@@ -349,12 +349,12 @@ let x = 5 + 10; // 5 ve 10 operand, + operatör. x değişkenine işlemin sonucu
 Operatörler ve İfadeler Arasındaki İlişki
 Temel ilişki, operatörlerin ifadelerde kullanılan işlemleri tanımlamasıdır. Bir ifade, yalnızca bir operatör içeren basit bir işlemden (x + y) veya birden fazla operatör içeren karmaşık bir işlemden ((x + y) * (a - b)) oluşabilir.
 
-İfadelerin değerlendirilmesi genellikle operatörlerin önceliği ve birleşme kurallarına bağlıdır. Örneğin, çarpma ve bölme işlemleri toplama ve çıkarmadan önce yapılır.
+- İfadelerin değerlendirilmesi genellikle operatörlerin önceliği ve birleşme kurallarına bağlıdır. Örneğin, çarpma ve bölme işlemleri toplama ve çıkarmadan önce yapılır.
 
-Operatör Türleri
-JavaScript'te birçok farklı operatör türü vardır. Bu konuda en yaygın kullanılan operatörleri inceleyeceğiz.
+## Operatör Türleri
+- JavaScript'te birçok farklı operatör türü vardır. Bu konuda en yaygın kullanılan operatörleri inceleyeceğiz.
 
-Aritmetik Operatörler
+## Aritmetik Operatörler
 Aritmetik operatörler, sayısal değerler üzerinde matematiksel işlemler yapmak için kullanılır. Örneğin, iki sayıyı toplamak veya çarpmak isteyebiliriz.
 
 JavaScript'te 5 aritmetik operatör vardır:
@@ -396,7 +396,7 @@ x **= 2; // sonuç 25
 x++; // sonuç 26
 x--; // sonuç 25
 
-Karşılaştırma Operatörleri
+## Karşılaştırma Operatörleri
 Karşılaştırma operatörleri, iki değeri karşılaştırmak için kullanılır. Karşılaştırma sonucu true veya false döner.
 
 JavaScript'te 8 karşılaştırma operatörü vardır:
@@ -423,7 +423,7 @@ console.log(x <= y); // true
 console.log(x === z); // false
 console.log(x !== z); // true
 
-Alıştırmalar
+## Alıştırmalar
 Alıştırma 1 - Temel Aritmetik Operatörler
 İki değişken tanımlayın ve dört temel matematiksel işlemi uygulayın.
 
@@ -435,7 +435,7 @@ console.log(num1 - num2); // -5
 console.log(num1 * num2); // 50
 console.log(num1 / num2); // 0.5
 
-Alıştırma 2 - Karşılaştırma Operatörleri
+## Alıştırma 2 - Karşılaştırma Operatörleri
 İki değişken tanımlayın ve karşılaştırma operatörleriyle sonuçlarını yazdırın.
 
 let a = 5;
