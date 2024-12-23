@@ -118,5 +118,4 @@ Javascript'i çalıştırmanın birçok yolu vardır. Javascript kodunu bir dosy
 
 Javascript yazmak için basit bir metin düzenleyici kullanabilirsiniz, ancak Javascript'i destekleyen özel bir kod düzenleyici kullanmanız önerilir. Kod yazmak için `.js` uzantısına sahip yeni bir dosya oluşturup kodunuzu bu dosyaya yazmanız gerekir.
 
-```js
-console.log('Merhaba, Dünya!');
+![Running Javascript in Node JS](../NodeJS/RunningNode.gif)
