@@ -522,11 +522,26 @@ console.log(sayilar[0]); // 1
 sayilar[0] = 10;
 
 console.log(sayilar); // [10, 2, 3]
+### Dizi Metotları
 
-## Dizi Metotları
-# Dizileri manipüle etmek için birçok metot vardır. Örneğin:
+Dizileri manipüle etmek için birçok metot vardır. Örneğin:
 
-- push() bir değeri dizinin sonuna ekler.
-- pop() bir değeri dizinin sonundan kaldırır.
-- shift() bir değeri dizinin başından kaldırır.
-- unshift() bir değeri dizinin başına ekler.
+```javascript
+// push() bir değeri dizinin sonuna ekler.
+const sayilar = [1, 2, 3];
+sayilar.push(4);
+console.log(sayilar); // [1, 2, 3, 4]
+
+// pop() bir değeri dizinin sonundan kaldırır.
+sayilar.pop();
+console.log(sayilar); // [1, 2, 3]
+
+// shift() bir değeri dizinin başından kaldırır.
+sayilar.shift();
+console.log(sayilar); // [2, 3]
+
+// unshift() bir değeri dizinin başına ekler.
+sayilar.unshift(0);
+console.log(sayilar); // [0, 2, 3]
+```
+
