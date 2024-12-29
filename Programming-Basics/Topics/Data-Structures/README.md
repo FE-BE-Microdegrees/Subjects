@@ -460,88 +460,123 @@ console.log(student);
 
 If you want to solve additional exercises on objects, you can find some here: [Addditional exercises.](Exercises-Objects.md)
 
-# Veri Yapıları
+// Veri Yapıları
 
-Bu konuda, veri yapıları hakkında detaylı konuşacağız. Veri yapısının ne olduğunu, bir dizinin ne olduğunu, bir nesnenin ne olduğunu ve dizileri ve nesneleri nasıl kullanacağımızı keşfedeceğiz.
+// Bu başlıkta, veri yapılarını ayrıntılı bir şekilde ele alacağız. Bir veri yapısının ne olduğunu, dizilerin ne olduğunu, nesnelerin ne olduğunu ve diziler ve nesnelerin nasıl kullanılacağını inceleyeceğiz.
 
-- [Veri Yapıları](#veri-yapıları)
-  - [Öğrenim Çıktıları](#öğrenim-çıktıları)
-  - [Veri Yapısı Nedir?](#veri-yapısı-nedir)
-  - [Dizi](#dizi)
-    - [Dizi Metotları](#dizi-metotları)
-      - [Diziye Değer Eklemek](#diziye-değer-eklemek)
-      - [Dizide Değer Bulmak](#dizide-değer-bulmak)
-      - [Diziden Değer Kaldırmak](#diziden-değer-kaldırmak)
-    - [Dizi İterasyonu](#dizi-iterasyonu)
-  - [Nesne](#nesne)
-    - [`Object.keys()` Metodu](#objectkeys-metodu)
-    - [`Object.values()` Metodu](#objectvalues-metodu)
-    - [`Object.entries()` Metodu](#objectentries-metodu)
-  - [Alıştırmalar](#alıştırmalar)
-    - [Alıştırma 1 - Temel Dizi Operasyonları](#alıştırma-1---temel-dizi-operasyonları)
-    - [Alıştırma 2 - Dizi İterasyonu](#alıştırma-2---dizi-iterasyonu)
-    - [Alıştırma 3 - Temel Nesne Operasyonları](#alıştırma-3---temel-nesne-operasyonları)
-    - [Alıştırma 4 - Nesne Özelliklerini Değiştirme](#alıştırma-4---nesne-özelliklerini-değiştirme)
+// Veri Yapıları
 
-## Öğrenim Çıktıları
+// Öğrenim Kazanımları:
+// - Veri yapısının ne olduğunu tanımlayın
+// - Dizilerin ne olduğunu açıklayın
+// - Nesnelerin ne olduğunu açıklayın
+// - Diziler ve nesneleri kullanın
+// - Temel dizi yöntemlerini kullanın
 
-Bu konuyu tamamladıktan sonra:
+// Veri Yapısı Nedir?
 
-- Veri yapısının ne olduğunu tanımlayabileceksiniz
-- Dizinin ne olduğunu açıklayabileceksiniz
-- Nesnenin ne olduğunu açıklayabileceksiniz
-- Dizileri ve nesneleri kullanabileceksiniz
-- Temel dizi metotlarını kullanabileceksiniz
+// Zaten değişkenlerin ne olduğunu biliyoruz ve verileri saklamak için kullanıldığını biliyoruz. Ancak, şimdiye kadar bir değişkende yalnızca bir değer saklayabildik. Örneğin, bir kişinin adını saklamak için bir "ad" değişkeni oluşturabiliriz. Ancak, bir kişinin adı, soyadı, yaşı ve adresini saklamak istesek ne yaparız? Bunun için ayrı ayrı değişkenler oluşturmak yerine bir veri yapısı kullanabiliriz.
 
-## Veri Yapısı Nedir?
+// Veri yapısı, verileri bir bilgisayarın belleğinde düzenleme yöntemidir. Veri yapıları, veri koleksiyonlarını saklamak için kullanılır. Örneğin, bir sayı listesi veya isim listesi saklamak için bir **dizi** kullanabiliriz. Bir kişi hakkında bilgi saklamak (isim, soyisim, yaş, adres, vb.) için bir **nesne** kullanabiliriz.
 
-Değişkenlerin veri saklamak için kullanıldığını zaten biliyoruz. Ancak şimdiye kadar bir değişkende sadece bir değer saklayabiliyorduk. Örneğin, bir kişinin adını saklamak için `isim` adında bir değişken oluşturabiliriz. Ama ya kişinin adını, soyadını, yaşını ve adresini saklamak istersek? Her bir değer için bir değişken oluşturabiliriz, ancak bu verimsiz bir yöntem olurdu. Bunun yerine, tüm bu değerleri bir yerde saklamak için bir veri yapısı kullanabiliriz.
+// Array (Dizi)
 
-Bir veri yapısı, bilgisayar belleğinde veriyi organize etmenin bir yoludur. Veri yapıları, veri koleksiyonlarını saklamak için kullanılır. Örneğin, bir listeyi saklamak için bir **dizi** kullanabiliriz. Bir kişi hakkında bilgi saklamak için bir **nesne** kullanabiliriz (ad, soyad, yaş, adres, vb.). Eşsiz değerleri saklamak için bir **set**, anahtar-değer çiftlerini saklamak için bir **map** kullanabiliriz.
+// Dizi, tek bir değişkende birden çok değer saklamamıza olanak tanıyan bir veri yapısıdır. Örneğin:
+const sayilar = [1, 2, 3]; // Sayılar dizisi
+const isimler = ['Ahmet', 'Ayşe', 'Mehmet']; // İsimler dizisi
 
-> Pek çok farklı veri yapısı olmasına rağmen, bu konuda dizilere ve nesnelere odaklanacağız.
+// Dizinin ilk elemanına erişim:
+console.log(sayilar[0]); // Çıktı: 1
 
-## Dizi
-
-Bir dizi, tek bir değişkende saklanan değerler koleksiyonudur. Diziler, ilişkili veri koleksiyonlarını saklamak için kullanılır. Örneğin, bir sayı listesi veya bir isim listesi saklamak için bir dizi kullanabiliriz.
-
-Bir dizi oluşturmak için `[]` operatörünü kullanırız. Örneğin:
-
-```javascript
-const sayilar = [1, 2, 3];
-
-
-const isimler = ['Ali', 'Ayşe', 'Mehmet'];
-
-- Bir dizideki değerlere dizinin indeksini kullanarak erişebiliriz. İlk değerin indeksi 0'dır:
-
-console.log(sayilar[0]); // 1
-
-- Ayrıca, dizideki bir değeri değiştirmek için de indeksini kullanabiliriz:
-
+// Dizideki bir elemanın değerini değiştirmek:
 sayilar[0] = 10;
+console.log(sayilar); // Çıktı: [10, 2, 3]
 
-console.log(sayilar); // [10, 2, 3]
-### Dizi Metotları
+// Array Yöntemleri:
 
-Dizileri manipüle etmek için birçok metot vardır. Örneğin:
+// 1. Değer Ekleme (push):
+const meyveler = ['elma', 'armut', 'muz'];
+meyveler.push('çilek');
+console.log(meyveler); // Çıktı: ['elma', 'armut', 'muz', 'çilek']
 
-```javascript
-// push() bir değeri dizinin sonuna ekler.
-const sayilar = [1, 2, 3];
-sayilar.push(4);
-console.log(sayilar); // [1, 2, 3, 4]
+// 2. Değer Bulma (indexOf):
+console.log(meyveler.indexOf('muz')); // Çıktı: 2
 
-// pop() bir değeri dizinin sonundan kaldırır.
-sayilar.pop();
-console.log(sayilar); // [1, 2, 3]
+// 3. Değer Silme (splice):
+meyveler.splice(1, 1); // 1. indeksin elemanını sil
+console.log(meyveler); // Çıktı: ['elma', 'muz', 'çilek']
 
-// shift() bir değeri dizinin başından kaldırır.
-sayilar.shift();
-console.log(sayilar); // [2, 3]
+// Array İterasyonu:
+const gunler = ['Pazartesi', 'Salı', 'Çarşamba'];
+for (let i = 0; i < gunler.length; i++) {
+  console.log(gunler[i]);
+}
+// Çıktı:
+// Pazartesi
+// Salı
+// Çarşamba
 
-// unshift() bir değeri dizinin başına ekler.
-sayilar.unshift(0);
-console.log(sayilar); // [0, 2, 3]
-```
+// Nesne (Object)
+
+// Nesne, anahtar-değer çiftlerini saklayan bir veri yapısıdır. Örneğin:
+const kisi = {
+  ad: 'Ali',
+  soyad: 'Yılmaz',
+  yas: 30
+};
+
+// Nesneye erişim:
+console.log(kisi.ad); // Çıktı: Ali
+
+// Nesnenin değerini değiştirme:
+kisi.ad = 'Veli';
+console.log(kisi.ad); // Çıktı: Veli
+
+// Object Yöntemleri:
+
+// 1. Object.keys(): Nesnenin anahtarlarını bir dizi olarak döndürür:
+console.log(Object.keys(kisi)); // Çıktı: ['ad', 'soyad', 'yas']
+
+// 2. Object.values(): Nesnenin değerlerini bir dizi olarak döndürür:
+console.log(Object.values(kisi)); // Çıktı: ['Veli', 'Yılmaz', 30]
+
+// 3. Object.entries(): Nesnenin anahtar-değer çiftlerini bir dizi olarak döndürür:
+console.log(Object.entries(kisi));
+// Çıktı: [['ad', 'Veli'], ['soyad', 'Yılmaz'], ['yas', 30]]
+
+// Exercises (Alıştırmalar)
+
+// 1. Basic Array Operations:
+const favoriMeyveler = ['elma', 'portakal', 'armut'];
+favoriMeyveler.push('kavun');
+favoriMeyveler.push('karpuz');
+for (let i = 0; i < favoriMeyveler.length; i++) {
+  console.log(favoriMeyveler[i]);
+}
+
+// 2. Array Iteration (Toplam Bulma):
+const numaralar = [1, 2, 3, 4, 5];
+let toplam = 0;
+for (let i = 0; i < numaralar.length; i++) {
+  toplam += numaralar[i];
+}
+console.log(toplam); // Çıktı: 15
+
+// 3. Basic Object Operations:
+const araba = {
+  marka: 'Toyota',
+  model: 'Corolla',
+  yil: 2020
+};
+console.log(`Aracım ${araba.yil} model bir ${araba.marka} ${araba.model}.`);
+
+// 4. Modifying Object Properties:
+const ogrenci = {
+  isim: 'Mehmet',
+  yas: 18,
+  sinif: 12
+};
+ogrenci.yas = 19;
+ogrenci.ders = 'Matematik';
+console.log(ogrenci);
 
