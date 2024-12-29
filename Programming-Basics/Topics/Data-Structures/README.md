@@ -509,125 +509,24 @@ Bir dizi oluşturmak için `[]` operatörünü kullanırız. Örneğin:
 
 ```javascript
 const sayilar = [1, 2, 3];
-Veya:
 
-javascript
-Kodu kopyala
+
 const isimler = ['Ali', 'Ayşe', 'Mehmet'];
-Bir dizideki değerlere dizinin indeksini kullanarak erişebiliriz. İlk değerin indeksi 0'dır:
 
-javascript
-Kodu kopyala
+- Bir dizideki değerlere dizinin indeksini kullanarak erişebiliriz. İlk değerin indeksi 0'dır:
+
 console.log(sayilar[0]); // 1
-Ayrıca, dizideki bir değeri değiştirmek için de indeksini kullanabiliriz:
 
-javascript
-Kodu kopyala
+- Ayrıca, dizideki bir değeri değiştirmek için de indeksini kullanabiliriz:
+
 sayilar[0] = 10;
 
 console.log(sayilar); // [10, 2, 3]
-Dizi Metotları
-Dizileri manipüle etmek için birçok metot vardır. Örneğin:
 
-push() bir değeri dizinin sonuna ekler.
-pop() bir değeri dizinin sonundan kaldırır.
-shift() bir değeri dizinin başından kaldırır.
-unshift() bir değeri dizinin başına ekler.
-Diziye Değer Eklemek
-javascript
-Kodu kopyala
-const sayilar = [1, 2, 3];
+## Dizi Metotları
+# Dizileri manipüle etmek için birçok metot vardır. Örneğin:
 
-sayilar.push(4);
-
-console.log(sayilar); // [1, 2, 3, 4]
-Dizide Değer Bulmak
-javascript
-Kodu kopyala
-console.log(sayilar.indexOf(2)); // 1
-Diziden Değer Kaldırmak
-javascript
-Kodu kopyala
-sayilar.splice(1, 1);
-
-console.log(sayilar); // [1, 3]
-Dizi İterasyonu
-javascript
-Kodu kopyala
-const gunler = ['Pazartesi', 'Salı', 'Çarşamba'];
-
-for (let i = 0; i < gunler.length; i++) {
-  console.log(gunler[i]);
-}
-Nesne
-Nesneler, anahtar-değer çiftlerini saklamak için kullanılır. Örneğin:
-
-javascript
-Kodu kopyala
-const kisi = {
-  ad: 'Ali',
-  soyad: 'Veli',
-  yas: 30
-};
-
-console.log(kisi.ad); // Ali
-Object.keys() Metodu
-javascript
-Kodu kopyala
-console.log(Object.keys(kisi)); // [ 'ad', 'soyad', 'yas' ]
-Object.values() Metodu
-javascript
-Kodu kopyala
-console.log(Object.values(kisi)); // [ 'Ali', 'Veli', 30 ]
-Object.entries() Metodu
-javascript
-Kodu kopyala
-console.log(Object.entries(kisi)); // [ [ 'ad', 'Ali' ], [ 'soyad', 'Veli' ], [ 'yas', 30 ] ]
-Alıştırmalar
-Alıştırma 1 - Temel Dizi Operasyonları
-javascript
-Kodu kopyala
-const meyveler = ['elma', 'muz', 'portakal'];
-
-meyveler.push('çilek');
-meyveler.push('ananas');
-
-for (let i = 0; i < meyveler.length; i++) {
-  console.log(meyveler[i]);
-}
-Alıştırma 2 - Dizi İterasyonu
-javascript
-Kodu kopyala
-const sayilar = [1, 2, 3, 4, 5];
-
-let toplam = 0;
-
-for (let i = 0; i < sayilar.length; i++) {
-  toplam += sayilar[i];
-}
-
-console.log(toplam); // 15
-Alıştırma 3 - Temel Nesne Operasyonları
-javascript
-Kodu kopyala
-const araba = {
-  marka: 'Toyota',
-  model: 'Corolla',
-  yil: 2019
-};
-
-console.log(`Benim arabam ${araba.yil} model bir ${araba.marka}.`);
-Alıştırma 4 - Nesne Özelliklerini Değiştirme
-javascript
-Kodu kopyala
-const ogrenci = {
-  isim: 'Ahmet',
-  yas: 16,
-  sinif: 10
-};
-
-ogrenci.yas = 17;
-ogrenci.ders = 'Matematik';
-
-console.log(ogrenci);
-// { isim: 'Ahmet', yas: 17, sinif: 10, ders: 'Matematik' }
+- push() bir değeri dizinin sonuna ekler.
+- pop() bir değeri dizinin sonundan kaldırır.
+- shift() bir değeri dizinin başından kaldırır.
+- unshift() bir değeri dizinin başına ekler.
