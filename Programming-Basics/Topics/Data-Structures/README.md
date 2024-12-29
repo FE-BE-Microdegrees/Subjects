@@ -459,3 +459,133 @@ console.log(student);
 </details>
 
 If you want to solve additional exercises on objects, you can find some here: [Addditional exercises.](Exercises-Objects.md)
+
+# Veri Yapıları
+
+Bu konuda, veri yapıları hakkında detaylıca konuşacağız. Veri yapısının ne olduğunu, bir dizinin ne olduğunu, bir nesnenin ne olduğunu ve diziler ile nesnelerin nasıl kullanıldığını inceleyeceğiz.
+
+- [Veri Yapıları](#veri-yap%C4%B1lar%C4%B1)
+  - [Öğrenme Amaçları](#%C3%B6%C4%9Frenme-ama%C3%A7lar%C4%B1)
+  - [Veri Yapısı Nedir?](#veri-yap%C4%B1s%C4%B1-nedir)
+  - [Dizi](#dizi)
+    - [Dizi Metotları](#dizi-metotlar%C4%B1)
+      - [Diziye Değer Ekleme](#diziye-de%C4%9Fer-ekleme)
+      - [Dizide Değer Bulma](#dizide-de%C4%9Fer-bulma)
+      - [Diziden Değer Silme](#diziden-de%C4%9Fer-silme)
+    - [Dizi İterasyonu](#dizi-%C4%B0terasyonu)
+  - [Nesne](#nesne)
+    - [`Object.keys()` Metodu](#objectkeys-metodu)
+    - [`Object.values()` Metodu](#objectvalues-metodu)
+    - [`Object.entries()` Metodu](#objectentries-metodu)
+  - [Alıştırmalar](#al%C4%B1%C5%9Ft%C4%B1rmalar)
+    - [Alıştırma 1 - Temel Dizi İşlemleri](#al%C4%B1%C5%9Ft%C4%B1rma-1---temel-dizi-%C4%B0%C5%9Flemleri)
+    - [Alıştırma 2 - Dizi İterasyonu](#al%C4%B1%C5%9Ft%C4%B1rma-2---dizi-%C4%B0terasyonu)
+    - [Alıştırma 3 - Temel Nesne İşlemleri](#al%C4%B1%C5%9Ft%C4%B1rma-3---temel-nesne-%C4%B0%C5%9Flemleri)
+    - [Alıştırma 4 - Nesne Özelliklerini Değiştirme](#al%C4%B1%C5%9Ft%C4%B1rma-4---nesne-%C3%B6zelliklerini-de%C4%9Fi%C5%9Ftirme)
+
+## Öğrenme Amaçları
+
+Bu konuyu tamamladığınızda:
+
+- Veri yapısını tanımlayabileceksiniz.
+- Dizinin ne olduğunu açıklayabileceksiniz.
+- Nesnenin ne olduğunu açıklayabileceksiniz.
+- Diziler ve nesneler kullanabileceksiniz.
+- Temel dizi metotlarını kullanabileceksiniz.
+
+## Veri Yapısı Nedir?
+
+Bir değişkenin ne olduğunu ve veri depolamak için kullanıldığını zaten biliyoruz. Ancak, şu ana kadar bir değişkende yalnızca bir değer depolayabildik ya da yalnızca bir şeyi tanımlayabildik. Örneğin, bir kişinin adını depolamak için `firstName` adlı bir değişken kullanabiliriz. Ancak, bir kişinin adı, soyadı, yaşı ve adresini depolamak istersek ne olur? Her bir değer için ayrı bir değişken oluşturabiliriz, ancak bu çok verimsiz olur. Bunun yerine, tüm bu değerleri tek bir yerde depolamak için bir veri yapısı kullanabiliriz.
+
+Veri yapısı, bilgisayar belleğinde veriyi düzenleme yöntemidir. Veri yapıları, veri koleksiyonlarını depolamak için kullanılır. Örneğin, bir liste veya isim listesini depolamak için bir **dizi** kullanabiliriz. Bir kişi hakkında bilgi depolamak için (ad, soyad, yaş, adres vb.) bir **nesne** kullanabiliriz. Benzersiz değerleri depolamak için bir **set** kullanabiliriz. Anahtar-değer çiftlerini depolamak için bir **map** kullanabiliriz.
+
+> Çok sayıda farklı veri yapısı olmasına rağmen, bu konuda diziler ve nesneler üzerinde yoğunlaşacaktır.
+
+## Dizi
+
+Bir dizi, tek bir değişkende depolanan değer koleksiyonudur. Diziler, ilgili değerlerin listelerini depolamak için kullanılır. Örneğin, bir liste veya isim listesi depolamak için bir dizi kullanabiliriz.
+
+Bir dizi oluşturmak için `[]` operatörünü kullanırız. Örneğin, `numbers` adlı bir dizi oluşturabilir ve `1`, `2` ve `3` sayılarını şu şekilde ekleyebiliriz:
+
+```javascript
+const numbers = [1, 2, 3];
+```
+Veya `names` adlı bir dizi oluşturup `John`, `Jane` ve `Jack` isimlerini şu şekilde ekleyebiliriz:
+
+```javascript
+const names = ['John', 'Jane', 'Jack'];
+```
+
+Bir dizideki değerlere, değerin dizindeki sırası (indeksi) kullanılarak erişilebilir. Dizideki ilk değerin sırası `0`'dır. Örneğin, `numbers` dizisindeki ilk değere erişmek istersek, indeks `0`'i kullanabiliriz:
+
+```javascript
+const numbers = [1, 2, 3];
+
+console.log(numbers[0]);
+```
+**Beklenen çıktı**:
+
+```
+1
+```
+
+Bir dizideki değerleri değiştirebiliriz de. Örneğin, `numbers` dizisindeki ilk değeri `10` olarak değiştirmek istersek, indeks `0`'i kullanabiliriz:
+
+```javascript
+const numbers = [1, 2, 3];
+
+numbers[0] = 10;
+
+console.log(numbers);
+```
+**Beklenen çıktı**:
+
+```
+[10, 2, 3]
+```
+
+### Dizi Metotları
+
+Metotlar, bir nesne ile ilişkili olan fonksiyonlardır. Bu, JavaScript'te bir nesne ile şu işlemleri yapabileceğimiz anlamına gelir: nesneye bağlı bir fonksiyon çağırabiliriz.
+
+Dizilerle işlem yapmamıza olanak tanıyan birçok metod vardır. Örneğin, `push()` metodunu kullanarak bir değeri bir dizinin sonuna ekleyebiliriz, `pop()` metodunu kullanarak bir değeri dizinin sonundan silebiliriz, `shift()` metodunu kullanarak bir değeri dizinin başından silebiliriz ve `unshift()` metodunu kullanarak bir değeri dizinin başına ekleyebiliriz.
+
+Tüm dizi metotlarını MDN web dokümanlarının [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) bölümünde bulabilirsiniz.
+
+#### Diziye Değer Ekleme
+
+`push()` metodunu kullanarak bir değeri bir dizinin sonuna ekleyebiliriz. Örneğin, `numbers` dizisinin sonuna `4` sayısını eklemek istersek, `push()` metodunu şu şekilde kullanabiliriz:
+
+```javascript
+const numbers = [1, 2, 3];
+
+numbers.push(4);
+
+console.log(numbers);
+```
+**Beklenen çıktı**:
+
+```
+[1, 2, 3, 4]
+```
+
+
+#### Dizide Değer Bulma
+
+`indexOf()` metodunu kullanarak bir dizide bir değerin indeksini bulabiliriz. Örneğin, `numbers` dizisinde `2` sayısının indeksini bulmak istersek, `indexOf()` metodunu şu şekilde kullanabiliriz:
+
+```javascript
+const numbers = [1, 2, 3];
+
+console.log(numbers.indexOf(2));
+```
+**Beklenen çıktı**:
+
+```
+1
+```
+
+> Dizide değer bulunamazsa, `indexOf()` metodu `-1` döndürecektir.
+
+#### Diziden Değer Silme
+
