@@ -339,3 +339,53 @@ Try to explain the following concepts in your own words:
 
 Next steps:
 - install `git` on your computer
+
+# Git
+
+Bu konuda, Git ve sürüm kontrolünün temellerini öğreneceğiz. Sürüm kontrol sistemlerinin önemi, Git’in temelleri ve Git akış süreci hakkında bilgi vereceğiz.
+
+- [Git](#git)
+  - [Öğrenme Çıktıları](#öğrenme-çıktıları)
+  - [Git Nedir?](#git-nedir)
+  - [Temel Git Mimarisi](#temel-git-mimarisi)
+  - [Git Yükleme](#git-yükleme)
+  - [Temel Git Kavramları](#temel-git-kavramları)
+  - [Temel Git Komutları](#temel-git-komutları)
+  - [Grafiksel Git İstemcileri](#grafiksel-git-istemcileri)
+    - [Git İçin Popüler Grafiksel İstemciler:](#git-için-popüler-grafiksel-istemciler)
+    - [Grafiksel Git İstemcileri Kullanmanın Nedenleri:](#grafiksel-git-istemcileri-kullanmanın-nedenleri)
+  - [Git Akışı](#git-akışı)
+    - [1. **Ana Dallar**:](#1-ana-dallar)
+    - [2. **Destekleyici Dallar**:](#2-destekleyici-dallar)
+    - [**Temel Git Akış Süreci**:](#temel-git-akış-süreci)
+  - [Git Barındırma Platformları](#git-barındırma-platformları)
+  - [Alıştırmalar](#alıştırmalar)
+
+## Öğrenme Çıktıları
+
+Bu konuyu tamamladıktan sonra şunları yapabileceksiniz:
+
+- Sürüm kontrol sistemlerinin önemini anlayabileceksiniz;
+- Git ve sürüm kontrolünün temellerini açıklayabileceksiniz;
+- Temel Git mimarisini açıklayabileceksiniz;
+- Temel Git kavramlarını açıklayabileceksiniz;
+- Temel Git akışını açıklayabileceksiniz;
+
+## Git Nedir?
+
+```mermaid
+    gitGraph
+       commit id: "Projeyi oluştur"
+       commit id: "Proje temeli"
+       branch nice_feature_branch
+       checkout nice_feature_branch
+       commit id: "Frontend iskeletini ekle"
+       checkout nice_feature_branch
+       commit id: "Frontend'i API ile bağla"
+       checkout nice_feature_branch
+       commit id: "Frontend testlerini ekle"
+       checkout main
+       merge nice_feature_branch id: "Temel frontend" tag: "Versiyon 1.0"
+       commit id: "Dokümantasyon oluştur"
+       checkout main
+       commit id: "Dokümantasyonu güncelle"
