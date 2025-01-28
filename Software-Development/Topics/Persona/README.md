@@ -91,3 +91,95 @@ Author: Xtensio
 - [UXPressia](https://uxpressia.com/)
 - [Hubspot](https://www.hubspot.com/make-my-persona)
 
+- [Persona](#persona)
+  - [Öğrenme Çıktıları](#öğrenme-çıktıları)
+  - [Persona Nedir?](#persona-nedir)
+  - [Bir Persona Hakkında Kısa Genel Bakış](#bir-persona-hakkında-kısa-genel-bakış)
+  - [Persona Oluşturma](#persona-oluşturma)
+  - [Bir Persona Neyi Tanımlar?](#bir-persona-neyi-tanımlar)
+  - [Persona Türleri](#persona-türleri)
+  - [Persona Örnekleri](#persona-örnekleri)
+  - [Persona Oluşturma Araçları](#persona-oluşturma-araçları)
+
+## Öğrenme Çıktıları
+
+Bu konuyu tamamladıktan sonra şunları yapabileceksiniz:
+
+- Persona nedir, açıklayabileceksiniz;
+- Bir personanın hedeflerini ve faydalarını tanımlayabileceksiniz;
+- Yazılım geliştirme bağlamında bir persona oluşturabileceksiniz.
+
+## Persona Nedir?
+
+Yazılım geliştirme ve kullanıcı deneyimi tasarımı bağlamında, **persona**, belirli bir kullanıcı türünü temsil eden kurgusal bir karakterdir. **Personalar**, gerçek kullanıcılar hakkında yapılan araştırma ve verilerden oluşturulur ve tasarımcıların ve geliştiricilerin kullanıcılarını, ihtiyaçlarını, hedeflerini ve davranışlarını anlamalarına yardımcı olmak için kullanılır.
+
+Bir **persona**, genellikle kullanıcının demografik bilgilerini (yaş, cinsiyet, meslek gibi) ve ilgi alanları, motivasyonları ve davranışları hakkında bilgileri içerir. Ayrıca, kullanıcının hedefleri, hayal kırıklıkları ve acı noktaları hakkında bilgiler ve yazılım veya uygulama ile etkileşimde bulunma yöntemleri de yer alabilir.
+
+**Personalar**, empati oluşturmak ve tasarımcıların ve geliştiricilerin kullanıcı ihtiyaçlarına ve tercihlerine dayalı kararlar almalarına yardımcı olmak için kullanılır. Farklı kullanıcı türlerinin ihtiyaçlarını ve davranışlarını anlamak, tasarımcıların hedef kitlelerine özel arayüzler ve deneyimler oluşturmasına olanak tanır, bu da yazılımın daha çekici, kullanılabilir ve etkili olmasını sağlar.
+
+## Bir Persona Hakkında Kısa Genel Bakış
+
+- Bir örnek kullanıcı, tipik bir son kullanıcının arketipi, belirli bir kullanıcı grubunu temsil eder;
+- Müşteriyi daha iyi anlamak için oluşturulmuştur – onları ne motive eder, onları ne sinirlendirir, neye ihtiyaçları vardır?
+- Kullanıcı araştırmasının yerine geçmez, ancak buna dayanır!
+- Tasarım sırasında son kullanıcının ihtiyaçlarını göz önünde bulundurmayı sağlar, örneğin gerekli işlevsellikleri gereksiz olanlardan ayırt etmek.
+
+## Persona Oluşturma
+
+Bir persona oluşturmak için, bir ekip genellikle şu araştırma yöntemlerini kullanarak bilgi toplar:
+
+- Anketler;
+- Görüşmeler;
+- Gerçek kullanıcıların gözlemleri.
+
+Bu bilgiler, hedef kitlenin temel özelliklerini taşıyan kurgusal bir karakter oluşturmak için kullanılır.
+
+Personalar oluştururken, yazılımın veya uygulamanın hedeflerini ve hedef kitlenin özelliklerini göz önünde bulundurmak önemlidir. Örneğin, yazılım tıbbi profesyoneller için tasarlanmışsa, personalar genellikle onların iş sorumlulukları, uzmanlık seviyeleri ve yazılımla etkileşimde bulunma tercihleri hakkında bilgiler içerir. Diğer yandan, yazılım daha genç bir kitleye yönelikse, personalar teknoloji kullanımı, ilgi alanları ve sosyal davranışlar hakkında bilgiler içerebilir.
+
+Personalar oluşturulduktan sonra, tasarım ve geliştirme sürecinde tasarım kararları almak, kullanıcı ihtiyaçlarını değerlendirmek ve yazılım kullanılabilirliğini test etmek için kullanılabilirler. Personalar kullanılarak, takımlar daha etkili, çekici ve kullanıcı odaklı yazılımlar oluşturabilir, bu da hem kullanıcılar hem de geliştiriciler için daha büyük memnuniyet ve başarı sağlar.
+
+## Bir Persona Neyi Tanımlar?
+
+- Genel Bilgiler
+  - İsim;
+  - Yaş ve cinsiyet;
+  - Konum;
+  - Eğitim ve meslek;
+  - Aile durumu vb.
+- Resim ve Alıntı
+  - Bir resim kelimelerden daha fazlasını anlatır – bir fotoğraf persona’yı insancıllaştırır. Persona'nın kişiliğini tanımlayan bir fotoğraf bulmaya çalışın;
+  - Bir alıntı, persona’ya ses verir. Kesinlikle ürün/hizmetinizle ilgili olmalıdır.
+- Kişilik, Tipoloji
+  - Persona’nın kişiliğini tanımlamak, onları daha iyi anlamanızı sağlar;
+  - Ürün/hizmetinizle ilgili özellikleri tanımlayın (örneğin, bağımsız vs. desteğe ihtiyaç duyan; tutarlı vs. istikrarsız vb.)
+- Hedefler, Amaçlar
+  - Sadece verilen hizmet/ürünle ilgili motivasyon!
+  - Ne başarmak istiyorlar? Onlar için ne önemlidir?
+  - Onları hizmete/ürüne yönlendiren nedir? Ne istiyorlar?
+- Acı Noktaları, Endişeler
+  - Sadece verilen hizmet/ürünle ilgili sorunlar!
+  - Hedeflerine ulaşmalarını engelleyen nedir? Endişeleri ve korkuları nedir?
+  - Engelleri nasıl aşarlar?
+
+## Persona Türleri
+
+- **Proto-persona**: Yeni araştırmaya dayanmayan, mevcut varsayımların hızlıca bir taslağını oluşturmak için kullanılan tür!
+- **Niteliksel Persona**: Küçük ölçekli çalışmalara dayalıdır (örneğin, görüşmeler, gözlemler). Hedef, müşterileri derinlemesine anlamaktır!
+- **Niceliksel Persona**: Büyük ölçekli çalışmalara dayalıdır (örneğin, istatistikler, anketler). Hedef, veriyi kişiselleştirmektir!
+
+## Persona Örnekleri
+
+![Persona 1](persona_1.png)
+Yazar: Shannon Cui
+
+![Persona 2](persona_2.png)
+Yazar: Julia Sjöberg
+
+![Persona 3](persona_3.png)
+Yazar: Xtensio
+
+## Persona Oluşturma Araçları
+
+- [UXPressia](https://uxpressia.com/)
+- [Hubspot](https://www.hubspot.com/make-my-persona)
+
