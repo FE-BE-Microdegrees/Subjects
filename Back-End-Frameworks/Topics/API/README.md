@@ -129,3 +129,133 @@ These operations often correlate with HTTP methods used to perform them:
 - **Read** - uses the HTTP GET method.
 - **Update** - uses the HTTP PUT or PATCH method.
 - **Delete** - uses the HTTP DELETE method.
+- 
+# API - Uygulama Programlama Arayüzü
+
+Bu bölümde, API'leri, türlerini, kaynaklarını, yanıtlarını ve CRUD işlemlerini ele alacağız.
+
+![HTTP API](HTTP-API.webp)
+
+Görsel kaynağı: Dall-E by OpenAI
+
+- [API - Uygulama Programlama Arayüzü](#api---uygulama-programlama-arayüzü)
+  - [Öğrenme Çıktıları](#öğrenme-çıktıları)
+  - [Web API Türleri](#web-api-türleri)
+  - [API Kaynağı](#api-kaynağı)
+  - [API Yanıtı](#api-yanıtı)
+  - [CRUD API](#crud-api)
+
+## Öğrenme Çıktıları
+
+Bu bölümü tamamladığınızda şunları yapabileceksiniz:
+
+- Bir web API'sinin ne olduğunu ve nasıl çalıştığını açıklayın.
+- RESTful API'ler, SOAP API'ler ve GraphQL API'leri gibi çeşitli web API türlerini tanımlayın.
+- API kaynaklarını ve URI'leri tanımlayın.
+- API yanıtlarının yapısını ve JSON ve XML gibi veri formatlarını açıklayın.
+- Bir CRUD API'sinin temel işlemlerini ve bunların HTTP yöntemleriyle olan ilişkisini açıklayın.
+
+Bu kurs bağlamında, HTTP protokolü üzerinden çalışan API'lere web API'leri denir.
+
+Bir web API'si, web uygulamaları için bir programlama arayüzünü temsil eder. Diğer uygulamalarla internet üzerinden iletişim kurabilen web tabanlı uygulamalar oluşturmak için kullanılan protokoller, araçlar ve mekanizmalar bir koleksiyonudur.
+
+Web API'leri genellikle HTTP istekleri ve yanıtları aracılığıyla erişilir, bu da web uygulamalarının diğer uygulamalar tarafından sağlanan veriler ve hizmetlerle etkileşimde bulunmasını sağlar. Bu uygulamalar genellikle farklı sunucularda veya dünya çapında farklı lokasyonlarda bulunabilir.
+
+```mermaid
+sequenceDiagram
+  participant Client
+  participant API
+  participant Server
+
+  Client->>API: HTTP isteği gönderir
+  API->>Server: HTTP isteğini iletir
+  Server->>API: HTTP yanıtı gönderir
+  API->>Client: HTTP yanıtını iletir
+```
+## Web API Türleri
+
+- **RESTful API'ler**: Representational State Transfer (REST), HTTP istekleriyle veri almak ve üzerinde işlem yapmak için kullanılan popüler bir mimari tarzdır. RESTful API'ler, ölçeklenebilir, güvenilir ve kolay kullanılacak şekilde tasarlanmıştır.
+- **SOAP API'ler**: Simple Object Access Protocol (SOAP), XML tabanlı mesajların değiş tokuşunu sağlayan başka bir popüler protokoldür. SOAP API'leri genellikle karmaşık mesajlaşma ve işlem desteği gerektiren kurumsal düzeyde uygulamalarda kullanılır.
+- **GraphQL API'ler**: GraphQL, istemcilerin sadece ihtiyaç duydukları veriyi istemelerini sağlayan yeni bir teknolojidir, böylece tüm kaynakları almak yerine yalnızca gerekli veriler çekilir. GraphQL API'leri, modern web ve mobil uygulamalarda verimli veri alımı ve işleme gereksinimi duyan uygulamalar için yaygın olarak kullanılır.
+
+Web API'leri, modern web geliştirmede önemli bileşenlerdir ve geliştiricilerin internetin gücünü ve küresel geliştirici topluluğunun kolektif kaynaklarını kullanarak karmaşık ve özellik açısından zengin uygulamalar oluşturmasını sağlar.
+
+## API Kaynağı
+
+Web API'leri bağlamında, bir kaynak, internet üzerinden bir URI (Uniform Resource Identifier) ve HTTP istekleri kullanarak erişilebilen veya üzerinde işlem yapılabilen herhangi bir veri veya işlevsellik parçasıdır.
+
+Bir kaynak, bir müşteri kaydı gibi tek bir veri biriminden, bir çevrimiçi mağazada bir ürün listesi gibi ilişkili öğelerin bir koleksiyonuna kadar herhangi bir şey olabilir. Kaynaklar ayrıca daha karmaşık işlevsellikleri de içerebilir, örneğin bir arama motoru veya ödeme geçidi.
+
+Bir RESTful API'de kaynaklar genellikle URI'lerde isim olarak temsil edilir ve bu kaynaklar üzerinde işlem yapmak için HTTP yöntemleri (GET, POST, PUT, DELETE vb.) kullanılır. Örneğin, tipik bir RESTful API aşağıdaki gibi URI'lere sahip olabilir:
+
+- `/customers`
+- `/customers/123`
+- `/orders/456`
+- `/products/search?q=keyword`
+
+Bu örnekte, ilk URI müşteri koleksiyonunu temsil eder, ikinci URI ID'si 123 olan belirli bir müşteriyi temsil eder, üçüncü URI ID'si 456 olan belirli bir siparişi temsil eder ve dördüncü URI "keyword" anahtar kelimesine uyan ürünler için bir arama sorgusunu temsil eder.
+
+Kaynakları ve URI'leri açıkça ve tutarlı bir şekilde tanımlayarak, web API'leri internet üzerinden veri ve işlevselliklere erişmek için basit ve sezgisel bir arayüz sağlayabilir, bu da geliştiricilerin başka sistemlerle ve hizmetlerle, konumlarına veya uygulama detaylarına bakılmaksızın, iletişim kurabilen web uygulamaları inşa etmelerini kolaylaştırır.
+
+Burada ücretsiz halka açık web API'lerinin bir seçkisini bulabilirsiniz: [Public APIs](https://github.com/public-apis/public-apis)
+
+## API Yanıtı
+
+Genellikle, bir web API'si bir isteğe yanıt olarak veriyi JSON (JavaScript Object Notation) veya XML (Extensible Markup Language) formatında döndürür. JSON, hafif olması ve okunması ve yazılması kolay olduğundan web API'leri için standart yanıt formatı haline gelmiştir. XML, bazı web API'lerinde, özellikle SOAP API'lerinde hala kullanılmaktadır, ancak JSON'a kıyasla daha az yaygındır.
+
+Bir web API'si yanıtı ayrıca isteğin durumu, hata mesajları, meta veriler ve diğer faydalı bilgileri içerebilir. Örneğin, bir web API yanıtı, isteğin başarılı olup olmadığını belirten bir HTTP durum kodu ile birlikte, isteğin neden başarısız olduğunu açıklayan bir hata mesajı içerebilir.
+
+Tipik bir API yanıtı örneği şu şekilde olabilir:
+
+```json
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "id": 123,
+    "name": "John Smith",
+    "email": "john@smith.com",
+    "phone": "555-123-4567"
+  }
+}
+
+Bu örnekte, web API yanıtı, üç anahtar-değer çiftini içeren bir JSON nesnesidir. İlk anahtar-değer çifti, isteğin durumunu içerir. İkinci anahtar-değer çifti, isteğe ilişkin bir mesajı içerir. Üçüncü anahtar-değer çifti, isteğin sonucu olarak döndürülen veriyi içerir.
+
+Eğer API yanıtı, müşteri kayıtları gibi bir veri listesi içeriyorsa, şu şekilde görünebilir:
+
+{
+  "status": 200,
+  "message": "OK",
+  "data": [
+    {
+      "id": 123,
+      "name": "John Smith",
+      "email": "john@smith.com",
+      "phone": "555-123-4567"
+    },
+    {
+      "id": 456,
+      "name": "Jane Doe",
+      "email": "jane@doe.com",
+      "phone": "555-987-6543"
+    }
+  ]
+}
+
+## CRUD API
+
+`CRUD`, veriler üzerinde gerçekleştirilebilecek dört temel işlemi temsil eden bir kısaltmadır: **Create** (Oluştur), **Read** (Okuma), **Update** (Güncelle), ve **Delete** (Sil). Bunlar, web API'leri kullanılarak gerçekleştirilebilen temel işlemlerdir.
+
+- **Create** - yeni bir veri kaydı oluşturur.
+- **Read** - mevcut bir veri kaydını alır.
+- **Update** - mevcut bir veri kaydını değiştirir.
+- **Delete** - mevcut bir veri kaydını siler.
+
+Bu işlemler, genellikle bunları gerçekleştirmek için kullanılan HTTP yöntemleriyle ilişkilidir:
+
+- **Create** - HTTP POST yöntemi kullanır.
+- **Read** - HTTP GET yöntemi kullanır.
+- **Update** - HTTP PUT veya PATCH yöntemi kullanır.
+- **Delete** - HTTP DELETE yöntemi kullanır.
+
+
