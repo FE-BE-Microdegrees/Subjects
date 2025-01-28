@@ -281,3 +281,261 @@ const createUser = async (username, email, password) => {
 ```
 
 Using parameterized queries ensures that user input is handled safely, preventing SQL injection attacks.
+
+# MySQL Veritabanını Node.js ve Express ile mysql2 Modülünü Kullanarak Bağlama
+
+MySQL veritabanını Node.js ve Express framework'üne bağlamak, dinamik ve veri odaklı web uygulamaları oluşturmayı sağlar. `mysql2` modülü, tüm MySQL özelliklerini destekleyen hızlı ve modern bir Node.js istemcisidir. Bu öğretici materyalde, `mysql2` modülünün nasıl yükleneceği ve yapılandırılacağı, bir MySQL veritabanına nasıl bağlanılacağı ve sorguların nasıl gerçekleştirileceği konularını ele alacağız. Uygulamayı servisler ve kontrolcüler olarak yapılandırmanın yanı sıra, SQL enjeksiyonlarını önlemek için parametreli sorguları kullanmayı tartışacağız.
+
+![MySQL-NodeJS](MySQL-Node.webp)
+
+Görsel kaynağı: Dall-E by OpenAI
+
+- [MySQL Veritabanını Node.js ve Express ile mysql2 Modülünü Kullanarak Bağlama](#mysql-veritabanını-nodejs-ve-express-ile-mysql2-modülünü-kullanarak-bağlama)
+  - [Öğrenim Çıktıları](#öğrenim-çıktıları)
+  - [Ön Koşullar](#ön-koşullar)
+  - [Adım 1: Projeyi Hazırlama](#adım-1-projeyi-hazırlama)
+    - [1.1. Node.js Projesi Oluşturma](#11-nodejs-projesi-oluşturma)
+    - [1.2. Gerekli Bağımlılıkları Yükleme](#12-gerekli-bağımlılıkları-yükleme)
+  - [Adım 2: Proje Yapılandırması](#adım-2-proje-yapılandırması)
+    - [2.1. Bağlantıyı Yapılandırma](#21-bağlantıyı-yapılandırma)
+    - [2.2. Servislerin Oluşturulması](#22-servislerin-oluşturulması)
+    - [2.3. Kontrolcülerin Oluşturulması](#23-kontrolcülerin-oluşturulması)
+    - [2.4. Express Sunucusunun Oluşturulması](#24-express-sunucusunun-oluşturulması)
+  - [SQL Enjeksiyonu ve Parametreli Sorgular](#sql-enjeksiyonu-ve-parametreli-sorgular)
+    - [SQL Enjeksiyonu Nedir?](#sql-enjeksiyonu-nedir)
+    - [Parametreli Sorgular](#parametreli-sorgular)
+      - [Örnek: Parametreli Sorguların Kullanımı](#örnek-parametreli-sorguların-kullanımı)
+
+---
+
+## Öğrenim Çıktıları
+
+Bu materyalin sonunda katılımcılar:
+
+- `mysql2` modülünü bir Node.js projesine yükleyip yapılandırabilecek;
+- MySQL veritabanına bağlantı kurabilecek;
+- Veritabanına temel CRUD (Oluşturma, Okuma, Güncelleme, Silme) sorguları yapabilecek;
+- Uygulamayı servisler ve kontrolcüler olarak yapılandırabilecek;
+- SQL enjeksiyonlarını önlemek için parametreli sorgular kullanabilecek.
+
+---
+
+## Ön Koşullar
+
+- Bilgisayarınızda Node.js ve npm kurulmuş olmalıdır.
+- Çalışır durumda bir MySQL sunucusu ve oluşturulmuş bir veritabanı gereklidir.
+
+---
+
+## Adım 1: Projeyi Hazırlama
+
+Yeni bir Node.js projesi oluşturun ve gerekli bağımlılıkları yükleyin.
+
+### 1.1. Node.js Projesi Oluşturma
+
+```bash
+mkdir myapp
+cd myapp
+npm init -y
+```
+
+## Adım 2: Proje Yapılandırması
+Aşağıdaki dizin yapısını oluşturun:
+```text
+myapp/
+├── controllers/
+│   └── userController.js
+├── services/
+│   └── userService.js
+├── db.js
+├── index.js
+└── package.json
+```
+
+## 2.1. Bağlantıyı Yapılandırma
+`db.js` dosyasını oluşturun ve MySQL veritabanı bağlantısını yapılandırın.
+
+```javascript
+// db.js
+const mysql = require("mysql2");
+
+// Bir bağlantı havuzu oluşturun
+const pool = mysql.createPool({
+  host: "localhost",
+  user: "root",
+  password: "password",
+  database: "blog",
+});
+
+// Promise desteği ekleyin
+const promisePool = pool.promise();
+
+module.exports = promisePool;
+```
+`host`, `user`,`password`ve database bilgilerini kendi veritabanı ayarlarınıza göre düzenleyin.
+
+## 2.2. Servislerin Oluşturulması
+`userService.js` dosyasını oluşturun ve veritabanı ile etkileşimleri burada yönetin.
+```javascript
+
+// services/userService.js
+const db = require("../db");
+
+const getAllUsers = async () => {
+  const [rows] = await db.query("SELECT * FROM users");
+  return rows;
+};
+
+const getUserById = async (id) => {
+  const [rows] = await db.query("SELECT * FROM users WHERE id = ?", [id]);
+  return rows[0];
+};
+
+const createUser = async (username, email, password) => {
+  const [result] = await db.query(
+    "INSERT INTO users (username, email, password) VALUES (?, ?, ?)",
+    [username, email, password]
+  );
+  return result.insertId;
+};
+
+const updateUser = async (id, username, email, password) => {
+  const [result] = await db.query(
+    "UPDATE users SET username = ?, email = ?, password = ? WHERE id = ?",
+    [username, email, password, id]
+  );
+  return result.affectedRows;
+};
+
+const deleteUser = async (id) => {
+  const [result] = await db.query("DELETE FROM users WHERE id = ?", [id]);
+  return result.affectedRows;
+};
+
+module.exports = {
+  getAllUsers,
+  getUserById,
+  createUser,
+  updateUser,
+  deleteUser,
+};
+```
+## 2.3. Kontrolcülerin Oluşturulması
+`userController.js` dosyasını oluşturun ve API uç noktalarını burada yönetin.
+```javascript
+// controllers/userController.js
+const userService = require("../services/userService");
+
+const getUsers = async (req, res) => {
+  try {
+    const users = await userService.getAllUsers();
+    res.status(200).json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const getUser = async (req, res) => {
+  try {
+    const user = await userService.getUserById(req.params.id);
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const createUser = async (req, res) => {
+  const { username, email, password } = req.body;
+  try {
+    const id = await userService.createUser(username, email, password);
+    res.status(201).json({ id });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const updateUser = async (req, res) => {
+  const { id } = req.params;
+  const { username, email, password } = req.body;
+  try {
+    const affectedRows = await userService.updateUser(
+      id,
+      username,
+      email,
+      password
+    );
+    if (affectedRows === 0) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    res.status(200).json({ message: "User updated successfully" });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const deleteUser = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const affectedRows = await userService.deleteUser(id);
+    if (affectedRows === 0) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    res.status(200).json({ message: "User deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+module.exports = {
+  getUsers,
+  getUser,
+  createUser,
+  updateUser,
+  deleteUser,
+};
+```
+## 2.4. Express Sunucusunun Oluşturulması
+`index.js` dosyasını oluşturun ve Express sunucusunu yapılandırın.
+```javascript
+
+// index.js
+const express = require("express");
+const app = express();
+const userController = require("./controllers/userController");
+
+// JSON isteklerini işlemek için middleware
+app.use(express.json());
+
+// Temel rota
+app.get("/", (req, res) => {
+  res.send("Merhaba Dünya!");
+});
+
+// API uç noktaları
+app.get("/users", userController.getUsers);
+app.get("/users/:id", userController.getUser);
+app.post("/users", userController.createUser);
+app.put("/users/:id", userController.updateUser);
+app.delete("/users/:id", userController.deleteUser);
+
+// Sunucuyu başlat
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Sunucu ${PORT} portunda çalışıyor`);
+});
+```
+## SQL Enjeksiyonu ve Parametreli Sorgular
+**SQL Enjeksiyonu Nedir?** 
+SQL enjeksiyonu, kötü niyetli kullanıcıların, sorguların yapısını ve veritabanını değiştiren SQL kodu girmesiyle oluşan bir saldırıdır. Bu, web uygulamalarındaki en yaygın güvenlik açıklarından biridir.
+
+**Parametreli Sorgular** 
+Parametreli sorgular, SQL kodunu kullanıcı girdilerinden ayırarak SQL enjeksiyonu saldırılarını zorlaştırır.
+
+**Örnek: Parametreli Sorguların Kullanımı** 
+Servislerdeki tüm sorgular zaten parametre kullanmaktadır. Kullanıcı verilerini güvenli bir şekilde sorguya dahil etmek için ? sembolü ve bir argüman dizisi kullanılır.
+
+Parametreli sorgular, kullanıcı girişlerinin güvenli bir şekilde işlenmesini sağlayarak SQL enjeksiyonu saldırılarını önler.
+
