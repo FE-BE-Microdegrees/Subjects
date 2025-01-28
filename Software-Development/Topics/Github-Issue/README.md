@@ -73,3 +73,80 @@ To practice what you have learned in this topic, do the following:
 - Add an `assignee` to the `Issue`
 - Add a comment to an `Issue` directed at you
 - Close the `Issue` you created if it has received any comments
+
+
+  # Github Issue
+
+Bu konuda Github Issue özelliğini keşfedeceğiz – ne olduğunu, nasıl kullanılacağını ve neden faydalı olduğunu.
+
+- [Github Issue](#github-issue)
+  - [Öğrenme Sonuçları](#öğrenme-sonuçları)
+  - [Bir *Github Issue* Nedir?](#bir-github-issue-nedir)
+  - [Neden *Github Issues* Kullanılır?](#neden-github-issues-kullanılır)
+  - [*Issues* Yazarken En İyi Uygulamalar](#issues-yazarken-en-iyi-uygulamalar)
+  - [İyi Yapılandırılmış Bir *Issue* Örneği](#iyi-yapılandırılmış-bir-issue-örneği)
+  - [Kötü Yazılmış Bir *Issue* Örneği](#kötü-yazılmış-bir-issue-örneği)
+  - [Egzersizler](#egzersizler)
+
+Tüm projelerin iş akışını organize etmeye ve gözden geçirmeye yardımcı olacak bir sisteme ihtiyacı vardır. Bunun için birçok farklı araç bulunmaktadır, **GitHub Issues** bunlardan sadece biridir.
+
+## Öğrenme Sonuçları
+Bu bölümü tamamladıktan sonra şunları yapabileceksiniz:
+
+- *Github Issue*'nun ne olduğunu ve nasıl kullanılacağını açıklamak;
+- *Github Issues* oluşturmak ve bunlara *atamalar* yapmak;
+- *Github Issue*'lara yorum yapmak ve kapatmak;
+
+## Bir *Github Issue* Nedir?
+
+Github bağlamında, bir *issue* kullanıcılara belirli bir depo için görevleri, hataları ve özellik isteklerini takip etme imkanı sunan bir özelliktir. Bu özellik, projeyi hızlıca gözden geçirme ve iş akışınızı buna göre planlama ve önceliklendirme için harika bir yoldur. *Issues*, proje üyelerinin proje hakkında iletişim kurmalarını ve projenin ilerlemesini takip etmelerini sağlar. *Issues* oluşturma yeteneği, her depoyla birlikte gelir ve iletişimin yanı sıra, *issues* aynı zamanda proje belgelerinin bir parçasıdır.
+
+Bir *issue* genellikle bir kullanıcı tarafından açılır ve o problemi çözmesi gereken bir veya birden fazla kullanıcıya atanabilir. Bir *issue* genellikle bir **başlık**, **açıklama**, **etiketler** ve **öncelik** ya da **sorumlu kişi** gibi diğer metadataları içerebilir.
+
+Github, yaygın *issues* türleri, örneğin *bug report* (hata raporu) ve *feature request* (özellik isteği) gibi, için önceden oluşturulmuş şablonları kullanma imkanı sunar. Ayrıca, projenizin ihtiyaçlarına göre şablonlar oluşturulabilir.
+
+## Neden *Github Issues* Kullanılır?
+
+GitHub *issues* çeşitli amaçlar için kullanılabilir, örneğin:
+
+- Görev atamak
+- Son tarihler belirlemek
+- Yazılım projelerinde hataları takip etmek
+- Özellik/atribüt isteklerini ve iyileştirmelerini izlemek
+- Bir ekip arasında işbirliği yapmak ve koordinasyonu sağlamak
+- Belirli bir depo ya da proje için destek almak veya sunmak
+
+*Issues* çeşitli kriterlere göre aranabilir ve filtrelenebilir, örneğin *Issue* **numarası**, **başlık**, **yazar**, **etiket** ve **durum** gibi. Ayrıca, *issues* üzerine **yorum yapılabilir** ve **güncellenebilir**, takip edilen işin **durumu** yansıtılabilir. *Issue* aramasını kullanmak, benzer içeriğe sahip başka *issues* yaratmamak için çok tavsiye edilir (örneğin, büyük projelerde aynı ya da benzer konularla ilgili birden fazla *issue* açmaktan kaçının). Diğer benzer araçlar otomatik olarak tekrar eden *issues* tespit etme sistemine sahiptir, ancak maalesef Github Issues bu özelliği sunmamaktadır. Bununla birlikte, Github kullanıcıların kendilerinin *issue* tekrarlarını rapor etmesine ve benzer problemleri birleştirmesine olanak tanır. Bunu yapmak için, yorum yaparken `duplicate of #*issue* nr`, `duplicate pull request`, ya da `duplicate *issue*` gibi anahtar kelimeler kullanılabilir.
+
+## *Github Issues* Yazarken En İyi Uygulamalar
+
+- Başlıkları kısa ve öz tutun
+- İçerikte, arka planı (*context*), problemi ya da fikri açıklayın ve çözüm ya da bir sonraki adımı önerin
+- *Etiketleri* kullanın, ancak birden fazla etiket kullanmaktan kaçının
+- Açıklık için *markdown* dilini kullanarak biçimlendirin (listeler, vurgulamalar, resimler, bağlantılar vb.)
+- Başkalarını dahil edin – *@mention* ve *assigned to*
+- Bir *issue* göndermeden önce aynı ya da benzer bir problemin daha önce açılmadığından emin olun – arama özelliğini kullanın!
+- *Issue* ile *discussion* arasındaki farkı ayırt edin – GitHub Discussions, daha açık uçlu tartışmalar için daha uygun bir seçenektir
+- Çözülen *issues*'ları karışıklığı önlemek için kapatın
+
+## İyi Yapılandırılmış Bir *Issue* Örneği
+
+![good practice example](https://wiredcraft.com/images/posts/how_we_write_our_github_issues_2.png)
+
+Belirgin bir başlık, arka plan açıklaması, kişilerin dahil edilmesi ve bir sonraki adımın önerilmesi.
+
+## Kötü Yazılmış Bir *Issue* Örneği
+
+![bad example](https://wiredcraft.com/images/posts/how_we_write_our_github_issues_1.png)
+
+Başlık çok uzun, içerik çok genel.
+
+## Egzersizler
+
+Bu konuyu öğrendiklerinizi uygulamak için şunları yapın:
+
+- Kendi depolarınızdan birinde bir `Issue` oluşturun, başlık, açıklama ve bazı etiketler ekleyin
+- Bir `assignee` ekleyin
+- Sizinle ilgili bir `Issue`'ya yorum yapın
+- Oluşturduğunuz `Issue`'ı, eğer yorum almışsa, kapatın
+
