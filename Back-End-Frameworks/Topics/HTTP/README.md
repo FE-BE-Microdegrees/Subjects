@@ -118,3 +118,120 @@ Sources:
 
 - [HTTP Methods - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 - [HTTP Status Codes - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- 
+# HTTP (_Hypertext Transfer Protocol_)
+
+Bu bölümde, HTTP, istek yöntemleri ve yanıt kodları hakkında konuşacağız.
+
+![HTTP](HTTP.webp)
+
+Görsel kaynağı: Dall-E by OpenAI
+
+- [HTTP (_Hypertext Transfer Protocol_)](#http-hypertext-transfer-protocol)
+  - [Öğrenme Çıktıları](#öğrenme-çıktıları)
+  - [HTTP Nedir?](#http-nedir)
+  - [HTTP İstek Yöntemleri](#http-istek-yöntemleri)
+  - [HTTP Yanıt Kodları](#http-yanıt-kodları)
+  - [HTTP Yanıt Kodu Örnekleri](#http-yanıt-kodu-örnekleri)
+    - [1xx (Bilgilendirme)](#1xx-bilgilendirme)
+    - [2xx (Başarılı)](#2xx-başarılı)
+    - [3xx (Yönlendirme)](#3xx-yönlendirme)
+    - [4xx (İstemci Hatası)](#4xx-istemci-hatası)
+    - [5xx (Sunucu Hatası)](#5xx-sunucu-hatası)
+
+## Öğrenme Çıktıları
+
+Bu bölümün sonunda şunları yapabiliyor olacaksınız:
+
+- HTTP'nin ne olduğunu ve nasıl çalıştığını açıklayabileceksiniz.
+- Çeşitli HTTP istek yöntemlerini ve kullanım senaryolarını açıklayabileceksiniz.
+- HTTP yanıt kodlarını ve anlamlarını tanımlayabileceksiniz.
+- HTTP yanıt kodlarının, isteklerin sonuçlarını ve durumlarını belirtmek için nasıl kullanıldığını açıklayabileceksiniz.
+
+## HTTP Nedir?
+
+HTTP, **Hypertext Transfer Protocol** (Hiper Metin Transfer Protokolü) anlamına gelir. İnternet üzerinden veri iletimi için kullanılan bir uygulama katmanı protokolüdür.
+
+HTTP, Dünya Çapında Ağ'ın (World Wide Web) temelini oluşturur ve web tarayıcılarının web sayfalarını, resimleri, videoları ve diğer içerikleri web sunucularından talep etmesini ve almasını sağlar. Web sunucuları da bu istekleri yanıtlamak için HTTP kullanır ve talep edilen içeriği istemciye geri gönderir.
+
+HTTP, istemci-sunucu modelinde çalışır; burada istemci, sunucuya bir istek mesajı gönderir ve sunucu, yanıt mesajı ile geri döner. HTTP istekleri genellikle kullanıcının web tarayıcısı veya diğer istemci tarafı uygulamaları tarafından başlatılır ve çeşitli türde bilgiler içerebilir; örneğin istek yöntemleri (GET, POST, PUT, DELETE gibi), başlıklar ve veriler.
+
+HTTP, **stateless** (durumsuz) bir protokoldür; yani her istek ve yanıt bağımsızdır ve istemci ile sunucu arasındaki önceki iletişimlere dayanmaz. Bu, daha büyük ölçeklenebilirlik ve esneklik sağlar ancak istemci ve sunucu arasında oturum bazlı iletişimi sürdürmek için çerezler veya oturum belirteçleri gibi ek mekanizmalar gerektirir.
+
+## HTTP İstek Yöntemleri
+
+HTTP istek yöntemleri, HTTP isteğinde yer alan URI (Uniform Resource Identifier - Evrensel Kaynak Tanımlayıcı) tarafından tanımlanan bir kaynağa yapılacak işlemi belirtir. En yaygın HTTP istek yöntemleri şunlardır:
+
+- **GET**: Sunucudan bir kaynak talep etmek için kullanılır. Güvenli ve idempotent bir yöntemdir, yani birden fazla aynı istek, tek bir isteğin etkisiyle aynı sonuca yol açar. GET isteğine verilen yanıt genellikle talep edilen kaynağın veya onun temsili olan verinin mesaj gövdesini içerir.
+
+- **POST**: Sunucuya veri göndermek ve bir kaynağı oluşturmak veya güncellemek için kullanılır. İdempotent değildir, yani birden fazla aynı istek farklı etkiler yaratabilir. POST isteğine verilen yanıt genellikle oluşturulan veya güncellenen kaynağın temsili olan veriyi içerir.
+
+- **PUT**: Sunucudaki mevcut bir kaynağı güncellemek için kullanılır. İdempotenttir, yani birden fazla aynı istek, tek bir isteğin etkisiyle aynı sonuca yol açar. PUT isteğine verilen yanıt genellikle güncellenen kaynağın temsili olan veriyi içerir.
+
+- **DELETE**: Sunucudan bir kaynağı silmek için kullanılır. İdempotenttir, yani birden fazla aynı istek, tek bir isteğin etkisiyle aynı sonuca yol açar. DELETE isteğine verilen yanıt genellikle silme işleminin onayını içerir.
+
+- **PATCH**: Sunucudaki mevcut bir kaynağı kısmi olarak güncellemek için kullanılır. İdempotent değildir, yani birden fazla aynı istek farklı etkiler yaratabilir. PATCH isteğine verilen yanıt genellikle güncellenen kaynağın temsili olan veriyi içerir.
+
+- **OPTIONS**: Bir kaynak için mevcut olan seçenekleri almak için kullanılır. Güvenli ve idempotent bir yöntemdir, yani birden fazla aynı istek, tek bir isteğin etkisiyle aynı sonuca yol açar. OPTIONS isteğine verilen yanıt genellikle desteklenen yöntemler, başlıklar ve kaynak için diğer seçenekler hakkında bilgi içerir.
+
+Bu HTTP istek yöntemleri, istemcilerin sunucu kaynaklarıyla standart ve tutarlı bir şekilde etkileşimde bulunmalarını sağlar, sunucunun özel uygulama detaylarından bağımsız olarak.
+
+## HTTP Yanıt Kodları
+
+HTTP yanıt kodları, HTTP yanıt mesajının durumunu belirten üç haneli kodlardır. HTTP yanıt kodları beş sınıfa ayrılır, her bir sınıf farklı bir yanıt türünü temsil eder:
+
+- **1xx** (_Bilgilendirme_): Bu durum kodları, sunucunun isteği aldığını ve işlemeye devam ettiğini gösterir. Bu kodlardan en yaygın olanı `100`'dür ve sunucunun isteğin ilk kısmını aldığını ve istemcinin geri kalan kısmı göndermesini beklediğini gösterir.
+
+- **2xx** (_Başarılı_): Bu durum kodları, sunucunun isteği başarıyla alıp anladığını ve işlediğini gösterir. Bu kodlardan en yaygın olanı `200`'dür ve isteğin başarılı olduğunu ve sunucunun talep edilen veriyi döndüğünü gösterir.
+
+- **3xx** (_Yönlendirme_): Bu durum kodları, istemcinin isteği tamamlamak için ek bir işlem yapması gerektiğini gösterir. Bu kodlardan en yaygın olanı `302`'dir ve talep edilen kaynağın geçici olarak yeni bir URL'ye taşındığını gösterir.
+
+- **4xx** (_İstemci Hatası_): Bu durum kodları, sunucunun isteği, istemcinin tarafında bir hata nedeniyle işleyemediğini gösterir. Bu kodlardan en yaygın olanı `404`'tür ve talep edilen kaynağın sunucuda bulunamadığını gösterir.
+
+- **5xx** (_Sunucu Hatası_): Bu durum kodları, sunucunun isteği, sunucunun tarafındaki bir hata nedeniyle işleyemediğini gösterir. Bu kodlardan en yaygın olanı `500`'dür ve sunucuda bir iç hata oluştuğunu, bu nedenle isteğin işlenemediğini gösterir.
+
+HTTP yanıt kodları, sunucuların isteğin durumunu istemciye iletmek için standart bir yol sunar ve istemcilerin hatalara veya diğer beklenmedik durumlardaki yanıtları uygun şekilde yönetmelerine olanak tanır. HTTP yanıt kodlarını kontrol ederek istemciler, isteğin başarılı olup olmadığını belirleyebilir ve yanıt doğrultusunda gerekli işlemleri yapabilir.
+
+## HTTP Yanıt Kodu Örnekleri
+
+### 1xx (Bilgilendirme)
+
+- 100 - Devam Et
+- 101 - Protokol Değiştiriliyor
+- 102 - İşlem Yapılıyor
+
+### 2xx (Başarılı)
+
+- 200 - Tamam
+- 201 - Oluşturuldu
+- 202 - Kabul Edildi
+- 204 - İçerik Yok
+
+### 3xx (Yönlendirme)
+
+- 300 - Birden Fazla Seçenek
+- 301 - Kalıcı Olarak Taşındı
+- 302 - Bulundu
+- 304 - Değiştirilmedi
+- 307 - Geçici Yönlendirme
+
+### 4xx (İstemci Hatası)
+
+- 400 - Kötü İstek
+- 401 - Yetkisiz
+- 403 - Yasak
+- 404 - Bulunamadı
+- 409 - Çatışma
+- 415 - Desteklenmeyen Medya Türü
+- 429 - Çok Fazla İstek
+
+### 5xx (Sunucu Hatası)
+
+- 500 - İç Sunucu Hatası
+- 501 - Uygulanmadı
+- 502 - Kötü Ağ Geçidi
+- 503 - Hizmet Kullanılamaz
+- 504 - Ağ Geçidi Zaman Aşımı
+
+Bunlar, mevcut olan birçok HTTP yanıt kodunun sadece birkaç örneğidir. Farklı web sun
+
