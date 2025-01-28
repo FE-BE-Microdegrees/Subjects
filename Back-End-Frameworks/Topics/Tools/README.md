@@ -117,9 +117,9 @@ Veya bir `POST` isteği göndermek:
 curl -X POST -H "Content-Type: application/json" -d '{"username":"xyz","password":"xyz"}' http://localhost:3000/login
 ```
 ## Docker Desktop
-Docker Desktop, geliştiricilerin uygulamaları konteynerlerde oluşturmasına, test etmesine ve paylaşmasına olanak tanıyan bir uygulamadır. Konteynerler, geliştiricilerin Docker'ın bulunduğu her yerde uygulama geliştirmesine ve çalıştırmasına olanak tanıyan hafif, izole edilmiş ve yeniden kullanılabilir sanal ortamlardır.
+`Docker Desktop`, geliştiricilerin uygulamaları konteynerlerde oluşturmasına, test etmesine ve paylaşmasına olanak tanıyan bir uygulamadır. Konteynerler, geliştiricilerin Docker'ın bulunduğu her yerde uygulama geliştirmesine ve çalıştırmasına olanak tanıyan hafif, izole edilmiş ve yeniden kullanılabilir sanal ortamlardır.
 
 ## SQLTools VS Code Uzantısı
-SQLTools, Visual Studio Code (VS Code) ortamında doğrudan güçlü ve kullanıcı dostu bir SQL veritabanı yönetim aracı sunan popüler bir uzantıdır. Geliştiricilerin SQL sorguları yazmasına, veritabanlarını yönetmesine ve veri sonuçlarını görmesine olanak tanır. SQLTools, MySQL, PostgreSQL, SQLite ve diğer birçok veritabanı yönetim sistemini destekler.
+`SQLTools`, Visual Studio Code (VS Code) ortamında doğrudan güçlü ve kullanıcı dostu bir SQL veritabanı yönetim aracı sunan popüler bir uzantıdır. Geliştiricilerin SQL sorguları yazmasına, veritabanlarını yönetmesine ve veri sonuçlarını görmesine olanak tanır. SQLTools, MySQL, PostgreSQL, SQLite ve diğer birçok veritabanı yönetim sistemini destekler.
 
 
