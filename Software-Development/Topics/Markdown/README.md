@@ -292,7 +292,9 @@ Yaygın biçimleme dilleri şunlardır:
 
 ### Başlıklar:
 
-```markdown
+```
+markdown
+
 # H1
 ## H2
 ### H3
@@ -300,18 +302,120 @@ Yaygın biçimleme dilleri şunlardır:
 ##### H5
 ###### H6
 
-### Vurgu 
-*italic* veya _italic_
-**bold** veya __bold__
-**_italic ve bold_** veya *__italic ve bold__*
-~~üstü çizili~~
+### Vurgu:
 
+```markdown
+*italic* or _italic_
+**bold** or __bold__
+**_italic and bold_** or *__italic and bold__*
+~~strikethrough~~
+```
 
+### Listeler:
 
-## Excercises
+#### Sırasız:
 
-- Create `README.md` file into your repository and write a short introduction about yourself using Markdown syntax.
-- Make sure to use at least 3 different Markdown syntaxes (e.g. headings, lists, links, images, etc.).
-- Commit and push your changes to your repository.
-- Check your repository on GitHub and make sure that your `README.md` file is rendered properly.
+```markdown
+* Item 1
+* Item 2
+  * Subitem 2.1
+  * Subitem 2.2
+```
+
+or 
+
+```markdown
+- Item 1
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
+```
+
+#### Sıralı:
+
+```markdown
+1. First item
+2. Second item
+   1. Subitem 2.1
+   2. Subitem 2.2
+```
+
+### Bağlantılar:
+
+```markdown
+[Google](https://www.google.com)
+```
+
+### Görseller:
+
+```markdown
+![Alt text](url_to_image)
+```
+
+### Blok alıntı:
+
+```markdown
+> This is a blockquote.
+```
+
+### Hiza Kodu:
+
+```markdown
+Here is `inline code`.
+```
+
+### Kod Bloğu:
+
+Using three backticks:
+
+<pre>
+```
+function example() {
+  console.log("example");
+}
+```
+</pre>
+
+Or with syntax highlighting:
+
+<pre>
+```javascript
+function example() {
+  console.log("example");
+}
+```
+</pre>
+
+### Horizontal Rule:
+
+```markdown
+---
+```
+
+or 
+
+```markdown
+***
+```
+
+### Tables:
+
+```markdown
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Cell1    | Cell2    |
+| Cell3    | Cell4    |
+```
+
+### Task Lists:
+
+```markdown
+- [x] Task 1 (completed)
+- [ ] Task 2 (not completed)
+```
+
+Unutmayın, farklı platformlar veya Markdown'un farklı sürümleri ek özelliklere veya küçük varyasyonlara sahip olabilir, ancak yukarıda belirtilenler temel ve yaygın olarak kullanılan sözdizimini kapsar.
+
+Daha fazla okumak için [Markdown Guide](https://www.markdownguide.org/).
+
 
