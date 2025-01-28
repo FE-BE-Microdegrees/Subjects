@@ -110,3 +110,114 @@ login: async (email, password) => {
 
 - [Bcrypt npm page](https://www.npmjs.com/package/bcrypt)
 - [Wikipedia](https://en.wikipedia.org/wiki/Bcrypt#:~:text=The%20bcrypt%20function%20is%20the,Ruby%2C%20python%20and%20other%20languages.)
+- 
+# Bcrypt
+
+Bu bölümde, öncelikle şifreleri hash'lemek için kullanılan bir hashing fonksiyonu olan `bcrypt` hakkında konuşacağız.
+
+![Bcrypt](Bcrypt.webp)
+
+Görsel Kaynağı: [DALL-E by OpenAI](https://openai.com/)
+
+## Öğrenme Çıktıları
+
+Bu bölümü tamamladıktan sonra öğrenciler:
+
+- `Bcrypt`'in ne olduğunu ve nasıl kullanılacağını açıklayabilecek,
+- `Bcrypt` kullanmanın avantajlarını sıralayabilecek,
+- Şifreleri hash'lemek ve karşılaştırmak için `bcrypt`'i uygulayabileceklerdir.
+
+## Bcrypt Nedir?
+
+`Bcrypt`, öncelikle şifreleri hash'lemek için kullanılan bir hashing fonksiyonudur. Hashing, bir girdi değerini (ör. şifre) sabit uzunlukta bir çıktı değerine dönüştürme işlemidir. Hash değeri, benzersizdir ve orijinal girdiye geri döndürülemez. Hashing genellikle veri güvenliğini sağlamak için kullanılır, çünkü benzersiz ve geri döndürülemezdir.
+
+Hashing genellikle şifreleme ile karıştırılır, ancak bu iki işlem farklıdır. Şifreleme, bir girdi değerini bir şifreleme anahtarı kullanarak şifrelenmiş bir çıktıya dönüştürme işlemidir ve daha sonra orijinal girdiye geri döndürülebilir. Buna karşılık, bir hash değeri orijinal girdiye geri döndürülemez, bu da hassas verileri depolamak için daha güvenlidir.
+
+## Bcrypt Avantajları
+
+- **Güvenlik**: Birçok diğer hashing fonksiyonunun aksine, `bcrypt` yavaş olacak şekilde tasarlanmıştır. Bu, saldırganların brute-force saldırıları yapmasını zorlaştırır. Yavaşlık, salt round sayısını artırarak veya azaltarak ayarlanabilir.
+  
+- **Salting**: `Bcrypt` otomatik olarak bir salting özelliği içerir. Salting, bir şifreye hash'lenmeden önce rastgele veri eklemek anlamına gelir. Bu, aynı şifreler için aynı hash değerlerini önler ve precomputed hash tabloları ("rainbow tables") kullanan saldırganlar için zorluğu artırır.
+
+## Bcrypt Kullanımı
+
+Bir API'de `bcrypt` uygularken, genelde şifreyi veritabanına kaydetmeden önce hash'leme ve kullanıcı girişinde şifreyi karşılaştırma işlemleri yapılır.
+
+`Bcrypt` kurmak için şu komutu kullanabilirsiniz:
+
+```bash
+npm install bcrypt
+```
+Örnek bir hashing servisi şu şekilde olabilir:
+
+```javascript
+// Bcrypt'i import edin
+const bcrypt = require("bcrypt");
+// Şifre hash'leme için ne kadar işlem yapılacağını belirler
+// Bu sayı ne kadar yüksekse işlem o kadar uzun sürer
+const saltRounds = 10;
+
+const hashService = {
+  // Bir şifreyi hash'leyen fonksiyon - hash'lenmiş şifreyi döndürür
+  hash: async (password) => {
+    const hash = await bcrypt.hash(password, saltRounds);
+    return hash;
+  },
+  // Bir şifreyi bir hash ile karşılaştıran fonksiyon - eşleşmeye göre true veya false döner
+  compare: async (password, hash) => {
+    const match = await bcrypt.compare(password, hash);
+    return match;
+  },
+};
+
+// Diğer modüllerde kullanılmak üzere oluşturulan nesneyi dışa aktarır
+module.exports = hashService;
+```
+Bu servisi kullanıcı oluşturma, güncelleme veya giriş işlemlerinde kullanabiliriz.
+
+Kullanıcı oluşturma sırasında bir şifreyi hash'lemek şu şekilde görünebilir:
+
+```javascript
+createUser: async (newUser) => {
+  const id = db.users.length + 1;
+  // Yeni kullanıcının şifresini hash'le
+  const hashedPassword = await hashService.hash(newUser.password);
+  // Kullanıcıyı hash'lenmiş şifreyle "veritabanına" ekle
+  db.users.push({
+    id,
+    ...newUser,
+    password: hashedPassword,
+  });
+  return id;
+},
+
+```
+
+Kullanıcı giriş yapma ve şifre karşılaştırma işlemi şu şekilde görünebilir:
+
+```javascript
+login: async (email, password) => {
+  // Kullanıcıyı e-posta ile bul
+  const user = db.users.find((user) => user.email === email);
+  // Kullanıcı bulunamazsa bir hata mesajı döner
+  if (!user) {
+    return 'Kullanıcı bulunamadı';
+  }
+  // Girilen şifreyi hash'lenmiş şifreyle karşılaştır
+  const match = await hashService.compare(password, user.password);
+  // Şifreler eşleşmezse bir hata mesajı döner
+  if (!match) {
+    return 'Yanlış şifre';
+  }
+  // Şifreler eşleşirse kullanıcı bilgilerini döner
+  return user;
+},
+```
+## Özet
+`Bcrypt`, şifreleri hash'lemek ve karşılaştırmak için kullanılan güvenli bir hashing fonksiyonudur. Yavaşlığı ve otomatik salting özelliği, onu diğer hashing fonksiyonlarından daha güvenli hale getirir. `Bcrypt` kullanmak, kullanıcı şifrelerini korumaya ve web uygulamalarında gizliliği sağlamaya yardımcı olur.
+
+## Kaynaklar
+- [Bcrypt npm page](https://www.npmjs.com/package/bcrypt)
+- [Wikipedia](https://en.wikipedia.org/wiki/Bcrypt#:~:text=The%20bcrypt%20function%20is%20the,Ruby%2C%20python%20and%20other%20languages.)
+
+
