@@ -44,3 +44,47 @@ By mapping the user journey in this way, software developers and designers can i
 - Second, the focus is on visualizing the experience, divided into several stages.
 - Third, it includes observations and opportunities for improvement, and assigns responsibilities.
 
+- [Kullanıcı Yolculuğu](#kullanıcı-yolculuğu)
+  - [Öğrenme Çıktıları](#öğrenme-çıktıları)
+  - [Yazılım Geliştirmede Kullanıcı Yolculuğu Nedir?](#yazılım-geliştirmede-kullanıcı-yolculuğu-nedir)
+  - [Kullanıcı Yolculuğunu Haritalama](#kullanıcı-yolculuğunu-haritalama)
+  - [Kullanıcı Yolculuğu Özeti](#kullanıcı-yolculuğu-özeti)
+
+## Öğrenme Çıktıları
+
+Bu konuyu tamamladıktan sonra şunları yapabileceksiniz:
+
+- Yazılım geliştirmede kullanıcı yolculuğunun ne olduğunu açıklayabileceksiniz;
+- Kullanıcı yolculuğunun hedeflerini ve faydalarını tanımlayabileceksiniz;
+- Yazılım geliştirme bağlamında kullanıcı yolculuğunu haritalayabileceksiniz.
+
+## Yazılım Geliştirmede Kullanıcı Yolculuğu Nedir?
+
+Kullanıcı yolculuğu, aynı zamanda kullanıcı yolculuğu haritası veya müşteri yolculuğu haritası olarak da bilinir, yazılım geliştirmede bir ürün veya hizmetle etkileşimde bulunan kullanıcının deneyimini görselleştirmek için kullanılan bir araçtır. Temelde, kullanıcının ürün veya hizmetle ilk tanışmasından, onunla etkileşimde bulunmasına ve son olarak devam edip etmeme kararına kadar olan adım adım bir haritadır.
+
+![Kullanıcı Yolculuğu Haritalama Örneği](Kasutajateekond_1.png)
+Kullanıcı Yolculuğu Haritalama Örneği (Nielsen Norman Group, 2021)
+
+Kullanıcı yolculuğu, yazılım geliştirme için değerli bir araçtır çünkü acı noktalarını ve kullanıcı deneyiminin iyileştirilebileceği alanları belirlemeye yardımcı olur. Kullanıcının deneyimlerini görselleştirerek, yazılım geliştiricileri ve tasarımcıları, kullanıcının ürün veya hizmetle nasıl etkileşimde bulunduğunu daha iyi anlayabilir. Bu da, kullanıcı deneyimini optimize etmek için bilinçli kararlar alınmasına yardımcı olur.
+
+## Kullanıcı Yolculuğunu Haritalama
+
+Tipik bir kullanıcı yolculuğu, aşağıdaki ana aşamaları içerebilir:
+
+- **Farkındalık**: Kullanıcı, reklamlar, sosyal medya veya ağızdan ağıza yoluyla ürün veya hizmet hakkında bilgi edinir.
+- **Araştırma**: Kullanıcı, ürün veya hizmet hakkında daha fazla bilgi edinmek için incelemeler okur, web sitesini ziyaret eder veya bir video izler.
+- **Kaydolma veya Satın Alma**: Kullanıcı, ürün veya hizmet hakkında bir karar verir.
+- **Başlangıç**: Kullanıcı, ürün veya hizmetin ilk kurulumundan geçirilir.
+- **Kullanım**: Kullanıcı, ürün veya hizmeti düzenli olarak kullanır, deneyimini geliştiren özellikler ve işlevselliklerle karşılaşır.
+- **Destek**: Kullanıcı, ürün veya hizmetle ilgili sorunlarla karşılaşabilir ve geliştirici veya destek ekibinden yardım talep eder.
+- **Yenileme veya Sonlandırma**: Kullanıcı, ürün veya hizmeti kullanmaya devam etme, aboneliğini yenileme veya kullanmayı bırakma kararını verir.
+
+Kullanıcı yolculuğunu bu şekilde haritalayarak, yazılım geliştiricileri ve tasarımcıları, kullanıcı deneyiminin iyileştirilebileceği alanları belirleyebilirler, örneğin başlangıç sürecini basitleştirmek, ürün özelliklerini geliştirmek veya daha iyi destek sağlamak.
+
+## Kullanıcı Yolculuğu Özeti
+
+- Bir senaryoya alternatif/uzantı, kullanıcı deneyimini kapsamlı bir şekilde özetler;
+- İlk olarak, persona ve senaryo belirlenir, hedeflerle birlikte.
+- İkinci olarak, deneyimin görselleştirilmesine odaklanılır ve birkaç aşamaya ayrılır.
+- Üçüncü olarak, gözlemler ve iyileştirme fırsatları eklenir ve sorumluluklar atanır.
+
