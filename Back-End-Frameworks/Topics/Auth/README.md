@@ -160,7 +160,7 @@ Front-end açısından, kullanıcının kullanıcı adı ve şifre (veya başka 
 ## Back-End Uygulamalarda Kimlik Doğrulama ve Yetkilendirme Süreci
 Back-end açısından, kullanıcı kimlik doğrulama kimlik bilgilerini almak, doğrulamak ve bir kimlik doğrulama token'ı oluşturmak için sunucu tarafında bir işlevsellik oluşturmamız gerekir. Sunucu ayrıca, her istekle gönderilen token'ı kontrol edebilmeli ve kullanıcının talep edilen işlemi yapma hakkına sahip olup olmadığına karar verebilmelidir.
 
-Bu kursta, token oluşturma ve doğrulama için JWT (JSON Web Token) teknolojisini kullanacağız. JWT, bilgileri güvenli bir şekilde JSON nesnesi olarak iletmek için kompakt ve bağımsız bir yöntem tanımlayan bir standarttır.
+Bu kursta, token oluşturma ve doğrulama için `JWT` (JSON Web Token) teknolojisini kullanacağız. JWT, bilgileri güvenli bir şekilde JSON nesnesi olarak iletmek için kompakt ve bağımsız bir yöntem tanımlayan bir standarttır.
 
 JWT oluşturulurken yalnızca sunucu tarafında saklanan ve token'ı imzalamak için kullanılan bir gizli anahtar kullanılır. İmzalandıktan sonra, token imzası değiştirilmeden düzenlenemez ve bu da token'ın doğruluğunu garanti eder.
 
