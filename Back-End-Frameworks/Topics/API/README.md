@@ -219,10 +219,12 @@ Tipik bir API yanıtı örneği şu şekilde olabilir:
   }
 }
 
+```
+
 Bu örnekte, web API yanıtı, üç anahtar-değer çiftini içeren bir JSON nesnesidir. İlk anahtar-değer çifti, isteğin durumunu içerir. İkinci anahtar-değer çifti, isteğe ilişkin bir mesajı içerir. Üçüncü anahtar-değer çifti, isteğin sonucu olarak döndürülen veriyi içerir.
 
 Eğer API yanıtı, müşteri kayıtları gibi bir veri listesi içeriyorsa, şu şekilde görünebilir:
-
+```
 {
   "status": 200,
   "message": "OK",
@@ -241,7 +243,7 @@ Eğer API yanıtı, müşteri kayıtları gibi bir veri listesi içeriyorsa, şu
     }
   ]
 }
-
+```
 ## CRUD API
 
 `CRUD`, veriler üzerinde gerçekleştirilebilecek dört temel işlemi temsil eden bir kısaltmadır: **Create** (Oluştur), **Read** (Okuma), **Update** (Güncelle), ve **Delete** (Sil). Bunlar, web API'leri kullanılarak gerçekleştirilebilen temel işlemlerdir.
