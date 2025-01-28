@@ -639,3 +639,41 @@ gitGraph
     checkout develop
     merge release/1.0
     checkout main
+
+```
+
+1. **Başlatma**:
+   Bir Git deposu başlatın ve ardından boş bir `main` ve `develop` dalı oluşturun.
+2. **Yeni Bir Özellik Başlatma**:
+   Her yeni özellik için, `develop` dalından yeni bir dal oluşturun ve üzerinde çalıştığınız özelliğe göre adlandırın.
+3. **Tamamlanan Özelliği Dahil Etme**:
+   Özellik tamamlandığında ve test edildiğinde, geri `develop` dalına birleştirilir. Bir sonraki sürüm döngüsü için `main` dalına entegrasyon bekler.
+4. **Sürüm Zamanı**:
+   Yeterince özellik hazır olduğunda veya önceden belirlenmiş bir sürüm noktası ulaşıldığında, `develop` dalı bir sürüm dalına ayrılır ve burada son testler yapılır.
+5. **Main ile Birleştirme**:
+   Sürüm dalı yeterince test edildikten sonra, `main` dalına birleştirilir ve bir sürüm numarası ile etiketlenir. Daha sonra, gelecek döngüdeki özelliklerin hotfix'ler ve güncellemelerle uyumlu olmasını sağlamak için tekrar `develop` dalına birleştirilmesi gerekir.
+6. **Hotfix'ler**:
+   Eğer `main` dalında bir sorun tespit edilirse ve hemen bir düzeltme yapılması gerekirse, bir hotfix dalı oluşturulur. Hotfix tamamlandığında, hem `main` dalına (etiketlenmiş olarak) hem de `develop` dalına birleştirilir.
+
+Git Flow, büyük ölçekli projeler için katı bir çerçeve sunar, ancak küçük projeler veya ekipler için fazla karmaşık olabilir. Bazı ekipler, GitHub Flow veya GitLab Flow gibi daha basit iş akışlarını tercih edebilir. Yine de Git Flow'u anlamak, karmaşık senaryolarda dallanmanın nasıl kullanılacağı konusunda sağlam bir temel sağlar.
+
+## Git Hosting Platformları
+
+Git'i yerel olarak kullanabiliriz, ancak daha yaygın olarak bir uzaktan Git hosting platformu kullanılır. Bu platformlar, Git depolarını saklamak ve üzerinde iş birliği yapmak için merkezi bir yer sağlar. Ayrıca, hata izleme, pull request'ler, kod incelemeleri ve daha fazlası gibi ek özellikler sunar.
+
+İşte bazı popüler Git hosting platformları:
+
+- [**GitHub**](https://github.com)
+- [**GitLab**](https://gitlab.com)
+- [**Bitbucket**](https://bitbucket.org)
+- vb.
+
+## Alıştırmalar
+
+Aşağıdaki kavramları kendi kelimelerinizle açıklamayı deneyin:
+- Git ve Sürüm Kontrolü nedir?
+- Git terimlerinden en az dört tanesini sayın.
+- En az bir Git hosting platformu ismi sayın.
+
+Sonraki adımlar:
+- Bilgisayarınıza `git` yükleyin
