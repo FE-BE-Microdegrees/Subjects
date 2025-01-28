@@ -244,6 +244,7 @@ graph TD
   G --> H(İnceleme ve Geribildirim)
   H --> A
 
+```
 ## Tipik SDLC Aşamaları
 
 Yazılım Geliştirme Yaşam Döngüsü (SDLC), yazılım üretiminde yer alan aşamaları veya adımları tanımlayan yapılandırılmış bir süreçtir. Çeşitli SDLC modelleri veya çerçeveleri olsa da, çoğu ortak aşamalara sahiptir. İşte tipik adımların genel bir özeti:
