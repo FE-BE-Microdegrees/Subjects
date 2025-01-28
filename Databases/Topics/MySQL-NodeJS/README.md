@@ -536,6 +536,13 @@ Parametreli sorgular, SQL kodunu kullanıcı girdilerinden ayırarak SQL enjeksi
 
 **Örnek: Parametreli Sorguların Kullanımı** 
 Servislerdeki tüm sorgular zaten parametre kullanmaktadır. Kullanıcı verilerini güvenli bir şekilde sorguya dahil etmek için ? sembolü ve bir argüman dizisi kullanılır.
-
+```javascript
 Parametreli sorgular, kullanıcı girişlerinin güvenli bir şekilde işlenmesini sağlayarak SQL enjeksiyonu saldırılarını önler.
-
+const createUser = async (username, email, password) => {
+  const [result] = await db.query(
+    "INSERT INTO users (username, email, password) VALUES (?, ?, ?)",
+    [username, email, password]
+  );
+  return result.insertId;
+};
+```
