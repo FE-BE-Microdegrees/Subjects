@@ -256,3 +256,252 @@ describe("Hooks Example", function () {
   });
 });
 ```
+
+
+# Mocha Test Çerçevesi
+
+Mocha, hem sunucu tarafı (Node.js) hem de istemci tarafı (tarayıcı) ortamlarında test yazmanıza ve çalıştırmanıza olanak tanıyan popüler bir JavaScript test çerçevesidir. Mocha, BDD (Davranışa Dayalı Geliştirme) ve TDD (Test-Tabanlı Geliştirme) dahil olmak üzere çeşitli test stillerini destekleyen esnek ve genişletilebilir bir yapıya sahiptir.
+
+![Mocha](Mocha.webp)
+
+Görsel kaynağı: Dall-E tarafından OpenAI
+
+- [Mocha Test Çerçevesi](#mocha-test-çerçevesi)
+  - [Öğrenme Hedefleri](#öğrenme-hedefleri)
+  - [Mocha Nedir?](#mocha-nedir)
+  - [Mocha'nın Avantajları](#mochanın-avantajları)
+  - [Mocha'yı Yükleme ve Ayarlama](#mochayı-yükleme-ve-ayarlama)
+    - [1. Mocha'yı Yükleme](#1-mochayı-yükleme)
+      - [Global Yükleme](#global-yükleme)
+      - [Proje Seviyesi Yükleme](#proje-seviyesi-yükleme)
+    - [2. Bir Test Dosyası Oluşturma](#2-bir-test-dosyası-oluşturma)
+  - [Mocha ile Test Yazma](#mocha-ile-test-yazma)
+    - [Örnek: Basit Test](#örnek-basit-test)
+      - [`sum.js` - Test Edilecek Fonksiyon](#sumjs---test-edilecek-fonksiyon)
+      - [`test/test.js` - Mocha Testi](#testtestjs---mocha-testi)
+    - [Testleri Çalıştırma](#testleri-çalıştırma)
+  - [Asenkron Testler](#asenkron-testler)
+    - [Örnek: Geri Çağırma ile Asenkron Test](#örnek-geriye-çağırma-ile-asenkron-test)
+      - [`asyncFunction.js` - Asenkron Fonksiyon](#asyncfunctionjs---asenkron-fonksiyon)
+      - [`test/asyncTest.js` - Mocha Testi](#testasynctestjs---mocha-testi)
+    - [Örnek: Promiseler ile Asenkron Test](#örnek-promiseler-ile-asenkron-test)
+      - [`asyncPromise.js` - Asenkron Fonksiyon](#asyncpromisejs---asenkron-fonksiyon)
+      - [`test/asyncPromiseTest.js` - Mocha Testi](#testasyncpromisetestjs---mocha-testi)
+  - [Chai İddia Kütüphanesini Kullanma](#chai-iddia-kütüphanesini-kullanma)
+    - [Chai'yi Yükleme](#chaıyı-yükleme)
+    - [Örnek: Chai Kullanımı](#örnek-chai-kullanımı)
+      - [`test/chaiTest.js` - Mocha Testi Chai ile](#testchaitestjs---mocha-testi-chai-ile)
+  - [Ekstra Mocha Özellikleri](#ekstra-mocha-özellikleri)
+    - [Hook'lar](#hooklar)
+      - [Örnek: Hook Kullanımı](#örnek-hook-kullanımı)
+
+## Öğrenme Hedefleri
+
+Bu materyalin sonunda öğrenciler şunları yapabilmelidir:
+
+- Mocha'nın ne olduğunu ve neden kullanıldığını açıklamak;
+- Mocha test çerçevesini yükleyip ayarlamak;
+- Mocha ile temel testler yazıp çalıştırmak;
+- Chai gibi iddia kütüphanelerini Mocha ile birlikte kullanmak.
+
+## Mocha Nedir?
+
+Mocha, asenkron testler yazmak ve çalıştırmak için tasarlanmış bir JavaScript test çerçevesidir. Testleri organize etmek ve yönetmek için basit ve esnek bir yol sunar ve diğer araçlar ve çerçevelerle iyi bir şekilde entegre olur.
+
+## Mocha'nın Avantajları
+
+- **Esneklik:** Farklı test stilleri ve metodolojilerini destekler.
+- **Asenkronluk:** Asenkron testler yazmak ve çalıştırmak kolaydır.
+- **Genişletilebilirlik:** Chai ve Sinon gibi diğer araçlarla iyi bir şekilde entegre olur.
+- **İyi dökümantasyon ve topluluk:** Büyük bir kullanıcı kitlesi ve çok sayıda kaynak bulunur.
+
+## Mocha'yı Yükleme ve Ayarlama
+
+### 1. Mocha'yı Yükleme
+
+Mocha'yı global olarak ya da proje seviyesinde npm kullanarak yükleyebilirsiniz.
+
+#### Global Yükleme
+
+```bash
+npm install --global mocha
+```
+
+### Proje Seviyesi Yükleme
+```bash
+npm install --save-dev mocha
+```
+### 2. Bir Test Dosyası Oluşturma
+Projenizin kök dizininde test adında bir dizin oluşturun ve içerisine bir test dosyası oluşturun, örneğin `test.js`.
+
+```bash
+mkdir test
+cd test
+touch test.js
+```
+
+## Mocha ile Test Yazma
+Mocha, `describe`, `it`, `before`, `afte`r, `beforeEach`, `afterEach` gibi BDD stilindeki fonksiyonları kullanarak test yazmanızı sağlar.
+
+## Örnek: Basit Test
+
+`sum.js` - Test Edilecek Fonksiyon
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+module.exports = sum;
+```
+`test/test.js` - Mocha Testi
+```javascript
+const assert = require("assert");
+const sum = require("../sum");
+
+describe("Sum Fonksiyonu", function () {
+  it("girdi olarak 1 ve 2 verildiğinde 3 döndürmelidir", function () {
+    assert.strictEqual(sum(1, 2), 3);
+  });
+
+  it("girdi olarak -2 ve 1 verildiğinde -1 döndürmelidir", function () {
+    assert.strictEqual(sum(-2, 1), -1);
+  });
+});
+```
+
+## Testleri Çalıştırma
+Testleri Mocha ile komut satırından çalıştırabilirsiniz.
+```bash
+npx mocha
+```
+
+## Asenkron Testler
+
+Mocha, geri çağırmalar veya promiseler kullanarak asenkron testler yazılmasını destekler.
+
+### Örnek: Geri Çağırma ile Asenkron Test
+
+#### `asyncFunction.js` - Asenkron Fonksiyon
+
+```javascript
+function asyncFunction(callback) {
+  setTimeout(() => {
+    callback(null, "Merhaba Dünya");
+  }, 1000);
+}
+
+module.exports = asyncFunction;
+```
+### `test/asyncTest.js` - Mocha Testi
+```javascript
+const assert = require("assert");
+const asyncFunction = require("../asyncFunction");
+
+describe("AsyncFunction", function () {
+  it('1 saniye sonra "Merhaba Dünya" döndürmelidir', function (done) {
+    asyncFunction(function (err, result) {
+      assert.strictEqual(result, "Merhaba Dünya");
+      done();
+    });
+  });
+});
+```
+
+### Örnek: Promiseler ile Asenkron Test
+
+## `asyncPromise.js` - Asenkron Fonksiyon
+```javascript
+function asyncPromise() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Merhaba Dünya");
+    }, 1000);
+  });
+}
+
+module.exports = asyncPromise;
+```
+
+## `test/asyncPromiseTest.js` - Mocha Testi
+```javascript
+const assert = require("assert");
+const asyncPromise = require("../asyncPromise");
+
+describe("AsyncPromise", function () {
+  it('1 saniye sonra "Merhaba Dünya" döndürmelidir', function () {
+    return asyncPromise().then((result) => {
+      assert.strictEqual(result, "Merhaba Dünya");
+    });
+  });
+});
+```
+### Chai İddia Kütüphanesini Kullanma
+Chai, Mocha ile birlikte kullanılabilen popüler bir iddia kütüphanesidir. Chai, TDD ve BDD dahil olmak üzere çeşitli iddia stillerini destekler.
+
+## Chai'yi Yükleme
+Chai'yi proje seviyesinde yükleyin.
+```bash
+npm install --save-dev chai
+```
+
+### Örnek: Chai Kullanımı
+## `test/chaiTest.js` - Mocha Testi Chai ile
+
+```javascript
+const chai = require("chai");
+const expect = chai.expect;
+const sum = require("../sum");
+
+describe("Sum Fonksiyonu", function () {
+  it("girdi olarak 1 ve 2 verildiğinde 3 döndürmelidir", function () {
+    expect(sum(1, 2)).to.equal(3);
+  });
+
+  it("girdi olarak -2 ve 1 verildiğinde -1 döndürmelidir", function () {
+    expect(sum(-2, 1)).to.equal(-1);
+  });
+});
+```
+
+### Ekstra Mocha Özellikleri
+
+## Hook'lar
+Mocha, testlerden önce ve sonra kod çalıştırmanızı sağlayan before, `after`, `beforeEach`, `afterEach` gibi hook'lar sunar.
+
+# Örnek: Hook Kullanımı
+```javasript
+describe("Hooklar Örneği", function () {
+  before(function () {
+    // Tüm testlerden önce çalıştırılır
+  });
+
+  after(function () {
+    // Tüm testlerden sonra çalıştırılır
+  });
+
+  beforeEach(function () {
+    // Her testten önce çalıştırılır
+  });
+
+  afterEach(function () {
+    // Her testten sonra çalıştırılır
+  });
+
+  it("test durumu 1", function () {
+    // Test kodu
+  });
+
+  it("test durumu 2", function () {
+    // Test kodu
+  });
+});
+```
+
+
+
+
+
+
+
+
+
