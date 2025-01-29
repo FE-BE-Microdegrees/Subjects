@@ -392,8 +392,8 @@ npm test
 
 ```
 
-### Ekstra Örnekler ve En İyi Uygulamalar
-## 1. Parametre Kontrolü
+## Ekstra Örnekler ve En İyi Uygulamalar
+# 1. Parametre Kontrolü
 API'nin URL parametreleri ve sorgu dizeleri ile nasıl çalıştığını test edin.
 
 # `app.js` - Güncellenmiş
@@ -415,10 +415,10 @@ describe("GET /user/:id", () => {
   });
 });
 ```
-### 2. Başlık Kontrolü
+## 2. Başlık Kontrolü
 API'nin HTTP başlıkları ile nasıl çalıştığını test edin.
 
-## `app.js` - Güncellenmiş
+# `app.js` - Güncellenmiş
 ```javascript
 app.get("/headers", (req, res) => {
   res.status(200).set("X-Custom-Header", "value").send("Başlıklar");
@@ -436,10 +436,10 @@ describe("GET /headers", () => {
 });
 ```
 
-### 3. Hata Yönetimi
+## 3. Hata Yönetimi
 API'nin hatalar ve geçersiz isteklerle nasıl başa çıktığını test edin.
 
-## `app.js` - Güncellenmiş
+# `app.js` - Güncellenmiş
 
 ```javascript
 app.get("/error", (req, res) => {
