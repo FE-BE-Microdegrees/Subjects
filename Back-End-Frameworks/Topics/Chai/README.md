@@ -267,3 +267,182 @@ describe("Async Function", function () {
   });
 });
 ```
+
+# Chai Doğrulama (Assertion) Kütüphanesi
+
+Chai, JavaScript test çatıları olan Mocha ve Jest ile kullanılan popüler bir doğrulama (assertion) kütüphanesidir. Chai, TDD (Test-Driven Development) ve BDD (Behavior-Driven Development) gibi çeşitli doğrulama stilleri sunarak test yazmayı kolay ve okunabilir hale getirir.
+
+![Chai](Chai.webp)
+
+Görsel kaynağı: Dall-E by OpenAI
+
+- [Chai Doğrulama Kütüphanesi](#chai-dogrulama-kutuphanesi)
+  - [Öğrenme Çıktıları](#ogrenme-ciktilari)
+  - [Chai Nedir?](#chai-nedir)
+    - [Chai'nin Avantajları](#chainin-avantajlari)
+  - [Chai Kurulumu ve Yapılandırması](#chai-kurulumu-ve-yapilandirmasi)
+    - [1. Chai Kurulumu](#1-chai-kurulumu)
+    - [2. Bir Test Çatısı Kurma](#2-bir-test-catisi-kurma)
+    - [3. Bir Test Dosyası Oluşturma](#3-bir-test-dosyasi-olusturma)
+  - [Chai ile Test Yazma](#chai-ile-test-yazma)
+    - [Örnek: Basit TDD Stili Test](#ornek-basit-tdd-stili-test)
+      - [`sum.js` - Test Edilen Fonksiyon](#sumjs---test-edilen-fonksiyon)
+      - [`test/sum.test.js` - Chai ile Mocha Testi](#testsumtestjs---chai-ile-mocha-testi)
+    - [Örnek: Basit BDD Stili Test](#ornek-basit-bdd-stili-test)
+      - [`test/sum.test.js` - Chai ile Mocha Testi](#testsumtestjs---chai-ile-mocha-testi-1)
+    - [Testleri Çalıştırma](#testleri-calistirma)
+  - [Chai Doğrulama Stilleri](#chai-dogrulama-stilleri)
+    - [1. Assert Stili](#1-assert-stili)
+    - [2. Expect Stili](#2-expect-stili)
+    - [3. Should Stili](#3-should-stili)
+  - [Chai'yi Genişletme](#chaiyi-genisletme)
+    - [Örnek: Chai-as-Promised](#ornek-chai-as-promised)
+      - [Kurulum](#kurulum)
+      - [Kullanım](#kullanim)
+  - [Ek Örnekler ve En İyi Uygulamalar](#ek-ornekler-ve-en-iyi-uygulamalar)
+    - [Nesne Eşitliğini Kontrol Etme](#nesne-esitligini-kontrol-etme)
+    - [Hata Kontrolü](#hata-kontrolu)
+    - [Asenkron Fonksiyonları Test Etme](#asenkron-fonksiyonlari-test-etme)
+
+## Örnek: Basit BDD Stili Test
+
+#### `test/sum.test.js` - Chai ile Mocha Testi
+
+```javascript
+const chai = require("chai");
+const expect = chai.expect;
+const sum = require("../sum");
+
+describe("Toplama Fonksiyonu", function () {
+  it("1 ve 2 girdileri için sonucu 3 döndürmelidir", function () {
+    expect(sum(1, 2)).to.equal(3);
+  });
+
+  it("-2 ve 1 girdileri için sonucu -1 döndürmelidir", function () {
+    expect(sum(-2, 1)).to.equal(-1);
+  });
+});
+```
+
+### Testleri Çalıştırma
+
+Mocha komut satırı ile testleri çalıştırın.
+
+```bash
+npm test
+```
+
+## Chai Doğrulama Stilleri
+
+Chai, üç farklı doğrulama stili destekler: Assert, Expect ve Should.
+
+### 1. Assert Stili
+
+```javascript
+const chai = require("chai");
+const assert = chai.assert;
+
+assert.strictEqual(sum(1, 2), 3, "1 ve 2 toplamı 3 olmalıdır");
+```
+
+### 2. Expect Stili
+
+```javascript
+const chai = require("chai");
+const expect = chai.expect;
+
+expect(sum(1, 2)).to.equal(3, "1 ve 2 toplamı 3 olmalıdır");
+```
+
+### 3. Should Stili
+
+```javascript
+const chai = require("chai");
+chai.should();
+
+sum(1, 2).should.equal(3, "1 ve 2 toplamı 3 olmalıdır");
+```
+
+## Chai'yi Genişletme
+
+Chai, ek işlevsellik eklemek için eklentilerle genişletilebilir.
+
+### Örnek: Chai-as-Promised
+
+Chai-as-Promised, vaatleri (promises) test etmeyi sağlayan bir eklentidir.
+
+#### Kurulum
+
+```bash
+npm install --save-dev chai-as-promised
+```
+
+#### Kullanım
+
+```javascript
+const chai = require("chai");
+const expect = chai.expect;
+const chaiAsPromised = require("chai-as-promised");
+
+chai.use(chaiAsPromised);
+
+function asyncFunction() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Merhaba, Dünya!");
+    }, 1000);
+  });
+}
+
+describe("Asenkron Fonksiyon", function () {
+  it('1 saniye sonra "Merhaba, Dünya!" döndürmelidir', function () {
+    return expect(asyncFunction()).to.eventually.equal("Merhaba, Dünya!");
+  });
+});
+```
+
+## Ek Örnekler ve En İyi Uygulamalar
+
+### Nesne Eşitliğini Kontrol Etme
+
+```javascript
+const obj1 = { a: 1, b: 2 };
+const obj2 = { a: 1, b: 2 };
+
+expect(obj1).to.deep.equal(obj2);
+```
+
+### Hata Kontrolü
+
+```javascript
+function badFunction() {
+  throw new Error("Bir hata oluştu");
+}
+
+expect(badFunction).to.throw("Bir hata oluştu");
+```
+
+### Asenkron Fonksiyonları Test Etme
+
+```javascript
+function asyncFunction(callback) {
+  setTimeout(() => {
+    callback(null, "Merhaba, Dünya!");
+  }, 1000);
+}
+
+describe("Asenkron Fonksiyon", function () {
+  it('1 saniye sonra "Merhaba, Dünya!" döndürmelidir', function (done) {
+    asyncFunction(function (err, result) {
+      expect(result).to.equal("Merhaba, Dünya!");
+      done();
+    });
+  });
+});
+```
+
+
+
+
+
+
