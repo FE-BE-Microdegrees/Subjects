@@ -1,5 +1,15 @@
 # Code Review
 
+Code reviews by other developers can be a valuable tool in ensuring high-quality code. Code reviews allow other developers to inspect code changes, suggest improvements, and catch errors or issues.
+
+![Code Review](Code-Review.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Code Review](#code-review)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Code Review?](#what-is-code-review)
+  - [At What Stage is Code Review Conducted?](#at-what-stage-is-code-review-conducted)
 
 ## Learning Outcomes
 

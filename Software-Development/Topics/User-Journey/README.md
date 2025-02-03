@@ -1,5 +1,9 @@
 # User Journey
 
+![User Journey](User-Journey.webp)
+
+Image source: Dall-E by OpenAI
+
 - [User Journey](#user-journey)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a User Journey in Software Development?](#what-is-a-user-journey-in-software-development)
@@ -43,4 +47,3 @@ By mapping the user journey in this way, software developers and designers can i
 - First, the persona and scenario are determined, along with goals.
 - Second, the focus is on visualizing the experience, divided into several stages.
 - Third, it includes observations and opportunities for improvement, and assigns responsibilities.
-

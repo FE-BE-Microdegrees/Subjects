@@ -1,5 +1,8 @@
 # Scenario
 
+![Scenario](Scenario.webp)
+
+Image source: Dall-E by OpenAI
 
 - [Scenario](#scenario)
   - [Learning Outcomes](#learning-outcomes)
@@ -36,12 +39,12 @@ Scenarios are important because they help ensure that the software meets the use
 
 ## Sample Scenario
 
-| Actor | Tiina.. |
-| --- | --- |
-| Motivation | ..wants to learn how to create a website for her business |
-| Goal | She wants to find a course that is affordable, aimed at beginners, and scheduled at convenient dates |
-| Action | Tiina selects the IT category from the list of courses, sorts the courses by price and date, and reviews their content |
-| Outcome | She finds a suitable course from the list and registers as a participant |
+| Actor      | Tiina..                                                                                                                |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Motivation | ..wants to learn how to create a website for her business                                                              |
+| Goal       | She wants to find a course that is affordable, aimed at beginners, and scheduled at convenient dates                   |
+| Action     | Tiina selects the IT category from the list of courses, sorts the courses by price and date, and reviews their content |
+| Outcome    | She finds a suitable course from the list and registers as a participant                                               |
 
 ## Creating a Scenario
 
@@ -60,4 +63,3 @@ Scenarios are important because they help ensure that the software meets the use
   - Outcome or resolution.
 
 Created or validated together with real users similar to the persona (participatory design)!
-

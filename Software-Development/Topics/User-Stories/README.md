@@ -1,5 +1,8 @@
 # User Story
 
+![User Story](User-Story.webp)
+
+Image source: Dall-E by OpenAI
 
 - [User Story](#user-story)
   - [Learning Outcomes](#learning-outcomes)
@@ -45,4 +48,3 @@ Here is an example of a prioritized list of user stories for a fictional e-comme
 6. As a registered user, I want to update my account information so that I can keep my details current.
 
 In this example, the user stories are prioritized based on their importance to the core functionality of the website. The first three stories focus on the basic process of finding and purchasing goods, while the later stories focus on additional features that enhance the user experience. This prioritized list can help the development team focus on the most important stories first and ensure that the core functionalities of the website are implemented correctly.
-

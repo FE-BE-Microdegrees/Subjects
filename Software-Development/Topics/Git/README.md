@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about the basics of Git and version control. We'll cover the importance of version control systems, the basics of Git, and the Git flow process.
 
+![Git](Git.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Git](#git)
   - [Learning outcomes](#learning-outcomes)
   - [What is Git?](#what-is-git)
@@ -103,6 +107,7 @@ Latest version of Git and instructions for installation can be found from [git-s
 ## Basic Git vocabulary
 
 Git has its own unique vocabulary, and understanding these terms is key to working effectively with Git. Here's a basic overview of some essential Git terminology:
+
 - **Repository (Repo)**:
   - A directory or storage space where your project lives. It contains all of the project files and the entire revision history.
   - Can be local (on your computer) or remote (e.g., on a server or service like GitHub).
@@ -242,6 +247,7 @@ Git Flow is a popular workflow methodology in Git that defines a structured appr
 These branches are used to aid parallel development, easily track features, prepare for releases, and quickly fix live issues.
 
 - **Feature Branches**:
+
   - Branch off from: `develop`
   - Merge back into: `develop`
   - Naming convention: anything except `main`, `develop`, `release-*`, or `hotfix-*`
@@ -254,6 +260,7 @@ These branches are used to aid parallel development, easily track features, prep
     ```
 
 - **Release Branches**:
+
   - Branch off from: `develop`
   - Merge back into: `main` and `develop`
   - Naming convention: `release-*`
@@ -267,6 +274,7 @@ These branches are used to aid parallel development, easily track features, prep
     ```
 
 - **Hotfix Branches**:
+
   - Branch off from: `main`
   - Merge back into: `main` and `develop`
   - Naming convention: `hotfix-*`
@@ -333,9 +341,11 @@ Here are some popular Git hosting platforms:
 ## Excercises
 
 Try to explain the following concepts in your own words:
+
 - What is Git and Version Control?
 - Name at least four terms from the git vocabulary
 - Name at least one Git hosting platform
 
 Next steps:
+
 - install `git` on your computer

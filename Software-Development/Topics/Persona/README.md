@@ -1,3 +1,8 @@
+# Persona
+
+![Persona](Persona.webp)
+
+Image source: Dall-E by OpenAI
 
 - [Persona](#persona)
   - [Learning Outcomes](#learning-outcomes)
@@ -90,4 +95,3 @@ Author: Xtensio
 
 - [UXPressia](https://uxpressia.com/)
 - [Hubspot](https://www.hubspot.com/make-my-persona)
-

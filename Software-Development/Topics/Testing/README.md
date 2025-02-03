@@ -1,5 +1,9 @@
 # Testing in Software Development
 
+![Testing](Testing.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Testing in Software Development](#testing-in-software-development)
   - [Learning Outcomes:](#learning-outcomes)
   - [Importance of Testing:](#importance-of-testing)
@@ -94,4 +98,3 @@ Testing in software development refers to the process of executing a program or 
 In conclusion, testing is an integral part of software development that ensures the delivery of a robust, high-quality product. It identifies and rectifies bugs, vulnerabilities, and deficiencies in the early stages, ensuring the software meets user expectations and industry standards. Proper testing results in reliable software, minimizes risks, and enhances user satisfaction.
 
 ## Excercises and Assignments
-

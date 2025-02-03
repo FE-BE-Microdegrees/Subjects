@@ -1,5 +1,11 @@
 # Project management in software development
 
+Selles teemas õpime tundma projektijuhtimise tähtsust tarkvaraarenduses. Uurime projektijuhtimise põhielemente ja õpime, kuidas neid tarkvaraarendusprojektis rakendada.
+
+![Projektijuhtimine](Project-Management.webp)
+
+Pildi allikas: Dall-E by OpenAI
+
 - [Project management in software development](#project-management-in-software-development)
   - [Learning Outcomes](#learning-outcomes)
   - [Importance of Project Management in Software Development:](#importance-of-project-management-in-software-development)

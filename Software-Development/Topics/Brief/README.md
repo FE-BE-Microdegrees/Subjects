@@ -1,5 +1,9 @@
 # Brief
 
+![Brief](Brief.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Brief](#brief)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Brief?](#what-is-a-brief)
@@ -91,4 +95,4 @@ A brief may include the following:
 
 ## Brief Template
 
-
+- [Brief template](Briif.pdf)

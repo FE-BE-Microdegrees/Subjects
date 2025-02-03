@@ -76,12 +76,15 @@ Prototyping tools are an essential class of tools in software development that h
 There are many different prototyping tools available, ranging from simple web-based tools that don’t require installation to more advanced desktop applications with a wide range of features. Some examples of popular prototyping tools include:
 
 - **Sketch:** Sketch is a popular UI design tool that includes built-in prototyping features. Users can create clickable prototypes by linking artboards together and adding transition effects.
+
   - <https://www.sketch.com/>
 
 - **Adobe XD:** Adobe XD is a UI/UX design tool that includes features for creating and sharing interactive prototypes. Users can create interactive designs with animations, transitions, and other effects.
+
   - <https://www.adobe.com/products/xd/learn/get-started-xd-prototype.html>
 
 - **InVision:** InVision is a web-based prototyping tool that allows users to create interactive designs with animations, hotspots, and other interactive elements. InVision also includes features for collaborating on designs and gathering feedback from stakeholders.
+
   - <https://www.invisionapp.com/>
 
 - **Figma:** Figma is a web-based UI design and prototyping tool that allows users to create and share interactive designs with animations, transitions, and other effects. Figma also includes features for real-time collaboration and version control.
@@ -90,6 +93,7 @@ There are many different prototyping tools available, ranging from simple web-ba
 ![Figma Prototype](FigmaProto.png)
 
 - **Axure RP:** Axure RP is a desktop application that allows users to create interactive wireframes, prototypes, and specifications for web and mobile applications. Axure RP includes advanced features for designing complex interactions and workflows.
+
   - <https://www.axure.com/>
 
 - Many other web-based and desktop applications allow users to create interactive or non-interactive prototypes and designs.

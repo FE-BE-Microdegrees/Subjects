@@ -2,7 +2,11 @@
 
 In this topic, we'll learn about the `.gitignore` file, what it is, and why it's important. We'll also learn how to use it to exclude files from version control.
 
-- [`.gitignore`](#gitignore)
+![gitignore](gitignore.webp)
+
+Image source: Dall-E by OpenAI
+
+- [.gitignore](#gitignore)
   - [.gitignore in the Context of Node.js](#gitignore-in-the-context-of-nodejs)
     - [Explanation of the Previous Example](#explanation-of-the-previous-example)
     - [What to Include in `.gitignore`](#what-to-include-in-gitignore)
@@ -14,6 +18,7 @@ Briefly, a `.gitignore` file contains rules about the files and folders that Git
 ## .gitignore in the Context of Node.js
 
 Here is an example of a typical `.gitignore` file for Node.js projects:
+
 ```
 # Logs
 logs/

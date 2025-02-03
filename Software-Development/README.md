@@ -1,5 +1,9 @@
 # Software Development
 
+![Tarkvaraarendus](Topics/Software/Software-Development.webp)
+
+Image source: Dall-E by OpenAI
+
 ## Description
 
 **Software Development** delves deep into the heart of creating modern software solutions. This subject covers the entire software development lifecycle, from understanding user requirements to design, coding, testing, deployment, and beyond. Students will learn both the theoretical foundations of software engineering and the practical skills necessary to become proficient software developers. Topics covered include design principles, coding best practices, collaborative development, version control, testing strategies, and software maintenance. Through hands-on projects and case studies, students will experience the challenges and rewards of software development in real-world contexts.
@@ -31,19 +35,24 @@
   - [Markdown](./Topics/Markdown/README.md)
   - [Git and Github Best Practices](./Topics/Git-Best-Practices/README.md)
   - [Github Issue](./Topics/Github-Issue/README.md)
+- [Code Quality](./Topics/Code-Quality/README.md)
 - [Project management](./Topics/Project-Management/README.md)
+- [Code Review](./Topics/Code-Review/README.md)
 - [Software Development Life Cycle](./Topics/SDLC/README.md)
-- [Roles in Software development](./Topics/Roles/README.md)
+- [Roles in Software Development](./Topics/Roles/README.md)
 - [Software Development Methods](./Topics/SDLC/README.md#common-sdlc-models)
-- [User Research](./Topics/User-Research/README.md)
-  - [Requirements](./Topics/Requirements/README.md)
-  - [User Stories](./Topics/User-Stories/README.md)
+- Requirements and User Research
+  - [Brief](./Topics/Brief/README.md)
   - [Persona](./Topics/Persona/README.md)
+  - [User Stories](./Topics/User-Stories/README.md)
+  - [Scenario](./Topics/Scenario/README.md)
   - [User Journey](./Topics/User-Journey/README.md)
-  - [User Flow](./Topics/User-Flow/README.md)
 - [Documentation](./Topics/Documentation/README.md)
+- [VS Code Extensions and Tips](./Topics/VSCode-Tips/README.md)
+- [Command Line](./Topics/Command-Line/README.md)
 - [Prototyping](./Topics/Prototyping/README.md)
 - [Testing](./Topics/Testing/README.md)
+- [ESLint](./Topics/ESLint/README.md)
 
 ## Lectures
 

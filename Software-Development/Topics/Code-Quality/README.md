@@ -1,5 +1,10 @@
 # Code Quality
 
+Like any product, quality is important for code as well. Quality code is readable, consistent, simple, maintainable, and reliable. Writing quality code can help reduce errors, improve productivity, and save time and resources.
+
+![Code Quality](Code-Quality.webp)
+
+Image source: Dall-E by OpenAI
 
 - [Code Quality](#code-quality)
   - [What Does Code Quality Mean?](#what-does-code-quality-mean)
@@ -46,9 +51,12 @@ By following these practices, you can ensure that your JavaScript code is of hig
 For example:
 
 ```javascript
-function add(x,y){return x+y;}
-console.log(add(2,3));
+function add(x, y) {
+  return x + y;
+}
+console.log(add(2, 3));
 ```
+
 This code performs a simple addition and prints the result to the console. While the code works correctly, it is not very readable. Here is an improved version of the same code that is more readable:
 
 ```javascript
@@ -59,6 +67,7 @@ function add(num1, num2) {
 const result = add(2, 3);
 console.log(result);
 ```
+
 In this version, we have improved the readability of the code by giving the function parameters more descriptive names (num1 and num2) and adding spaces to make the code more readable. We also stored the result of the addition in a variable before printing it to the console, making the code easier to understand.
 
 ### Simplicity
@@ -67,20 +76,22 @@ For example:
 
 ```javascript
 function checkLogin(username, password) {
-  if (username === 'admin' && password === 'password') {
+  if (username === "admin" && password === "password") {
     return true;
   } else {
     return false;
   }
 }
 ```
+
 This code defines a function `checkLogin` that takes two arguments (username and password) and returns `true` if the values are 'admin' and 'password' respectively, and `false` otherwise. While the code works correctly, it can be simplified. Here is a simpler version of the same code that produces the same result:
 
 ```javascript
 function checkLogin(username, password) {
-  return (username === 'admin' && password === 'password');
+  return username === "admin" && password === "password";
 }
 ```
+
 In this version, we have simplified the code by removing the unnecessary `if` statement and `else` block. We also removed the `true` and `false` return statements and replaced them with a single boolean expression that returns `true` or `false` based on the conditions.
 
 ### Maintainability
@@ -128,11 +139,12 @@ This code defines a function `divide` that takes two arguments (`a` and `b`) and
 ```javascript
 function divide(a, b) {
   if (b === 0) {
-    throw new Error('Division by zero error');
+    throw new Error("Division by zero error");
   }
   return a / b;
 }
 ```
+
 In this version, we have improved the reliability of the code by adding a check to ensure that `b` is not zero before performing the division. If `b` is zero, the function throws a new error object with a message indicating a division by zero error.
 
 By adding this check, we have made the code more reliable because it now handles the case where `b` is zero, preventing a division by zero error. This leads to better code quality because the code is more likely to work correctly and produce the expected results.
@@ -142,6 +154,3 @@ Sources and further reading:
 - <https://blog.cleancoder.com/>
 - <https://github.com/jnguyen095/clean-code/blob/master/Clean.Code.A.Handbook.of.Agile.Software.Craftsmanship.pdf>
 - <https://github.com/ryanmcdermott/clean-code-javascript>
-
-
-

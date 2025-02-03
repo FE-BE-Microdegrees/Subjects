@@ -4,6 +4,8 @@ In this topic, we will learn about the best practices for using Git and GitHub. 
 
 ![Git Best Practices](Git-Best-Practices.webp)
 
+Image source: Dall-E by OpenAI
+
 - [Git and GitHub Best Practices](#git-and-github-best-practices)
   - [Learning Outcomes](#learning-outcomes)
   - [Git Best Practices](#git-best-practices)

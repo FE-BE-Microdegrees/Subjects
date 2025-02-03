@@ -1,12 +1,18 @@
 # Markdown
 
+In this topic, we will get to know Markdown, one of the most popular text formatting languages in the world. We will explore its features, learn how to use it, and discover how it can be applied in software project documentation, blogging, and other purposes.
+
+![Markup](Markup-Language.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Markdown](#markdown)
   - [Learning Outcomes](#learning-outcomes)
   - [What is Markdown?](#what-is-markdown)
-  - [What is a Markup Language?](what-is-a-markup-language?)
+  - [What is a Markup Language?](#what-is-a-markup-language)
   - [Advantages of Markdown:](#advantages-of-markdown)
   - [Disadvantages of Markdown:](#disadvantages-of-markdown)
-  - [When to Use Markdown:](#when-to-use-markdown)
+  - [When to Use Markdown](#when-to-use-markdown)
   - [Basic Markdown Syntax:](#basic-markdown-syntax)
     - [Headings:](#headings)
     - [Emphasis:](#emphasis)
@@ -59,7 +65,6 @@ Common markup languages include:
 - **Version Control Friendly:** Being plain text, Markdown works seamlessly with version control systems like Git.
 - **No Need for Specialized Software:** Markdown can be written in any text editor. Additionally, there are specialized Markdown editors that offer additional features, such as preview and quick conversion.
 
-
 ## Disadvantages of Markdown:
 
 - **Limited Styling:** While Markdown easily handles basic formatting, it is not suitable for composing documents that require complex styles or layouts.
@@ -87,19 +92,24 @@ Here's a quick reference to basic Markdown syntax:
 
 ```markdown
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 ```
 
 ### Emphasis:
 
 ```markdown
-*italic* or _italic_
-**bold** or __bold__
-**_italic and bold_** or *__italic and bold__*
+_italic_ or _italic_
+**bold** or **bold**
+**_italic and bold_** or _**italic and bold**_
 ~~strikethrough~~
 ```
 
@@ -108,13 +118,13 @@ Here's a quick reference to basic Markdown syntax:
 #### Unordered:
 
 ```markdown
-* Item 1
-* Item 2
-  * Subitem 2.1
-  * Subitem 2.2
+- Item 1
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
 ```
 
-or 
+or
 
 ```markdown
 - Item 1
@@ -184,10 +194,10 @@ function example() {
 ---
 ```
 
-or 
+or
 
 ```markdown
-***
+---
 ```
 
 ### Tables:

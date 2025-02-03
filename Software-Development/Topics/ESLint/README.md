@@ -1,10 +1,8 @@
----
-marp: true
----
-
 # ESLint
 
 ![Static Code Analysis](Static-Code-Analyzator.webp)
+
+Image source: Dall-E by OpenAI
 
 - [ESLint](#eslint)
   - [Learning Outcomes](#learning-outcomes)
@@ -14,7 +12,7 @@ marp: true
   - [Line Endings LF vs CRLF](#line-endings-lf-vs-crlf)
   - [Setting Line Endings in VSCode Editor](#setting-line-endings-in-vscode-editor)
   - [Setting the Number of Spaces](#setting-the-number-of-spaces)
-  - [.eslintrc.js File Content](#eslintrcjs-file-content)
+  - [eslintrc.js File Content](#eslintrcjs-file-content)
 
 ## Learning Outcomes
 
@@ -145,14 +143,13 @@ module.exports = {
     commonjs: true,
     es2021: true,
   },
-  extends: 'airbnb-base',
-  overrides: [
-  ],
+  extends: "airbnb-base",
+  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: "latest",
   },
   rules: {
-    'linebreak-style': 0,
+    "linebreak-style": 0,
   },
-}
+};
 ```
