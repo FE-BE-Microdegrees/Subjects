@@ -22,7 +22,7 @@ Image Source: Dall-E by OpenAI
       - [Example of Using Redux](#example-of-using-redux)
   - [Context API](#context-api)
     - [Example of Using Context API](#example-of-using-context-api)
-  - [Resources](#resources)
+  - [Sources](#sources)
   - [Review Questions or Exercises](#review-questions-or-exercises)
   - [Exercises](#exercises)
 
@@ -48,7 +48,7 @@ State is an object that holds data private to a component and can only be modifi
 #### Using the `useState` Hook
 
 ```javascript
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -56,9 +56,7 @@ function Counter() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -125,19 +123,19 @@ npm install redux react-redux
 2. **Create a Redux Store and Reducer:**
 
 ```javascript
-import { createStore } from 'redux';
+import { createStore } from "redux";
 
 // Define an action
 const increment = () => {
   return {
-    type: 'INCREMENT'
+    type: "INCREMENT",
   };
 };
 
 // Define a reducer
 const counter = (state = 0, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case "INCREMENT":
       return state + 1;
     default:
       return state;
@@ -155,22 +153,22 @@ store.dispatch(increment()); // Increments the state by 1
 3. **Integrate Redux with React:**
 
 ```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider, useDispatch, useSelector } from 'react-redux';
-import { createStore } from 'redux';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider, useDispatch, useSelector } from "react-redux";
+import { createStore } from "redux";
 
 // Define an action
 const increment = () => {
   return {
-    type: 'INCREMENT'
+    type: "INCREMENT",
   };
 };
 
 // Define a reducer
 const counter = (state = 0, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case "INCREMENT":
       return state + 1;
     default:
       return state;
@@ -181,15 +179,13 @@ const counter = (state = 0, action) => {
 const store = createStore(counter);
 
 function Counter() {
-  const count = useSelector(state => state);
+  const count = useSelector((state) => state);
   const dispatch = useDispatch();
 
   return (
     <div>
       <p>Count: {count}</p>
-      <button onClick={() => dispatch(increment())}>
-        Increment
-      </button>
+      <button onClick={() => dispatch(increment())}>Increment</button>
     </div>
   );
 }
@@ -198,9 +194,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Counter />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
 ```
 
 ## Context API
@@ -212,18 +207,14 @@ The Context API is a built-in mechanism in React that allows sharing data across
 1. **Create a Context:**
 
 ```javascript
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 const MyContext = createContext();
 
 function MyProvider({ children }) {
   const [value, setValue] = useState("Hello from Context!");
 
-  return (
-    <MyContext.Provider value={value}>
-      {children}
-    </MyContext.Provider>
-  );
+  return <MyContext.Provider value={value}>{children}</MyContext.Provider>;
 }
 
 function MyComponent() {

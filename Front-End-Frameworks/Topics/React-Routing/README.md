@@ -36,7 +36,7 @@ Image Source: Dall-E by OpenAI
     - [About.js](#aboutjs-1)
     - [User.js](#userjs-1)
     - [NotFound.js](#notfoundjs-1)
-  - [Resources](#resources)
+  - [Sources](#sources)
   - [Review Questions or Exercises](#review-questions-or-exercises)
   - [Exercises](#exercises)
 
@@ -78,10 +78,10 @@ npm install react-router-dom
 #### App.js
 
 ```javascript
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
 
 function App() {
   return (
@@ -100,7 +100,7 @@ export default App;
 #### Home.js
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function Home() {
   return <h1>Home Page</h1>;
@@ -112,7 +112,7 @@ export default Home;
 #### About.js
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function About() {
   return <h1>About Page</h1>;
@@ -128,15 +128,19 @@ Links enable users to navigate between pages without reloading the entire page.
 #### Example: Using Links
 
 ```javascript
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
       </ul>
     </nav>
   );
@@ -145,14 +149,14 @@ function Navigation() {
 export default Navigation;
 ```
 
-Include the  `Navigation` component in the `App` component to display links on all pages:
+Include the `Navigation` component in the `App` component to display links on all pages:
 
 ```javascript
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Navigation from './Navigation';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Navigation from "./Navigation";
 
 function App() {
   return (
@@ -173,13 +177,13 @@ export default App;
 
 Dynamic routes allow displaying different components depending on URL parameters. For instance, dynamic routes can be used to display user profiles where each profile corresponds to a unique ID..
 
-### NExample: Dynamic Route
+### Example: Dynamic Route
 
 #### User.js
 
 ```javascript
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
 
 function User() {
   const { userId } = useParams();
@@ -192,12 +196,12 @@ export default User;
 #### App.js
 
 ```javascript
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import User from './User';
-import Navigation from './Navigation';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import User from "./User";
+import Navigation from "./Navigation";
 
 function App() {
   return (
@@ -219,21 +223,18 @@ export default App;
 
 Programmatic navigation allows the application to navigate between pages using the `useNavigate` hook. For instance, redirecting users to another page after logging in:
 
-
 ```javascript
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
 
   function handleLogin() {
     // Sisselogimise loogika
-    navigate('/dashboard');
+    navigate("/dashboard");
   }
 
-  return (
-    <button onClick={handleLogin}>Login</button>
-  );
+  return <button onClick={handleLogin}>Login</button>;
 }
 ```
 
@@ -246,7 +247,7 @@ function Login() {
 #### NotFound.js
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function NotFound() {
   return <h1>404 - Page Not Found</h1>;
@@ -258,13 +259,13 @@ export default NotFound;
 #### App.js
 
 ```javascript
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import User from './User';
-import NotFound from './NotFound';
-import Navigation from './Navigation';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import User from "./User";
+import NotFound from "./NotFound";
+import Navigation from "./Navigation";
 
 function App() {
   return (
@@ -285,7 +286,7 @@ export default App;
 
 ## Best Practices for Routing
 
-- **Clear and descriptive URLs:**  Use clear and descriptive URLs reflecting the page content.
+- **Clear and descriptive URLs:** Use clear and descriptive URLs reflecting the page content.
 - **Navigation components:** Use navigation components like `Link` to enable smooth navigation.
 - **404 page handling:** Add a 404 page to handle non-existent routes.
 - **Dynamic routes:** Use dynamic routes to display components based on URL parameters.
@@ -295,13 +296,13 @@ export default App;
 ### App.js
 
 ```javascript
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import User from './User';
-import NotFound from './NotFound';
-import Navigation from './Navigation';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import User from "./User";
+import NotFound from "./NotFound";
+import Navigation from "./Navigation";
 
 function App() {
   return (
@@ -323,17 +324,25 @@ export default App;
 ### Navigation.js
 
 ```javascript
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/user/1">User 1</Link></li>
-        <li><Link to="/user/2">User 2</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/user/1">User 1</Link>
+        </li>
+        <li>
+          <Link to="/user/2">User 2</Link>
+        </li>
       </ul>
     </nav>
   );
@@ -345,7 +354,7 @@ export default Navigation;
 ### Home.js
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function Home() {
   return <h1>Home Page</h1>;
@@ -357,7 +366,7 @@ export default Home;
 ### About.js
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function About() {
   return <h1>About Page</h1>;
@@ -369,8 +378,8 @@ export default About;
 ### User.js
 
 ```javascript
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
 
 function User() {
   const { userId } = useParams();
@@ -383,12 +392,10 @@ export default User;
 ### NotFound.js
 
 ```javascript
-import React from 'react';
+import React from "react";
 
 function NotFound() {
-  return <h1>404 - Page Not Found
-
-</h1>;
+  return <h1>404 - Page Not Found</h1>;
 }
 
 export default NotFound;
@@ -416,4 +423,3 @@ export default NotFound;
 - Add navigation components to allow switching between pages.
 - Create a dynamic route to display user profiles where each profile corresponds to a unique ID.
 - Add a 404 page to handle non-existent routes.
-

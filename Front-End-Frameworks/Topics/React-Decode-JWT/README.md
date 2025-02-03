@@ -4,6 +4,10 @@ JSON Web Token (JWT) is a compact and URL-friendly standard used for secure and 
 
 When a React application uses an API that returns a JWT as an authentication token, you can decode it to extract useful information like user roles, permissions, and other related data.
 
+![Decode Token](Decode-Token.webp)
+
+Image source: Dall-E by OpenAI
+
 ## JWT Decoding in React
 
 To decode JWT and read its payload in React, you can:
@@ -31,8 +35,8 @@ Use `jwt-decode`to decode a JWT and extract its payload.
 
 ```javascript
 // JWTDecoder.js
-import React from 'react';
-import { jwtDecode } from 'jwt-decode';
+import React from "react";
+import { jwtDecode } from "jwt-decode";
 
 const JWTDecoder = ({ token }) => {
   if (!token) {
@@ -64,21 +68,21 @@ If you prefer to decode a JWT without using external libraries, you can decode i
 
 ```javascript
 // ManualJWTDecoder.js
-import React from 'react';
+import React from "react";
 
 const base64UrlDecode = (str) => {
   // Asenda - ja _ märgid vastavalt Base64 standardile
-  const base64 = str.replace(/-/g, '+').replace(/_/g, '/');
+  const base64 = str.replace(/-/g, "+").replace(/_/g, "/");
   return decodeURIComponent(
     atob(base64)
-      .split('')
-      .map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
-      .join('')
+      .split("")
+      .map((c) => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2))
+      .join("")
   );
 };
 
 const decodeJWT = (token) => {
-  const [, payload] = token.split('.');
+  const [, payload] = token.split(".");
   return JSON.parse(base64UrlDecode(payload));
 };
 
@@ -112,8 +116,8 @@ Combine JWT decoding with React Context API to store user authentication data in
 
 ```javascript
 // AuthContext.js
-import React, { createContext, useState, useEffect } from 'react';
-import { jwtDecode } from 'jwt-decode';
+import React, { createContext, useState, useEffect } from "react";
+import { jwtDecode } from "jwt-decode";
 
 export const AuthContext = createContext();
 
@@ -122,26 +126,26 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Võta localStorage'ist token
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     if (token) {
       try {
         const decodedUser = jwtDecode(token);
         setUser(decodedUser);
       } catch (error) {
-        console.error('Invalid token');
+        console.error("Invalid token");
         setUser(null);
       }
     }
   }, []);
 
   const login = (token) => {
-    localStorage.setItem('token', token);
+    localStorage.setItem("token", token);
     const decodedUser = jwtDecode(token);
     setUser(decodedUser);
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     setUser(null);
   };
 
@@ -159,8 +163,8 @@ Use `AuthContext` to display user information when they are logged in.
 
 ```javascript
 // UserProfile.js
-import React, { useContext } from 'react';
-import { AuthContext } from './AuthContext';
+import React, { useContext } from "react";
+import { AuthContext } from "./AuthContext";
 
 const UserProfile = () => {
   const { user, logout } = useContext(AuthContext);
@@ -184,13 +188,14 @@ export default UserProfile;
 ### Review Questions
 
 1. How can you decode JWT in React to extract information?
-2. What are the differences between using  `jwt-decode` and manual decoding?
+2. What are the differences between using `jwt-decode` and manual decoding?
 3. How can you integrate JWT decoding with React Context API?
 
 ### Exercise
 
 - **Create an application that reads and displays user information from a JWT**: Use `jwt-decode` or manually decode the JWT to build an application that displays user information from the token.
-- **Integrate JWT decoding into an authentication context**:  Extend the previous example to store user authentication data and roles in React Context API.
+- **Integrate JWT decoding into an authentication context**: Extend the previous example to store user authentication data and roles in React Context API.
+
 ### References
 
 - [JWT Documentation](https://jwt.io/introduction/)

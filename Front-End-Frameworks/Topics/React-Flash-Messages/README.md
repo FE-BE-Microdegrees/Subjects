@@ -2,6 +2,10 @@
 
 Flash messages are an essential way to provide users with quick, temporary feedback, such as after successful login, data submission, or error occurrences. In React, flash messages can be implemented using various approaches, ranging from basic state management (`useState` and `useEffect`) to leveraging third-party libraries like `react-toastify`. This guide explores both methods.
 
+![Flash messages](Flash-Messages.webp)
+
+Image source: Dall-E by OpenAI
+
 - [React Flash Messages](#react-flash-messages)
   - [Learning Objectives](#learning-objectives)
   - [What Are Flash Messages?](#what-are-flash-messages)
@@ -13,7 +17,7 @@ Flash messages are an essential way to provide users with quick, temporary feedb
   - [2. Flash Messages Using `react-toastify`](#2-flash-messages-using-react-toastify)
     - [Installation](#installation)
     - [Using `react-toastify` in an Application](#using-react-toastify-in-an-application)
-    - [Explanation](#explanation-1)
+    - [Selgitus](#selgitus)
     - [Customizing `react-toastify`](#customizing-react-toastify)
 
 ---
@@ -47,8 +51,8 @@ Here's a simple `FlashMessage` component that displays a message and hides it au
 
 ```javascript
 // FlashMessage.js
-import React, { useState, useEffect } from 'react';
-import './FlashMessage.css'; // Styles for the flash messages
+import React, { useState, useEffect } from "react";
+import "./FlashMessage.css"; // Styles for the flash messages
 
 const FlashMessage = ({ message, type, duration = 3000 }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -63,11 +67,7 @@ const FlashMessage = ({ message, type, duration = 3000 }) => {
 
   if (!isVisible) return null;
 
-  return (
-    <div className={`flash-message ${type}`}>
-      {message}
-    </div>
-  );
+  return <div className={`flash-message ${type}`}>{message}</div>;
 };
 
 export default FlashMessage;
@@ -93,17 +93,16 @@ Add simple styles to distinguish message types (e.g., success, error, info).
 }
 
 .flash-message.success {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
 }
 
 .flash-message.error {
-  background-color: #F44336; /* Red */
+  background-color: #f44336; /* Red */
 }
 
 .flash-message.info {
-  background-color: #2196F3; /* Blue */
+  background-color: #2196f3; /* Blue */
 }
-
 ```
 
 ### Using Flash Messages in the Application
@@ -112,39 +111,42 @@ Trigger flash messages based on actions, such as after a login attempt.
 
 ```javascript
 // LoginPage.js
-import React, { useState } from 'react';
-import FlashMessage from './FlashMessage';
-import './FlashMessage.css';
+import React, { useState } from "react";
+import FlashMessage from "./FlashMessage";
+import "./FlashMessage.css";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [flashMessage, setFlashMessage] = useState(null);
 
   const handleLogin = () => {
-    if (username === 'user' && password === 'password') {
+    if (username === "user" && password === "password") {
       // Näita edu sõnumit
-      setFlashMessage({ message: 'Login successful!', type: 'success' });
+      setFlashMessage({ message: "Login successful!", type: "success" });
     } else {
       // Näita tõrkesõnumit
-      setFlashMessage({ message: 'Login failed. Please try again.', type: 'error' });
+      setFlashMessage({
+        message: "Login failed. Please try again.",
+        type: "error",
+      });
     }
   };
 
   return (
     <div>
       <h2>Login</h2>
-      <input 
-        type="text" 
-        value={username} 
-        onChange={(e) => setUsername(e.target.value)} 
-        placeholder="Username" 
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        placeholder="Username"
       />
-      <input 
-        type="password" 
-        value={password} 
-        onChange={(e) => setPassword(e.target.value)} 
-        placeholder="Password" 
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Password"
       />
       <button onClick={handleLogin}>Login</button>
 
@@ -152,12 +154,12 @@ const LoginPage = () => {
         <FlashMessage
           message={flashMessage.message}
           type={flashMessage.type}
-          duration={3000} 
+          duration={3000}
         />
       )}
     </div>
   );
-}
+};
 
 export default LoginPage;
 ```
@@ -184,13 +186,13 @@ npm install react-toastify
 
 ```javascript
 // App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import HomePage from './HomePage';
-import LoginPage from './LoginPage';
-import Dashboard from './Dashboard';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import HomePage from "./HomePage";
+import LoginPage from "./LoginPage";
+import Dashboard from "./Dashboard";
 
 const App = () => {
   return (
@@ -200,14 +202,13 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <ToastContainer /> 
+      <ToastContainer />
     </Router>
   );
-}
+};
 
 export default App;
 ```
-
 
 ### Selgitus
 
@@ -219,10 +220,8 @@ export default App;
 You can customize the appearance and behavior of `react-toastify` :
 
 ```javascript
-toast.success('Success Message', {
-  position:
-
- toast.POSITION.TOP_RIGHT,
+toast.success("Success Message", {
+  position: toast.POSITION.TOP_RIGHT,
   autoClose: 5000,
   hideProgressBar: false,
   closeOnClick: true,
