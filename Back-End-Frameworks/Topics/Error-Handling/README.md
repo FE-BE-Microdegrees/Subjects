@@ -1,89 +1,89 @@
-# Vigade Haldus (Error Handling) Express API-s
+# Error Handling in Express API
 
-Vigade haldus on kriitiline komponent igas API-s. Õige veahaldus aitab mitte ainult parandada kasutajakogemust, vaid ka hoida rakendust turvalisena ja hooldatavana. Express pakub paindlikke meetodeid vigade haldamiseks, mis võimaldavad teil elegantset ja tõhusat vigade käsitlemist oma API-s rakendada.
+Error handling is a critical component of any API. Proper error handling not only improves the user experience but also keeps the application secure and maintainable. Express provides flexible methods for handling errors, allowing you to implement elegant and efficient error management in your API.
 
 ![Express Error Handling](Express-Error-Handling.webp)
 
-Pildi allikas: Dall-E by OpenAI
+Image source: Dall-E by OpenAI
 
-- [Vigade Haldus (Error Handling) Express API-s](#vigade-haldus-error-handling-express-api-s)
-  - [Õpiväljundid](#õpiväljundid)
-  - [Miks on Veahaldus Oluline?](#miks-on-veahaldus-oluline)
-  - [Veahaldus Expressis](#veahaldus-expressis)
-    - [Kohandatud Veakäsitlejad Lõpp-punktides](#kohandatud-veakäsitlejad-lõpp-punktides)
-    - [Keskne Veakäsitleja Vahevara](#keskne-veakäsitleja-vahevara)
-    - [Selgitus](#selgitus)
-    - [Asünkroonsete Vigade Käsitlemine](#asünkroonsete-vigade-käsitlemine)
-    - [Selgitus](#selgitus-1)
-  - [Täiendavad Meetodid Vigade Käsitlemiseks](#täiendavad-meetodid-vigade-käsitlemiseks)
-    - [Vigade Logimine](#vigade-logimine)
-    - [Valesti Tehtud Päringute Käsitlemine](#valesti-tehtud-päringute-käsitlemine)
+- [Error Handling in Express API](#error-handling-in-express-api)
+  - [Learning Outcomes](#learning-outcomes)
+  - [Why is Error Handling Important?](#why-is-error-handling-important)
+  - [Error Handling in Express](#error-handling-in-express)
+    - [Custom Error Handlers in Endpoints](#custom-error-handlers-in-endpoints)
+    - [Centralized Error Handling Middleware](#centralized-error-handling-middleware)
+    - [Explanation](#explanation)
+    - [Handling Asynchronous Errors](#handling-asynchronous-errors)
+    - [Explanation](#explanation-1)
+  - [Additional Methods for Handling Errors](#additional-methods-for-handling-errors)
+    - [Logging Errors](#logging-errors)
+    - [Handling Incorrect Requests](#handling-incorrect-requests)
 
-## Õpiväljundid
+## Learning Outcomes
 
-Selle õppematerjali lõpuks peaksid õppijad olema võimelised:
+By the end of this tutorial, students should be able to:
 
-- selgitama, miks on veahaldus Expressis oluline.
-- rakendama kohandatud veakäsitlejaid Expressi API-s;
-- kasutama vahevara (middleware) vigade haldamiseks;
-- kasutama keskse veakäsitleja kasutamist kogu rakenduse ulatuses;
-- käsitlema asünkroonseid vigu Expressis.
+- Explain why error handling in Express is important.
+- Implement custom error handlers in an Express API.
+- Use middleware for handling errors.
+- Implement a centralized error handler across the application.
+- Handle asynchronous errors in Express.
 
-## Miks on Veahaldus Oluline?
+## Why is Error Handling Important?
 
-- **Kasutajakogemus**: Hästi kavandatud veahaldus annab kasutajale selged ja kasulikud sõnumid, mis aitavad tal mõista, mis valesti läks ja mida teha järgmiseks.
-- **Turvalisus**: Peidab süsteemi siseinfo ja hoiab ära tundliku teabe lekkimise.
-- **Hooldatavus**: Lihtsustab vigade jälgimist ja parandamist, andes arendajatele täpsed ja kasulikud logid.
-- **Usaldusväärsus**: Tagab, et rakendus suudab jätkata tööd isegi siis, kui tekivad vead.
+- **User Experience**: Well-designed error handling provides clear and helpful messages to users, helping them understand what went wrong and what to do next.
+- **Security**: Hides internal system details and prevents leakage of sensitive information.
+- **Maintainability**: Simplifies error tracking and debugging by providing developers with precise and useful logs.
+- **Reliability**: Ensures that the application continues functioning even when errors occur.
 
-## Veahaldus Expressis
+## Error Handling in Express
 
-Expressis saab vigu käsitleda mitmel viisil, sealhulgas:
+Express allows handling errors in multiple ways, including:
 
-1. **Kohandatud veakäsitlejad**: Funktsioonid, mis käsitlevad vigu kindlates lõpp-punktides.
-2. **Vahevara (middleware)**: Keskse veakäsitleja loomine, mis püüab kinni kõik vead, mis tekivad rakenduses.
-3. **Asünkroonsete vigade käsitlemine**: Vigade haldamine asünkroonsetes funktsioonides ja promisis.
+1. **Custom error handlers**: Functions that handle errors for specific endpoints.
+2. **Middleware (Centralized error handling)**: A global error handler that catches all errors in the application.
+3. **Handling asynchronous errors**: Managing errors in asynchronous functions and promises.
 
-### Kohandatud Veakäsitlejad Lõpp-punktides
+### Custom Error Handlers in Endpoints
 
-Mõnikord on vaja käsitleda vigu spetsiaalselt teatud lõpp-punktides. Näiteks, kui päringuga kaasneb vale sisend, saate tagastada kohandatud veateate:
+Sometimes, you need to handle errors specifically for certain endpoints. For example, if a request contains invalid input, you can return a custom error message:
 
 ```javascript
 // routes/users.js
 const express = require("express");
 const router = express.Router();
 
-// Näidis GET päring, mis võib tekitada vea
+// Example GET request that may produce an error
 router.get("/:id", (req, res, next) => {
   const userId = req.params.id;
 
-  // Kontrollime, kas ID on number
+  // Check if ID is a number
   if (isNaN(userId)) {
     const error = new Error("Invalid user ID");
     error.status = 400;
-    return next(error); // Edastame vea järgmisele vahevarale või veakäsitlejale
+    return next(error); // Pass the error to the next middleware or error handler
   }
 
-  // Otsime kasutajat (näidis)
+  // Example user retrieval
   const user = { id: userId, name: "John Doe" };
 
-  // Kui kasutajat ei leita
+  // If the user is not found
   if (!user) {
     const error = new Error("User not found");
     error.status = 404;
     return next(error);
   }
 
-  // Tagastame kasutaja andmed
+  // Return user data
   res.json(user);
 });
 
 module.exports = router;
 ```
 
-### Keskne Veakäsitleja Vahevara
+### Centralized Error Handling Middleware
 
-Expressis saab luua keskse veakäsitleja vahevara, mis püüab kinni kõik vead, mis tekivad rakenduses. See vahevara paigutatakse pärast kõiki teisi teekondi ja vahevarasid.
+Express allows creating a centralized error-handling middleware that catches all errors in the application. This middleware is placed after all routes and other middleware.
 
 ```javascript
 // app.js
@@ -97,7 +97,7 @@ app.use(bodyParser.json());
 
 app.use("/users", usersRouter);
 
-// Keskne veakäsitleja
+// Central error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).json({
@@ -109,16 +109,16 @@ app.use((err, req, res, next) => {
 module.exports = app;
 ```
 
-### Selgitus
+### Explanation
 
-- **`app.use((err, req, res, next) => { ... })`**: See on Expressi vahevara veakäsitleja signatuur. Kui mõni teekond või vahevara kutsub `next(error)`, püüab see vahevara vea kinni ja käsitleb seda.
-- **`err.status`**: See on määratud veakood, kui see on olemas. Kui ei ole määratud, kasutatakse vaiket `500`.
-- **`err.message`**: Veateade, mis tagastatakse vastusena.
-- **`console.error(err.stack)`**: Logib vea stack trace serveri konsooli.
+- **`app.use((err, req, res, next) => { ... })`**: This is the signature of an Express error-handling middleware. If any route or middleware calls `next(error)`, this middleware catches the error and processes it.
+- **`err.status`**: The assigned error code if specified; otherwise, defaults to `500`.
+- **`err.message`**: The error message returned in the response.
+- **`console.error(err.stack)`**: Logs the error stack trace in the server console.
 
-### Asünkroonsete Vigade Käsitlemine
+### Handling Asynchronous Errors
 
-Asünkroonsed operatsioonid, nagu andmete pärimine API-st või andmebaasist, võivad tekitada vigu, mis tuleb käsitleda. Expressis saate kasutada `try/catch` plokke ja `next` funktsiooni asünkroonsete vigade käsitlemiseks.
+Asynchronous operations, such as retrieving data from an API or database, can generate errors that must be handled properly. In Express, you can use `try/catch` blocks and the `next` function to manage asynchronous errors.
 
 ```javascript
 // routes/todos.js
@@ -126,7 +126,7 @@ const express = require("express");
 const router = express.Router();
 const todosService = require("../services/todosService");
 
-// Näidis GET päring, mis kasutab async/await
+// Example GET request using async/await
 router.get("/:id", async (req, res, next) => {
   try {
     const todoId = req.params.id;
@@ -147,24 +147,24 @@ router.get("/:id", async (req, res, next) => {
 
     res.json(todo);
   } catch (error) {
-    next(error); // Edastame vea järgmisele vahevarale või veakäsitlejale
+    next(error); // Pass the error to the next middleware or error handler
   }
 });
 
 module.exports = router;
 ```
 
-### Selgitus
+### Explanation
 
-- **`try/catch` plokk**: Kasutatakse asünkroonsete operatsioonide vigade püüdmise ja käsitlemise jaoks.
-- **`throw error`**: Visatakse vead `try` plokist `catch` plokki, mis seejärel edasi saadetakse Expressi veakäsitlejale.
-- **`next(error)`**: Kutsutakse `catch` plokis, et edastada vea järgmisele vahevarale või veakäsitlejale.
+- **`try/catch` block**: Used to catch and handle errors in asynchronous operations.
+- **`throw error`**: Throws errors from the `try` block to the `catch` block, which then forwards them to the Express error handler.
+- **`next(error)`**: Called in the `catch` block to pass the error to the next middleware or error handler.
 
-## Täiendavad Meetodid Vigade Käsitlemiseks
+## Additional Methods for Handling Errors
 
-### Vigade Logimine
+### Logging Errors
 
-Hea tava on logida vead, et saaksite neid hiljem analüüsida ja parandada. Võite kasutada spetsiaalseid logimisteeke, nagu `winston` või `morgan`, et logida vead välisesse faili või logihaldussüsteemi.
+A best practice is to log errors for future analysis and debugging. You can use logging libraries like `winston` or `morgan` to store logs in an external file or logging management system.
 
 ```javascript
 const express = require("express");
@@ -172,12 +172,12 @@ const morgan = require("morgan");
 
 const app = express();
 
-// Morgan logib kõik päringud
+// Morgan logs all requests
 app.use(morgan("dev"));
 
-// Teie teekonnad ja vahevara siia
+// Your routes and middleware here
 
-// Keskne veakäsitleja
+// Central error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).json({
@@ -189,9 +189,9 @@ app.use((err, req, res, next) => {
 module.exports = app;
 ```
 
-### Valesti Tehtud Päringute Käsitlemine
+### Handling Incorrect Requests
 
-Vigade vältimiseks on hea lisada vahevara, mis püüab kinni kõik valesti tehtud päringud ja tagastab 404 vastuse.
+To avoid errors, it is good practice to add middleware that catches all incorrect requests and returns a 404 response.
 
 ```javascript
 // app.js
@@ -205,7 +205,7 @@ app.use(bodyParser.json());
 
 app.use("/users", usersRouter);
 
-// Kui ükski teekond ei vasta
+// If no route matches, return 404
 app.use((req, res, next) => {
   res.status(404).json({
     success: false,
@@ -213,7 +213,7 @@ app.use((req, res, next) => {
   });
 });
 
-// Keskne veakäsitleja
+// Central error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).json({

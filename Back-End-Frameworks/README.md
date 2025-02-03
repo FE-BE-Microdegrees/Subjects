@@ -1,47 +1,97 @@
 # Back-End Frameworks
 
-Back-end frameworks provide an in-depth exploration of modern methods, tools, and best practices for developing server-side applications. Learners will dive into essential concepts such as routing, middleware, authentication, and database operations. Throughout the course, students will engage in practical projects, creating performance-oriented and secure applications ready for real-world scenarios. This journey will also introduce them to a comprehensive toolkit and ecosystem associated with modern back-end application development.
+![Back-End Frameworks](Back-End-Frameworks.webp)
+
+Image source: Dall-E by OpenAI
+
+Back-End frameworks provide an in-depth exploration of modern server-side application development methods, tools, and best practices. Students dive into core concepts such as routing, middleware, authentication, and database operations. Throughout the course, students engage in practical projects, building performance-driven and secure applications ready for real-world scenarios. This journey also introduces an extensive set of tools and an ecosystem essential for modern back-end development.
 
 ## Description
 
 - **Credits**: 4 ECTS (4 x 26 hours)
-- **Course Objectives**: The aim of the course is to develop learners' skills in using modern back-end frameworks to create robust, scalable, and secure server-side applications.
+- **Course Objectives**: The goal of this course is to develop students' skills in using modern back-end frameworks to build resilient, scalable, and secure server-side applications.
 
-By the end of the course, students should be proficient in the principles of server architecture, API development, database integration, and the broader ecosystem related to modern back-end application development.
+By the end of the course, students should be proficient in server architecture principles, API development, database integration, and the broader ecosystem related to modern back-end development.
 
 ## Learning Outcomes
 
-- **Server Architecture**: Understand and implement server architectures using framework capabilities to structure scalable applications.
-- **Routing and Middleware**: Utilize routing mechanisms to handle different types of requests and implement middleware for request/response processing.
-- **Database Integration**: Connect server-side applications to relational and non-relational databases, perform CRUD operations, and understand ORM/ODM paradigms.
-- **Authentication and Authorization**: Implement strategies for securing applications with authentication and authorization, understanding sessions, tokens, and OAuth mechanisms.
-- **API Development**: Design and develop RESTful APIs, emphasizing best practices in endpoint structure, data validation, and error handling.
-- **Error Handling**: Implement comprehensive error handling strategies to manage and respond to various error types and scenarios.
-- **Deployment and Production**: Familiarize with deployment processes, environment configurations, and the nuances involved in bringing a back-end application to production.
-- **Security Measures**: Implement various security measures, understanding potential vulnerabilities such as SQL injection, CSRF, and protecting against them.
-- **Continuous Integration/Continuous Deployment (CI/CD)**: Understand the CI/CD pipeline and integrate it into the workflow of back-end application development.
+Upon completing this course, the student:
+
+- Builds a CRUD API using the Express.js framework.
+- Uses Express middleware to control the request/response cycle.
+- Integrates a database to store API data.
+- Implements authentication and authorization for API users to manage access control.
 
 ## Topics
 
-- [Introduction](./Topics/Introduction/README.md)
+- Introduction
 - [Tools](./Topics/Tools/README.md)
 - [API](./Topics/API/README.md)
 - [HTTP](./Topics/HTTP/README.md)
 - [HTTP Methods](./Topics/HTTP-Methods/README.md)
 - [Express](./Topics/Express/README.md)
-- [Structuring](./Topics/Structure/README.md)
+- [Structuring](./Topics/Structuring/README.md)
+- [Sending Data to API](./Topics/Sending-Data-To-Express/README.md)
 - [Middleware](./Topics/Middleware/README.md)
-- [Routes](./Topics/Routes/README.md)
+- [Express Router](./Topics/Routes/README.md)
 - [Authentication and Authorization](./Topics/Auth/README.md)
 - [Bcrypt](./Topics/Bcrypt/README.md)
 - [JWT](./Topics/JWT/README.md)
-- [Adding Tests to an Existing Project](../Databases/Topics/MySQL-NodeJS/README.md)
-- [Chai](./Topics/Chai/README.md)
-- [Connecting to a Database](./Topics/Connecting-Database/README.md)
-- [Docker](./Topics/Docker/README.md)
-- [Environment Variables](./Topics/Environment-Variables/README.md)
-- [Error Handling in Express](./Topics/Error-Handling/README.md)
-- [Factory Design Pattern](./Topics/Factory/README.md)
-- [Mocha](./Topics/Mocha/README.md)
-- [Supertest](./Topics/Supertest/README.md)
-- [Testing](../Software-Development/Topics/Testing/README.md)
+- [Sending Data to Express API - Header](./Topics/Sending-Data-To-Express/README.md#header)
+- [Automated Testing](./Topics/Testing-Node-API/README.md)
+- [Error Handling](./Topics/Error-Handling/README.md)
+- [Logging](./Topics/Logging/README.md)
+
+## Lectures (tentative plan, subject to change during the course)
+
+### First Lecture: Introduction to Back-End Frameworks
+
+Credits: 8 hours.
+
+- Introduction
+- [Tools](./Topics/Tools/README.md)
+- [API](./Topics/API/README.md)
+- [HTTP](./Topics/HTTP/README.md)
+- [HTTP Methods](./Topics/HTTP-Methods/README.md)
+- [Express](./Topics/Express/README.md)
+- [Structuring](./Topics/Structuring/README.md)
+
+### Second Lecture (Zoom): Sending Data to API
+
+Credits: 4 hours.
+
+- Review of the previous lecture
+- [Structuring](./Topics/Structuring/README.md) - Controllers
+- [Sending Data to API](./Topics/Sending-Data-To-Express/README.md)
+  - Query string
+  - Body
+- Using API tools
+  - Thunder Client
+
+### Third Lecture: Review
+
+Credits: 8 hours.
+
+- Review of the previous lecture
+- Recap:
+  - Structuring
+  - Sending Data to API
+
+### Fourth Lecture (Zoom): Middleware
+
+Credits: 4 hours.
+
+- Review of the previous lecture
+- [Middleware](./Topics/Middleware/README.md)
+- [Express Router](./Topics/Routes/README.md)
+
+### Fifth Lecture: Authentication and Authorization
+
+Credits: 8 hours.
+
+- Review of the previous lecture
+- [Authentication and Authorization](./Topics/Auth/README.md)
+- [Bcrypt](./Topics/Bcrypt/README.md)
+- [JWT](./Topics/JWT/README.md)
+- [Sending Data to Express API - Header](./Topics/Sending-Data-To-Express/README.md#header)
+- Implementing authentication and authorization
