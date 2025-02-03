@@ -27,7 +27,7 @@ By the end of the course, the student will be able to:
 - [MySQL in Docker](./Topics/MySQL-Docker/README.md)
 - [Writing SQL Queries](./Topics/MySQL-Queries/README.md)
 - [Connecting Database to NodeJS](./Topics/MySQL-NodeJS/README.md)
-- [JOIN Statements in MySQL](./Topics/MySQL-Joins/README.md)
+- [JOIN Statements in MySQL](./Topics/MySQL-Join/README.md)
 - [Error Handling](../Back-End-Frameworks/Topics/Error-Handling/README.md)
 - [Logging](../Back-End-Frameworks/Topics/Logging/README.md)
 - [Testing Node API](../Back-End-Frameworks/Topics/Testing-Node-API/README.md)
