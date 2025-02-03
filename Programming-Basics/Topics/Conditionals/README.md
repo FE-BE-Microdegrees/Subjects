@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about conditionals in Javascript.
 
+![Tingimuslaused](Conditionals.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Conditionals](#conditionals)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Conditional?](#what-is-a-conditional)
@@ -21,6 +25,7 @@ In this topic, we'll learn about conditionals in Javascript.
     - [Exercise 1 - Basic If Statement](#exercise-1---basic-if-statement)
     - [Exercise 2 - If-Else Statement](#exercise-2---if-else-statement)
     - [Exercise 3 - Nested If-Else Statement](#exercise-3---nested-if-else-statement)
+- [Additional Exercises](#additional-exercises)
 
 ## Learning Outcomes
 
@@ -101,12 +106,12 @@ if (condition) {
 ```
 
 For example:
-  
-```javascript
-let weather = 'sunny';
 
-if (weather === 'sunny') {
-  console.log('Im going to the beach!');
+```javascript
+let weather = "sunny";
+
+if (weather === "sunny") {
+  console.log("Im going to the beach!");
 }
 ```
 
@@ -127,12 +132,12 @@ if (condition) {
 For example:
 
 ```javascript
-let weather = 'rainy';
+let weather = "rainy";
 
-if (weather === 'sunny') {
-  console.log('Im going to the beach!');
+if (weather === "sunny") {
+  console.log("Im going to the beach!");
 } else {
-  console.log('Im going to the movies!');
+  console.log("Im going to the movies!");
 }
 ```
 
@@ -155,14 +160,14 @@ if (condition1) {
 For example:
 
 ```javascript
-let weather = 'rainy';
+let weather = "rainy";
 
-if (weather === 'sunny') {
-  console.log('Im going to the beach!');
-} else if (weather === 'rainy') {
-  console.log('Im going to the movies!');
+if (weather === "sunny") {
+  console.log("Im going to the beach!");
+} else if (weather === "rainy") {
+  console.log("Im going to the movies!");
 } else {
-  console.log('Im going to stay home!');
+  console.log("Im going to stay home!");
 }
 ```
 
@@ -181,24 +186,24 @@ switch (expression) {
     // code to be executed if expression is equal to value2
     break;
   default:
-    // code to be executed if expression is not equal to value1 or value2
+  // code to be executed if expression is not equal to value1 or value2
 }
 ```
 
 For example:
 
 ```javascript
-let weather = 'rainy';
+let weather = "rainy";
 
 switch (weather) {
-  case 'sunny':
-    console.log('Im going to the beach!');
+  case "sunny":
+    console.log("Im going to the beach!");
     break;
-  case 'rainy':
-    console.log('Im going to the movies!');
+  case "rainy":
+    console.log("Im going to the movies!");
     break;
   default:
-    console.log('Im going to stay home!');
+    console.log("Im going to stay home!");
 }
 ```
 
@@ -209,15 +214,17 @@ This example is equivalent to the previous example with `if-else-if` statement.
 The ternary operator is used to execute a block of code based on a condition. The ternary operator has the following syntax:
 
 ```javascript
-condition ? expression1 : expression2
+condition ? expression1 : expression2;
 ```
 
 For example:
 
 ```javascript
-let weather = 'rainy';
+let weather = "rainy";
 
-weather === 'sunny' ? console.log('Im going to the beach!') : console.log('Im going to the movies!');
+weather === "sunny"
+  ? console.log("Im going to the beach!")
+  : console.log("Im going to the movies!");
 ```
 
 This example is equivalent to the previous example with `if-else` statement.
@@ -227,15 +234,15 @@ This example is equivalent to the previous example with `if-else` statement.
 A nested conditional is a conditional that is inside another conditional. For example:
 
 ```javascript
-let weather = 'rainy';
+let weather = "rainy";
 
-if (weather === 'sunny') {
-  console.log('Im going to the beach!');
+if (weather === "sunny") {
+  console.log("Im going to the beach!");
 } else {
-  if (weather === 'rainy') {
-    console.log('Im going to the movies!');
+  if (weather === "rainy") {
+    console.log("Im going to the movies!");
   } else {
-    console.log('Im going to stay home!');
+    console.log("Im going to stay home!");
   }
 }
 ```
@@ -263,17 +270,17 @@ For example:
 let x = 5;
 
 if (x) {
-  console.log('x is truthy'); // this will be printed to the console, because 5 is considered to be truthy
+  console.log("x is truthy"); // this will be printed to the console, because 5 is considered to be truthy
 } else {
-  console.log('x is falsy');
+  console.log("x is falsy");
 }
 
 x = 0;
 
 if (x) {
-  console.log('x is truthy');
+  console.log("x is truthy");
 } else {
-  console.log('x is falsy'); // this will be printed to the console, because 0 is considered to be falsy
+  console.log("x is falsy"); // this will be printed to the console, because 0 is considered to be falsy
 }
 ```
 
@@ -306,14 +313,16 @@ Test your code with different values.
 let number = 5;
 
 if (number > 0) {
-  console.log('The number is positive');
+  console.log("The number is positive");
 }
 ```
+
 **Expected output**:
 
 ```javascript
 The number is positive
 ```
+
 ![If conditional](if.gif)
 
 </details>
@@ -331,9 +340,9 @@ The number is positive
 let number = 5;
 
 if (number % 2 === 0) {
-  console.log('The number is even');
+  console.log("The number is even");
 } else {
-  console.log('The number is odd');
+  console.log("The number is odd");
 }
 ```
 
@@ -342,6 +351,7 @@ if (number % 2 === 0) {
 ```javascript
 The number is odd
 ```
+
 </details>
 
 ### Exercise 3 - Nested If-Else Statement
@@ -356,10 +366,8 @@ The number is odd
 - `D` for 60 to 69
 - `F` for below 60
 
-
 Print the grade classification.
 
 # Additional Exercises
 
 If you want to solve additional exercises, you can find some here: [Additional Exercises](./Exercises.md)
-

@@ -2,6 +2,8 @@
 
 ![alt text](Javascript-Best-Practices.webp)
 
+Image source: Dall-E by OpenAI
+
 - [Javascript Best Practices](#javascript-best-practices)
   - [Learning Outcomes](#learning-outcomes)
   - [Introduction](#introduction)
@@ -10,7 +12,7 @@
     - [Start Code Blocks on the Same Line as the Curly Brace](#start-code-blocks-on-the-same-line-as-the-curly-brace)
     - [Use camelCase for Variable and Function Names](#use-camelcase-for-variable-and-function-names)
     - [Prefer `const` for Variables](#prefer-const-for-variables)
-    - [Import Modules at the Beginning of Files](#import-modules-at-the-beginning-of-files)
+    - [Import Modules](#import-modules)
     - [Use `===` and `!==` Operators](#use--and--operators)
     - [Use Template Literals for Strings](#use-template-literals-for-strings)
   - [References](#references)
@@ -52,8 +54,7 @@ function someFunction() {
 }
 
 // Avoid this
-function someFunction()
-{
+function someFunction() {
   // code block
 }
 ```
@@ -74,14 +75,13 @@ let my_variable = 10;
 function my_function() {
   // code block
 }
-
 ```
 
 ### Prefer `const` for Variables
 
 When a variable’s value does not change, use `const` to define it. A `const` variable cannot be reassigned, which helps prevent accidental modification. If the value needs to change, use let. It's recommended to avoid using `var`.
 
-### Import Modules 
+### Import Modules
 
 If your project contains modules, always import them at the beginning of the file, not inside a function.
 
@@ -97,13 +97,12 @@ Template literals are string literals in Javascript that allow variables and exp
 
 ```javascript
 // Do this
-const name = 'John';
+const name = "John";
 const greeting = `Hello, ${name}!`;
 
 // Avoid this
-const name = 'John';
-const greeting = 'Hello, ' + name + '!';
-
+const name = "John";
+const greeting = "Hello, " + name + "!";
 ```
 
 ## References

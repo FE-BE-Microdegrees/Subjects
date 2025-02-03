@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about data types in Javascript.
 
+![Andmetüübid](Data-Types.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Data Types](#data-types)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Data Type?](#what-is-a-data-type)
@@ -16,6 +20,7 @@ In this topic, we'll learn about data types in Javascript.
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
+
 - Define what a data type is
 - List the primitive data types in Javascript
 - List the object data types in Javascript
@@ -24,11 +29,12 @@ After completing this topic, you'll be able to:
 
 ## What is a Data Type?
 
-As we already know, the variable is a `named storage location in a computer's memory` that can be used to store data. The data that can be stored in a variable has a *type*. The **type** of data determines what operations can be performed on it. For example, we can add two **numbers** together, but we cannot add a **number** and a **string** together.
+As we already know, the variable is a `named storage location in a computer's memory` that can be used to store data. The data that can be stored in a variable has a _type_. The **type** of data determines what operations can be performed on it. For example, we can add two **numbers** together, but we cannot add a **number** and a **string** together.
 
 Javascript is a dynamically typed language, which means that the **type** of a variable can be changed throughout the execution of a program. For example, we can assign a **number** to a variable and then assign a **string** to the same variable later in the program. This is different from statically typed languages like Java, where the type of a variable is fixed as we declare it.
 
-In Javascript, we can divide data types into two categories: 
+In Javascript, we can divide data types into two categories:
+
 - **primitive data** types
 - **object data** types.
 
@@ -36,21 +42,21 @@ In Javascript, we can divide data types into two categories:
 
 Primitive data types are the most basic data types in Javascript. There are 7 primitive data types in Javascript:
 
-- **String**: a sequence of *characters* enclosed in single or double quotes
-- **Number**: a *numeric* value
-- **Boolean**: a value that is either *true* or *false*
-- **Undefined**: a value that represents *lack of value* (e.g., when a variable is declared but has not been assigned a value)
-- **Null**: a value that represents *nothing* (the difference from *undefined* value is usually that *null* is a deliberately assigned value)
-- **Symbol**: a *unique* value used to identify object properties (we will not use this type in this course)
-- **BigInt**: a numeric value that is *larger than Number.MAX_SAFE_INTEGER* (we will not use this type in this course)
+- **String**: a sequence of _characters_ enclosed in single or double quotes
+- **Number**: a _numeric_ value
+- **Boolean**: a value that is either _true_ or _false_
+- **Undefined**: a value that represents _lack of value_ (e.g., when a variable is declared but has not been assigned a value)
+- **Null**: a value that represents _nothing_ (the difference from _undefined_ value is usually that _null_ is a deliberately assigned value)
+- **Symbol**: a _unique_ value used to identify object properties (we will not use this type in this course)
+- **BigInt**: a numeric value that is _larger than Number.MAX_SAFE_INTEGER_ (we will not use this type in this course)
 
 ```javascript
-let firstName = 'John'; // string
+let firstName = "John"; // string
 let age = 25; // number
 let isMarried = false; // boolean
 let x; // undefined
 let car = null; // null
-let symbol = Symbol('symbol'); // symbol
+let symbol = Symbol("symbol"); // symbol
 let bigInt = 1234567890123456789012345678901234567890n; // bigint
 ```
 
@@ -60,20 +66,22 @@ Object data types are more complex data types that can be used to store collecti
 
 - **Object**: a collection of key: value pairs, which can describe data with a more complex structure. Here, the value can be a primitive data type, an array, or even another object. The key is a string that describes the property of the object and is followed by a colon and then the property value.
 - **Array**: a collection of values. An array is an object that allows storing multiple values in one variable. An array can contain different data types, including primitive data types, arrays, and objects.
-- **Function**: a *block of code* that can be executed by calling it
+- **Function**: a _block of code_ that can be executed by calling it
 
 ```javascript
-let person = { // object
-  firstName: 'John',
-  lastName: 'Doe',
+let person = {
+  // object
+  firstName: "John",
+  lastName: "Doe",
   age: 25,
-  isMarried: false
+  isMarried: false,
 };
 
-let fruits = ['apple', 'banana', 'orange']; // array
+let fruits = ["apple", "banana", "orange"]; // array
 
-function sayHello() { // function
-  console.log('Hello!');
+function sayHello() {
+  // function
+  console.log("Hello!");
 }
 ```
 
@@ -97,7 +105,7 @@ Type coercion is the process of converting a value from one data type to another
 
 ```javascript
 let x = 5; // number
-let y = '5'; // string
+let y = "5"; // string
 let z = x + y; // string - value of z is '55'
 ```
 
@@ -108,7 +116,7 @@ let z = x + y; // string - value of z is '55'
 What is the data type of the following variables?
 
 ```javascript
-let firstName = 'John';
+let firstName = "John";
 let age = 25;
 let isMarried = false;
 let x;
@@ -132,16 +140,16 @@ What is the data type of the following variables?
 
 ```javascript
 let person = {
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   age: 25,
-  isMarried: false
+  isMarried: false,
 };
 
-let fruits = ['apple', 'banana', 'orange'];
+let fruits = ["apple", "banana", "orange"];
 
 function sayHello() {
-  console.log('Hello!');
+  console.log("Hello!");
 }
 ```
 

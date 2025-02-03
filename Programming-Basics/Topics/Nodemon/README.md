@@ -2,12 +2,15 @@
 
 ![Nodemon](Nodemon.webp)
 
-Image Source: [Dall-E by OpenAI](https://openai.com/)
+Image Source: Dall-E by OpenAI
 
 - [Nodemon](#nodemon)
   - [Learning Outcomes](#learning-outcomes)
   - [What is Nodemon?](#what-is-nodemon)
   - [Installing Nodemon](#installing-nodemon)
+    - [Global Installation](#global-installation)
+    - [Local Installation](#local-installation)
+    - [Running with Nodemon](#running-with-nodemon)
 
 ## Learning Outcomes
 
@@ -36,20 +39,27 @@ To install `nodemon` globally so it can be used across all projects, run the fol
 ```bash
 npm install -g nodemon
 ```
+
 With a global installation, you can run nodemon from anywhere in your system without needing to install it in every project.
 
 ### Local Installation
 
 To install nodemon as a development dependency for a specific project, use the following command:
+
 ```bash
 npm install --save-dev nodemon
 ```
+
 The --save-dev flag ensures that nodemon is listed as a development dependency in the project's package.json file. This means it is only installed when working in development mode and not included in the production environment.
+
 ### Running with Nodemon
+
 After installation, you can use nodemon by replacing the node command with nodemon. For example:
+
 ```bash
 nodemon app.js
 ```
+
 This command starts your Node.js application with nodemon, which will monitor for changes and automatically restart the app as needed.
 Reference:
 

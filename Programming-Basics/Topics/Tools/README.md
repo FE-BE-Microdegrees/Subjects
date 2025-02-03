@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about tools that we'll be using during this course.
 
+![Tools](Software-Development-Tools.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Tools](#tools)
   - [Learning Outcomes](#learning-outcomes)
   - [Code Editor](#code-editor)
@@ -14,6 +18,7 @@ In this topic, we'll learn about tools that we'll be using during this course.
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
+
 - Explain what a code editor is
 - Explain what a browser is
 - Explain what a terminal is
@@ -24,6 +29,7 @@ After completing this topic, you'll be able to:
 ## Code Editor
 
 A code editor is a program that is used to write and edit source code. There are many different code editors available, but the most popular ones are:
+
 - Visual Studio Code
 - Sublime Text
 - Atom
@@ -35,7 +41,8 @@ During this course, we'll be using [Visual Studio Code](https://code.visualstudi
 
 ## Browser
 
-A browser is a program that is used to view web pages. There are many different browsers available, but the most popular ones are: 
+A browser is a program that is used to view web pages. There are many different browsers available, but the most popular ones are:
+
 - Google Chrome
 - Mozilla Firefox
 - Microsoft Edge
@@ -44,7 +51,8 @@ During this course, we'll be using [Google Chrome](https://www.google.com/chrome
 
 ## Terminal
 
-A terminal is a program that is used to interact with the operating system. It is also known as a command-line interface (CLI) or a shell. There are many different terminals available, but the most popular ones are: 
+A terminal is a program that is used to interact with the operating system. It is also known as a command-line interface (CLI) or a shell. There are many different terminals available, but the most popular ones are:
+
 - Windows Terminal
 - iTerm2
 - Hyper

@@ -2,7 +2,7 @@
 
 ![Async Await](Async-Await.webp)
 
-Image Source: [Dall-E by OpenAI](https://openai.com/)
+Image Source: Dall-E by OpenAI
 
 - [Async/Await](#asyncawait)
   - [Learning Outcomes](#learning-outcomes)
@@ -19,11 +19,11 @@ After completing this topic, you will be able to:
 
 ## What is `async/await`?
 
-`async/await` is a feature of modern JavaScript that allows you to write asynchronous code in a way that looks and behaves like synchronous code. It is essentially a syntactic improvement built on top of [*promises*](../promise/README.md) to simplify their usage.
+`async/await` is a feature of modern JavaScript that allows you to write asynchronous code in a way that looks and behaves like synchronous code. It is essentially a syntactic improvement built on top of [_promises_](../promise/README.md) to simplify their usage.
 
 ## Why Use `async/await`?
 
-The `async` keyword is used to define an asynchronous function. Such a function always returns a *promise*, which can have three states:
+The `async` keyword is used to define an asynchronous function. Such a function always returns a _promise_, which can have three states:
 
 1. Pending
 2. Fulfilled
@@ -32,7 +32,7 @@ The `async` keyword is used to define an asynchronous function. Such a function 
 For example:
 
 ```javascript
-const url = 'https://jsonplaceholder.typicode.com/posts/1'; // API URL
+const url = "https://jsonplaceholder.typicode.com/posts/1"; // API URL
 
 async function fetchData() {
   const response = await fetch(url);
@@ -54,14 +54,13 @@ async function main() {
 }
 
 main();
-
 ```
 
 In the example above, the main asynchronous function fetches data using the fetchData function. The execution of main pauses while waiting for fetchData to complete. If the fetchData call succeeds, the fetched data is logged to the console. If it fails, the error is caught in the catch block and displayed in the console
 
-> Note: The  `await` keyword can only be used inside functions defined with the `async` keyword.
+> Note: The `await` keyword can only be used inside functions defined with the `async` keyword.
 
-As seen in the example, the use of `async/await` provides a clearer and more readable syntax compared to usingi *promise* alone.
+As seen in the example, the use of `async/await` provides a clearer and more readable syntax compared to usingi _promise_ alone.
 
 Sources:
 

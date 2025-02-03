@@ -2,6 +2,14 @@
 
 In this topic, we'll learn about modules in Javascript.
 
+You can read about built-in modules [here](../Modules-Built-In/README.md).
+
+You can read about third-party modules [here](../Modules-Third-Party/README.md).
+
+![Moodulid](Modules.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Modules](#modules)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Module?](#what-is-a-module)
@@ -34,21 +42,25 @@ In order to export a module, we need to use the `module.exports` keyword followe
 ```javascript
 module.exports myModule; // export a module named myModule
 ```
+
 or
+
 ```javascript
 module.exports { myModule, myModule1 }; // export multiple modules named myModule and myModule1
 ```
 
 ## How to Import a Module?
 
-In order to import a module, we need to use the `require` keyword followed by the name of the file containing module(s) that we want to import. For example, if we want to import a module named `myModule` from file `moduleFileName.js`, we can type `require('./moduleFileName');` in the Javascript file where we want to import the module (the `./` part is used to specify the path to the file containing the module(s) that we want to import). 
+In order to import a module, we need to use the `require` keyword followed by the name of the file containing module(s) that we want to import. For example, if we want to import a module named `myModule` from file `moduleFileName.js`, we can type `require('./moduleFileName');` in the Javascript file where we want to import the module (the `./` part is used to specify the path to the file containing the module(s) that we want to import).
 
 ```javascript
-const myModule = require('./moduleFileName'); // import a module from file named `moduleFileName.js`
+const myModule = require("./moduleFileName"); // import a module from file named `moduleFileName.js`
 ```
+
 or
+
 ```javascript
-import { myModule, myModule1 } from './moduleFileName'; // import multiple modules named myModule and myModule1 from the `moduleFileName.js` file
+import { myModule, myModule1 } from "./moduleFileName"; // import multiple modules named myModule and myModule1 from the `moduleFileName.js` file
 ```
 
 ## How to Use a Module?
@@ -72,7 +84,7 @@ module.exports = { add, subtract }; // export the add and subtract functions
 Contents of `index.js` file could be something like this:
 
 ```javascript
-const calculate = require('./calculate'); // import the calculate module
+const calculate = require("./calculate"); // import the calculate module
 
 const sum = calculate.add(5, 3); // call the add function from the calculate module and assign the result to the sum variable
 
@@ -106,22 +118,24 @@ Test your code by running the `index.js` file using the `node index.js` command.
 <details>
   <summary>Solution</summary>
 
-  ```javascript
-  // greetings.js
-  function sayHello() {
-    console.log('Hello, World!');
-  }
+```javascript
+// greetings.js
+function sayHello() {
+  console.log("Hello, World!");
+}
 
-  module.exports = sayHello;
-  ```
+module.exports = sayHello;
+```
 
-  ```javascript
-  // index.js
-  const sayHello = require('./greetings');
+```javascript
+// index.js
+const sayHello = require("./greetings");
 
-  sayHello();
-  ```
+sayHello();
+```
+
 ![Modules](modules.gif)
+
 </details>
 
 ### Exercise 2 - Export Multiple Functions
@@ -135,26 +149,27 @@ Test your code by running the `index.js` file using the `node index.js` command.
 <details>
   <summary>Solution</summary>
 
-  ```javascript
-  // greetings.js
-  function sayHello() {
-    console.log('Hello, World!');
-  }
+```javascript
+// greetings.js
+function sayHello() {
+  console.log("Hello, World!");
+}
 
-  function sayHelloTo(name) {
-    console.log(`Hello, ${name}!`);
-  }
+function sayHelloTo(name) {
+  console.log(`Hello, ${name}!`);
+}
 
-  module.exports = { sayHello, sayHelloTo };
-  ```
+module.exports = { sayHello, sayHelloTo };
+```
 
-  ```javascript
-  // index.js
-  const { sayHello, sayHelloTo } = require('./greetings');
+```javascript
+// index.js
+const { sayHello, sayHelloTo } = require("./greetings");
 
-  sayHello();
-  sayHelloTo('John');
-  ```
+sayHello();
+sayHelloTo("John");
+```
+
 </details>
 
 ### Exercise 3 - Exporting an Object
@@ -164,17 +179,17 @@ Test your code by running the `index.js` file using the `node index.js` command.
 **Description**: Create a file `utils.js` with an object that has two methods: `square` (returns the square of a number) and `cube` (returns the cube of a number). Export this object. In `index.js`, import this object and call its methods.
 
 > Hint: You can add functions to an object using the following syntax:
+>
 > ```javascript
 > const myObject = {
 >   myFunction() {
 >     // function body
->   }
-> }
+>   },
+> };
 > ```
 >
 > Hint: You can call a function from an object using the following syntax:
+>
 > ```javascript
 > myObject.myFunction();
 > ```
-
-

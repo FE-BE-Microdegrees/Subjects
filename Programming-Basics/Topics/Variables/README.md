@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about variables in Javascript.
 
+![Muutujad](Variables.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Variables](#variables)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Variable?](#what-is-a-variable)
@@ -15,6 +19,7 @@ In this topic, we'll learn about variables in Javascript.
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
+
 - Define what a variable is
 - Declare variables
 - Assign values to variables
@@ -38,13 +43,14 @@ console.log(apples); // print the value of the apples variable to the console (o
 ## How to Declare a Variable?
 
 In order to use a variable in a program, we must first declare it. In Javascript, we can declare a variable using the `var`, `let`, or `const` keywords.
+
 - The `var` keyword is used to declare a variable that can be reassigned, but we should avoid using `var` nowadays and use `let` instead.
 - The `let` keyword is used to declare a variable that can be reassigned.
 - The `const` keyword is used to declare a variable that cannot be reassigned.
 
 ```javascript
 let firstName; // declare a variable named x
-let age, lastName; // declare multiple variables 
+let age, lastName; // declare multiple variables
 ```
 
 In previous example, we declared variables named `firstName`, `age`, and `lastName`. We can also declare variables and assign values to them at the same time.
@@ -54,8 +60,9 @@ In previous example, we declared variables named `firstName`, `age`, and `lastNa
 We can assign values to variables using the assignment operator `=`. The value on the right side of the assignment operator is assigned to the variable on the left side of the assignment operator.
 
 ```javascript
-let firstName = 'John'; // declare a variable named firstName and assign the value 'John' to it
-let age = 25, lastName = 'Doe'; // declare multiple variables and assign values to them
+let firstName = "John"; // declare a variable named firstName and assign the value 'John' to it
+let age = 25,
+  lastName = "Doe"; // declare multiple variables and assign values to them
 const PI = 3.14; // declare a constant named PI and assign the value 3.14 to it
 ```
 
@@ -79,10 +86,11 @@ Test your code by running the `index.js` file using the `node index.js` command.
   <summary>Solution</summary>
 
 ```javascript
-let firstName = 'John'; // declare a variable named firstName and assign the value 'John' to it
+let firstName = "John"; // declare a variable named firstName and assign the value 'John' to it
 
 console.log(firstName); // print the value of the firstName variable to the console
 ```
+
 ![Declaring variable with value](DeclaringVariableWithValue.gif)
 
 </details>
@@ -101,10 +109,10 @@ Test your code by running the `index.js` file using the `node index.js` command.
   <summary>Solution</summary>
 
 ```javascript
-let firstName = 'John'; // declare a variable named firstName and assign the value 'John' to it
-let lastName = 'Doe'; // declare a variable named lastName and assign the value 'Doe' to it
+let firstName = "John"; // declare a variable named firstName and assign the value 'John' to it
+let lastName = "Doe"; // declare a variable named lastName and assign the value 'Doe' to it
 
-console.log(firstName + ' ' + lastName); // print out values of the firstName and lastName variables in a single line
+console.log(firstName + " " + lastName); // print out values of the firstName and lastName variables in a single line
 ```
 
 </details>

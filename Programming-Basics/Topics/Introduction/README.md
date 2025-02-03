@@ -2,13 +2,17 @@
 
 In thistopic, we'll talk about Programming Basics subject and what you can expect to learn from it.
 
+![Sissejuhatus](Introduction-To-Programming.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Introduction](#introduction)
   - [What is the purpose of this course?](#what-is-the-purpose-of-this-course)
   - [What is programming and why is it important?](#what-is-programming-and-why-is-it-important)
   - [What we will learn in this course?](#what-we-will-learn-in-this-course)
   - [Which language will we use?](#which-language-will-we-use)
   - [What tools will we use?](#what-tools-will-we-use)
-
+  - [Questions](#questions)
 
 ## What is the purpose of this course?
 
@@ -24,6 +28,7 @@ Programming is a creative process that involves designing **algorithms** and dev
 ## What we will learn in this course?
 
 In this course, we will learn the basics of programming. We will learn about:
+
 - [Variables](https://github.com/FE-BE-Microdegrees/Subjects/blob/Translate/Programming-Basics/Topics/Variables/README.md);
 - [Data types](https://github.com/FE-BE-Microdegrees/Subjects/blob/Translate/Programming-Basics/Topics/Data-Types/README.md);
 - Control structures

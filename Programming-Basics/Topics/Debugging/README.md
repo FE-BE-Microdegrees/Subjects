@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about debugging in Node JS.
 
+![Silumine](Debugging.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Debugging](#debugging)
   - [Learning Outcomes](#learning-outcomes)
   - [What is Debugging?](#what-is-debugging)
@@ -17,7 +21,7 @@ After completing this topic, you'll be able to:
 
 ## What is Debugging?
 
-If we want to know how something works in real life, we can observe the process, sometimes we can intercept the process and see what happens. For example when we are cooking, we can measure some *parameters* like taste, temperature and time. Based on the result of the measurement, we can decide what to do next - add some salt or other spices, change the temperature or modify the cooking time.
+If we want to know how something works in real life, we can observe the process, sometimes we can intercept the process and see what happens. For example when we are cooking, we can measure some _parameters_ like taste, temperature and time. Based on the result of the measurement, we can decide what to do next - add some salt or other spices, change the temperature or modify the cooking time.
 
 In programming, sometimes we don't understand why our program doesn't work as expected. We can use the same approach as in real life - we can observe the process and see what happens. This process is called **debugging**.
 

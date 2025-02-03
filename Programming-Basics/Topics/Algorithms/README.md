@@ -2,6 +2,10 @@
 
 In this topic, we will learn about algorithms and how to design algorithms to solve problems.
 
+![Algoritmid](Algorithms.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Algorithms](#algorithms)
   - [Learning Outcomes](#learning-outcomes)
   - [What is an Algorithm?](#what-is-an-algorithm)
@@ -24,7 +28,7 @@ After completing this topic, you'll be able to:
 
 ## What is an Algorithm?
 
-Very often, when we need to solve problem, we tend to jump into writing code without thinking about the problem. This is not a good approach because it can lead to bugs and errors in our code. It is better to first think about the problem and then write code to solve the problem. This is where algorithms come in. 
+Very often, when we need to solve problem, we tend to jump into writing code without thinking about the problem. This is not a good approach because it can lead to bugs and errors in our code. It is better to first think about the problem and then write code to solve the problem. This is where algorithms come in.
 
 An algorithm is a specific set of clearly defined instructions or a step-by-step process designed to perform a task or solve a problem. In the context of computer science and programming, algorithms are used to manipulate data, make calculations, process input, and perform automated reasoning or other decision-making processes. Algorithms are used in many different fields, including mathematics, science, engineering, and economics. Actually, we use algorithms in our everyday life, for example, when we follow a recipe to cook a meal, when we follow a set of directions to get to a destination, or when we follow a set of instructions to assemble a piece of furniture.
 
@@ -59,30 +63,37 @@ Since pseudocode is not meant to be executed, it does not have to follow the syn
 However, there are some common conventions often used in pseudocode:
 
 - Basic Control Structures:
+
   - `IF`...`THEN`...`ELSE` for conditional branches.
   - `FOR`...`DO` for definite loops (loops with a predetermined number of iterations).
   - `WHILE`...`DO` for indefinite loops (loops where the number of iterations is not predetermined).
   - `REPEAT`...`UNTIL` for loops that must execute at least once before the condition is evaluated.
 
 - Variable Assignment and Declaration:
+
   - Variables are typically declared implicitly when they are first used, and their assignment is often denoted with a simple `=` symbol.
 
 - Input and Output:
+
   - `READ`, `INPUT`, or similar phrases for taking input.
   - `PRINT`, `DISPLAY`, or similar phrases for outputting results.
 
 - Comments:
+
   - Often marked with words like `//`, `#`, or `REM`, followed by the comment text, although the specific symbols can vary.
 
 - Subroutines and Functions:
+
   - Defined with words like `FUNCTION` or `PROCEDURE`, followed by the subroutine name and possibly parameters.
   - `RETURN` is used to indicate the output of the subroutine.
 
 - Array and Data Structure Usage:
+
   - Arrays or lists might be used without explicit declaration of their size or type.
   - Other data structures like stacks, queues, or trees can be referenced as per their standard operations (e.g., PUSH, POP for stacks).
 
 - Algorithmic Statements:
+
   - Statements that describe specific actions like `SORT`, `MERGE`, `FIND`, etc.
 
 - Pseudocode Structure:
@@ -120,6 +131,7 @@ flowchart TD
     F --> H
     G --> H
 ```
+
 This is a very simple example of a flowchart to describe basic program that checks if a number is positive, negative, or zero.
 
 In flowcharts, the following symbols are used to represent the different steps of an algorithm:
@@ -158,6 +170,7 @@ flowchart TD
     D --> E[Print sum]
     E --> F[End]
 ```
+
 </details>
 
 ### Exercise 2
@@ -167,5 +180,3 @@ Write an algorithm that takes two numbers as input and prints the larger of the 
 ### Exercise 3
 
 Write an algorithm that takes three numbers as input and prints the average of the three numbers.
-
-

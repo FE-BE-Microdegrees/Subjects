@@ -2,7 +2,7 @@
 
 ![Try Catch Finally](Try-Catch.webp)
 
-*Image source: Dall-E by OpenAI*
+Image source: Dall-E by OpenAI
 
 - [Try..catch](#trycatch)
   - [Learning Outcomes](#learning-outcomes)
@@ -42,6 +42,7 @@ try {
 ```
 
 The `try...catch` statement always starts with a `try` block. This must be followed by either a `catch` Block, a `finally` block, or both. It provides three forms of the try...catch statement:
+
 ```javascript
 try...catch
 try...finally
@@ -84,11 +85,10 @@ graph TD
 Suppose we have code that might throw an error, such as attempting to read a non-existent file:
 
 ```javascript
-const fs = require('fs');
-const file = fs.readFileSync('nonexistingFile.txt');
+const fs = require("fs");
+const file = fs.readFileSync("nonexistingFile.txt");
 
-console.log('Program continues');
-
+console.log("Program continues");
 ```
 
 If we try to execute this code, we get an error, and the program stops before reaching the output:
@@ -105,16 +105,15 @@ Error: ENOENT: no such file or directory, open 'nonexistingFile.txt'
 In such a case, we can use the following approach:
 
 ```javascript
-const fs = require('fs');
+const fs = require("fs");
 
 try {
-  const file = fs.readFileSync('nonexistingFile.txt');
+  const file = fs.readFileSync("nonexistingFile.txt");
 } catch (error) {
-  console.error('Error reading file:', error.message);
+  console.error("Error reading file:", error.message);
 }
 
-console.log('Program continues');
-
+console.log("Program continues");
 ```
 
 Now, the error is handled, and we can continue running the program even if an error occurred:

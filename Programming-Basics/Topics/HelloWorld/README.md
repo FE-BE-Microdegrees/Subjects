@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about Hello World in Javascript.
 
+![Hello World!](Hello-World.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Hello World](#hello-world)
   - [Learning Outcomes](#learning-outcomes)
   - [What is Hello World?](#what-is-hello-world)
@@ -28,7 +32,7 @@ In some programming languages (like C), we need to write a lot of code to print 
 In order to write Hello World in Javascript, we need to open a text editor and type the following code:
 
 ```javascript
-console.log('Hello World!');
+console.log("Hello World!");
 ```
 
 We can save the file as `helloWorld.js` and run it using Node JS.
@@ -50,4 +54,3 @@ Run the program using Node JS.
 > **Hint:** You can use the `console.log()` function to print a message to the console.
 >
 > **Hint:** You can use the `node fileName.js` command to run a Javascript file.
-> 

@@ -2,6 +2,9 @@
 
 In this chapter, we will learn about operators and expressions in JavaScript.
 
+![Operaatorid](Operators.webp)
+
+Image source: Dall-E by OpenAI
 
 - [Operators and Expressions](#operators-and-expressions)
   - [Learning Outcomes](#learning-outcomes)
@@ -42,6 +45,7 @@ An operator is a symbol used to perform an operation on one or more values. For 
 ```javascript
 let x = 5 + 10; // 5 and 10 are operands, + is the operator. x is the variable to which the result of the operation is assigned
 ```
+
 ## What is an Expression?
 
 An expression is a combination of values, variables, operators, and functions that evaluates to a new value. For example, `2 + 3` is an expression that evaluates to `5`. Expressions can be used to perform calculations, manipulate strings, and more.
@@ -77,6 +81,7 @@ let z = 5 * 10; // multiplication - result is 50
 let w = 5 / 10; // division - result is 0.5
 let v = 5 % 10; // modulus - result is 5
 ```
+
 ### Assignment Operators
 
 Assignment operators are used to assign values to variables. Sometimes we want to perform an operation on a variable and assign the resulting value back to the same variable. For example, we might want to add `10` to the current value of a variable.
@@ -104,6 +109,7 @@ x **= 2; // raises x to the power of 2 and assigns the result to x - result is 2
 x++; // increments x by 1 - result is 26
 x--; // decrements x by 1 - result is 25
 ```
+
 ### Comparison Operators
 
 Comparison operators are used to compare two values. Comparing values is useful when we want to check if two values are equal or not, or if one value is greater or less than another value. The result of a comparison is a boolean value `true` or `false`.
@@ -122,7 +128,7 @@ JavaScript has 8 comparison operators:
 ```javascript
 let x = 5;
 let y = 10;
-let z = '5';
+let z = "5";
 
 console.log(x == y); // false
 console.log(x != y); // true
@@ -135,6 +141,7 @@ console.log(x !== y); // true
 console.log(x == z); // true
 console.log(x === z); // false
 ```
+
 > It is recommended to always use strict equality (`===`) and strict inequality (`!==`) when comparing values because, as shown in the example above, the equality operator (`==`) and the inequality operator (`!=`) can give unexpected results.
 >
 > For example, `5 == '5'` returns `true`, but `5 === '5'` returns `false`. This is because the equality operator (`==`) converts the operands to the same type before comparing them, while the strict equality operator (`===`) does not convert the operands to the same type before comparing them but considers both the values and their types.
@@ -157,6 +164,7 @@ console.log(x > 5 && x < 10); // false
 console.log(x > 5 || x < 10); // true
 console.log(!(x > 5)); // true
 ```
+
 ### Bitwise Operators (optional - not used in this course)
 
 Bitwise operators are used to perform operations on numerical values at the binary level. Bitwise operations are actions performed on numbers in their binary form. For example, the binary representation of the number `5` is `101`. The binary representation of the number `10` is `1010`. A bitwise `AND` operation on the numbers `5` and `10` results in `0` because `101` AND `1010` is `0`. Considering from right to left, the first bit of the result is `0` because the first bits of the operands are `1` and `0`. The result of the second bit is `0` because the second bits of the operands are `0` and `1`. The result of the third bit is `0` because the third bits of the operands are `1` and `0`.
@@ -183,6 +191,7 @@ console.log(x << 1); // 10 - shifts 101 bits to the left by 1, resulting in 1010
 console.log(x >> 1); // 2 - shifts 101 bits to the right by 1, resulting in 10
 console.log(x >>> 1); // 2 - shifts 101 bits to the right by 1, resulting in 10 and fills the empty bit with 0
 ```
+
 ### String Operators
 
 String operators are used to concatenate strings. For example, we might want to concatenate a person's first name and last name to get their full name.
@@ -192,11 +201,12 @@ JavaScript has only one string operator:
 - `+`: concatenation - concatenates two strings
 
 ```javascript
-let firstName = 'John';
-let lastName = 'Doe';
+let firstName = "John";
+let lastName = "Doe";
 
-console.log(firstName + ' ' + lastName); // 'John Doe'
+console.log(firstName + " " + lastName); // 'John Doe'
 ```
+
 ### Conditional (Ternary) Operator
 
 The conditional operator is used to assign a value to a variable based on a condition. For example, we might want to assign the value `true` to a variable if a number is greater than `10`, or the value `false` if the number is less than `10`.
@@ -210,6 +220,7 @@ let x = 5;
 
 let result = x > 10 ? true : false; // false
 ```
+
 ### Comma Operator
 
 The comma operator is used to evaluate multiple expressions and return the result of the last expression.
@@ -221,7 +232,7 @@ JavaScript has only one comma operator:
 ```javascript
 let x = 5;
 
-let result = (x = 10, x + 5); // 15
+let result = ((x = 10), x + 5); // 15
 console.log(result); // 15
 ```
 
@@ -236,12 +247,13 @@ JavaScript has 3 unary operators:
 - `!`: logical NOT - returns the opposite boolean value
 
 ```javascript
-let x = '5';
+let x = "5";
 
 console.log(+x); // 5
 console.log(-x); // -5
 console.log(!x); // false
 ```
+
 ## Exercises
 
 Create a file `index.js` and write the code for the following exercises in that file.
@@ -271,6 +283,7 @@ console.log(num1 * num2); // 50
 console.log(num1 / num2); // 0.5
 </details>
 ```
+
 ![Using Operators](operators.gif)
 
 </details>

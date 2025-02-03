@@ -2,7 +2,7 @@
 
 ![JSON](JSON.webp)
 
-Image Source: [Dall-E by OpenAI](https://openai.com/)
+Image Source: Dall-E by OpenAI
 
 - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
   - [What is JSON?](#what-is-json)
@@ -12,7 +12,7 @@ Image Source: [Dall-E by OpenAI](https://openai.com/)
 
 ## What is JSON?
 
-JSON stands for *JavaScript Object Notation* and is a simple, human-readable data interchange format commonly used for transmitting data between client and server applications, such as between a web application's frontend and an API.
+JSON stands for _JavaScript Object Notation_ and is a simple, human-readable data interchange format commonly used for transmitting data between client and server applications, such as between a web application's frontend and an API.
 
 JSON data is represented as a collection of key-value pairs, where keys are strings and values can be strings, numbers, booleans, arrays, or other objects. JSON is easy for humans to read and write, and easy for machines to parse and generate. While JSON looks very similar to a JavaScript object, it is important to note that JSON is a data format, not a JavaScript object. The biggest difference is that JSON keys must always be enclosed in double quotes, whereas JavaScript object keys do not require quotes.
 
@@ -43,7 +43,7 @@ Key characteristics of JSON:
 
 ## JSON.stringify()
 
-`JSON.stringify()`  is a JavaScript function that converts a JavaScript object into a JSON string. This function takes an object as input and returns it as a JSON string.
+`JSON.stringify()` is a JavaScript function that converts a JavaScript object into a JSON string. This function takes an object as input and returns it as a JSON string.
 
 Example of using `JSON.stringify()` :
 
@@ -52,7 +52,7 @@ const person = {
   name: "John",
   age: 30,
   isStudent: true,
-  favoriteFoods: ["pizza", "sushi", "ice cream"]
+  favoriteFoods: ["pizza", "sushi", "ice cream"],
 };
 
 const jsonPerson = JSON.stringify(person);
@@ -63,7 +63,12 @@ console.log(jsonPerson);
 Output:
 
 ```json
-{"name":"John","age":30,"isStudent":true,"favoriteFoods":["pizza","sushi","ice cream"]}
+{
+  "name": "John",
+  "age": 30,
+  "isStudent": true,
+  "favoriteFoods": ["pizza", "sushi", "ice cream"]
+}
 ```
 
 In the example above, thet `person` object is converted to a JSON string using the `JSON.stringify()` function. The JSON string is stored in the `jsonPerson` ariable and then logged to the console.
@@ -77,7 +82,8 @@ In the example above, thet `person` object is converted to a JSON string using t
 Example of using `JSON.parse()`:
 
 ```javascript
-const jsonPerson = '{"name":"John","age":30,"isStudent":true,"favoriteFoods":["pizza","sushi","ice cream"]}';
+const jsonPerson =
+  '{"name":"John","age":30,"isStudent":true,"favoriteFoods":["pizza","sushi","ice cream"]}';
 const person = JSON.parse(jsonPerson);
 
 console.log(person);

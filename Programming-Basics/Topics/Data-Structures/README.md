@@ -2,6 +2,10 @@
 
 In this topic, we will talk in detail about data structures. We will explore what a data structure is, what an array is, what an object is, and how to use arrays and objects.
 
+![Andmestruktuurid](Data-Structures.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Data Structures](#data-structures)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Data Structure?](#what-is-a-data-structure)
@@ -48,10 +52,11 @@ To create an array, we use the `[]` operator. For example, we can create an arra
 ```javascript
 const numbers = [1, 2, 3];
 ```
+
 Or we can create an array named `names` that contains the names `John`, `Jane`, and `Jack` like this:
 
 ```javascript
-const names = ['John', 'Jane', 'Jack'];
+const names = ["John", "Jane", "Jack"];
 ```
 
 We can access the values in an array using the index of the value. The index of the first value in an array is `0`. For example, if we want to access the first value in the `numbers` array, we can use the index `0` like this:
@@ -61,6 +66,7 @@ const numbers = [1, 2, 3];
 
 console.log(numbers[0]);
 ```
+
 **Expected output**:
 
 ```
@@ -76,6 +82,7 @@ numbers[0] = 10;
 
 console.log(numbers);
 ```
+
 **Expected output**:
 
 ```
@@ -101,12 +108,12 @@ numbers.push(4);
 
 console.log(numbers);
 ```
+
 **Expected output**:
 
 ```
 [1, 2, 3, 4]
 ```
-
 
 #### Finding Values in an Array
 
@@ -117,6 +124,7 @@ const numbers = [1, 2, 3];
 
 console.log(numbers.indexOf(2));
 ```
+
 **Expected output**:
 
 ```
@@ -136,6 +144,7 @@ numbers.splice(1, 1);
 
 console.log(numbers);
 ```
+
 **Expected output**:
 
 ```
@@ -153,12 +162,21 @@ console.log(numbers);
 We can use the `for` loop to iterate over an array. For example, if we want to print each value in the `numbers` array on a new line, we can use the `for` loop like this:
 
 ```javascript
-const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const days = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
 
 for (let i = 0; i < numbers.length; i++) {
   console.log(numbers[i]);
 }
 ```
+
 **Expected output**:
 
 ```
@@ -172,13 +190,13 @@ Sunday
 ```
 
 > Pay attention to the condition of the `for` loop. We need to use the `length` property of the array in the condition of the `for` loop to make sure that we don't go out of bounds of the array.
-> 
+>
 > The `length` property of an array returns the number of values in the array.
-> 
+>
 > The `length` property of an array is always one more than the index of the last value in the array.
-> 
+>
 > Also, remember, that `i` is the value, that increments on each iteration of the `for` loop. We can use the value of `i` to access the values in the array.
-> 
+>
 > Index of the first value in an array is `0`, so the index of the last value in an array is `length - 1`.
 
 ## Object
@@ -189,9 +207,9 @@ To create an object, we use the `{}` operator. For example, we can create an obj
 
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 ```
 
@@ -199,9 +217,9 @@ We can access the values in an object using the key of the value. For example, i
 
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 console.log(person.firstName); // John
@@ -211,35 +229,39 @@ We can also use the key of the value to change the value in the object. For exam
 
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
-person.firstName = 'Jane';
+person.firstName = "Jane";
 
 console.log(person); // { firstName: 'Jane', lastName: 'Doe', age: 25 }
 ```
 
-As for arrays, there are lots of methods that we can use to manipulate objects also. For example, we can use the 
+As for arrays, there are lots of methods that we can use to manipulate objects also. For example, we can use the
 
 ### `Object.keys()` Method
+
 The `Object.keys()` method returns the keys of an object as an array. For example, if we want to get the keys of the `person` object as an array, we can use the `Object.keys()` method like this:
+
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 console.log(Object.keys(person)); // [ 'firstName', 'lastName', 'age' ]
 ```
+
 This can also be used for iterating over the properties of an object. For example, if we want to print each key in the `person` object, we can use the `Object.keys()` method like this:
+
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 for (let key of Object.keys(person)) {
@@ -250,16 +272,15 @@ for (let key of Object.keys(person)) {
 // firstName
 // lastName
 // age
-
 ```
+
 If we do not want to use a `for...of` loop, we can also use a `for` loop like this:
 
 ```javascript
-
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 for (let i = 0; i < Object.keys(person).length; i++) {
@@ -270,37 +291,43 @@ for (let i = 0; i < Object.keys(person).length; i++) {
 // firstName
 // lastName
 // age
-
 ```
-### `Object.values()` Method 
+
+### `Object.values()` Method
+
 The `Object.values()` method returns the values of an object as an array. For example, if we want to get the values of the `person` object as an array, we can use the `Object.values()` method like this:
+
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 console.log(Object.values(person)); // [ 'John', 'Doe', 25 ]
 ```
-### `Object.entries()` Method 
+
+### `Object.entries()` Method
+
 The `Object.entries()` method returns an array of key-value pairs of an object. For example, if we want to get the key-value pairs of the `person` object as an array, we can use the `Object.entries()` method like this:
+
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 console.log(Object.entries(person)); // [ [ 'firstName', 'John' ], [ 'lastName', 'Doe' ], [ 'age', 25 ] ]
 ```
+
 If we want to output key-value pairs one by one, we can use a `for` loop like this:
 
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
 };
 
 for (let i = 0; i < Object.entries(person).length; i++) {
@@ -328,22 +355,23 @@ Create a file named `index.js` (or another name of your choice) and start adding
 **Description**: Create an array to store a list of three favorite fruits. Add two more fruits to the array using array methods. Finally, print each fruit in the array on a new line.
 
 > You can use the `push()` method to add elements to an array.
-> 
+>
 > Use the `for` loop to print each element in the array on a new line.
 
 <details>
   <summary>Solution</summary>
 
 ```javascript
-const fruits = ['apple', 'banana', 'orange'];
+const fruits = ["apple", "banana", "orange"];
 
-fruits.push('strawberry');
-fruits.push('pineapple');
+fruits.push("strawberry");
+fruits.push("pineapple");
 
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
 ```
+
 ![Array](array.gif)
 
 </details>
@@ -370,11 +398,13 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(sum);
 ```
+
 **Expected output**:
 
 ```
 15
 ```
+
 </details>
 
 If you want to solve additional exercises, you can find some here: [Additional Exercises for Arrays](Exercises-Arrays.md).
@@ -394,9 +424,9 @@ If you want to solve additional exercises, you can find some here: [Additional E
 
 ```javascript
 const car = {
-  make: 'Toyota',
-  model: 'Corolla',
-  year: 2019
+  make: "Toyota",
+  model: "Corolla",
+  year: 2019,
 };
 
 console.log(`I drive a ${car.year} ${car.make} ${car.model}.`);
@@ -407,7 +437,6 @@ console.log(`I drive a ${car.year} ${car.make} ${car.model}.`);
 ```
 I drive a 2019 Toyota Corolla.
 ```
-
 
 </details>
 
@@ -421,9 +450,9 @@ Example `student` object:
 
 ```javascript
 const student = {
-  name: 'John Doe',
+  name: "John Doe",
   age: 16,
-  grade: 10
+  grade: 10,
 };
 ```
 
@@ -438,14 +467,14 @@ const student = {
 
 ```javascript
 const student = {
-  name: 'John Doe',
+  name: "John Doe",
   age: 16,
-  grade: 10
+  grade: 10,
 };
 
 student.age = 17;
 
-student.subject = 'Math';
+student.subject = "Math";
 
 console.log(student);
 ```

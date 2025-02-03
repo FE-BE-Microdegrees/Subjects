@@ -2,13 +2,13 @@
 
 ![Typeof](typeof.webp)
 
-*Image source: Dall-E by OpenAI*
+Image source: Dall-E by OpenAI
 
 - [Typeof Operator](#typeof-operator)
   - [Learning Outcomes](#learning-outcomes)
   - [What is the `typeof` Operator?](#what-is-the-typeof-operator)
   - [Using the `typeof` Operator](#using-the-typeof-operator)
-  - [Where and When to Use the `typeof` Operator?](#where-and-when-to-use-the-typeof-operator)
+  - [Where and When to Use the typeof Operator?](#where-and-when-to-use-the-typeof-operator)
 
 ## Learning Outcomes
 
@@ -32,8 +32,8 @@ console.log(`${number} type is ${typeof number}`);
 let age;
 console.log(`Type of an uninitialized variable is ${typeof age}`);
 const person = {
-  firstName: 'John',
-  lastName: 'Doe'
+  firstName: "John",
+  lastName: "Doe",
 };
 console.log(typeof person);
 ```
@@ -41,7 +41,7 @@ console.log(typeof person);
 Output:
 
 ```bash
-$ node app.js 
+$ node app.js
 123 type is number
 Type of an uninitialized variable is undefined
 object
@@ -59,14 +59,13 @@ To verify that the input value is of the expected type, we can use the typeof op
 ```javascript
 const userInput = 25;
 
-if (typeof userInput === 'number') {
-  console.log('The entered value is a number');
+if (typeof userInput === "number") {
+  console.log("The entered value is a number");
   // Perform calculations with the age here
 } else {
-  console.log('The entered value is not a number');
+  console.log("The entered value is not a number");
   // Handle the situation where the user entered something else
 }
-
 ```
 
 [Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)

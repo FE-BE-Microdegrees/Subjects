@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about loops and iteration.
 
+![Tsüklid](Loops.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Loops and iteration](#loops-and-iteration)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Loop?](#what-is-a-loop)
@@ -35,15 +39,17 @@ A loop is a programming construct that is used to repeat a block of code until a
 
 ## `for` Loop
 
-The `for` loop is used to repeat a block of code a certain number of times. The `for` loop consists of three parts: *initialization*, *condition*, and *increment/decrement*. The initialization part is used to initialize the loop counter, the condition part is used to check if the loop counter is less/greater than or equal to a certain value, and the increment/decrement part is used to increment or decrement the loop counter. The `for` loop is used to iterate over a collection of data or to repeat a block of code a certain number of times.
+The `for` loop is used to repeat a block of code a certain number of times. The `for` loop consists of three parts: _initialization_, _condition_, and _increment/decrement_. The initialization part is used to initialize the loop counter, the condition part is used to check if the loop counter is less/greater than or equal to a certain value, and the increment/decrement part is used to increment or decrement the loop counter. The `for` loop is used to iterate over a collection of data or to repeat a block of code a certain number of times.
 
 ```javascript
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
+
 Output:
-```
+
+```text
 0
 1
 2
@@ -55,11 +61,12 @@ Output:
 8
 9
 ```
+
 In this example, we created a `for` loop that iterates over the numbers from `0` to `9` and prints them to the console. In the beginning of the loop, we initialize the loop counter (`i`) to `0` (`let i = 0`). Then, we check if the loop counter (`i`) is less than `10` (`i < 10`). If the loop counter is less than `10`, we print the value of the loop counter to the console and increment the loop counter (`i`) by `1` (`i++`). And then we repeat this process until the loop counter is greater than or equal to `10`.
 
 ## `while` Loop
 
-The `while` loop is used to repeat a block of code while a certain condition is true. The `while` loop consists of a *condition* and a *block of code*. The condition is used to check if the loop counter is less/greater than or equal to a certain value, and the block of code is used to execute the code inside the loop. The `while` loop is used to iterate over a collection of data or to repeat a block of code a certain number of times.
+The `while` loop is used to repeat a block of code while a certain condition is true. The `while` loop consists of a _condition_ and a _block of code_. The condition is used to check if the loop counter is less/greater than or equal to a certain value, and the block of code is used to execute the code inside the loop. The `while` loop is used to iterate over a collection of data or to repeat a block of code a certain number of times.
 
 > **Note:** The `while` loop is similar to the `for` loop, but the `while` loop doesn't have an built in initialization part or an increment/decrement part. So we have to be careful when using the `while` loop because it can easily lead to an infinite loop if we forget to increment/decrement the loop counter.
 
@@ -71,8 +78,10 @@ while (i < 10) {
   i++;
 }
 ```
+
 Output:
-```
+
+```text
 0
 1
 2
@@ -99,8 +108,10 @@ do {
   i++;
 } while (i < 10);
 ```
+
 Output:
-```
+
+```text
 0
 1
 2
@@ -117,46 +128,52 @@ The key difference between the `while` loop and the `do...while` loop is that th
 
 ## `for...in` Loop
 
-The `for...in` loop is bit different from the previous loops. The `for...in` loop is used to iterate over the properties of an object. The `for...in` loop consists of a *variable* and an *object*. The variable is used to store the name of the property, and the object is used to iterate over the properties of the object. The `for...in` loop is used to iterate over the properties of an object.
+The `for...in` loop is bit different from the previous loops. The `for...in` loop is used to iterate over the properties of an object. The `for...in` loop consists of a _variable_ and an _object_. The variable is used to store the name of the property, and the object is used to iterate over the properties of the object. The `for...in` loop is used to iterate over the properties of an object.
 
 ```javascript
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   age: 25,
-  isMarried: false
+  isMarried: false,
 };
 
 for (let key in person) {
-  console.log(key + ': ' + person[key]);
+  console.log(key + ": " + person[key]);
 }
 ```
+
 Output:
-```
+
+```text
 firstName: John
 lastName: Doe
 age: 25
 isMarried: false
 ```
+
 In this example, we created an object named `person` with four properties: `firstName`, `lastName`, `age`, and `isMarried`. Then, we created a `for...in` loop that iterates over the properties of the `person` object and prints them to the console.
 
 ## `for...of` Loop
 
-The `for...of` loop is another type of loop. The `for...of` loop is used to iterate over the values of an iterable object. The `for...of` loop consists of a *variable* and an *iterable object*. The variable is used to store the value of the current iteration, and the iterable object is used to iterate over the values of the iterable object. 
+The `for...of` loop is another type of loop. The `for...of` loop is used to iterate over the values of an iterable object. The `for...of` loop consists of a _variable_ and an _iterable object_. The variable is used to store the value of the current iteration, and the iterable object is used to iterate over the values of the iterable object.
 
 ```javascript
-const fruits = ['apple', 'banana', 'orange'];
+const fruits = ["apple", "banana", "orange"];
 
 for (let fruit of fruits) {
   console.log(fruit);
 }
 ```
+
 Output:
-```
+
+```text
 apple
 banana
 orange
 ```
+
 In this example, we created an array named `fruits` with three values: `apple`, `banana`, and `orange`. Then, we created a `for...of` loop that iterates over the values of the `fruits` array and prints them to the console.
 
 ## Loop Control Statements
@@ -175,8 +192,10 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
+
 Output:
-```
+
+```text
 0
 1
 2
@@ -203,8 +222,10 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
+
 Output:
-```
+
+```text
 0
 1
 2
@@ -229,16 +250,16 @@ Create a `for` loop that iterates over the numbers from `1` to `10` and prints t
 **Expected output**:
 
 ```javascript
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+1;
+2;
+3;
+4;
+5;
+6;
+7;
+8;
+9;
+10;
 ```
 
 > Hint: Use the `console.log()` method to print the numbers to the console.
@@ -267,11 +288,11 @@ Create a `for` loop that iterates over the numbers from `1` to `10` and prints o
 **Expected output**:
 
 ```javascript
-2
-4
-6
-8
-10
+2;
+4;
+6;
+8;
+10;
 ```
 
 <details>
@@ -284,8 +305,8 @@ for (let i = 1; i <= 10; i++) {
   }
 }
 ```
-</details>
 
+</details>
 
 ### Exercise 3
 
@@ -304,4 +325,4 @@ Create multiplication table using nested `for` loops.
 ```
 
 > Hint: Use nested `for` loops to create the multiplication table. Nested means that one loop is inside another loop.
-If you want to solve additional exercises, you can find some here: [Additional Exercises for Loops.](./Exercises.md)
+> If you want to solve additional exercises, you can find some here: [Additional Exercises for Loops.](./Exercises.md)

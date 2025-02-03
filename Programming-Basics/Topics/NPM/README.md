@@ -1,8 +1,12 @@
-# Node Package Manager (*NPM*)
+# Node Package Manager (_NPM_)
 
 In this topic, we'll learn about Node Package Manager (NPM).
 
-- [Node Package Manager (*NPM*)](#node-package-manager-npm)
+![NPM](NPM.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Node Package Manager (_NPM_)](#node-package-manager-npm)
   - [Learning Outcomes](#learning-outcomes)
   - [What is NPM?](#what-is-npm)
   - [How to Install NPM?](#how-to-install-npm)
@@ -59,7 +63,7 @@ In order to create a `package.json` file, we need to open a terminal and type `n
   "description": "My Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Doe",
   "license": "ISC",
@@ -75,7 +79,7 @@ In order to install a package, we need to open a terminal and type `npm install 
 
 `node_modules` folder contains all the packages that are installed locally on our computer. It is created automatically when we install a package using NPM.
 
-```bash	
+```bash
 npm install packageName
 ```
 
@@ -102,7 +106,7 @@ npm update packageName
 In order to use a package, we need to import it in our code using the `require()` function. For example, if we want to use the `packageName` package, we can import it using the following code:
 
 ```javascript
-const packageName = require('packageName');
+const packageName = require("packageName");
 ```
 
 ## Example of Using NPM to install `ansi-colors` package and use it in code
@@ -121,11 +125,11 @@ npm install ansi-colors
 ```
 
 ```javascript
-const colors = require('ansi-colors');
+const colors = require("ansi-colors");
 
-console.log(colors.red('Hello world!'));
-console.log(colors.yellow('Hello world!'));
-console.log(colors.green('Hello world!'));
+console.log(colors.red("Hello world!"));
+console.log(colors.yellow("Hello world!"));
+console.log(colors.green("Hello world!"));
 ```
 
 ```bash
@@ -151,4 +155,3 @@ node index.js
   }
 }
 ```
-

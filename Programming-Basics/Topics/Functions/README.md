@@ -2,6 +2,10 @@
 
 In this topic, we will learn about functions in Javascript.
 
+![Funktsioonid](Functions.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Functions](#functions)
   - [Learning Outcomes](#learning-outcomes)
   - [What is a Function?](#what-is-a-function)
@@ -53,11 +57,11 @@ In previous example, we declared a function named `add` with keyword `function`,
 
 ```javascript
 function sayHello() {
-  console.log('Hello World!');
+  console.log("Hello World!");
 }
 ```
 
-> Next important thing to remember is that function always returns a value. If we don't specify the return value, the function will return `undefined`. In our previous `sum` function, we specified the return value using the `return` keyword. If we don't specify the return value (like in `sayHello` function), the function will return `undefined`. 
+> Next important thing to remember is that function always returns a value. If we don't specify the return value, the function will return `undefined`. In our previous `sum` function, we specified the return value using the `return` keyword. If we don't specify the return value (like in `sayHello` function), the function will return `undefined`.
 
 In Javascript we can declare functions in two ways: function declaration and function expression.
 
@@ -77,10 +81,10 @@ function functionName(parameter1, parameter2) {
 But we can also declare functions using function expressions. For function expression, we use the `const` keyword followed by the name of the function, optional parameters, and function body. It means, that we declare function and assign it to a variable. For example:
 
 ```javascript
-const add = function(a, b) {
+const add = function (a, b) {
   const sum = a + b;
   return sum;
-}
+};
 ```
 
 Even though we use the `const` keyword to declare the function, we can still call the function using the function name followed by parentheses. For example:
@@ -162,10 +166,10 @@ But we have to rememeber, that function hoisting only works with function declar
 ```javascript
 printX(); // TypeError: printX is not a function
 
-const printX = function() {
+const printX = function () {
   let x = 5; // declare a variable named x and assign the value 5 to it
   console.log(x); // print the value of the x variable to the console
-}
+};
 ```
 
 In this example, we tried to call the `printX` function before it was declared. But we got a `TypeError` because function hoisting only works with function declarations, not with function expressions.
@@ -180,7 +184,7 @@ Arrow functions are a new way to declare functions in Javascript. They are simil
 const add = (a, b) => {
   const sum = a + b;
   return sum;
-}
+};
 
 const result = add(1, 2);
 console.log(result); // 3
@@ -210,7 +214,7 @@ function greet(name) {
   console.log(`Hello, ${name}!`);
 }
 
-greet('John');
+greet("John");
 ```
 
 **Expected output**:
@@ -218,6 +222,7 @@ greet('John');
 ```javascript
 Hello, John!
 ```
+
 ![Function](function.gif)
 
 </details>
@@ -229,7 +234,7 @@ Hello, John!
 **Description**: Write a function named `calculateArea` that takes the `length` and `width` of a rectangle as arguments and returns its area. Call this function with different sets of values and print the results.
 
 > Hint: You can give multiple arguments to a function by separating them with commas.
-> 
+>
 > Hint: The area of a rectangle is calculated by multiplying its length by its width.
 
 <details>
@@ -251,9 +256,10 @@ console.log(area2);
 **Expected output**:
 
 ```javascript
-50
-8
+50;
+8;
 ```
+
 </details>
 
 ### Exercise 3 - Function Manipulating Array Data
@@ -279,5 +285,5 @@ console.log(evenNumbers);
 **Expected output**:
 
 ```javascript
-[2, 4, 6, 8]
+[2, 4, 6, 8];
 ```
