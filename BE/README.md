@@ -1,7 +1,3 @@
-Understood! From now on, I'll make sure to adjust the paths accordingly. Here's the updated version of your document with the changes:
-
----
-
 # Back-End Microdegree
 
 ![Back-End](Back-End.webp)
