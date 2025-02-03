@@ -4,7 +4,7 @@ This guide explores the creation and handling of HTML forms. Forms are essential
 
 ![HTML-Forms](HTML-Forms.webp)
 
-*Image Source: Dall-E by OpenAI*
+Image Source: Dall-E by OpenAI
 
 - [HTML Forms: Creation and Handling](#html-forms-creation-and-handling)
   - [Learning Outcomes](#learning-outcomes)
@@ -68,14 +68,14 @@ Forms can include attributes that define their behavior, appearance, and more. C
 <body>
   <form action="/submit-form" method="POST">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <br>
+    <input type="text" id="name" name="name" required />
+    <br />
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
+    <input type="email" id="email" name="email" required />
+    <br />
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <br>
+    <input type="password" id="password" name="password" required />
+    <br />
     <button type="submit">Register</button>
   </form>
 </body>
@@ -101,16 +101,16 @@ This example shows a simple registration form with fields for name, email, and p
 ### Checkbox
 
 ```html
-<input type="checkbox" name="subscribe" id="subscribe">
+<input type="checkbox" name="subscribe" id="subscribe" />
 <label for="subscribe">Subscribe to newsletter</label>
 ```
 
 ### Radio Button
 
 ```html
-<input type="radio" name="gender" value="male" id="gender-male" checked>
+<input type="radio" name="gender" value="male" id="gender-male" checked />
 <label for="gender-male">Male</label>
-<input type="radio" name="gender" value="female" id="gender-female">
+<input type="radio" name="gender" value="female" id="gender-female" />
 <label for="gender-female">Female</label>
 ```
 

@@ -2,6 +2,21 @@
 
 In this learning material, we explore the CSS `border` property, which allows developers to define borders around an element. Borders are used to visually outline elements, emphasize style, and enhance the distinctiveness of user interfaces.
 
+![CSS Border](CSS-Border.webp)
+
+Image source: Dall-E by OpenAI
+
+- [CSS Borders](#css-borders)
+  - [Learning Objectives](#learning-objectives)
+  - [What is the CSS Border Property?](#what-is-the-css-border-property)
+  - [Border Properties](#border-properties)
+  - [Shorthand Property](#shorthand-property)
+  - [Different Border Styles](#different-border-styles)
+  - [Border Width and Color](#border-width-and-color)
+  - [Styling Individual Sides](#styling-individual-sides)
+  - [Border-radius](#border-radius)
+  - [Conclusion](#conclusion)
+
 ## Learning Objectives
 
 After completing this topic, you will be able to:

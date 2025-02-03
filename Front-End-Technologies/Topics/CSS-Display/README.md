@@ -6,6 +6,21 @@ In this tutorial, we explore the CSS `display` property, one of the most importa
 
 Image source: Dall-E by OpenAI
 
+- [CSS Display Property](#css-display-property)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is the CSS Display Property?](#what-is-the-css-display-property)
+  - [Key Display Values](#key-display-values)
+  - [Examples and Use Cases](#examples-and-use-cases)
+    - [Block](#block)
+    - [Inline](#inline)
+    - [Inline-Block](#inline-block)
+    - [None](#none)
+    - [Flex](#flex)
+    - [Grid](#grid)
+  - [Summary](#summary)
+  - [Exercises](#exercises)
+    - [Exercise 1: Create a Simple Navigation Bar](#exercise-1-create-a-simple-navigation-bar)
+
 ## Learning Outcomes
 
 After completing this topic, you will be able to:
@@ -104,6 +119,7 @@ Grid is used for more complex layouts requiring control over both rows and colum
 ## Summary
 
 The CSS `display` property is one of the most important tools for understanding and managing webpage layouts. Its versatility allows developers to create clean, responsive, and accessible websites. Understanding when and how to use different display values can maximize the visual and functional potential of your webpages.
+
 ## Exercises
 
 ### Exercise 1: Create a Simple Navigation Bar
@@ -130,7 +146,7 @@ The CSS `display` property is one of the most important tools for understanding 
 <html>
   <head>
     <title>Create a Simple Navigation Bar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <ul>
@@ -140,7 +156,6 @@ The CSS `display` property is one of the most important tools for understanding 
     </ul>
   </body>
 </html>
-
 ```
 
 ```css
@@ -160,7 +175,6 @@ li {
 li:hover {
   background-color: red;
 }
-
 ```
 
 </details>

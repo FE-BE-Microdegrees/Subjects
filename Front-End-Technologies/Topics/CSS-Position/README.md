@@ -6,6 +6,20 @@ This guide explores the CSS `position` property, an essential tool for placing e
 
 Image source: Dall-E by OpenAI
 
+- [CSS Position Property](#css-position-property)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What Is the CSS Position Property?](#what-is-the-css-position-property)
+  - [Key Position Values](#key-position-values)
+  - [Examples and Use Cases](#examples-and-use-cases)
+    - [Example HTML](#example-html)
+    - [static](#static)
+    - [Relative](#relative)
+    - [Absolute](#absolute)
+    - [Fixed](#fixed)
+    - [Sticky](#sticky)
+    - [Complete CSS Example](#complete-css-example)
+  - [Conclusion](#conclusion)
+
 ## Learning Outcomes
 
 After completing this topic, you will be able to:
@@ -32,32 +46,28 @@ The CSS `position` property allows developers to define the placement method for
 
 ### Example HTML
 
-```html
+````html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Position Property</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="child child-1">Child 1</div>
-    <div class="child child-2">Child 2</div>
-    <div class="child child-3">Child 3</div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Property</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="child child-1">Child 1</div>
+      <div class="child child-2">Child 2</div>
+      <div class="child child-3">Child 3</div>
+    </div>
+  </body>
 </html>
-### Static
-
-Enamik HTML elemente kasutab vaikimisi `static` paigutust, mis tähendab, et need asuvad seal, kuhu lehe normaalne voog neid paigutab. See tähendab, et `top`, `right`, `bottom`, ja `left` omadused ei mõjuta elementi.
-
-```css
-div {
-  position: static;
-}
-```
+### Static Enamik HTML elemente kasutab vaikimisi `static` paigutust, mis
+tähendab, et need asuvad seal, kuhu lehe normaalne voog neid paigutab. See
+tähendab, et `top`, `right`, `bottom`, ja `left` omadused ei mõjuta elementi.
+```css div { position: static; }
+````
 
 ### static
 
@@ -159,7 +169,6 @@ header {
   bottom: 0;
   right: 0;
 }
-
 ```
 
 This example places three elements on the page in different locations using various `position` values.

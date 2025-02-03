@@ -4,7 +4,7 @@ In this guide, we explore JavaScript events, their significance, and how to use 
 
 ![JS Events](JS-Events.webp)
 
-*Image Source: Dall-E by OpenAI*
+Image Source: Dall-E by OpenAI
 
 - [JavaScript Events](#javascript-events)
   - [Learning Outcomes](#learning-outcomes)
@@ -43,27 +43,25 @@ Using JavaScript events involves setting event listeners and defining event hand
 - **Select Elements**: First, select the HTML element you want to add an event listener to:
 
 ```javascript
-const button = document.getElementById('myButton');
+const button = document.getElementById("myButton");
 ```
 
 - **Add Event Listener**: Attach an event listener for a specific event, such as `click`.
 
 ```javascript
-button.addEventListener('click', function() {
-  alert('Button clicked!');
+button.addEventListener("click", function () {
+  alert("Button clicked!");
 });
-
 ```
 
 - **Handle Events**: Define a function to execute when the event occurs:
 
 ```javascript
-button.addEventListener('click', handleClick);
+button.addEventListener("click", handleClick);
 
 function handleClick() {
-  alert('Button clicked!');
+  alert("Button clicked!");
 }
-
 ```
 
 ## JavaScript Event Examples
@@ -73,9 +71,9 @@ function handleClick() {
 React to a user clicking a button:
 
 ```javascript
-const button = document.getElementById('clickButton');
-button.addEventListener('click', () => {
-  console.log('Button clicked!');
+const button = document.getElementById("clickButton");
+button.addEventListener("click", () => {
+  console.log("Button clicked!");
 });
 ```
 
@@ -84,8 +82,8 @@ button.addEventListener('click', () => {
 Respond to a key press by the user:
 
 ```javascript
-const inputField = document.getElementById('inputField');
-inputField.addEventListener('keydown', (event) => {
+const inputField = document.getElementById("inputField");
+inputField.addEventListener("keydown", (event) => {
   console.log(`Key pressed: ${event.key}`);
 });
 ```
@@ -95,12 +93,11 @@ inputField.addEventListener('keydown', (event) => {
 Handle form submissions:
 
 ```javascript
-const form = document.getElementById('myForm');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();  // Prevent default form submission
-  console.log('Form submitted!');
+const form = document.getElementById("myForm");
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevent default form submission
+  console.log("Form submitted!");
 });
-
 ```
 
 ### Mouse Event
@@ -108,9 +105,9 @@ form.addEventListener('submit', (event) => {
 React to mouse movements over an element:
 
 ```javascript
-const box = document.getElementById('mouseBox');
-box.addEventListener('mousemove', () => {
-  console.log('Mouse is moving over the box!');
+const box = document.getElementById("mouseBox");
+box.addEventListener("mousemove", () => {
+  console.log("Mouse is moving over the box!");
 });
 ```
 

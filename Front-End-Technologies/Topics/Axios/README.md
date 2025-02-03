@@ -2,6 +2,24 @@
 
 In this guide, we introduce the Axios library, a popular JavaScript HTTP client used for making asynchronous requests to web servers. Axios provides a simple API for performing HTTP requests, making it easier to send and receive data.
 
+![Axios](Axios.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Axios: JavaScript HTTP Client](#axios-javascript-http-client)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Axios?](#what-is-axios)
+  - [Why Use Axios?](#why-use-axios)
+  - [Setting Up Axios with Async/Await](#setting-up-axios-with-asyncawait)
+    - [Using CDN (In the Browser)](#using-cdn-in-the-browser)
+    - [Using NPM or Yarn](#using-npm-or-yarn)
+  - [Examples of Using Axios with Async/Await](#examples-of-using-axios-with-asyncawait)
+    - [GET Request](#get-request)
+    - [POST Request](#post-request)
+    - [Sending Headers with Axios](#sending-headers-with-axios)
+  - [Summary](#summary)
+  - [Sources](#sources)
+
 ## Learning Outcomes
 
 By the end of this topic, you will be able to:
@@ -46,7 +64,7 @@ npm install axios
 Then, import it into your JavaScript file:
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 ```
 
 ## Examples of Using Axios with Async/Await
@@ -58,15 +76,16 @@ An example of performing a GET request and handling the response using async/awa
 ```javascript
 async function fetchUsers() {
   try {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/users"
+    );
     console.log(response.data);
   } catch (error) {
-    console.error('Error with request:', error);
+    console.error("Error with request:", error);
   }
 }
 
 fetchUsers();
-
 ```
 
 ### POST Request
@@ -76,20 +95,22 @@ An example of sending data to a server with a POST request using async/await:
 ```javascript
 async function createUser(userData) {
   try {
-    const response = await axios.post('https://jsonplaceholder.typicode.com/users', userData);
-    console.log('User created:', response.data);
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/users",
+      userData
+    );
+    console.log("User created:", response.data);
   } catch (error) {
-    console.error('Error creating user:', error);
+    console.error("Error creating user:", error);
   }
 }
 
 const userData = {
-  name: 'John Doe',
-  email: 'john@example.com'
+  name: "John Doe",
+  email: "john@example.com",
 };
 
 createUser(userData);
-
 ```
 
 ### Sending Headers with Axios
@@ -99,16 +120,19 @@ Often, we want to include headers with requests to APIs, such as an authenticati
 ```javascript
 async function fetchUser(userId) {
   try {
-    const response = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`, {
-      headers: {
-        Authorization: 'Bearer my-auth-token'
+    const response = await axios.get(
+      `https://jsonplaceholder.typicode.com/users/${userId}`,
+      {
+        headers: {
+          Authorization: "Bearer my-auth-token",
+        },
       }
-    });
+    );
     console.log(response.data);
   } catch (error) {
-    console.error('Error with request:', error);
+    console.error("Error with request:", error);
   }
-};
+}
 
 fetchUser(1);
 ```

@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about Cascading Style Sheets (CSS).
 
+![CSS](CSS.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Cascading Style Sheets (CSS)](#cascading-style-sheets-css)
   - [Learning Outcomes](#learning-outcomes)
   - [What is CSS?](#what-is-css)
@@ -51,7 +55,6 @@ After completing this topic, you'll be able to:
 - Explain the difference between the standard box model and the alternative box model.
 - Use the standard box model and the alternative box model to layout HTML elements.
 
-
 ## What is CSS?
 
 CSS is a language used to style HTML elements. It is used to add colors, fonts, layouts, and more to web pages. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
@@ -84,8 +87,9 @@ When we take a simple HTML document and add some CSS to it, we get the following
   <body>
     <p>Hello, World!</p>
   </body>
-
+</html>
 ```
+
 Example page would look like this:
 
 <p style="color: red; font-size: 20px; font-family: Arial, Helvetica, sans-serif; background-color: yellow; border-color: black; border-width: 1px; border-style: solid;">Hello, World!</p>
@@ -160,6 +164,7 @@ a:hover {
   /* CSS rules */
 }
 ```
+
 First we specify the selector (`a`), then we specify the pseudo-class (`:hover`). The selector and the pseudo-class are separated by a colon `:`.
 
 Most common pseudo-classes are:
@@ -185,6 +190,7 @@ p {
 ```
 
 **Result:**
+
 <p style="color: red">Hello, World!</p>
 
 In this example, the property is `color` and the value is `red`. The property is followed by a colon `:` and the value is followed by a semicolon `;`.
@@ -224,6 +230,7 @@ p {
 ```
 
 **Result:**
+
 <p style="color: blue; size: 20px; font-family: Arial, Helvetica, sans-serif">Hello, World!</p>
 
 In this example there is a CSS rule with three properties, which are applied for all paragraphs in webpage: `color`, `size`, and `font-family`. Each property has a value. The value of the `color` property is `blue`. The value of the `size` property is `20px`. The value of the `font-family` property is `Arial, Helvetica, sans-serif`.
@@ -237,9 +244,11 @@ p {
   border: 1px solid black;
 }
 ```
+
 In this example, the `border` property has three values: `1px`, `solid`, and `black`. The first value (`1px`) specifies the border width. The second value (`solid`) specifies the border style. The last value (`black`) specifies the border color.
 
 **Result:**
+
 <p style="border: 1px solid black">Hello, World!</p>
 
 ## Units
@@ -302,7 +311,9 @@ p {
   opacity: 0.5;
 }
 ```
+
 **Result:**
+
 <p style="opacity: 0.5">Hello, World!</p>
 
 In this example, the opacity of the element is `0.5`. The opacity is not relative to anything. It is fixed at `0.5`.
@@ -349,7 +360,9 @@ p {
   color: rgb(0, 255, 0);
 }
 ```
+
 **Result:**
+
 <p style="color: rgb(0, 255, 0)">Hello, World!</p>
 
 In this example, the color of the element is `rgb(255, 0, 0)`. The first number (`255`) specifies the amount of red in the color. The second number (`0`) specifies the amount of green in the color. The last number (`0`) specifies the amount of blue in the color. In this example, the amount of red is `255`, the amount of green is `0`, and the amount of blue is `0`. This means that the color is red.
@@ -378,7 +391,9 @@ p {
   color: #ff0000;
 }
 ```
+
 **Result:**
+
 <p style="color: #ff0000">Hello, World!</p>
 
 In this example, the color of the element is `#ff0000`. The first two characters (`ff`) specify the amount of red in the color. The second two characters (`00`) specify the amount of green in the color. The last two characters (`00`) specify the amount of blue in the color. In this example, the amount of red is `ff`, the amount of green is `00`, and the amount of blue is `00`. This means that the color is red.
@@ -409,7 +424,9 @@ p {
   color: rgba(255, 0, 0, 0.5);
 }
 ```
+
 **Result:**
+
 <p style="color: rgba(255, 0, 0, 0.5)">Hello, World!</p>
 
 In this example, the color of the element is `rgba(255, 0, 0, 0.5)`. The first number (`255`) specifies the amount of red in the color. The second number (`0`) specifies the amount of green in the color. The last number (`0`) specifies the amount of blue in the color. The last number (`0.5`) specifies the amount of alpha in the color.
@@ -423,6 +440,7 @@ p {
 ```
 
 **Result:**
+
 <p style="color: rgba(255, 0, 0, 1)">Hello, World!</p>
 
 ## How to apply CSS to HTML
@@ -479,25 +497,27 @@ External CSS is used to apply CSS to multiple HTML pages. For example, if we wan
 <html>
   <head>
     <title>My First Web Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <p>Hello, World!</p>
   </body>
 </html>
 ```
+
 `style.css` file:
+
 ```css
 p {
   color: red;
 }
 ```
+
 ![External CSS](externalCSS.gif)
 
-In this example, we used the `<link>` tag to apply CSS to  HTML page. The `<link>` tag is followed by a set of double quotes `""`. Inside the double quotes, we specified the path to the CSS file. In this example, the path to the CSS file is `style.css`.
+In this example, we used the `<link>` tag to apply CSS to HTML page. The `<link>` tag is followed by a set of double quotes `""`. Inside the double quotes, we specified the path to the CSS file. In this example, the path to the CSS file is `style.css`.
 
 In `style.css` file, we specified the CSS rules that will be applied to the HTML page. In this example, we apply red color to all paragraphs on the HTML page.
-
 
 ## Combining different ways to apply CSS to HTML
 
@@ -608,7 +628,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -645,7 +667,7 @@ Try to solve exercises without looking at the solutions. If you get stuck, you c
 <html>
   <head>
     <title>Basic CSS Styling</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Hello, World!</h1>
@@ -672,6 +694,7 @@ div {
   padding: 25px;
 }
 ```
+
 </details>
 
 ### Exercise 2: Creating a Simple Navigation Bar
@@ -681,6 +704,7 @@ div {
 **Description**: Design a basic webpage with a navigation bar consisting of unordered list items. The navigation bar should be horizontal, with each list item displayed inline. Style the list items to have padding, a border, and a background color. When hovering over a list item, change its background color.
 
 **Expected Tasks**:
+
 - Apply styling (padding, border, background color) to list items.
 - Change the background color of list items on hover
 
@@ -698,7 +722,7 @@ div {
 <html>
   <head>
     <title>Creating a Simple Navigation Bar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <ul>
@@ -728,6 +752,7 @@ li:hover {
   background-color: red;
 }
 ```
+
 </details>
 
 ### Exercise 3: Styling a Content Section with Columns

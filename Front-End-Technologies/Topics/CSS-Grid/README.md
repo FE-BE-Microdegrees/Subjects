@@ -2,10 +2,26 @@
 
 In this topic, we'll learn about basics of CSS Grid.
 
+![Grid](Grid.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Grid](#grid)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is CSS Grid?](#what-is-css-grid)
+  - [Why Use CSS Grid?](#why-use-css-grid)
+  - [How to use CSS Grid](#how-to-use-css-grid)
+    - [Grid Container](#grid-container)
+    - [Grid Columns](#grid-columns)
+  - [Implicit and Explicit Grids](#implicit-and-explicit-grids)
+  - [Positioning Grid Items](#positioning-grid-items)
+  - [Exercises](#exercises)
+    - [Exercise 1: Creating a Grid](#exercise-1-creating-a-grid)
+    - [Exercise 2: Creating a Checkered Grid](#exercise-2-creating-a-checkered-grid)
+
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
-
 
 ## What is CSS Grid?
 
@@ -43,8 +59,10 @@ Now we create HTML elements inside the container and they will become grid items
 
 ```html
 <body>
-  <div class="container"> <!-- Grid Container -->
-    <div class="item">One</div> <!-- Grid Item -->
+  <div class="container">
+    <!-- Grid Container -->
+    <div class="item">One</div>
+    <!-- Grid Item -->
     <div class="item">Two</div>
     <div class="item">Three</div>
     <div class="item">Four</div>
@@ -95,6 +113,7 @@ If we want dynamic column widths, we can use percentages or fractions of the ava
   grid-template-columns: 1fr 1fr 1fr;
 }
 ```
+
 Now our grid container looks like this:
 
 ![Grid With Dynamic Columns](GridWithDynamicColumns.png)
@@ -128,6 +147,7 @@ We can also mix fixed widths and dynamic widths. For example, if we want the fir
   gap: 20px;
 }
 ```
+
 Now our grid has one fixed width column and two dynamic width columns. What makes things interesting is that the dynamic width columns will take up the available space after the fixed width column has been taken into account and if we resize the browser window, the dynamic width columns will resize accordingly.
 
 ![Grid With Fixed And Dynamic Columns](GridWithFixedAndDynamicColumns.gif)
@@ -146,6 +166,7 @@ We can create an explicit grid by defining the number of rows and columns in the
   gap: 20px;
 }
 ```
+
 Now our grid container looks like this:
 
 ![Explicit Grid](ExplicitGrid.png)
@@ -239,6 +260,7 @@ For example, if we want to create a 3x3 grid and place three items in the grid s
   grid-row: 3 / 4;
 }
 ```
+
 As we can see from the exapmle, we had to create elements with classes `box-1`, `box-2`, and `box-3` to be able to style them individually. First item is placed from the first line of the first column to the second line of the first column and from the first line of the first row to the second line of the first row. Other items are placed in the same way, but in different columns and rows.
 
 ![Grid Items Positioned](GridItemsPositioned.png)
@@ -292,20 +314,20 @@ Try to solve exercises without looking at the solutions. If you get stuck, you c
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <div class="item item-1">One</div>
-    <div class="item item-2">Two</div>
-    <div class="item item-3">Three</div>
-    <div class="item item-4">Four</div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">One</div>
+      <div class="item item-2">Two</div>
+      <div class="item item-3">Three</div>
+      <div class="item item-4">Four</div>
+    </div>
+  </body>
 </html>
 ```
 
@@ -337,6 +359,7 @@ Try to solve exercises without looking at the solutions. If you get stuck, you c
   background-color: #bbb;
 }
 ```
+
 ![Exercise 1 solution](CSSExercise.gif)
 
 </details>
@@ -357,32 +380,32 @@ Try to solve exercises without looking at the solutions. If you get stuck, you c
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <div class="item item-1"></div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
-    <div class="item item-5"></div>
-    <div class="item item-6"></div>
-    <div class="item item-7"></div>
-    <div class="item item-8"></div>
-    <div class="item item-9"></div>
-    <div class="item item-10"></div>
-    <div class="item item-11"></div>
-    <div class="item item-12"></div>
-    <div class="item item-13"></div>
-    <div class="item item-14"></div>
-    <div class="item item-15"></div>
-    <div class="item item-16"></div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-4"></div>
+      <div class="item item-5"></div>
+      <div class="item item-6"></div>
+      <div class="item item-7"></div>
+      <div class="item item-8"></div>
+      <div class="item item-9"></div>
+      <div class="item item-10"></div>
+      <div class="item item-11"></div>
+      <div class="item item-12"></div>
+      <div class="item item-13"></div>
+      <div class="item item-14"></div>
+      <div class="item item-15"></div>
+      <div class="item item-16"></div>
+    </div>
+  </body>
 </html>
 ```
 

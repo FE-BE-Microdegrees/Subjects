@@ -2,6 +2,30 @@
 
 LocalStorage is a feature provided by web browsers that allows web applications to store data on the user's device. This guide introduces how to use LocalStorage, its benefits, and important considerations.
 
+![LocalStorage](LocalStorage.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Using LocalStorage in Web Applications](#using-localstorage-in-web-applications)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is LocalStorage?](#what-is-localstorage)
+    - [Key Features](#key-features)
+  - [Saving Data in LocalStorage](#saving-data-in-localstorage)
+    - [Example: Saving Data](#example-saving-data)
+  - [Reading Data from LocalStorage](#reading-data-from-localstorage)
+    - [Example: Reading Data](#example-reading-data)
+  - [Deleting Data from LocalStorage](#deleting-data-from-localstorage)
+    - [Example: Removing a Specific Key](#example-removing-a-specific-key)
+    - [Example: Clearing All LocalStorage](#example-clearing-all-localstorage)
+  - [Considerations and Limitations](#considerations-and-limitations)
+  - [Example: Login and Storing User Data](#example-login-and-storing-user-data)
+    - [Creating a Login Form](#creating-a-login-form)
+    - [Sending Login Data with JavaScript and Axios](#sending-login-data-with-javascript-and-axios)
+  - [Managing Tokens in LocalStorage](#managing-tokens-in-localstorage)
+    - [Security Considerations](#security-considerations)
+  - [Conclusion](#conclusion)
+  - [References](#references)
+
 ## Learning Outcomes
 
 After completing this topic, you will be able to:
@@ -27,7 +51,7 @@ Interactions with LocalStorage are done using JavaScript. Data can be saved usin
 ### Example: Saving Data
 
 ```javascript
-localStorage.setItem('username', 'JohnDoe');
+localStorage.setItem("username", "JohnDoe");
 ```
 
 ## Reading Data from LocalStorage
@@ -37,7 +61,7 @@ Data can be retrieved using the `getItem` method by using the same key that was 
 ### Example: Reading Data
 
 ```javascript
-const username = localStorage.getItem('username');
+const username = localStorage.getItem("username");
 console.log(username); // Outputs: JohnDoe
 ```
 
@@ -48,7 +72,7 @@ You can remove data from LocalStorage by deleting a specific key or clearing all
 ### Example: Removing a Specific Key
 
 ```javascript
-localStorage.removeItem('username');
+localStorage.removeItem("username");
 ```
 
 ### Example: Clearing All LocalStorage
@@ -64,7 +88,8 @@ While LocalStorage is useful in many scenarios, it's important to understand its
 - **Security**: LocalStorage data is stored as plain text and is not encrypted, making it vulnerable to attackers, especially through Cross-Site Scripting (XSS) attacks.
 - **Limited Functionality**: Unlike server-side storage, LocalStorage does not offer advanced data processing or indexing capabilities.
 - **No Synchronization**: Data is not synchronized across devices, as it is stored locally on one device.
-- 
+-
+
 ## Example: Login and Storing User Data
 
 The following section demonstrates the login process, receiving a token from the server, and storing it in LocalStorage. This is a common pattern in web applications that require user authentication.
@@ -76,14 +101,13 @@ First, we create a simple HTML form to collect the username and password from th
 ```html
 <form id="loginForm">
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
-  
+  <input type="text" id="username" name="username" required />
+
   <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-  
+  <input type="password" id="password" name="password" required />
+
   <button type="submit">Login</button>
 </form>
-
 ```
 
 ### Sending Login Data with JavaScript and Axios
@@ -91,29 +115,30 @@ First, we create a simple HTML form to collect the username and password from th
 Using the Axios library, we send the login data as a POST request to the server. The server responds with an authentication token, which can be used for subsequent authorized requests.
 
 ```javascript
-document.getElementById('loginForm').addEventListener('submit', async function(event) {
-  event.preventDefault();
+document
+  .getElementById("loginForm")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
 
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-  try {
-    const response = await axios.post('https://example.com/api/login', {
-      username,
-      password
-    });
-    
-    // If authentication succeeds, retrieve the token
-    const { token } = response.data;
-    console.log('Received token:', token);
-    
-    // Save the token in LocalStorage
-    localStorage.setItem('authToken', token);
-  } catch (error) {
-    console.error('Authentication failed:', error);
-  }
-});
+    try {
+      const response = await axios.post("https://example.com/api/login", {
+        username,
+        password,
+      });
 
+      // If authentication succeeds, retrieve the token
+      const { token } = response.data;
+      console.log("Received token:", token);
+
+      // Save the token in LocalStorage
+      localStorage.setItem("authToken", token);
+    } catch (error) {
+      console.error("Authentication failed:", error);
+    }
+  });
 ```
 
 ## Managing Tokens in LocalStorage
@@ -121,29 +146,28 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 After obtaining the token, store it in LocalStorage. This allows using the token for subsequent requests while maintaining the user's session state even after refreshing or revisiting the page.
 
 ```javascript
-localStorage.setItem('authToken', token);
+localStorage.setItem("authToken", token);
 ```
 
 For example, you can use the token later to authorize requests by adding it to the request headers:
 
 ```javascript
 async function fetchUserData() {
-  const authToken = localStorage.getItem('authToken');
+  const authToken = localStorage.getItem("authToken");
 
   try {
-    const response = await axios.get('https://example.com/api/userdata', {
+    const response = await axios.get("https://example.com/api/userdata", {
       headers: {
-        'Authorization': `Bearer ${authToken}`
-      }
+        Authorization: `Bearer ${authToken}`,
+      },
     });
-    console.log('User data:', response.data);
+    console.log("User data:", response.data);
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error("Error fetching data:", error);
   }
 }
 
 fetchUserData();
-
 ```
 
 ### Security Considerations

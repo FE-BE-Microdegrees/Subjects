@@ -2,6 +2,10 @@
 
 In this topic, we'll learn about Hyper Text Markup Language (HTML).
 
+![HTML](HTML.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Hyper Text Markup Language (HTML)](#hyper-text-markup-language-html)
   - [Learning Outcomes](#learning-outcomes)
   - [HTML Basics](#html-basics)
@@ -18,7 +22,6 @@ In this topic, we'll learn about Hyper Text Markup Language (HTML).
     - [Exercise 2 - HTML Lists](#exercise-2---html-lists)
     - [Exercise 3 - HTML Table and Links](#exercise-3---html-table-and-links)
 
-
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
@@ -31,7 +34,6 @@ After completing this topic, you'll be able to:
 - Explain what HTML document metadata is;
 - Write simple HTML document;
 - Run HTML document in a web browser.
-
 
 ## HTML Basics
 
@@ -74,6 +76,7 @@ An HTML element is defined by a start tag, some content, and an end tag:
 ```html
 <tagname>Content goes here...</tagname>
 ```
+
 > Tags are used to mark up the start and end of an HTML element. The element content is everything between the start and the end tag, including the start and end tag.
 
 For example, the following HTML code defines a first level heading and paragraph element:
@@ -97,10 +100,12 @@ HTML elements can be nested (elements can contain elements). Most HTML elements 
 
 ```html
 <h1>This is a heading</h1>
-<p>This is a paragraph.
+<p>
+  This is a paragraph.
   <a href="https://www.google.com/">Google</a>
 </p>
 ```
+
 Nesting HTML elements is very common. For example, the `<body>` element contains all the contents of an HTML document, and the `<head>` element contains all the metadata of an HTML document. Nesting is also used to group elements together. For example, the `<ul>` element contains all the list items (`<li>` elements) of an unordered list (`<ul>` element). For example:
 
 ```html
@@ -154,7 +159,7 @@ There are some tags, which usually have some attributes. For example, the `<a>` 
 
 ```html
 <a href="https://www.google.com/">Google</a>
-<img src="https://www.example.com/image.png" alt="Alternate text">
+<img src="https://www.example.com/image.png" alt="Alternate text" />
 ```
 
 Most common HTML attributes can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
@@ -213,7 +218,8 @@ If we put all these parts together, we get the following HTML document:
   </body>
 </html>
 ```
-It is important to note that all HTML elements are descendants of the HTML document root element. 
+
+It is important to note that all HTML elements are descendants of the HTML document root element.
 
 ## HTML Document Metadata
 
@@ -222,10 +228,10 @@ HTML document metadata is data about the HTML document. HTML document metadata i
 ```html
 <head>
   <title>Page Title</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="John Doe">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Free Web tutorials" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="John Doe" />
 </head>
 ```
 
@@ -280,18 +286,18 @@ Result should look something like this:
 <details>
   <summary>Solution</summary>
 
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>My Webpage</title>
-    </head>
-    <body>
-      <h1>Welcome to My Webpage!</h1>
-      <p>My name is John Doe.</p>
-    </body>
-  </html>
-  ```
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1>Welcome to My Webpage!</h1>
+    <p>My name is John Doe.</p>
+  </body>
+</html>
+```
 
 </details>
 
@@ -312,30 +318,31 @@ Result should look something like this:
 <details>
   <summary>Solution</summary>
 
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>My Webpage</title>
-    </head>
-    <body>
-      <h1>Welcome to My Webpage!</h1>
-      <p>My name is John Doe.</p>
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Reading</li>
-        <li>Writing</li>
-        <li>Programming</li>
-      </ul>
-      <h2>How to Read a Book</h2>
-      <ol>
-        <li>Open the book</li>
-        <li>Read the book</li>
-        <li>Close the book</li>
-      </ol>
-    </body>
-  </html>
-  ```
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1>Welcome to My Webpage!</h1>
+    <p>My name is John Doe.</p>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Writing</li>
+      <li>Programming</li>
+    </ul>
+    <h2>How to Read a Book</h2>
+    <ol>
+      <li>Open the book</li>
+      <li>Read the book</li>
+      <li>Close the book</li>
+    </ol>
+  </body>
+</html>
+```
+
 </details>
 
 ### Exercise 3 - HTML Table and Links
@@ -357,51 +364,62 @@ Result should look something like this:
 <details>
   <summary>Solution</summary>
 
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>My Webpage</title>
-    </head>
-    <body>
-      <h1>Welcome to My Webpage!</h1>
-      <p>My name is John Doe.</p>
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Reading</li>
-        <li>Writing</li>
-        <li>Programming</li>
-      </ul>
-      <h2>How to Read a Book</h2>
-      <ol>
-        <li>Open the book</li>
-        <li>Read the book</li>
-        <li>Close the book</li>
-      </ol>
-      <h2>My Favorite Books</h2>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Year</th>
-        </tr>
-        <tr>
-          <td><a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings">The Lord of the Rings</a></td>
-          <td>A fantasy novel</td>
-          <td>1954</td>
-        </tr>
-        <tr>
-          <td><a href="https://en.wikipedia.org/wiki/The_Hobbit">The Hobbit</a></td>
-          <td>A fantasy novel</td>
-          <td>1937</td>
-        </tr>
-        <tr>
-          <td><a href="https://en.wikipedia.org/wiki/The_Silmarillion">The Silmarillion</a></td>
-          <td>A collection of mythopoeic works</td>
-          <td>1977</td>
-        </tr>
-      </table>
-    </body>
-  </html>
-  ```
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <h1>Welcome to My Webpage!</h1>
+    <p>My name is John Doe.</p>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Writing</li>
+      <li>Programming</li>
+    </ul>
+    <h2>How to Read a Book</h2>
+    <ol>
+      <li>Open the book</li>
+      <li>Read the book</li>
+      <li>Close the book</li>
+    </ol>
+    <h2>My Favorite Books</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+            >The Lord of the Rings</a
+          >
+        </td>
+        <td>A fantasy novel</td>
+        <td>1954</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/The_Hobbit">The Hobbit</a>
+        </td>
+        <td>A fantasy novel</td>
+        <td>1937</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/The_Silmarillion"
+            >The Silmarillion</a
+          >
+        </td>
+        <td>A collection of mythopoeic works</td>
+        <td>1977</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
 </details>

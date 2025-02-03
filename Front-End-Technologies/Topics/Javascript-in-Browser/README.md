@@ -2,6 +2,10 @@
 
 In this topic we'll learn about Javascript in browser and how to include Javascript in HTML files.
 
+![Javascript](JavaScript.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Javascript in Browser](#javascript-in-browser)
   - [Learning Outcomes](#learning-outcomes)
   - [Difference between Node.js and Browser Javascript](#difference-between-nodejs-and-browser-javascript)
@@ -15,7 +19,6 @@ In this topic we'll learn about Javascript in browser and how to include Javascr
     - [Exercise 1: Basic User Greeting](#exercise-1-basic-user-greeting)
     - [### Exercise 2: Simple Math Quiz](#-exercise-2-simple-math-quiz)
     - [Exercise 3: Age Category Checker](#exercise-3-age-category-checker)
-
 
 ## Learning Outcomes
 
@@ -54,18 +57,19 @@ Javascript code can be included in HTML files using `<script>` tag. `<script>` t
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Page Title</title>
     <script>
-        console.log('Hello, world!');
+      console.log("Hello, world!");
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
-</body>
+  </body>
 </html>
 ```
+
 > Note: in browser Javascript, we can see the output of `console.log()` in the browser console. To open the browser console, press `F12` or `Ctrl+Shift+I` in Chrome, Firefox, or Edge.
 > ![Console](Console.png)
 
@@ -76,14 +80,14 @@ Javascript code can be included from external Javascript files using `src` attri
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Page Title</title>
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
-</body>
+  </body>
 </html>
 ```
 
@@ -96,8 +100,8 @@ There are several ways to get user input and display output in browser Javascrip
 `prompt()` function displays a dialog box that prompts the user for input. It takes one argument, which is the text to display in the dialog box. It returns the text that the user entered in the dialog box.
 
 ```js
-let name = prompt('Enter your name:');
-console.log('Hello, ' + name + '!');
+let name = prompt("Enter your name:");
+console.log("Hello, " + name + "!");
 ```
 
 ### `alert()` function
@@ -105,7 +109,7 @@ console.log('Hello, ' + name + '!');
 `alert()` function displays a dialog box that shows a message to the user. It takes one argument, which is the text to display in the dialog box.
 
 ```js
-alert('Hello, world!');
+alert("Hello, world!");
 ```
 
 Usually we don't use `prompt()` and `alert()` functions in browser Javascript and we use the DOM instead. But they are useful for the first steps.
@@ -133,7 +137,7 @@ Always test your code to see if it works as expected.
 
 ```js
 // Use prompt to ask the user's name and store it in a variable
-const userName = prompt('What is Your name?');
+const userName = prompt("What is Your name?");
 
 // Use alert to display a greeting message
 alert(`Hello, ${userName}!`);
@@ -144,16 +148,18 @@ alert(`Hello, ${userName}!`);
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Greeting page</title>
     <script src="app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>This is greeting page</h1>
-</body>
+  </body>
 </html>
 ```
+
 ![Prompt and Alert](PromptAndAlert.gif)
+
 </details>
 
 ### ### Exercise 2: Simple Math Quiz
@@ -171,13 +177,13 @@ alert(`Hello, ${userName}!`);
 
 ```js
 // Ask a simple math question
-const userAnswer = prompt('What is 2 + 3?');
+const userAnswer = prompt("What is 2 + 3?");
 
 // Check the answer and provide feedback
 if (parseInt(userAnswer) === 5) {
-    alert('Correct! Well done.');
+  alert("Correct! Well done.");
 } else {
-    alert('Incorrect. The correct answer is 5.');
+  alert("Incorrect. The correct answer is 5.");
 }
 ```
 
@@ -188,15 +194,16 @@ if (parseInt(userAnswer) === 5) {
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Math Quiz</title>
     <script src="app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>This is math quiz</h1>
-</body>
+  </body>
 </html>
 ```
+
 </details>
 
 ### Exercise 3: Age Category Checker

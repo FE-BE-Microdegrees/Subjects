@@ -4,7 +4,7 @@ This guide explains the Document Object Model (DOM) and why it is essential in w
 
 ![DOM](DOM.webp)
 
-*Image Source: Dall-E by OpenAI*
+Image Source: Dall-E by OpenAI
 
 - [Document Object Model (DOM)](#document-object-model-dom)
   - [Learning Outcomes](#learning-outcomes)
@@ -12,6 +12,8 @@ This guide explains the Document Object Model (DOM) and why it is essential in w
   - [Why is DOM Important?](#why-is-dom-important)
   - [How to Use DOM](#how-to-use-dom)
   - [Examples of DOM Manipulation](#examples-of-dom-manipulation)
+    - [Changing Content](#changing-content)
+  - [Conclusion](#conclusion)
 
 ## Learning Outcomes
 
@@ -46,33 +48,35 @@ Using the DOM involves selecting and manipulating HTML elements with JavaScript.
 ## Examples of DOM Manipulation
 
 ### Changing Content
+
 Update the text or HTML content of a web page element:
+
 ```javascript
-document.getElementById('myElement').textContent = 'New Text';
+document.getElementById("myElement").textContent = "New Text";
 ```
 
 - **Modifying Styles**: Change the style of an element, such as its color or font:
 
 ```javascript
-document.getElementById('myElement').style.color = 'red';
+document.getElementById("myElement").style.color = "red";
 ```
 
 - **Adding/Removing Elements**: Add new elements or remove existing ones:
 
 ```javascript
-var newElement = document.createElement('div');
+var newElement = document.createElement("div");
 document.body.appendChild(newElement);
 ```
 
 - **Event Handling**: Set up reactions to user actions like button clicks:
 
 ```javascript
-const button = document.getElementById('myButton');
-button.addEventListener('click', function() {
-  alert('Button clicked!');
+const button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  alert("Button clicked!");
 });
-
- ```
+```
 
 ## Conclusion
+
 The DOM is a fundamental concept in web development, enabling developers to create dynamic, interactive web pages. Understanding and efficiently using the DOM is a crucial skill for any web developer. For more information about the DOM, visit [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).

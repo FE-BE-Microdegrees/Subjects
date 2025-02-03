@@ -2,6 +2,16 @@
 
 In this topic, you'll learn about semantic HTML and why it's important to use it when building webpages.
 
+![Semantiline HTML](Semantic-HTML.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Semantic HTML](#semantic-html)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What is Semantic HTML?](#what-is-semantic-html)
+  - [Why Use Semantic HTML?](#why-use-semantic-html)
+  - [How to Use Semantic HTML](#how-to-use-semantic-html)
+
 ## Learning Outcomes
 
 After completing this topic, you'll be able to:
@@ -48,4 +58,3 @@ Using semantic HTML involves choosing the most appropriate HTML elements to mark
 By using semantic HTML, not only do you structure your content in a meaningful, logical way, but you also contribute to the accessibility and SEO-friendliness of your website. It’s a best practice that enhances the overall quality and effectiveness of your web content.
 
 You can read more about semantic HTML in the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
-

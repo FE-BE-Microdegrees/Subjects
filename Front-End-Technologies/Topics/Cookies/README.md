@@ -2,6 +2,22 @@
 
 This guide covers the basics of cookies, their use in web applications, and how to handle cookies securely. Cookies are small text files that web servers use to store and retrieve information on users' devices, enabling user-friendly features.
 
+![Cookies](Cookies.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Using Cookies in Web Applications](#using-cookies-in-web-applications)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What Are Cookies?](#what-are-cookies)
+  - [Types of Cookies](#types-of-cookies)
+  - [Using Cookies in JavaScript](#using-cookies-in-javascript)
+    - [Creating a Cookie](#creating-a-cookie)
+    - [Reading a Cookie](#reading-a-cookie)
+    - [Deleting a Cookie](#deleting-a-cookie)
+  - [Cookie Security and Privacy](#cookie-security-and-privacy)
+  - [Summary](#summary)
+  - [References](#references)
+
 ## Learning Outcomes
 
 After completing this topic, you will be able to:
@@ -35,8 +51,10 @@ document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2021 23:59:59 GMT";
 Cookies are accessible via the `document.cookie` property as a semicolon-separated string, which can be parsed to retrieve specific values.
 
 ```javascript
-const cookies = document.cookie.split(';');
-const username = cookies.find(row => row.startsWith('username')).split('=')[1];
+const cookies = document.cookie.split(";");
+const username = cookies
+  .find((row) => row.startsWith("username"))
+  .split("=")[1];
 console.log(username);
 ```
 

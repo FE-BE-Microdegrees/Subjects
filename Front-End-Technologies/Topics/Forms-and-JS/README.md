@@ -4,7 +4,7 @@ In this guide, we explore how to use JavaScript to read and validate data from H
 
 ![HTML-Form-JS](HTML-Form-JS.webp)
 
-*Image Source: Dall-E by OpenAI*
+Image Source: Dall-E by OpenAI
 
 - [Handling HTML Forms with JavaScript](#handling-html-forms-with-javascript)
   - [Learning Outcomes](#learning-outcomes)
@@ -27,10 +27,10 @@ HTML form data can be read and processed using JavaScript. Below is an example o
 ```html
 <form id="userInfoForm">
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
+  <input type="text" id="username" name="username" required />
 
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
+  <input type="email" id="email" name="email" required />
 
   <label for="country">Country:</label>
   <select id="country" name="country">
@@ -40,32 +40,33 @@ HTML form data can be read and processed using JavaScript. Below is an example o
   </select>
 
   <label for="subscribe">Subscribe to newsletter:</label>
-  <input type="checkbox" id="subscribe" name="subscribe">
+  <input type="checkbox" id="subscribe" name="subscribe" />
 
   <button type="submit">Submit</button>
 </form>
 ```
 
 ```javascript
-document.getElementById('userInfoForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevents default form submission
+document
+  .getElementById("userInfoForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevents default form submission
 
-  const username = document.getElementById('username').value;
-  const email = document.getElementById('email').value;
-  const country = document.getElementById('country').value;
-  const subscribe = document.getElementById('subscribe').checked;
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const country = document.getElementById("country").value;
+    const subscribe = document.getElementById("subscribe").checked;
 
-  const userData = {
-    username,
-    email,
-    country,
-    subscribe,
-  };
+    const userData = {
+      username,
+      email,
+      country,
+      subscribe,
+    };
 
-  console.log(userData);
-  // Further processing or sending data to the server can follow here
-});
-
+    console.log(userData);
+    // Further processing or sending data to the server can follow here
+  });
 ```
 
 ## Validating HTML Forms with JavaScript
@@ -76,7 +77,7 @@ You can validate form inputs before reading data by adding the following code
 
 ```javascript
 if (!email.checkValidity()) {
-  console.log('Invalid email address');
+  console.log("Invalid email address");
 }
 ```
 

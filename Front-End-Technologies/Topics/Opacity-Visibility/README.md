@@ -2,6 +2,23 @@
 
 This guide explores CSS properties that control the transparency and visibility of HTML elements. These properties are essential in web design, enabling developers to create more dynamic and visually appealing user interfaces.
 
+![Css Visibility](CSS-Visibility.webp)
+
+Image source: Dall-E by OpenAI
+
+- [Object Transparency and Visibility in CSS](#object-transparency-and-visibility-in-css)
+  - [Learning Outcomes](#learning-outcomes)
+  - [What Are Object Transparency and Visibility?](#what-are-object-transparency-and-visibility)
+    - [`Opacity`](#opacity)
+      - [Example](#example)
+    - [`visibility`](#visibility)
+      - [Näide](#näide)
+  - [Transparency vs. Visibility](#transparency-vs-visibility)
+  - [Practical Usage](#practical-usage)
+    - [Interactive Menus](#interactive-menus)
+    - [Alert Messages](#alert-messages)
+  - [Conclusion](#conclusion)
+
 ## Learning Outcomes
 
 After completing this topic, you will be able to:
