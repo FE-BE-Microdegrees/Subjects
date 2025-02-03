@@ -7,12 +7,12 @@
 - **Volume**: 4 ECTS (4 x 26 hours)
 - **Lectures**: 5 x 4 hours on-site + 5 x 2 hours online
 - **Subject Aims**: The aim of the "Software Development" subject is to provide students with a comprehensive understanding of the processes, methodologies, tools, and best practices used in the design, creation, and maintenance of software applications.
-By the end of the course, students should be well-equipped to translate real-world problems into computational solutions and develop software applications that are robust, user-friendly, and maintainable.
+  By the end of the course, students should be well-equipped to translate real-world problems into computational solutions and develop software applications that are robust, user-friendly, and maintainable.
 
 ## Learning Outcomes
 
 - **Software Development Lifecycle (SDLC) Understanding**: Describe the stages of the software development lifecycle, including requirements gathering, design, implementation, testing, deployment, and maintenance.
-- **Development Methodologies**: Understand and differentiate between various software development methodologies such as *Waterfall*, *Agile*, and *Scrum*, and determine when each is appropriate.
+- **Development Methodologies**: Understand and differentiate between various software development methodologies such as _Waterfall_, _Agile_, and _Scrum_, and determine when each is appropriate.
 - **Requirements Analysis**: Extract and document clear, complete, and actionable software requirements from stakeholder communications.
 - **Coding Standards**: Write clean, maintainable, and well-documented code adhering to industry standards and best practices.
 - **Testing and Quality Assurance**: Implement various testing strategies, such as unit testing, integration testing, and system testing, to validate software functionality and robustness.
@@ -21,6 +21,7 @@ By the end of the course, students should be well-equipped to translate real-wor
 - **User-Centered Design**: Develop software with the end-user in mind, emphasizing usability, accessibility, and user experience.
 
 ## Topics
+
 - [Tools](./Topics/Tools/README.md)
 - [Software and Software Development](./Topics/Software/README.md)
 - [Version Control](./Topics/Version-Control/README.md)
@@ -89,7 +90,6 @@ Volume: 2h
 - Solving problems that arose during the homework
 - Documentation
 
-
 ### Lecture 5: User Research
 
 Volume: 4h
@@ -143,4 +143,3 @@ Volume: 2h
 - Recall of previous lecture
 - Solving problems that arose during the homework
 - Final Q&A
-
