@@ -61,15 +61,15 @@ flowchart TB
     end
     subgraph FE [Front-End Microdegree]
     FET[Front-End Technologies]
-    click FET "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Front-End-Technologies" _blank
+    click FET "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Front-End-Technologies/README.md" _blank
     FEF[Front-End Frameworks]
-    click FEF "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Front-End-Frameworks" _blank
+    click FEF "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Front-End-Frameworks/README.md" _blank
     end
     subgraph CS [Common Courses]
     SD[Software Development]
-    click SD "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Software-Development" _blank
+    click SD "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Software-Development/README.md" _blank
     PB[Programming Basics]
-    click PB "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Programming-Basics" _blank
+    click PB "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Programming-Basics/README.md" _blank
     end
     CS --> FE
     CS --> BE
