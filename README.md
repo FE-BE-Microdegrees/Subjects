@@ -55,21 +55,21 @@ Homework will be sent to each student's repository as a [`Github Issue`](Softwar
 flowchart TB
     subgraph BE [Back-End Microdegree]
     BEF[Back-End Frameworks]
-    click BEF "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Back-End-Frameworks/README.md" _blank
+    click BEF "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Back-End-Frameworks/README.md" _blank
     DB[Databases]
-    click DB "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Databases/README.md" _blank
+    click DB "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/README.md" _blank
     end
     subgraph FE [Front-End Microdegree]
     FET[Front-End Technologies]
-    click FET "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Front-End-Technologies/README.md" _blank
+    click FET "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Front-End-Technologies/README.md" _blank
     FEF[Front-End Frameworks]
-    click FEF "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Front-End-Frameworks/README.md" _blank
+    click FEF "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Front-End-Frameworks/README.md" _blank
     end
     subgraph CS [Common Courses]
     SD[Software Development]
     click SD "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Software-Development/README.md" _blank
     PB[Programming Basics]
-    click PB "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Subjects/Programming-Basics/README.md" _blank
+    click PB "https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Programming-Basics/README.md" _blank
     end
     CS --> FE
     CS --> BE
