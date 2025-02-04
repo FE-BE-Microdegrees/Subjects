@@ -11,16 +11,16 @@ In the first lecture, we will introduce the structure and content of the Front-E
 
 ### Topics
 
-- [HTML](https://github.com/FE-BE-Microdegrees/Subjects/blob/Front-end-Lessons/Front-End-Technologies/Topics/HTML/README.md)
-  - [Semantic HTML](https://github.com/FE-BE-Microdegrees/Subjects/blob/Front-end-Lessons/Front-End-Technologies/Topics/SemanticHTML/README.md)
-- [CSS](https://github.com/FE-BE-Microdegrees/Subjects/blob/Front-end-Lessons/Front-End-Technologies/Topics/CSS/README.md)
+- [HTML](../../../Front-End-Technologies/Topics/HTML/README.md)
+  - [Semantic HTML](../../../Front-End-Technologies/Topics/Semantic-HTML/README.md)
+- [CSS](../../../Front-End-Technologies/Topics/CSS/README.md)
 
 ### Homework
 
 - Read through the topics covered in the lecture:
-  - [HTML](https://github.com/FE-BE-Microdegrees/Subjects/blob/Front-end-Lessons/Front-End-Technologies/Topics/HTML/README.md)
-    - [Semantic HTML](https://github.com/FE-BE-Microdegrees/Subjects/blob/Front-end-Lessons/Front-End-Technologies/Topics/Semantic-HTML/README.md)
-  - [CSS](https://github.com/FE-BE-Microdegrees/Subjects/blob/Front-end-Lessons/Front-End-Technologies/Topics/CSS/README.md)
+  - [HTML](../../../Front-End-Technologies/Topics/HTML/README.md)
+    - [Semantic HTML](../../../Front-End-Technologies/Topics/Semantic-HTML/README.md)
+  - [CSS](../../../Front-End-Technologies/Topics/CSS/README.md)
 
 #### Homework Assignment
 

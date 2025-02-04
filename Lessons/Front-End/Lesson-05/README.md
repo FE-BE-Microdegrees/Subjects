@@ -13,20 +13,20 @@ After reviewing the previous lecture, this session covers authentication and aut
 
 ### Topics
 
-- [Authentication and Authorization](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Back-End-Frameworks/Topics/Auth/README.md)
-- [Browser Storage Technologies](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Browser-Memory/README.md)
-- [JWT](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Back-End-Frameworks/Topics/JWT/README.md)
-- [Sending Headers with Axios](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Axios/README.md#sending-headers-with-axios)
+- [Authentication and Authorization](../../../Back-End-Frameworks/Topics/Auth/README.md)
+- [Browser Storage Technologies](../../../Front-End-Technologies/Topics/Browser-Memory/README.md)
+- [JWT](../../../Back-End-Frameworks/Topics/JWT/README.md)
+- [Sending Headers with Axios](../../../Front-End-Technologies/Topics/Axios/README.md#sending-headers-with-axios)
 - Implementing Authentication and Authorization
 
 ### Homework
 
 Read the chapters covered in the lecture:
 
-- [Authentication and Authorization](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Back-End-Frameworks/Topics/Auth/README.md)
-- [Browser Storage Technologies](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Browser-Memory/README.md)
-- [JWT](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Back-End-Frameworks/Topics/JWT/README.md)
-- [Sending Headers with Axios](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Axios/README.md#sending-headers-with-axios)
+- [Authentication and Authorization](../../../Back-End-Frameworks/Topics/Auth/README.md)
+- [Browser Storage Technologies](../../../Front-End-Technologies/Topics/Browser-Memory/README.md)
+- [JWT](../../../Back-End-Frameworks/Topics/JWT/README.md)
+- [Sending Headers with Axios](../../../Front-End-Technologies/Topics/Axios/README.md#sending-headers-with-axios)
 
 #### Assignment
 
@@ -36,4 +36,3 @@ Implement login functionality in your blog application and use `JWT` for making 
 - Use Axios or another technology to send a request to the server.
 - Store the `token` received in the server's response in the browser’s storage.
 - Send requests to the server’s `/posts` endpoint, including the previously obtained `token` in the request headers.
-

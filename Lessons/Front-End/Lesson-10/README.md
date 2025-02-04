@@ -17,7 +17,7 @@ Before the lecture, please download the prepared [code for this lecture](code/10
 ### Topics
 
 - Review of the previous lecture
-- [Pagination](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Pagination/README.md)
-- [Deploying a React Application](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/Deploy/README.md)
+- [Pagination](../../../Front-End-Frameworks/Topics/React-Pagination/README.md)
+- [Deploying a React Application](../../../Front-End-Frameworks/Topics/Deploy/README.md)
 - Topics we did not cover in this course
 - Course Summary and Feedback

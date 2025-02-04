@@ -49,7 +49,7 @@ Pseudocode is a simple, informal language that is used to describe the steps of 
 
 For example, the following pseudocode describes the steps of an algorithm that calculates and prints the sum of two numbers:
 
-```
+```text
 START
     READ number1
     READ number2
@@ -99,7 +99,7 @@ However, there are some common conventions often used in pseudocode:
 - Pseudocode Structure:
   - Pseudocode is usually structured and indented to enhance readability.
 
-```
+```text
 FUNCTION findMax(numbers: LIST OF INTEGER) RETURNS INTEGER
     maxNumber = numbers[0]
     FOR EACH number IN numbers DO

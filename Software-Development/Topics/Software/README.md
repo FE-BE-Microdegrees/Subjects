@@ -2,7 +2,7 @@
 
 In this topic, we'll explore the concepts of software and software development.
 
-![Tarkvaraarendus](Topics/Software/Software-Development.webp)
+![Tarkvaraarendus](Software-Development.webp)
 
 Pildi allikas: Dall-E by OpenAI
 

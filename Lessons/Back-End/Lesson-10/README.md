@@ -3,8 +3,6 @@
 - [Ninth Lecture](../Lesson-09/README.md)
 - [Slides for Tenth Lecture](Slides.md)
 
-
-
 ## Topics
 
 - What did we discuss last time?

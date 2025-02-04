@@ -1,5 +1,9 @@
 # Software Development Models
 
+![Software Development Models](./Software-Development-Models.webp)
+
+Image source: Dall-E by OpenAI
+
 - [Software Development Models](#software-development-models)
   - [Learning Outcomes](#learning-outcomes)
   - [What are Software Development Models?](#what-are-software-development-models)
@@ -73,4 +77,3 @@ Software development models are structured approaches to software development th
 - **Disadvantages:** Requires experienced team members, scope can sometimes be too flexible.
 
 In summary, the choice of SDLC framework depends on the nature of the project, organizational preferences, team size, project scope, and other factors. The ultimate goal is to produce high-quality software that meets user expectations while maintaining timelines and budgets.
-

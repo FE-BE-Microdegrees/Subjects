@@ -13,29 +13,29 @@ In the second lecture, we will first recall what we discussed and did in the pre
 ### Topics
 
 - Review of the Previous Lecture
-- [CSS Display](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Display/README.md)
-- [CSS Display Flex](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Display-Flex/README.md)
-- [CSS Box Model](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Box-Model/README.md)
-- [Node vs Browser](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/NodeJS-vs-JS/README.md)
-- [JavaScript in the Browser](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Javascript-in-Browser/README.md)
-  - [Simple Input and Output](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Primitive-Input-Output/README.md)
-- [DOM](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/DOM/README.md)
-- [JavaScript Events](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Events/README.md)
-- [DOM Manipulation](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Manipulating-DOM/README.md)
+- [CSS Display](../../../Front-End-Technologies/Topics/CSS-Display/README.md)
+- [CSS Display Flex](../../../Front-End-Technologies/Topics/CSS-Display-Flex/README.md)
+- [CSS Box Model](../../../Front-End-Technologies/Topics/CSS-Box-Model/README.md)
+- [Node vs Browser](../../../Front-End-Technologies/Topics/NodeJS-vs-JS/README.md)
+- [JavaScript in the Browser](../../../Front-End-Technologies/Topics/Javascript-in-Browser/README.md)
+  - [Simple Input and Output](../../../Front-End-Technologies/Topics/Primitive-Input-Output/README.md)
+- [DOM](../../../Front-End-Technologies/Topics/DOM/README.md)
+- [JavaScript Events](../../../Front-End-Technologies/Topics/Events/README.md)
+- [DOM Manipulation](../../../Front-End-Technologies/Topics/Manipulating-DOM/README.md)
 
 ### Homework
 
 Read through the topics covered in the lecture:
 
-- [CSS Display](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Display/README.md)
-- [CSS Display Flex](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Display-Flex/README.md)
-- [CSS Box Model](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Box-Model/README.md)
-- [Node vs Browser](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/NodeJS-vs-JS/README.md)
-- [JavaScript in the Browser](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Javascript-in-Browser/README.md)
-  - [Simple Input and Output](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Primitive-Input-Output/README.md)
-- [DOM](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/DOM/README.md)
-- [JavaScript Events](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Events/README.md)
-- [DOM Manipulation](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Manipulating-DOM/README.md)
+- [CSS Display](../../../Front-End-Technologies/Topics/CSS-Display/README.md)
+- [CSS Display Flex](../../../Front-End-Technologies/Topics/CSS-Display-Flex/README.md)
+- [CSS Box Model](../../../Front-End-Technologies/Topics/CSS-Box-Model/README.md)
+- [Node vs Browser](../../../Front-End-Technologies/Topics/NodeJS-vs-JS/README.md)
+- [JavaScript in the Browser](../../../Front-End-Technologies/Topics/Javascript-in-Browser/README.md)
+  - [Simple Input and Output](../../../Front-End-Technologies/Topics/Primitive-Input-Output/README.md)
+- [DOM](../../../Front-End-Technologies/Topics/DOM/README.md)
+- [JavaScript Events](../../../Front-End-Technologies/Topics/Events/README.md)
+- [DOM Manipulation](../../../Front-End-Technologies/Topics/Manipulating-DOM/README.md)
 
 #### Homework Assignment
 

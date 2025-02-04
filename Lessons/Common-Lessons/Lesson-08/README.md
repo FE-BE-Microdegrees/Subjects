@@ -12,18 +12,18 @@ In the eighth lecture, we will again start with a recap of the previous lecture 
 
 - Recap of the previous lecture
 - Solving issues during homework
-- [Prototyping](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lessons-translation/Software-Development/Topics/Prototyping/README.md)
+- [Prototyping](../../../Software-Development/Topics/Prototyping/README.md)
 
 ### Programming
 
 - Recap of the previous lecture
 - Solving issues during homework
-- [JavaScript Best Practices](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lessons-translation/Programming-Basics/Topics/Javascript-Best-Practices/README.md)
-- [Code Debugging](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lessons-translation/Programming-Basics/Topics/Debugging/README.md)
+- [JavaScript Best Practices](../../../Programming-Basics/Topics/Javascript-Best-Practices/README.md)
+- [Code Debugging](../../../Programming-Basics/Topics/Debugging/README.md)
 
 ## Homework - Deadline: Before the next lecture
 
 - Read through today’s lecture materials
-  - [Prototyping](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lessons-translation/Software-Development/Topics/Prototyping/README.md)
-  - [JavaScript Best Practices](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lessons-translation/Programming-Basics/Topics/Javascript-Best-Practices/README.md)
-  - [Code Debugging](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lessons-translation/Programming-Basics/Topics/Debugging/README.md)
+  - [Prototyping](../../../Software-Development/Topics/Prototyping/README.md)
+  - [JavaScript Best Practices](../../../Programming-Basics/Topics/Javascript-Best-Practices/README.md)
+  - [Code Debugging](../../../Programming-Basics/Topics/Debugging/README.md)

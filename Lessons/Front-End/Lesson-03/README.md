@@ -15,18 +15,17 @@ In this lecture, we continue learning plain JavaScript. First, we look at how to
 
 - Review of the Previous Lecture
 - Using Multiple `js` Files
-- [HTML Forms](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/HTML-Forms/README.md)
-- [HTML Forms and JavaScript](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Forms-and-JS/README.md)
+- [HTML Forms](../../../Front-End-Technologies/Topics/HTML-Forms/README.md)
+- [HTML Forms and JavaScript](../../../Front-End-Technologies/Topics/Forms-and-JS/README.md)
 
 ### Homework
 
 Read through the sections covered in the lecture:
 
-- [HTML Forms](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/HTML-Forms/README.md)
-- [HTML Forms and JavaScript](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Forms-and-JS/README.md)
+- [HTML Forms](../../../Front-End-Technologies/Topics/HTML-Forms/README.md)
+- [HTML Forms and JavaScript](../../../Front-End-Technologies/Topics/Forms-and-JS/README.md)
 
 #### Homework Assignment
 
 - Add a form to your webpage that allows adding new posts.
 - Try to set up the posts list in a separate file, and automatically create a list of posts on the webpage from this file.
-

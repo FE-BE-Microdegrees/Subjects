@@ -10,10 +10,10 @@
 
 - Review of the previous lecture
 - Database
-- [Relational Database](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/Topics/Relational-Database/README.md)
-- [MySQL](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/Topics/MySQL/README.md)
-- [MySQL in Docker](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/Topics/Docker-MySQL/README.md)
-- [Making SQL Queries](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/Topics/MySQL-Queries/README.md)
+- [Relational Database](../../../Databases/Topics/Relational-Database/README.md)
+- [MySQL](../../../Databases/Topics/MySQL/README.md)
+- [MySQL in Docker](../../../Databases/Topics/MySQL-Docker/README.md)
+- [Making SQL Queries](../../../Databases/Topics/MySQL-Queries/README.md)
 
 ## Homework
 

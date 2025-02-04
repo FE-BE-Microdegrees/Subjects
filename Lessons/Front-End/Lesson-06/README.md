@@ -13,23 +13,23 @@ After reviewing the previous lecture, we’ll discuss front-end frameworks and i
 ### Topics
 
 - Review of the previous lecture
-- [Front-End Frameworks](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/FE-Frameworks/README.md)
-- [ReactJS](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React/README.md)
-- [React Components](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Components/README.md)
-- [React Props](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Props/README.md)
-- [React Bootstrap](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Bootstrap/README.md)
-- [React State Management](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/State-Management/README.md)
+- [Front-End Frameworks](../../../Front-End-Frameworks/Topics/FE-Frameworks/README.md)
+- [ReactJS](../../../Front-End-Frameworks/Topics/React/README.md)
+- [React Components](../../../Front-End-Frameworks/Topics/React-Components/README.md)
+- [React Props](../../../Front-End-Frameworks/Topics/React-Props/README.md)
+- [React Bootstrap](../../../Front-End-Frameworks/Topics/React-Bootstrap/README.md)
+- [React State Management](../../../Front-End-Frameworks/Topics/State-Management/README.md)
 
 ### Homework
 
 Read the topics covered in the lecture:
 
-- [Front-End Frameworks](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/FE-Frameworks/README.md)
-- [ReactJS](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React/README.md)
-- [React Components](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Components/README.md)
-- [React Props](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Props/README.md)
-- [React Bootstrap](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Bootstrap/README.md)
-- [React State Management](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/State-Management/README.md)
+- [Front-End Frameworks](../../../Front-End-Frameworks/Topics/FE-Frameworks/README.md)
+- [ReactJS](../../../Front-End-Frameworks/Topics/React/README.md)
+- [React Components](../../../Front-End-Frameworks/Topics/React-Components/README.md)
+- [React Props](../../../Front-End-Frameworks/Topics/React-Props/README.md)
+- [React Bootstrap](../../../Front-End-Frameworks/Topics/React-Bootstrap/README.md)
+- [React State Management](../../../Front-End-Frameworks/Topics/State-Management/README.md)
 
 #### Homework Assignment
 

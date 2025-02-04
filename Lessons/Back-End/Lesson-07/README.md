@@ -10,11 +10,11 @@
 ## Topics
 
 - Review of the previous lecture
-- [Connecting a Database to NodeJS](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/Topics/MySQL-NodeJS/README.md)
+- [Connecting a Database to NodeJS](../../../Databases/Topics/MySQL-NodeJS/README.md)
 - Database Queries in a Node API
 
 ## Homework
 
 - Read through the materials for the seventh lecture
-  - [Connecting a Database to NodeJS](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Databases/Topics/MySQL-NodeJS/README.md)
+  - [Connecting a Database to NodeJS](../../../Databases/Topics/MySQL-NodeJS/README.md)
 - Add database connection and queries to your application

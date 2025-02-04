@@ -10,8 +10,8 @@
 ## Topics
 
 - Review of the previous lecture
-- [Middleware](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Middleware/README.md)
-- [Express Router](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Routes/README.md)
+- [Middleware](../../../Back-End-Frameworks/Topics/Middleware/README.md)
+- [Express Router](../../../Back-End-Frameworks/Topics/Routes/README.md)
 
 ## Middleware (Illustration from the Lecture)
 
@@ -20,8 +20,8 @@
 ## Homework
 
 - Read through the materials for the fourth lecture:
-  - [Middleware](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Middleware/README.md)
-  - [Express Router](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Routes/README.md) materials
+  - [Middleware](../../../Back-End-Frameworks/Topics/Middleware/README.md)
+  - [Express Router](../../../Back-End-Frameworks/Topics/Routes/README.md) materials
 - Structure your project's routes as `Router` objects
 - Add a `middleware` function to your project that logs all requests with the timestamp to the console
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop) on your computer

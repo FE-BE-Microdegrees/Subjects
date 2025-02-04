@@ -2,7 +2,7 @@
 
 In this topic we'll explore the concepts of version control, its importance, and the different types of version control systems.
 
-![Tööriistad](Software-Development-Tools.webp)
+![Tööriistad](Version-Control.webp)
 
 Pildi allikas: Dall-E by OpenAI
 

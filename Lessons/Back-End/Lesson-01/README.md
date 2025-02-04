@@ -7,22 +7,22 @@
 
 ## Topics
 
-- [Tools](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Tools/README.md)
-- [API](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/API/README.md)
-- [HTTP](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/HTTP/README.md)
-- [HTTP Methods](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/HTTP-Methods/README.md)
-- [Express](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Express/README.md)
-- [Structuring](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Structuring/README.md)
+- [Tools](../../../Back-End-Frameworks/Topics/Tools/README.md)
+- [API](../../../Back-End-Frameworks/Topics/API/README.md)
+- [HTTP](../../../Back-End-Frameworks/Topics/HTTP/README.md)
+- [HTTP Methods](../../../Back-End-Frameworks/Topics/HTTP-Methods/README.md)
+- [Express](h../../../Back-End-Frameworks/Topics/Express/README.md)
+- [Structuring](../../../Back-End-Frameworks/Topics/Structuring/README.md)
 
 ## Homework
 
 Read the topics discussed in the lecture:
 
-- [API](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/API/README.md)
-- [HTTP](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/HTTP/README.md)
-- [HTTP Methods](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/HTTP-Methods/README.md)
-- [Express](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Express/README.md)
-- [Structuring](https://github.com/FE-BE-Microdegrees/Subjects/blob/main/Back-End-Frameworks/Topics/Structure/README.md)
+- [API](../../../Back-End-Frameworks/Topics/API/README.md)
+- [HTTP](../../../Back-End-Frameworks/Topics/HTTP/README.md)
+- [HTTP Methods](../../../Back-End-Frameworks/Topics/HTTP-Methods/README.md)
+- [Express](../../../Back-End-Frameworks/Topics/Express/README.md)
+- [Structuring](../../../Back-End-Frameworks/Topics/Structuring/README.md)
 
 ### Task
 

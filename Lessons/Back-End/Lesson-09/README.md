@@ -10,19 +10,19 @@
 ## Topics
 
 - Review of the previous lecture
-- [Automated Testing for Node API](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Testing-Node-Api/README.md)
-  - [Mocha](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Mocha/README.md)
-  - [Chai](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Chai/README.md)
-  - [Supertest](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Supertest/README.md)
+- [Automated Testing for Node API](../../../Back-End-Frameworks/Topics/Testing-Node-Api/README.md)
+  - [Mocha](../../../Back-End-Frameworks/Topics/Mocha/README.md)
+  - [Chai](../../../Back-End-Frameworks/Topics/Chai/README.md)
+  - [Supertest](../../../Back-End-Frameworks/Topics/Supertest/README.md)
 - Writing Tests
 
 ## Homework
 
 - Read through the materials for the ninth lecture:
 
-  - [Automated Testing for Node API](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Testing-Node-Api/README.md)
-    - [Mocha](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Mocha/README.md)
-    - [Chai](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Chai/README.md)
-    - [Supertest](https://github.com/FE-BE-Microdegrees/Subjects/tree/Lesson-translation/Back-End-Frameworks/Topics/Supertest/README.md)
+  - [Automated Testing for Node API](../../../Back-End-Frameworks/Topics/Testing-Node-Api/README.md)
+    - [Mocha](../../../Back-End-Frameworks/Topics/Mocha/README.md)
+    - [Chai](../../../Back-End-Frameworks/Topics/Chai/README.md)
+    - [Supertest](../../../Back-End-Frameworks/Topics/Supertest/README.md)
 
 - Write tests for your API

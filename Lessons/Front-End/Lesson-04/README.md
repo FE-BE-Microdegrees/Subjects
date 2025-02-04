@@ -12,19 +12,19 @@ As usual, we’ll start by reviewing the previous lecture. Then, we’ll discuss
 ### Topics
 
 - Review of the previous lecture
-- [CSS Position](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Position/README.md)
-- [CSS Frameworks](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Frameworks/README.md)
-- [Bootstrap](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Bootstrap/README.md)
+- [CSS Position](../../../Front-End-Technologies/Topics/CSS-Position/README.md)
+- [CSS Frameworks](../../../Front-End-Technologies/Topics/CSS-Frameworks/README.md)
+- [Bootstrap](../../../Front-End-Technologies/Topics/Bootstrap/README.md)
 - Fetching Data from an External Source
-  - [Axios](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Axios/README.md)
+  - [Axios](../../../Front-End-Technologies/Topics/Axios/README.md)
 
 ### Homework
 
 - Read the materials from the fourth lecture:
-  - [CSS Position](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Position/README.md)
-  - [CSS Frameworks](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/CSS-Frameworks/README.md)
-  - [Bootstrap](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Bootstrap/README.md)
-  - [Fetching Data from an External Source with Axios](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Technologies/Topics/Axios/README.md)
+  - [CSS Position](../../../Front-End-Technologies/Topics/CSS-Position/README.md)
+  - [CSS Frameworks](../../../Front-End-Technologies/Topics/CSS-Frameworks/README.md)
+  - [Bootstrap](../../../Front-End-Technologies/Topics/Bootstrap/README.md)
+  - [Fetching Data from an External Source with Axios](../../../Front-End-Technologies/Topics/Axios/README.md)
 
 #### Homework Assignment
 

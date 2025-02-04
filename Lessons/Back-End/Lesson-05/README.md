@@ -8,11 +8,11 @@
 
 ## Topics
 
-- [Authentication and Authorization](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Back-End-Frameworks/Topics/Auth/README.md)
-- [Bcrypt](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Back-End-Frameworks/Topics/Bcrypt/README.md)
-- [JWT](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Back-End-Frameworks/Topics/JWT/README.md)
-- [Sending Data to Express API - Header](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Back-End-Frameworks/Topics/Sending-Data-To-Express/README.md#headers)
-- [Implementing Authentication and Authorization](https://github.com/FE-BE-Microdegrees/Subjects/tree/main/Back-End-Frameworks/Topics/Auth-Middleware/README.md)
+- [Authentication and Authorization](../../../Back-End-Frameworks/Topics/Auth/README.md)
+- [Bcrypt](../../../Back-End-Frameworks/Topics/Bcrypt/README.md)
+- [JWT](../../../Back-End-Frameworks/Topics/JWT/README.md)
+- [Sending Data to Express API - Header](../../../Back-End-Frameworks/Topics/Sending-Data-To-Express/README.md#headers)
+- Implementing Authentication and Authorization
 
 ## Illustration from the Fifth Lecture
 

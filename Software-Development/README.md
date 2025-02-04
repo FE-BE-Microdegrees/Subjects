@@ -35,6 +35,7 @@ Image source: Dall-E by OpenAI
   - [Markdown](./Topics/Markdown/README.md)
   - [Git and Github Best Practices](./Topics/Git-Best-Practices/README.md)
   - [Github Issue](./Topics/Github-Issue/README.md)
+- [Working with Branches](./Topics/Branch/README.md)
 - [Code Quality](./Topics/Code-Quality/README.md)
 - [Project management](./Topics/Project-Management/README.md)
 - [Code Review](./Topics/Code-Review/README.md)

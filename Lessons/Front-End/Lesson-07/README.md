@@ -14,15 +14,15 @@ As per tradition, we will start by reviewing what we discussed and did in the pr
 ### Topics
 
 - Review of the previous lecture
-- [React Router](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Routing/README.md)
+- [React Router](../../../Front-End-Frameworks/Topics/React-Routing/README.md)
 - Not Found Page
-- [React Forms](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Forms/README.md)
+- [React Forms](../../../Front-End-Frameworks/Topics/React-Forms/README.md)
 
 ### Homework
 
 - Review the materials from Lecture Seven:
-  - [React Router](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Routing/README.md)
-  - [React Forms](https://github.com/FE-BE-Microdegrees/Subjects/tree/Front-end-Lessons/Front-End-Frameworks/Topics/React-Forms/README.md)
+  - [React Router](../../../Front-End-Frameworks/Topics/React-Routing/README.md)
+  - [React Forms](../../../Front-End-Frameworks/Topics/React-Forms/README.md)
 
 #### Homework Assignment
 
