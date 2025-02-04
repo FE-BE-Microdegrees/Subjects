@@ -24,7 +24,6 @@ The structure of the repository is as follows:
     - The [`Front-End-Technologies`](./Front-End-Technologies/) folder contains materials for the Front-End Development course.
     - The [`Front-End-Frameworks`](./Front-End-Frameworks/) folder contains materials for Front-End Frameworks course.
   - Back-End Development
-    - The [`Back-End-Technologies`](./Back-End-Technologies/) folder contains materials for the Back-End Development course.
     - The [`Back-End-Frameworks`](./Back-End-Frameworks/) folder contains materials for Back-End Frameworks course.
     - The [`Databases`](./Databases/) folder contains materials for the Databases course.
 
